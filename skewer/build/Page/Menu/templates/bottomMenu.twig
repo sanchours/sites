@@ -1,0 +1,5 @@
+<p class="b-menufoot {{ html_class }}">
+    {%for item in items%}
+    <a href="{{item.href}}" {% if aTargetBlank[item.id] is defined %} target="_blank" {% endif %} class="{% if item.selected %} on{% endif %}"><ins></ins>{{item.title}}</a>{% if not loop.last %} |{% endif %}
+    {% endfor %}
+</p>

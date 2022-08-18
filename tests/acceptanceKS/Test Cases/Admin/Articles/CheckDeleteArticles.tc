@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка удаление статьи в админке</description>
+   <name>CheckDeleteArticles</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>62103ec4-17ff-493d-b3d5-68d015dbde3f</testCaseGuid>
+</TestCaseEntity>

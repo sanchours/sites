@@ -1,0 +1,102 @@
+:global{
+
+    .b-form-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+     }
+
+    .login-form {
+        width: 100%;
+        max-width: 310px;
+        &__item {
+            height: auto;
+            margin-bottom: @form-item-margin-bottom;
+            .ant-form-explain {
+                margin-top: 6px;
+            }
+        }
+        &__input input {
+            height: 40px;
+            color: #222;
+            background: #FBFBFB;
+            border: 1px solid #DFDFDF;
+        }
+        &__header {
+            margin-bottom: 35px;
+            color: #222;
+            font-weight: 500;
+            font-size: 22px;
+
+        }
+        .logo-wrapper {
+            margin-bottom: 55px;
+        }
+        .form-forgot {
+            margin-top: 30px;
+
+            a:link,
+            a:active,
+            a:hover,
+            a:visited,
+            a:focus {
+                font-size: 14px;
+            }
+        }
+        &-button {
+            box-sizing: border-box;
+            width: 100%;
+            height: auto;
+            padding: 10px 38px;
+            color: #222;
+            font-weight: 600;
+            font-size: @font-size-base;
+            font-family: Source Sans Pro;
+            font-style: normal;
+            line-height: 18px;
+            text-align: center;
+            background: #FFD156;
+            border: 1px solid #FFD156;
+            border-radius: 5px;
+            &:hover,
+            &:focus {
+                color: #222;
+                background-color: transparent;
+                border-color: #FFD156;
+            }
+
+            &__can-id {
+                background: transparent;
+                &:hover,
+                &:focus {
+                    background-color: #ffd156;
+                }
+            }
+        }
+
+    }
+
+    .forgot-form {
+        &__cap-wrapper {
+            display: flex;
+            img {
+                margin-right: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .success-message {
+        &__pic {
+            margin-bottom: 6px;
+        }
+        .login-form__header {
+            margin-bottom: 10px;
+        }
+    }
+
+
+
+}

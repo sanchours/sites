@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Фильтр каталога на главной</description>
+   <name>FilterOfCatalogOnMain</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9abdb96f-29fe-45d8-b995-6f1fc5109194</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Изменение числа в списке добавления товара</description>
+   <name>ChengeMaxParamOrdersEditor</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ab832934-1d06-4235-91fd-4db257a50cdc</testCaseGuid>
+</TestCaseEntity>

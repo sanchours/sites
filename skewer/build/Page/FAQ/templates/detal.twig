@@ -1,0 +1,27 @@
+{%  if oForm is defined %}
+    {% include 'form.twig' %}
+{% endif %}
+
+<div class="b-faq"{{ Design.write(' sktag="modules.faq"') }}>
+    {% if list.items is not empty  %}
+    <div class="faq__msgtext"></div>
+        {%  for aItem in list.items  %}
+        <div class="faq__item">
+            <div class="faq__leftside">
+                <div class="faq__title">{{aItem.name}} </div>
+                <div class="faq__date">{{aItem.date_time}} </div>
+                <div class="faq__city">{{aItem.city}} </div>
+            </div>
+            <div class="faq__rightside">
+                <div class="faq__editor"><b>{{ Lang.get('faq.question') }}:</b></div>
+                <div class="b-editor">{{aItem.content}}</div>
+                <div class="faq__editor"><b>{{ Lang.get('FAQ.answer') }}:</b></div>
+                <div class="b-editor">{{aItem.answer}}</div>
+            </div>
+        </div>
+        {% endfor %}
+    {% else %}
+    <p>{{ Lang.get('faq.message_not_found') }}</p>
+    {% endif %}
+</div>
+<p><a rel="nofollow" href="#" onclick="history.go(-1);return false;">{{ Lang.get('page.back') }}</a></p>

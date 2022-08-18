@@ -1,0 +1,8 @@
+<div class="catalogbox__fotorama">
+    <div class="js-catalog-fotorama">
+        {% for iKey, aImage in aImages %}
+            <a href="{{ aImage.images_data['big'].file }}" alt="{{ aImage.alt_title|e }}"  title="{{ aImage.title|e }}
+                {% if aImage.description %} {{ aImage.description|e }}{% endif %}"></a>
+        {% endfor %}
+    </div>
+</div>

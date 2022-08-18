@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Изменение пароля админом</description>
+   <name>ChangePassAdm</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>efd2ae7a-2ac5-4538-95e5-6aabf55c7fd1</testCaseGuid>
+</TestCaseEntity>

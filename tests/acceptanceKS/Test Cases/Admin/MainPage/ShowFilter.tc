@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Вывод фильтра</description>
+   <name>ShowFilter</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d3d1c5c1-b936-4da8-897b-e011661a84ce</testCaseGuid>
+</TestCaseEntity>

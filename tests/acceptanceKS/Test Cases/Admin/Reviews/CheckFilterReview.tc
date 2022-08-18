@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка фильтра статусов отзывов</description>
+   <name>CheckFilterReview</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c1e76dd3-cfe7-4168-bf6e-3695b3921127</testCaseGuid>
+</TestCaseEntity>

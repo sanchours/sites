@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>img_editing</name>
+   <tag></tag>
+   <elementGuidId>a0acfa30-982f-4373-b27c-c10985c2cbae</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[contains(@class,'x-panel sk-tab-list x-grid x-box-item x-panel-default')]//tr[contains(@class,'x-grid-row')][1]//img[contains(@class,'-action-col-icon x-action-col-2  icon-edit ')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[contains(@class,'x-panel sk-tab-list x-grid x-box-item x-panel-default')]//tr[contains(@class,'x-grid-row')][1]//img[contains(@class,'-action-col-icon x-action-col-2  icon-edit ')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>x-action-col-icon x-action-col-2  icon-edit </value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-qtip</name>
+      <type>Main</type>
+      <value>Редактировать</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>ext-gen1498</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[contains(@class,'x-panel sk-tab-list x-grid x-box-item x-panel-default')]//tr[contains(@class,'x-grid-row')][1]//img[contains(@class,'-action-col-icon x-action-col-2  icon-edit ')]</value>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка  поиска при добавлении товара в заказ</description>
+   <name>CheckSearchOrdersEditor</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a7dffc5e-dadf-4786-b394-050becd81cce</testCaseGuid>
+</TestCaseEntity>

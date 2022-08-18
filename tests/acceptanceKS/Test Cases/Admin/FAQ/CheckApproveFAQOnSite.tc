@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка наличия ВИО на сайте</description>
+   <name>CheckApproveFAQOnSite</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cadd2a93-08e3-400b-9d2f-33b27e60bc02</testCaseGuid>
+</TestCaseEntity>

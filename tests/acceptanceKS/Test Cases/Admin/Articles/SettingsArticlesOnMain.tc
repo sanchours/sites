@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Настройки вывода статей на главной</description>
+   <name>SettingsArticlesOnMain</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3539bd77-cf6d-4a3d-bf4b-23cf3b72f206</testCaseGuid>
+</TestCaseEntity>

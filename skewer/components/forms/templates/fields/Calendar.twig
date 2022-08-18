@@ -1,0 +1,25 @@
+<div class="form__col-{{oField.getClassVal()}}">
+    <div class="form__item form__item--datepicker form__item--icon form__item--label-{{oField.settings.labelPosition}} {{ oField.settings.classModify }}">
+        {% if (oField.settings.labelPosition != 'right') %}
+            <div class="form__label">{{oField.settings.title}}{% if oField.settings.required==1 %} <ins class="form__mark">*</ins>{% endif %}</div>
+        {% endif %}
+        <div class="form__input form__input--input {%  if oField.getError() %} form__item--error {% endif %}">
+            <input data-hash="{{templateForm.formHash}}" data-name="{{oField.settings.title}}" autocomplete="off" class="js_calendar" type="{% if templateForm.mobile %}date{% else %}text{% endif %}"
+                    {% if 'placeholder' in oField.settings.specStyle and (oField.settings.labelPosition == 'none') %}
+                        {{ oField.settings.specStyle }}
+                    {% elseif 'placeholder' in oField.settings.specStyle %}
+                        {{ oField.settings.specStyle }}
+                    {% elseif (oField.settings.labelPosition == 'none') %}
+                        placeholder="{% if oField.settings.required==1 %}{{ oField.settings.title~'*' }}{% else %}{{ oField.settings.title }}{% endif %}"
+                    {% else %}
+                        {{ oField.settings.specStyle }}
+                    {% endif %}
+                   value="{{oField.value}}{% if templateForm.mobile %}{{ "now"|date("Y-m-d") }}{% endif %}" id="datepicker_{{oField.settings.slug}}_{{formHash}}" name="{{oField.settings.slug}}">
+            <div class="form__icon far fa-calendar-alt"></div>
+        </div>
+        {% if (oField.settings.labelPosition == 'right') %}
+            <div class="form__label">{{oField.settings.title}}{% if oField.settings.required==1 %} <ins class="form__mark">*</ins>{% endif %}</div>
+        {% endif %}
+    </div>
+    {% if oField.settings.description!='' %}<div class="form__info">{{oField.settings.description}}</div>{% endif %}
+</div>

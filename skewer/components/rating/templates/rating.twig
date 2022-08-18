@@ -1,0 +1,18 @@
+{% if rating > 5 %}
+    {% set rating = 5 %}
+{% endif %}
+{% set ext = 5 - rating|number_format %}
+
+<div class="js-ajax_content">
+    <div class="b-ratingstar">
+        <div class="js-rating" data-rating="{{ rating }}" data-moduleName="{{ moduleName }}" data-objectId="{{ objectId }}" data-allowRate="{{ allowRate }}">
+
+            <div class="ratingstar__item"></div>
+
+        </div>
+        {% if count %}
+              <div class="ratingstar__count">({{ count }})</div>
+        {% endif %}
+    </div>
+
+</div>

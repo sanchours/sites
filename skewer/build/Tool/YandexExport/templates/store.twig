@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE yml_catalog SYSTEM "shops.dtd">
+<yml_catalog date="{{ date }}">
+    <shop>
+        <name>{{ shopName }}</name>
+        <company>{{ companyName }}</company>
+        <url>{{ domain }}</url>
+        <currencies>
+            <currency id="RUR" rate="1" />
+        </currencies>
+        <categories>
+        {% for category in categories %}
+            <category id="{{ category.id }}" {% if category.parent is defined %} parentId="{{ category.parent }}"{% endif %}>{{ category.title }}</category>
+        {% endfor %}
+        </categories>
+        {% if localDeliveryCost %}
+            <local_delivery_cost>{{ localDeliveryCost|escape }}</local_delivery_cost>
+        {% endif %}
+        <offers>
+            {% for item in goods %}
+            <offer id="{{ item.id }}" available="{% if ((item.fields['available'] is defined) and (item.fields['available'].value)) %}true{% else %}false{% endif %}">
+                <url>{{ domain }}{{ item.url }}</url>
+                <price>{{ item.fields.price.value }}</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>{{ searchIndex[item.id] }}</categoryId>
+                {% if  item.fields.gallery.first_img.images_data.medium.file is defined %}
+                <picture>{{ domain }}{{ item.fields.gallery.first_img.images_data.medium.file  }}</picture>
+                {% else %}
+                <picture>{{ domain }}{{Design.get('modules.catalogbox.detal','nophoto_img','skewer\\build\\Page\\Main\\Asset')}}</picture>
+                {% endif %}
+                {% if item.fields['store'] is defined %}
+                    {% set aFieldList = item.fields['store'] %}
+                    <store>{{ aFieldList.value ? 'true': 'false' }}</store>
+                {% endif %}
+                {% if item.fields['pickup'] is defined %}
+                    {% set aFieldList = item.fields['pickup'] %}
+                    <pickup>{{ aFieldList.value ? 'true': 'false' }}</pickup>
+                {% endif %}
+                {% if item.fields['delivery'] is defined %}
+                    {% set aFieldList = item.fields['delivery'] %}
+                    <delivery>{{ aFieldList.value ? 'true': 'false' }}</delivery>
+                {% endif %}
+                <name>{{ item.title }}</name>
+                {% if item.fields['vendor'] is defined %}
+                    {% set aFieldList = item.fields['vendor'] %}
+                    <vendor>{{ aFieldList.value ? 'true': 'false' }}</vendor>
+                {% endif %}
+                {% if item.fields['announce'] is defined %}
+                    {% set aFieldList = item.fields['announce'] %}
+                    <description>{{ aFieldList.value|striptags|escape }}</description>
+                {% endif %}
+                {% if item.fields['sales_notes'] is defined %}
+                    {% set aFieldList = item.fields['sales_notes'] %}
+                    <sales_notes>{{ aFieldList.value|escape}}</sales_notes>
+                {% endif %}
+                {% if item.fields['warranty'] is defined %}
+                    {% set aFieldList = item.fields['warranty'] %}
+                    <manufacturer_warranty>{{ aFieldList.value ? 'true': 'false' }}</manufacturer_warranty>
+                {% endif %}
+                {% if item.fields['country'] is defined %}
+                    {% set aFieldList = item.fields['country'] %}
+                    <country_of_origin>{{ aFieldList.value|escape }}</country_of_origin>
+                {% endif %}
+                {% if item.fields['adult'] is defined %}
+                    {% set aFieldList = item.fields['adult'] %}
+                    <adult>{{ aFieldList.value ? 'true': 'false' }}</adult>
+                {% endif %}
+            </offer>
+        {% endfor %}
+        </offers>
+    </shop>
+</yml_catalog>

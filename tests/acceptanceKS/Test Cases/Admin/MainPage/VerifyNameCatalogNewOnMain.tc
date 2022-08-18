@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка заголовка каталога новых товаров на главной</description>
+   <name>VerifyNameCatalogNewOnMain</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>84e8d498-d6ac-4e47-a161-43fe000a67ab</testCaseGuid>
+</TestCaseEntity>

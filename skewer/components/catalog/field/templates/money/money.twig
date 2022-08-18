@@ -1,0 +1,7 @@
+<div class="catalogbox__param catalogbox__param__{{ name }}">
+{% if value %}
+    <p class="catalogbox__{{ name }}">
+        {% if attrs.show_title == 1 %}<span>{{ title }}: </span>{% endif %}{{ value|price_format }} {{ measure }}{% if html %}/{{ html  }}{% endif %}{{ attrs.measure }}
+    </p>
+{% endif %}
+</div>

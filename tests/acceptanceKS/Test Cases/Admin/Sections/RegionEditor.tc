@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Редактор областей</description>
+   <name>RegionEditor</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4d5200e6-92cf-4b9f-a211-f7c4b9f1a65c</testCaseGuid>
+</TestCaseEntity>

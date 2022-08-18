@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Выводить на главную</description>
+   <name>ShowOnTheMain</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9d591e8e-0eb2-49cf-9210-65216cad3e95</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,30 @@
+<div class="b-form b-form--subscribe js-form"{{ Design.write(' sktag="modules.forms"') }}>
+    <form method="post" action="{{ url }}">
+
+        {% set sError = templateForm.getError() %}
+        {% if sError %}
+            <div class="form__col-1 form__error">
+                <p class="form__errortext">{{sError}}</p>
+            </div>
+        {% endif %}
+
+        {% set aFieldList = templateForm.fields %}
+
+        <p>{{ Lang.get('subscribe.subscribe_title') }}</p>
+        {% set oField = aFieldList[email] %}
+        <div>
+            <button type="submit" class=""></button>
+            <div class="form--subscribe__inputbox">
+                <input type="text" placeholder="{{ oField.settings.title }}" name="{{oField.settings.slug}}" id="{{oField.settings.slug}}_{{templateForm.formHash}}" value="{{oField.value|e}}" />
+                {% if oField.error is defined %}
+                    <label class="error" for="captcha">{{oField.error}}</label>
+                {% endif %}
+            </div>
+            <p class="form__info">{{oField.settings.description|e}}</p>
+        </div>
+
+        <input type="hidden" name="cmd"  value="subscribe" />
+        <input type="hidden" name = 'formHash' value='{{ templateForm.formHash}}' />
+        {{ templateForm.hiddenCaptchaInput }}
+    </form>
+</div>

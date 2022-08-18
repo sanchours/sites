@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Редактирование поля в карточке</description>
+   <name>EditingFieldInCard</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a5a3af1d-8064-49b3-9b13-158a54f6437f</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,44 @@
+:global {
+	.ant-collapse-item.ant-collapse-item-active {
+		& > .ant-collapse-header {
+			> svg {
+				transform: rotate(-90deg) !important;
+			}
+		}
+	}
+	.ant-collapse-item {
+		& > .ant-collapse-header {
+			> svg {
+				transform: rotate(90deg) !important;
+			}
+		}
+	}
+	.sk-collapse-tools {
+		padding-bottom: 40px;
+		background: #2e303b;
+	}
+	.ant-collapse > .ant-collapse-item.skleftManagment.skleftManagment {
+		background: #2e303b;
+		.ant-collapse-content {
+			padding: 10px 0;
+			color: #CFD3E3;
+		}
+		
+		& > .ant-collapse-header {
+			padding-left: 0;
+			color: #fff;
+			font-size: 16px;
+			border-bottom: 1px solid #505364;
+			&:hover {
+				color: #fff;
+			}
+			svg {
+				transform: rotate(90deg);
+			}
+		}
+		.ant-collapse-header .ant-collapse-arrow {
+			right: 0;
+			left: auto;
+		}
+	}
+}

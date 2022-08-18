@@ -1,0 +1,92 @@
+/* layer: default */
+    /* group: modules.guestbox.guestmain.theme_shadow    | Отзывы в колонке. Тема С тенью */
+        /* param: border_color                              | Цвет бордера | color | #ffe953  */
+        /* param: content_bg                                | Цвет фона | color | #fff */
+        /* param: border_width                              | Толщина бордера | size | 2px  */
+        /* param: content_padding                           | Отступы внутри | size | 25px 25px */
+        /* param: shadow_size                               | Тень положение (x, y, blur) | size | 0 10px 20px */
+        /* param: shadow_color                              | Цвет тени | color | rgba(0, 0, 0, .15) */
+        /* param: separ_color                               | Цвет разделителя | color | #e9e9e9 */
+
+.b-reviews-theme-shadow {
+    margin-bottom: 20px;
+}
+.b-reviews-theme-shadow .reviews-theme-shadow__item {
+    padding-bottom: 20px;
+}
+.b-reviews-theme-shadow .reviews-theme-shadow__content {
+    margin-bottom: 30px;
+    background: [modules.guestbox.guestmain.theme_shadow.content_bg];
+    padding: [modules.guestbox.guestmain.theme_shadow.content_padding];
+    -webkit-box-shadow: [modules.guestbox.guestmain.theme_shadow.shadow_size] [modules.guestbox.guestmain.theme_shadow.shadow_color];
+    -moz-box-shadow: [modules.guestbox.guestmain.theme_shadow.shadow_size] [modules.guestbox.guestmain.theme_shadow.shadow_color];
+    box-shadow: [modules.guestbox.guestmain.theme_shadow.shadow_size] [modules.guestbox.guestmain.theme_shadow.shadow_color];
+    position: relative;
+}
+.b-reviews-theme-shadow .reviews-theme-shadow__content:before {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 15px;
+    top: 100%;
+    border: solid transparent;
+    border-top-color: [modules.guestbox.guestmain.theme_shadow.content_bg];
+    border-width: 20px 20px 0 0;
+}
+.b-reviews-theme-shadow .reviews-theme-shadow__contact {
+    padding-top: 1.5em;  /*-like b-editor bottom padding-*/
+    position: relative;
+}
+.b-reviews-theme-shadow .reviews-theme-shadow__contact:before {
+    content: '';
+    border-top: 1px solid [modules.guestbox.guestmain.theme_shadow.separ_color];
+    position: absolute;
+    left: -25px;
+    right: -25px;
+    bottom: 100%;
+}
+.b-reviews-theme-shadow .reviews-theme-shadow__contact--photo .reviews-theme-shadow__photo,
+.b-reviews-theme-shadow .reviews-theme-shadow__contact--photo .reviews-theme-shadow__contact-data {
+    margin-right: -.275em;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.b-reviews-theme-shadow .reviews-theme-shadow__contact--photo .reviews-theme-shadow__photo {
+    width: 50px;
+}
+.b-reviews-theme-shadow .reviews-theme-shadow__contact--photo .reviews-theme-shadow__photo img {
+    vertical-align: middle;
+    max-width: 100%;
+    border-radius: 1000px;
+}
+.b-reviews-theme-shadow .reviews-theme-shadow__contact--photo .reviews-theme-shadow__contact-data {
+    padding-left: 20px;
+    width: calc(100% - 50px);
+}
+.b-reviews-theme-shadow .reviews-theme-shadow__name {
+    font-family: [modules.guestbox.title.font_family];
+    font-size: [modules.guestbox.title.size];
+    font-weight: [modules.guestbox.title.weight];
+    font-style: [modules.guestbox.title.style];
+    text-decoration: [modules.guestbox.title.decoration];
+    text-transform: [modules.guestbox.title.transform];
+    color: [modules.guestbox.title.color];
+}
+.b-reviews-theme-shadow .reviews-theme-shadow__date,
+.b-reviews-theme-shadow .reviews-theme-shadow__company {
+    display: inline-block;
+    padding-right: 10px;
+    font-family: [modules.guestbox.date.font_family];
+    font-size: [modules.guestbox.date.size];
+    font-weight: [modules.guestbox.date.weight];
+    font-style: [modules.guestbox.date.style];
+    text-decoration: [modules.guestbox.date.decoration];
+    text-transform: [modules.guestbox.date.transform];
+    color: [modules.guestbox.date.color];
+}
+.b-reviews-theme-shadow .reviews-theme-shadow__rating{
+    margin: 0 0 15px;
+}

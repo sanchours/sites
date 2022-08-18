@@ -1,0 +1,10 @@
+<tr>
+    <td>{{ field.settings.title }}:</td>
+    <td>
+        {% if field.value %}
+            {{ Lang.get('forms.yes') }}
+        {% else %}
+            {{ Lang.get('forms.no') }}
+        {% endif %}
+    </td>
+</tr>

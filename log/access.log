@@ -1,0 +1,1056 @@
+[Tue, 19 Sep 2017 11:54:32 +0300](str): Patch 60545 install started  At Tue, 19 Sep 2017 11:54:32 +0300
+[Tue, 19 Sep 2017 11:54:32 +0300](str): Patch 60545 install complete At Tue, 19 Sep 2017 11:54:32 +0300
+[Tue, 19 Sep 2017 11:54:32 +0300](str): Patch 60067 install started  At Tue, 19 Sep 2017 11:54:32 +0300
+[Tue, 19 Sep 2017 11:54:33 +0300](str): Patch 60067 install complete At Tue, 19 Sep 2017 11:54:33 +0300
+[Tue, 19 Sep 2017 11:54:33 +0300](str): Patch 60558 install started  At Tue, 19 Sep 2017 11:54:33 +0300
+[Tue, 19 Sep 2017 11:54:41 +0300](str): Patch 60558 install complete At Tue, 19 Sep 2017 11:54:41 +0300
+[Tue, 19 Sep 2017 11:54:41 +0300](str): Patch 60499 install started  At Tue, 19 Sep 2017 11:54:41 +0300
+[Tue, 19 Sep 2017 11:54:41 +0300](str): Patch 60499 install complete At Tue, 19 Sep 2017 11:54:41 +0300
+[Fri, 03 Nov 2017 14:05:00 +0300](str): Patch 58469 install started  At Fri, 03 Nov 2017 14:05:00 +0300
+[Fri, 03 Nov 2017 14:05:01 +0300](str): Patch 58469 install complete At Fri, 03 Nov 2017 14:05:01 +0300
+[Fri, 03 Nov 2017 14:05:02 +0300](str): Patch 24946 install started  At Fri, 03 Nov 2017 14:05:02 +0300
+[Fri, 03 Nov 2017 14:05:02 +0300](str): Patch 24946 install complete At Fri, 03 Nov 2017 14:05:02 +0300
+[Fri, 03 Nov 2017 14:05:03 +0300](str): Patch 59129 install started  At Fri, 03 Nov 2017 14:05:03 +0300
+[Fri, 03 Nov 2017 14:05:03 +0300](str): Patch 59129 install complete At Fri, 03 Nov 2017 14:05:03 +0300
+2017-11-03 14:05:03 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 59130 install started  At Fri, 03 Nov 2017 14:05:03 +0300',
+]
+2017-11-03 14:05:12 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 59130 install complete At Fri, 03 Nov 2017 14:05:12 +0300',
+]
+2017-11-03 14:05:13 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 51364 install started  At Fri, 03 Nov 2017 14:05:13 +0300',
+]
+2017-11-03 14:05:13 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 51364 install complete At Fri, 03 Nov 2017 14:05:13 +0300',
+]
+2017-11-03 14:05:13 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 53520 install started  At Fri, 03 Nov 2017 14:05:13 +0300',
+]
+2017-11-03 14:05:14 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 53520 install complete At Fri, 03 Nov 2017 14:05:14 +0300',
+]
+2017-11-03 14:05:14 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 59116 install started  At Fri, 03 Nov 2017 14:05:14 +0300',
+]
+2017-11-03 14:05:14 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 59116 install complete At Fri, 03 Nov 2017 14:05:14 +0300',
+]
+2017-11-03 14:05:14 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 55727 install started  At Fri, 03 Nov 2017 14:05:14 +0300',
+]
+2017-11-03 14:05:14 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 55727 install complete At Fri, 03 Nov 2017 14:05:14 +0300',
+]
+2017-11-03 14:05:14 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 59049 install started  At Fri, 03 Nov 2017 14:05:14 +0300',
+]
+2017-11-03 14:05:14 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 59049 install complete At Fri, 03 Nov 2017 14:05:14 +0300',
+]
+2017-11-03 14:05:14 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 57038 install started  At Fri, 03 Nov 2017 14:05:14 +0300',
+]
+2017-11-03 14:05:14 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 57038 install complete At Fri, 03 Nov 2017 14:05:14 +0300',
+]
+2017-11-03 14:05:14 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 51903 install started  At Fri, 03 Nov 2017 14:05:14 +0300',
+]
+2017-11-03 14:05:15 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 51903 install complete At Fri, 03 Nov 2017 14:05:14 +0300',
+]
+2017-11-03 14:05:15 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 56192 install started  At Fri, 03 Nov 2017 14:05:15 +0300',
+]
+2017-11-03 14:05:15 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 56192 install complete At Fri, 03 Nov 2017 14:05:15 +0300',
+]
+2017-11-03 14:05:15 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 58678 install started  At Fri, 03 Nov 2017 14:05:15 +0300',
+]
+2017-11-03 14:05:15 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 58678 install complete At Fri, 03 Nov 2017 14:05:15 +0300',
+]
+2017-11-03 14:05:15 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 59919 install started  At Fri, 03 Nov 2017 14:05:15 +0300',
+]
+2017-11-03 14:05:15 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 59919 install complete At Fri, 03 Nov 2017 14:05:15 +0300',
+]
+2017-11-03 14:05:15 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 42952 install started  At Fri, 03 Nov 2017 14:05:15 +0300',
+]
+2017-11-03 14:05:15 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 42952 install complete At Fri, 03 Nov 2017 14:05:15 +0300',
+]
+2017-11-03 14:05:16 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 43193 install started  At Fri, 03 Nov 2017 14:05:16 +0300',
+]
+2017-11-03 14:05:16 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 43193 install complete At Fri, 03 Nov 2017 14:05:16 +0300',
+]
+2017-11-03 14:05:16 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 51376 install started  At Fri, 03 Nov 2017 14:05:16 +0300',
+]
+2017-11-03 14:05:16 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 51376 install complete At Fri, 03 Nov 2017 14:05:16 +0300',
+]
+2017-11-03 14:05:16 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 52861 install started  At Fri, 03 Nov 2017 14:05:16 +0300',
+]
+2017-11-03 14:05:16 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 52861 install complete At Fri, 03 Nov 2017 14:05:16 +0300',
+]
+2017-11-03 14:05:16 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 59151 install started  At Fri, 03 Nov 2017 14:05:16 +0300',
+]
+2017-11-03 14:05:16 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 59151 install complete At Fri, 03 Nov 2017 14:05:16 +0300',
+]
+2017-11-03 14:05:17 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 60672 install started  At Fri, 03 Nov 2017 14:05:17 +0300',
+]
+2017-11-03 14:05:17 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 60672 install complete At Fri, 03 Nov 2017 14:05:17 +0300',
+]
+2017-11-03 14:05:17 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 61478 install started  At Fri, 03 Nov 2017 14:05:17 +0300',
+]
+2017-11-03 14:05:17 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 61478 install complete At Fri, 03 Nov 2017 14:05:17 +0300',
+]
+2017-11-03 14:05:17 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 62392 install started  At Fri, 03 Nov 2017 14:05:17 +0300',
+]
+2017-11-03 14:05:17 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 62392 install complete At Fri, 03 Nov 2017 14:05:17 +0300',
+]
+2017-11-03 14:05:17 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 62077 install started  At Fri, 03 Nov 2017 14:05:17 +0300',
+]
+2017-11-03 14:05:17 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 62077 install complete At Fri, 03 Nov 2017 14:05:17 +0300',
+]
+2017-11-03 14:05:17 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 62391 install started  At Fri, 03 Nov 2017 14:05:17 +0300',
+]
+2017-11-03 14:05:17 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 62391 install complete At Fri, 03 Nov 2017 14:05:17 +0300',
+]
+2017-11-03 14:05:17 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 62883 install started  At Fri, 03 Nov 2017 14:05:17 +0300',
+]
+2017-11-03 14:05:17 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 62883 install complete At Fri, 03 Nov 2017 14:05:17 +0300',
+]
+2017-12-29 15:27:18 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 62614 install started  At Fri, 29 Dec 2017 15:27:18 +0300',
+]
+2017-12-29 15:27:19 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 62614 install complete At Fri, 29 Dec 2017 15:27:19 +0300',
+]
+2017-12-29 15:27:19 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 62615 install started  At Fri, 29 Dec 2017 15:27:19 +0300',
+]
+2017-12-29 15:27:34 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 62615 install complete At Fri, 29 Dec 2017 15:27:34 +0300',
+]
+2017-12-29 15:28:11 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 56605 install started  At Fri, 29 Dec 2017 15:28:11 +0300',
+]
+2017-12-29 15:28:11 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 56605 install complete At Fri, 29 Dec 2017 15:28:11 +0300',
+]
+2017-12-29 15:28:11 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 60060 install started  At Fri, 29 Dec 2017 15:28:11 +0300',
+]
+2017-12-29 15:28:12 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 60060 install complete At Fri, 29 Dec 2017 15:28:12 +0300',
+]
+2017-12-29 15:28:12 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 62231 install started  At Fri, 29 Dec 2017 15:28:12 +0300',
+]
+2017-12-29 15:28:12 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 62231 install complete At Fri, 29 Dec 2017 15:28:12 +0300',
+]
+2017-12-29 15:28:12 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 62387 install started  At Fri, 29 Dec 2017 15:28:12 +0300',
+]
+2017-12-29 15:28:12 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 62387 install complete At Fri, 29 Dec 2017 15:28:12 +0300',
+]
+2017-12-29 15:28:12 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 63085 install started  At Fri, 29 Dec 2017 15:28:12 +0300',
+]
+2017-12-29 15:28:12 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 63085 install complete At Fri, 29 Dec 2017 15:28:12 +0300',
+]
+2017-12-29 15:28:12 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 63766 install started  At Fri, 29 Dec 2017 15:28:12 +0300',
+]
+2017-12-29 15:28:13 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 63766 install complete At Fri, 29 Dec 2017 15:28:13 +0300',
+]
+2017-12-29 15:28:13 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 48697 install started  At Fri, 29 Dec 2017 15:28:13 +0300',
+]
+2017-12-29 15:28:13 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 48697 install complete At Fri, 29 Dec 2017 15:28:13 +0300',
+]
+2017-12-29 15:28:13 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 57147 install started  At Fri, 29 Dec 2017 15:28:13 +0300',
+]
+2017-12-29 15:28:13 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 57147 install complete At Fri, 29 Dec 2017 15:28:13 +0300',
+]
+2017-12-29 15:28:13 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 57152 install started  At Fri, 29 Dec 2017 15:28:13 +0300',
+]
+2017-12-29 15:28:13 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 57152 install complete At Fri, 29 Dec 2017 15:28:13 +0300',
+]
+2017-12-29 15:28:13 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 64415 install started  At Fri, 29 Dec 2017 15:28:13 +0300',
+]
+2017-12-29 15:28:13 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 64415 install complete At Fri, 29 Dec 2017 15:28:13 +0300',
+]
+2017-12-29 15:28:13 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 63498 install started  At Fri, 29 Dec 2017 15:28:13 +0300',
+]
+2017-12-29 15:28:14 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 63498 install complete At Fri, 29 Dec 2017 15:28:14 +0300',
+]
+2018-04-10 17:27:44 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 64751 install started  At Tue, 10 Apr 2018 17:27:44 +0300',
+]
+2018-04-10 17:27:44 [92.241.99.140][-][-][info][accessLog] [
+    'Patch 64751 install complete At Tue, 10 Apr 2018 17:27:44 +0300',
+]
+[Tue, 10 Apr 2018 17:28:00 +0300](array): Array
+(
+    [0] => Patch 64752 install started  At Tue, 10 Apr 2018 17:27:44 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:00 +0300](array): Array
+(
+    [0] => Patch 64752 install complete At Tue, 10 Apr 2018 17:27:54 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:00 +0300](array): Array
+(
+    [0] => Patch 63900 install started  At Tue, 10 Apr 2018 17:28:00 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:00 +0300](array): Array
+(
+    [0] => Patch 63900 install complete At Tue, 10 Apr 2018 17:28:00 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:00 +0300](array): Array
+(
+    [0] => Patch 58737 install started  At Tue, 10 Apr 2018 17:28:00 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:00 +0300](array): Array
+(
+    [0] => Patch 58737 install complete At Tue, 10 Apr 2018 17:28:00 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:00 +0300](array): Array
+(
+    [0] => Patch 49518 install started  At Tue, 10 Apr 2018 17:28:00 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:00 +0300](array): Array
+(
+    [0] => Patch 49518 install complete At Tue, 10 Apr 2018 17:28:00 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:00 +0300](array): Array
+(
+    [0] => Patch 59242 install started  At Tue, 10 Apr 2018 17:28:00 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:00 +0300](array): Array
+(
+    [0] => Patch 59242 install complete At Tue, 10 Apr 2018 17:28:00 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:00 +0300](array): Array
+(
+    [0] => Patch 64337 install started  At Tue, 10 Apr 2018 17:28:00 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:00 +0300](array): Array
+(
+    [0] => Patch 64337 install complete At Tue, 10 Apr 2018 17:28:00 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:00 +0300](array): Array
+(
+    [0] => Patch 57088 install started  At Tue, 10 Apr 2018 17:28:00 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:00 +0300](array): Array
+(
+    [0] => Patch 57088 install complete At Tue, 10 Apr 2018 17:28:00 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:01 +0300](array): Array
+(
+    [0] => Patch 61398 install started  At Tue, 10 Apr 2018 17:28:01 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:01 +0300](array): Array
+(
+    [0] => Patch 61398 install complete At Tue, 10 Apr 2018 17:28:01 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:01 +0300](array): Array
+(
+    [0] => Patch 61018 install started  At Tue, 10 Apr 2018 17:28:01 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:01 +0300](array): Array
+(
+    [0] => Patch 61018 install complete At Tue, 10 Apr 2018 17:28:01 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:01 +0300](array): Array
+(
+    [0] => Patch 60679 install started  At Tue, 10 Apr 2018 17:28:01 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:01 +0300](array): Array
+(
+    [0] => Patch 60679 install complete At Tue, 10 Apr 2018 17:28:01 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:01 +0300](array): Array
+(
+    [0] => Patch 61990 install started  At Tue, 10 Apr 2018 17:28:01 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:01 +0300](array): Array
+(
+    [0] => Patch 61990 install complete At Tue, 10 Apr 2018 17:28:01 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:02 +0300](array): Array
+(
+    [0] => Patch 57323 install started  At Tue, 10 Apr 2018 17:28:01 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:02 +0300](array): Array
+(
+    [0] => Patch 57323 install complete At Tue, 10 Apr 2018 17:28:02 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:02 +0300](array): Array
+(
+    [0] => Patch 65768 install started  At Tue, 10 Apr 2018 17:28:02 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:02 +0300](array): Array
+(
+    [0] => Patch 65768 install complete At Tue, 10 Apr 2018 17:28:02 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:02 +0300](array): Array
+(
+    [0] => Patch 52765 install started  At Tue, 10 Apr 2018 17:28:02 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:02 +0300](array): Array
+(
+    [0] => Patch 52765 install complete At Tue, 10 Apr 2018 17:28:02 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:03 +0300](array): Array
+(
+    [0] => Patch 62341 install started  At Tue, 10 Apr 2018 17:28:03 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:03 +0300](array): Array
+(
+    [0] => Patch 62341 install complete At Tue, 10 Apr 2018 17:28:03 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:04 +0300](array): Array
+(
+    [0] => Patch 60167 install started  At Tue, 10 Apr 2018 17:28:03 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:04 +0300](array): Array
+(
+    [0] => Patch 60167 install complete At Tue, 10 Apr 2018 17:28:03 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:04 +0300](array): Array
+(
+    [0] => Patch 62043 install started  At Tue, 10 Apr 2018 17:28:04 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:04 +0300](array): Array
+(
+    [0] => Patch 62043 install complete At Tue, 10 Apr 2018 17:28:04 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:04 +0300](array): Array
+(
+    [0] => Patch 63006 install started  At Tue, 10 Apr 2018 17:28:04 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:04 +0300](array): Array
+(
+    [0] => Patch 63006 install complete At Tue, 10 Apr 2018 17:28:04 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:04 +0300](array): Array
+(
+    [0] => Patch 66057 install started  At Tue, 10 Apr 2018 17:28:04 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:04 +0300](array): Array
+(
+    [0] => Patch 66057 install complete At Tue, 10 Apr 2018 17:28:04 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:04 +0300](array): Array
+(
+    [0] => Patch 60324 install started  At Tue, 10 Apr 2018 17:28:04 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:04 +0300](array): Array
+(
+    [0] => Patch 60324 install complete At Tue, 10 Apr 2018 17:28:04 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:04 +0300](array): Array
+(
+    [0] => Patch 66058 install started  At Tue, 10 Apr 2018 17:28:04 +0300
+)
+
+[Tue, 10 Apr 2018 17:28:04 +0300](array): Array
+(
+    [0] => Patch 66058 install complete At Tue, 10 Apr 2018 17:28:04 +0300
+)
+
+[Tue, 17 Apr 2018 16:10:00 +0300](array): Array
+(
+    [0] => Patch 67723 install started  At Tue, 17 Apr 2018 16:10:00 +0300
+)
+
+[Tue, 17 Apr 2018 16:10:00 +0300](array): Array
+(
+    [0] => Patch 67723 install complete At Tue, 17 Apr 2018 16:10:00 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:02 +0300](array): Array
+(
+    [0] => Patch 66882 install started  At Tue, 24 Jul 2018 16:40:02 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:02 +0300](array): Array
+(
+    [0] => Patch 66882 install complete At Tue, 24 Jul 2018 16:40:02 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:19 +0300](array): Array
+(
+    [0] => Patch 66883 install started  At Tue, 24 Jul 2018 16:40:02 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:19 +0300](array): Array
+(
+    [0] => Patch 66883 install complete At Tue, 24 Jul 2018 16:40:12 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:19 +0300](array): Array
+(
+    [0] => Patch 66052 install started  At Tue, 24 Jul 2018 16:40:19 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:19 +0300](array): Array
+(
+    [0] => Patch 66052 install complete At Tue, 24 Jul 2018 16:40:19 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:20 +0300](array): Array
+(
+    [0] => Patch 66427 install started  At Tue, 24 Jul 2018 16:40:20 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:20 +0300](array): Array
+(
+    [0] => Patch 66427 install complete At Tue, 24 Jul 2018 16:40:20 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:20 +0300](array): Array
+(
+    [0] => Patch 46235 install started  At Tue, 24 Jul 2018 16:40:20 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:20 +0300](array): Array
+(
+    [0] => Patch 46235 install complete At Tue, 24 Jul 2018 16:40:20 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:20 +0300](array): Array
+(
+    [0] => Patch 43395 install started  At Tue, 24 Jul 2018 16:40:20 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:20 +0300](array): Array
+(
+    [0] => Patch 43395 install complete At Tue, 24 Jul 2018 16:40:20 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:20 +0300](array): Array
+(
+    [0] => Patch 60674 install started  At Tue, 24 Jul 2018 16:40:20 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:20 +0300](array): Array
+(
+    [0] => Patch 60674 install complete At Tue, 24 Jul 2018 16:40:20 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:20 +0300](array): Array
+(
+    [0] => Patch 59259 install started  At Tue, 24 Jul 2018 16:40:20 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:20 +0300](array): Array
+(
+    [0] => Patch 59259 install complete At Tue, 24 Jul 2018 16:40:20 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:21 +0300](array): Array
+(
+    [0] => Patch 63163 install started  At Tue, 24 Jul 2018 16:40:21 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:21 +0300](array): Array
+(
+    [0] => Patch 63163 install complete At Tue, 24 Jul 2018 16:40:21 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:21 +0300](array): Array
+(
+    [0] => Patch 67385 install started  At Tue, 24 Jul 2018 16:40:21 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:21 +0300](array): Array
+(
+    [0] => Patch 67385 install complete At Tue, 24 Jul 2018 16:40:21 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:21 +0300](array): Array
+(
+    [0] => Patch 24474 install started  At Tue, 24 Jul 2018 16:40:21 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:21 +0300](array): Array
+(
+    [0] => Patch 24474 install complete At Tue, 24 Jul 2018 16:40:21 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:22 +0300](array): Array
+(
+    [0] => Patch 60597 install started  At Tue, 24 Jul 2018 16:40:21 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:22 +0300](array): Array
+(
+    [0] => Patch 60597 install complete At Tue, 24 Jul 2018 16:40:21 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:22 +0300](array): Array
+(
+    [0] => Patch 61788 install started  At Tue, 24 Jul 2018 16:40:22 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:22 +0300](array): Array
+(
+    [0] => Patch 61788 install complete At Tue, 24 Jul 2018 16:40:22 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:22 +0300](array): Array
+(
+    [0] => Patch 69848 install started  At Tue, 24 Jul 2018 16:40:22 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:22 +0300](array): Array
+(
+    [0] => Patch 69848 install complete At Tue, 24 Jul 2018 16:40:22 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:22 +0300](array): Array
+(
+    [0] => Patch 21758 install started  At Tue, 24 Jul 2018 16:40:22 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:22 +0300](array): Array
+(
+    [0] => Patch 21758 install complete At Tue, 24 Jul 2018 16:40:22 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:23 +0300](array): Array
+(
+    [0] => Patch 62382 install started  At Tue, 24 Jul 2018 16:40:22 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:23 +0300](array): Array
+(
+    [0] => Patch 62382 install complete At Tue, 24 Jul 2018 16:40:22 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:23 +0300](array): Array
+(
+    [0] => Patch 70216 install started  At Tue, 24 Jul 2018 16:40:23 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:23 +0300](array): Array
+(
+    [0] => Patch 70216 install complete At Tue, 24 Jul 2018 16:40:23 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:23 +0300](array): Array
+(
+    [0] => Patch 30278 install started  At Tue, 24 Jul 2018 16:40:23 +0300
+)
+
+[Tue, 24 Jul 2018 16:40:23 +0300](array): Array
+(
+    [0] => Patch 30278 install complete At Tue, 24 Jul 2018 16:40:23 +0300
+)
+
+[Fri, 21 Sep 2018 16:51:11 +0300](array): Array
+(
+    [0] => Patch 72601 install started  At Fri, 21 Sep 2018 16:51:11 +0300
+)
+
+[Fri, 21 Sep 2018 16:51:11 +0300](array): Array
+(
+    [0] => Patch 72601 install complete At Fri, 21 Sep 2018 16:51:11 +0300
+)
+
+[Fri, 21 Sep 2018 16:51:32 +0300](array): Array
+(
+    [0] => Patch 72602 install started  At Fri, 21 Sep 2018 16:51:11 +0300
+)
+
+[Fri, 21 Sep 2018 16:51:32 +0300](array): Array
+(
+    [0] => Patch 72602 install complete At Fri, 21 Sep 2018 16:51:27 +0300
+)
+
+[Fri, 21 Sep 2018 16:51:32 +0300](array): Array
+(
+    [0] => Patch 70074 install started  At Fri, 21 Sep 2018 16:51:32 +0300
+)
+
+[Fri, 21 Sep 2018 16:51:32 +0300](array): Array
+(
+    [0] => Patch 70074 install complete At Fri, 21 Sep 2018 16:51:32 +0300
+)
+
+[Fri, 21 Sep 2018 16:51:32 +0300](array): Array
+(
+    [0] => Patch 71253 install started  At Fri, 21 Sep 2018 16:51:32 +0300
+)
+
+[Fri, 21 Sep 2018 16:51:32 +0300](array): Array
+(
+    [0] => Patch 71253 install complete At Fri, 21 Sep 2018 16:51:32 +0300
+)
+
+[Fri, 21 Sep 2018 16:51:33 +0300](array): Array
+(
+    [0] => Patch 72013 install started  At Fri, 21 Sep 2018 16:51:33 +0300
+)
+
+[Fri, 21 Sep 2018 16:51:33 +0300](array): Array
+(
+    [0] => Patch 72013 install complete At Fri, 21 Sep 2018 16:51:33 +0300
+)
+
+[Fri, 21 Sep 2018 16:51:33 +0300](array): Array
+(
+    [0] => Patch 69988 install started  At Fri, 21 Sep 2018 16:51:33 +0300
+)
+
+[Fri, 21 Sep 2018 16:51:33 +0300](array): Array
+(
+    [0] => Patch 69988 install complete At Fri, 21 Sep 2018 16:51:33 +0300
+)
+
+[Fri, 21 Sep 2018 16:51:34 +0300](array): Array
+(
+    [0] => Patch 71750 install started  At Fri, 21 Sep 2018 16:51:33 +0300
+)
+
+[Fri, 21 Sep 2018 16:51:34 +0300](array): Array
+(
+    [0] => Patch 71750 install complete At Fri, 21 Sep 2018 16:51:33 +0300
+)
+
+[Fri, 21 Sep 2018 16:51:34 +0300](array): Array
+(
+    [0] => Patch 71318 install started  At Fri, 21 Sep 2018 16:51:34 +0300
+)
+
+[Fri, 21 Sep 2018 16:51:34 +0300](array): Array
+(
+    [0] => Patch 71318 install complete At Fri, 21 Sep 2018 16:51:34 +0300
+)
+
+[Fri, 21 Sep 2018 16:51:34 +0300](array): Array
+(
+    [0] => Patch 73347 install started  At Fri, 21 Sep 2018 16:51:34 +0300
+)
+
+[Fri, 21 Sep 2018 16:51:34 +0300](array): Array
+(
+    [0] => Patch 73347 install complete At Fri, 21 Sep 2018 16:51:34 +0300
+)
+
+[Fri, 21 Sep 2018 16:51:35 +0300](array): Array
+(
+    [0] => Patch 73565 install started  At Fri, 21 Sep 2018 16:51:34 +0300
+)
+
+[Fri, 21 Sep 2018 16:51:35 +0300](array): Array
+(
+    [0] => Patch 73565 install complete At Fri, 21 Sep 2018 16:51:35 +0300
+)
+
+[Fri, 21 Sep 2018 16:51:35 +0300](array): Array
+(
+    [0] => Patch 72853 install started  At Fri, 21 Sep 2018 16:51:35 +0300
+)
+
+[Fri, 21 Sep 2018 16:51:35 +0300](array): Array
+(
+    [0] => Patch 72853 install complete At Fri, 21 Sep 2018 16:51:35 +0300
+)
+
+[Fri, 21 Sep 2018 16:51:36 +0300](array): Array
+(
+    [0] => Patch 66313 install started  At Fri, 21 Sep 2018 16:51:35 +0300
+)
+
+[Fri, 21 Sep 2018 16:51:36 +0300](array): Array
+(
+    [0] => Patch 66313 install complete At Fri, 21 Sep 2018 16:51:36 +0300
+)
+
+[Fri, 21 Sep 2018 16:51:36 +0300](array): Array
+(
+    [0] => Patch 70322 install started  At Fri, 21 Sep 2018 16:51:36 +0300
+)
+
+[Fri, 21 Sep 2018 16:51:36 +0300](array): Array
+(
+    [0] => Patch 70322 install complete At Fri, 21 Sep 2018 16:51:36 +0300
+)
+
+[Mon, 03 Dec 2018 17:34:43 +0300](array): Array
+(
+    [0] => Patch 74908 install started  At Mon, 03 Dec 2018 17:34:43 +0300
+)
+
+[Mon, 03 Dec 2018 17:34:43 +0300](array): Array
+(
+    [0] => Patch 74908 install complete At Mon, 03 Dec 2018 17:34:43 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:00 +0300](array): Array
+(
+    [0] => Patch 74909 install started  At Mon, 03 Dec 2018 17:34:43 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:00 +0300](array): Array
+(
+    [0] => Patch 74909 install complete At Mon, 03 Dec 2018 17:34:55 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:00 +0300](array): Array
+(
+    [0] => Patch 44255 install started  At Mon, 03 Dec 2018 17:35:00 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:00 +0300](array): Array
+(
+    [0] => Patch 44255 install complete At Mon, 03 Dec 2018 17:35:00 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:00 +0300](array): Array
+(
+    [0] => Patch 68291 install started  At Mon, 03 Dec 2018 17:35:00 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:00 +0300](array): Array
+(
+    [0] => Patch 68291 install complete At Mon, 03 Dec 2018 17:35:00 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:01 +0300](array): Array
+(
+    [0] => Patch 73316 install started  At Mon, 03 Dec 2018 17:35:00 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:01 +0300](array): Array
+(
+    [0] => Patch 73316 install complete At Mon, 03 Dec 2018 17:35:00 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:02 +0300](array): Array
+(
+    [0] => Patch 49862 install started  At Mon, 03 Dec 2018 17:35:01 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:02 +0300](array): Array
+(
+    [0] => Patch 49862 install complete At Mon, 03 Dec 2018 17:35:01 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:02 +0300](array): Array
+(
+    [0] => Patch 72760 install started  At Mon, 03 Dec 2018 17:35:02 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:02 +0300](array): Array
+(
+    [0] => Patch 72760 install complete At Mon, 03 Dec 2018 17:35:02 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:02 +0300](array): Array
+(
+    [0] => Patch 71564 install started  At Mon, 03 Dec 2018 17:35:02 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:02 +0300](array): Array
+(
+    [0] => Patch 71564 install complete At Mon, 03 Dec 2018 17:35:02 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:02 +0300](array): Array
+(
+    [0] => Patch 70213 install started  At Mon, 03 Dec 2018 17:35:02 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:02 +0300](array): Array
+(
+    [0] => Patch 70213 install complete At Mon, 03 Dec 2018 17:35:02 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:03 +0300](array): Array
+(
+    [0] => Patch 67388 install started  At Mon, 03 Dec 2018 17:35:03 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:03 +0300](array): Array
+(
+    [0] => Patch 67388 install complete At Mon, 03 Dec 2018 17:35:03 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:03 +0300](array): Array
+(
+    [0] => Patch 74188 install started  At Mon, 03 Dec 2018 17:35:03 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:03 +0300](array): Array
+(
+    [0] => Patch 74188 install complete At Mon, 03 Dec 2018 17:35:03 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:03 +0300](array): Array
+(
+    [0] => Patch 71918 install started  At Mon, 03 Dec 2018 17:35:03 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:03 +0300](array): Array
+(
+    [0] => Patch 71918 install complete At Mon, 03 Dec 2018 17:35:03 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:04 +0300](array): Array
+(
+    [0] => Patch 65220 install started  At Mon, 03 Dec 2018 17:35:03 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:04 +0300](array): Array
+(
+    [0] => Patch 65220 install complete At Mon, 03 Dec 2018 17:35:03 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:05 +0300](array): Array
+(
+    [0] => Patch 55307 install started  At Mon, 03 Dec 2018 17:35:04 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:05 +0300](array): Array
+(
+    [0] => Patch 55307 install complete At Mon, 03 Dec 2018 17:35:04 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:05 +0300](array): Array
+(
+    [0] => Patch 75745 install started  At Mon, 03 Dec 2018 17:35:05 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:05 +0300](array): Array
+(
+    [0] => Patch 75745 install complete At Mon, 03 Dec 2018 17:35:05 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:06 +0300](array): Array
+(
+    [0] => Patch 66033 install started  At Mon, 03 Dec 2018 17:35:05 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:06 +0300](array): Array
+(
+    [0] => Patch 66033 install complete At Mon, 03 Dec 2018 17:35:05 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:07 +0300](array): Array
+(
+    [0] => Patch 73677 install started  At Mon, 03 Dec 2018 17:35:06 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:07 +0300](array): Array
+(
+    [0] => Patch 73677 install complete At Mon, 03 Dec 2018 17:35:06 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:08 +0300](array): Array
+(
+    [0] => Patch 72104 install started  At Mon, 03 Dec 2018 17:35:07 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:08 +0300](array): Array
+(
+    [0] => Patch 72104 install complete At Mon, 03 Dec 2018 17:35:07 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:09 +0300](array): Array
+(
+    [0] => Patch 59219 install started  At Mon, 03 Dec 2018 17:35:08 +0300
+)
+
+[Mon, 03 Dec 2018 17:35:09 +0300](array): Array
+(
+    [0] => Patch 59219 install complete At Mon, 03 Dec 2018 17:35:08 +0300
+)
+
+[Fri, 25 Jan 2019 17:27:17 +0300](array): Array
+(
+    [0] => Patch 77021 install started  At Fri, 25 Jan 2019 17:27:17 +0300
+)
+
+[Fri, 25 Jan 2019 17:27:17 +0300](array): Array
+(
+    [0] => Patch 77021 install complete At Fri, 25 Jan 2019 17:27:17 +0300
+)
+
+[Fri, 25 Jan 2019 17:27:37 +0300](str): Patch 77022 install started  At Fri, 25 Jan 2019 17:27:17 +0300
+[Fri, 25 Jan 2019 17:27:37 +0300](str): Patch 77022 install complete At Fri, 25 Jan 2019 17:27:28 +0300
+[Fri, 25 Jan 2019 17:27:37 +0300](str): Patch 73716 install started  At Fri, 25 Jan 2019 17:27:37 +0300
+[Fri, 25 Jan 2019 17:27:37 +0300](str): Patch 73716 install complete At Fri, 25 Jan 2019 17:27:37 +0300
+[Fri, 25 Jan 2019 17:27:37 +0300](str): Patch 76399 install started  At Fri, 25 Jan 2019 17:27:37 +0300
+[Fri, 25 Jan 2019 17:27:37 +0300](str): Patch 76399 install complete At Fri, 25 Jan 2019 17:27:37 +0300
+[Fri, 25 Jan 2019 17:27:37 +0300](str): Patch 76455 install started  At Fri, 25 Jan 2019 17:27:37 +0300
+[Fri, 25 Jan 2019 17:27:37 +0300](str): Patch 76455 install complete At Fri, 25 Jan 2019 17:27:37 +0300
+[Fri, 25 Jan 2019 17:27:37 +0300](str): Patch 76720 install started  At Fri, 25 Jan 2019 17:27:37 +0300
+[Fri, 25 Jan 2019 17:27:37 +0300](str): Patch 76720 install complete At Fri, 25 Jan 2019 17:27:37 +0300
+[Fri, 25 Jan 2019 17:27:37 +0300](str): Patch 76992 install started  At Fri, 25 Jan 2019 17:27:37 +0300
+[Fri, 25 Jan 2019 17:27:37 +0300](str): Patch 76992 install complete At Fri, 25 Jan 2019 17:27:37 +0300
+[Fri, 25 Jan 2019 17:27:37 +0300](str): Patch 76620 install started  At Fri, 25 Jan 2019 17:27:37 +0300
+[Fri, 25 Jan 2019 17:27:37 +0300](str): Patch 76620 install complete At Fri, 25 Jan 2019 17:27:37 +0300
+[Fri, 25 Jan 2019 17:27:38 +0300](str): Patch 75528 install started  At Fri, 25 Jan 2019 17:27:38 +0300
+[Fri, 25 Jan 2019 17:27:38 +0300](str): Patch 75528 install complete At Fri, 25 Jan 2019 17:27:38 +0300
+[Fri, 25 Jan 2019 17:27:38 +0300](str): Patch 76520 install started  At Fri, 25 Jan 2019 17:27:38 +0300
+[Fri, 25 Jan 2019 17:27:38 +0300](str): Patch 76520 install complete At Fri, 25 Jan 2019 17:27:38 +0300
+[Fri, 25 Jan 2019 17:27:38 +0300](str): Patch 74729 install started  At Fri, 25 Jan 2019 17:27:38 +0300
+[Fri, 25 Jan 2019 17:27:38 +0300](str): Patch 74729 install complete At Fri, 25 Jan 2019 17:27:38 +0300
+[Fri, 25 Jan 2019 17:27:38 +0300](str): Patch 76990 install started  At Fri, 25 Jan 2019 17:27:38 +0300
+[Fri, 25 Jan 2019 17:27:38 +0300](str): Patch 76990 install complete At Fri, 25 Jan 2019 17:27:38 +0300
+[Fri, 25 Jan 2019 17:27:38 +0300](str): Patch 77427 install started  At Fri, 25 Jan 2019 17:27:38 +0300
+[Fri, 25 Jan 2019 17:27:38 +0300](str): Patch 77427 install complete At Fri, 25 Jan 2019 17:27:38 +0300
+[Fri, 25 Jan 2019 17:27:39 +0300](str): Patch 77673 install started  At Fri, 25 Jan 2019 17:27:38 +0300
+[Fri, 25 Jan 2019 17:27:39 +0300](str): Patch 77673 install complete At Fri, 25 Jan 2019 17:27:38 +0300
+[Fri, 25 Jan 2019 17:27:39 +0300](str): Patch 77732 install started  At Fri, 25 Jan 2019 17:27:39 +0300
+[Fri, 25 Jan 2019 17:27:39 +0300](str): Patch 77732 install complete At Fri, 25 Jan 2019 17:27:39 +0300
+[Fri, 25 Jan 2019 17:27:39 +0300](str): Patch 77209 install started  At Fri, 25 Jan 2019 17:27:39 +0300
+[Fri, 25 Jan 2019 17:27:39 +0300](str): Patch 77209 install complete At Fri, 25 Jan 2019 17:27:39 +0300
+[Fri, 25 Jan 2019 17:27:40 +0300](str): Patch 77938 install started  At Fri, 25 Jan 2019 17:27:40 +0300
+[Fri, 25 Jan 2019 17:27:40 +0300](str): Patch 77938 install complete At Fri, 25 Jan 2019 17:27:40 +0300
+[Fri, 25 Jan 2019 17:27:45 +0300](str): Patch 78001 install started  At Fri, 25 Jan 2019 17:27:40 +0300
+[Fri, 25 Jan 2019 17:27:45 +0300](str): Patch 78001 install complete At Fri, 25 Jan 2019 17:27:44 +0300
+[Thu, 14 Feb 2019 17:25:29 +0300](str): Patch 79341 install started  At Thu, 14 Feb 2019 17:25:29 +0300
+[Thu, 14 Feb 2019 17:25:29 +0300](str): Patch 79341 install complete At Thu, 14 Feb 2019 17:25:29 +0300
+[Thu, 14 Feb 2019 17:26:03 +0300](str): Patch 79342 install started  At Thu, 14 Feb 2019 17:25:29 +0300
+[Thu, 14 Feb 2019 17:26:03 +0300](str): Patch 79342 install complete At Thu, 14 Feb 2019 17:25:58 +0300
+[Thu, 14 Feb 2019 17:26:04 +0300](str): Patch 79304 install started  At Thu, 14 Feb 2019 17:26:03 +0300
+[Thu, 14 Feb 2019 17:26:04 +0300](str): Patch 79304 install complete At Thu, 14 Feb 2019 17:26:03 +0300
+[Thu, 14 Feb 2019 17:26:05 +0300](str): Patch 79325 install started  At Thu, 14 Feb 2019 17:26:04 +0300
+[Thu, 14 Feb 2019 17:26:05 +0300](str): Patch 79325 install complete At Thu, 14 Feb 2019 17:26:04 +0300
+[Wed, 24 Feb 2021 18:18:33 +0300](str): Patch 82393 install started  At Wed, 24 Feb 2021 18:18:33 +0300
+[Wed, 24 Feb 2021 18:18:33 +0300](str): Patch 82393 install complete At Wed, 24 Feb 2021 18:18:33 +0300
+[Wed, 24 Feb 2021 18:18:42 +0300](str): Patch 82394 install started  At Wed, 24 Feb 2021 18:18:33 +0300
+[Wed, 24 Feb 2021 18:18:42 +0300](str): Patch 82394 install complete At Wed, 24 Feb 2021 18:18:41 +0300
+[Wed, 24 Feb 2021 18:18:42 +0300](str): Patch 81177 install started  At Wed, 24 Feb 2021 18:18:42 +0300
+[Wed, 24 Feb 2021 18:18:42 +0300](str): Patch 81177 install complete At Wed, 24 Feb 2021 18:18:42 +0300
+[Wed, 24 Feb 2021 18:18:43 +0300](str): Patch 77988 install started  At Wed, 24 Feb 2021 18:18:42 +0300
+[Wed, 24 Feb 2021 18:18:43 +0300](str): Patch 77988 install complete At Wed, 24 Feb 2021 18:18:42 +0300
+[Wed, 24 Feb 2021 18:18:45 +0300](str): Patch 67293 install started  At Wed, 24 Feb 2021 18:18:43 +0300
+[Wed, 24 Feb 2021 18:18:45 +0300](str): Patch 67293 install complete At Wed, 24 Feb 2021 18:18:43 +0300
+[Wed, 24 Feb 2021 18:18:45 +0300](str): Patch 66620 install started  At Wed, 24 Feb 2021 18:18:45 +0300
+[Wed, 24 Feb 2021 18:18:45 +0300](str): Patch 66620 install complete At Wed, 24 Feb 2021 18:18:45 +0300
+[Wed, 24 Feb 2021 18:18:45 +0300](str): Patch 83283 install started  At Wed, 24 Feb 2021 18:18:45 +0300
+[Wed, 24 Feb 2021 18:18:45 +0300](str): Patch 83283 install complete At Wed, 24 Feb 2021 18:18:45 +0300
+[Wed, 24 Feb 2021 18:18:45 +0300](str): Patch 72435 install started  At Wed, 24 Feb 2021 18:18:45 +0300
+[Wed, 24 Feb 2021 18:18:45 +0300](str): Patch 72435 install complete At Wed, 24 Feb 2021 18:18:45 +0300
+[Wed, 24 Feb 2021 18:18:45 +0300](str): Patch 72435_2 install started  At Wed, 24 Feb 2021 18:18:45 +0300
+[Wed, 24 Feb 2021 18:18:45 +0300](str): Patch 72435_2 install complete At Wed, 24 Feb 2021 18:18:45 +0300
+[Wed, 24 Feb 2021 18:18:45 +0300](str): Patch 78262 install started  At Wed, 24 Feb 2021 18:18:45 +0300
+[Wed, 24 Feb 2021 18:18:45 +0300](str): Patch 78262 install complete At Wed, 24 Feb 2021 18:18:45 +0300
+[Wed, 24 Feb 2021 18:18:45 +0300](str): Patch 84650 install started  At Wed, 24 Feb 2021 18:18:45 +0300
+[Wed, 24 Feb 2021 18:18:45 +0300](str): Patch 84650 install complete At Wed, 24 Feb 2021 18:18:45 +0300
+[Wed, 24 Feb 2021 18:18:45 +0300](str): Patch 80057 install started  At Wed, 24 Feb 2021 18:18:45 +0300
+[Wed, 24 Feb 2021 18:18:45 +0300](str): Patch 80057 install complete At Wed, 24 Feb 2021 18:18:45 +0300
+[Wed, 24 Feb 2021 18:18:46 +0300](str): Patch 85501 install started  At Wed, 24 Feb 2021 18:18:45 +0300
+[Wed, 24 Feb 2021 18:18:46 +0300](str): Patch 85501 install complete At Wed, 24 Feb 2021 18:18:46 +0300
+[Wed, 24 Feb 2021 18:18:46 +0300](str): Patch 85495 install started  At Wed, 24 Feb 2021 18:18:46 +0300
+[Wed, 24 Feb 2021 18:18:46 +0300](str): Patch 85495 install complete At Wed, 24 Feb 2021 18:18:46 +0300
+[Wed, 24 Feb 2021 18:18:46 +0300](str): Patch 88485 install started  At Wed, 24 Feb 2021 18:18:46 +0300
+[Wed, 24 Feb 2021 18:18:46 +0300](str): Patch 88485 install complete At Wed, 24 Feb 2021 18:18:46 +0300
+[Wed, 24 Feb 2021 18:18:46 +0300](str): Patch 91303 install started  At Wed, 24 Feb 2021 18:18:46 +0300
+[Wed, 24 Feb 2021 18:18:46 +0300](str): Patch 91303 install complete At Wed, 24 Feb 2021 18:18:46 +0300
+[Wed, 24 Feb 2021 18:18:46 +0300](str): Patch 90935 install started  At Wed, 24 Feb 2021 18:18:46 +0300
+[Wed, 24 Feb 2021 18:18:46 +0300](str): Patch 90935 install complete At Wed, 24 Feb 2021 18:18:46 +0300
+[Wed, 24 Feb 2021 18:18:46 +0300](str): Patch 94496 install started  At Wed, 24 Feb 2021 18:18:46 +0300
+[Wed, 24 Feb 2021 18:18:46 +0300](str): Patch 94496 install complete At Wed, 24 Feb 2021 18:18:46 +0300
+[Wed, 24 Feb 2021 18:18:46 +0300](str): Patch 84723 install started  At Wed, 24 Feb 2021 18:18:46 +0300
+[Wed, 24 Feb 2021 18:18:46 +0300](str): Patch 84723 install complete At Wed, 24 Feb 2021 18:18:46 +0300
+[Wed, 24 Feb 2021 18:18:46 +0300](str): Patch 85032 install started  At Wed, 24 Feb 2021 18:18:46 +0300
+[Wed, 24 Feb 2021 18:18:46 +0300](str): Patch 85032 install complete At Wed, 24 Feb 2021 18:18:46 +0300
+[Wed, 24 Feb 2021 18:18:46 +0300](str): Patch 96416 install started  At Wed, 24 Feb 2021 18:18:46 +0300
+[Wed, 24 Feb 2021 18:18:46 +0300](str): Patch 96416 install complete At Wed, 24 Feb 2021 18:18:46 +0300
+[Thu, 01 Apr 2021 19:42:38 +0300](str): Patch 102151 install started  At Thu, 01 Apr 2021 19:42:38 +0300
+[Thu, 01 Apr 2021 19:42:38 +0300](str): Patch 102151 install complete At Thu, 01 Apr 2021 19:42:38 +0300
+[Thu, 08 Apr 2021 17:26:07 +0300](str): Patch 100791 install started  At Thu, 08 Apr 2021 17:26:07 +0300
+[Thu, 08 Apr 2021 17:26:07 +0300](str): Patch 100791 install complete At Thu, 08 Apr 2021 17:26:07 +0300
+[Thu, 10 Jun 2021 14:23:44 +0300](str): Patch 101204 install started  At Thu, 10 Jun 2021 14:23:44 +0300
+[Thu, 10 Jun 2021 14:23:44 +0300](str): Patch 101204 install complete At Thu, 10 Jun 2021 14:23:44 +0300
+[Thu, 28 Oct 2021 11:39:09 +0300](str): Patch 112621 install started  At Thu, 28 Oct 2021 11:39:09 +0300
+[Thu, 28 Oct 2021 11:39:09 +0300](str): Patch 112621 install complete At Thu, 28 Oct 2021 11:39:09 +0300
+[Wed, 09 Feb 2022 17:02:05 +0300](str): Patch 112622 install started  At Wed, 09 Feb 2022 17:02:05 +0300
+[Wed, 09 Feb 2022 17:02:05 +0300](str): Patch 112622 install complete At Wed, 09 Feb 2022 17:02:05 +0300
+[Wed, 08 Jun 2022 16:40:09 +0300](str): Patch 96845 install started  At Wed, 08 Jun 2022 16:40:06 +0300
+[Wed, 08 Jun 2022 16:40:09 +0300](str): Patch 96845 install complete At Wed, 08 Jun 2022 16:40:06 +0300

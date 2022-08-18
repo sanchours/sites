@@ -1,0 +1,16 @@
+/* layer: default */
+/* group: modules.language               | Переключатель языков */
+/* param: v_value                        | Отступ сверху | size | 50px */
+/* param: h_value                        | Отступ справа | size | 20px */
+/* param: item_margin_left               | Отступ флажка слева | size | 10px */
+.b-lang {
+    top: [modules.language.v_value];
+    right: [modules.language.h_value];
+    position: absolute;
+    z-index: 21;
+}
+.b-lang .lang__item {
+    margin-left: [modules.language.item_margin_left];
+    display: inline-block;
+}
+/*-------------------------------*/

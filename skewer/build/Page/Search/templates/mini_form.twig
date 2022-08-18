@@ -1,0 +1,6 @@
+<div class="b-search"{{ Design.write(' sktag="modules.search"') }}>
+    <form method="GET" class="js_mini_form_search" action="[{{ search_section }}]">
+        <button type="submit"></button>
+        <div class="search_inputbox"><div><input class="{% if bHidePlaceHolder %}js_hide_placeholder{% endif %}" placeholder="{{ Lang.get('search.placeholder_mini_form') }}" value="" name="search_text" id="search_text_{{ label }}" /></div></div>
+    </form>
+</div>

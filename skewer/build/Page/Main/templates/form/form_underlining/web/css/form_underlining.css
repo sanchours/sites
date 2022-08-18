@@ -1,0 +1,9 @@
+/* layer: default */
+.b-form--material .form__cols-group [class^="form__col-"] {
+    margin-top: 0;
+}
+.b-form--material .form__item--captha,
+.b-form--material .form__item--agree,
+.b-form--material .form__item--btns {
+    padding-left: [modules.forms.labels.label_width];
+}

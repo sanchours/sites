@@ -1,0 +1,173 @@
+/* layer: default */
+    /* group: modules.guestbox.carousel.carousel_single | Карусель Тема с одним слайдом */
+        /* param: border_color              | Цвет разделителя | color | #e9e9e9 */
+        /* param: align                     | Отступ стрелок | text-align | center */
+        /* param: carousel_pic_prev         | Стрелка назад | url | ../images/review-car-prev.png */
+        /* param: carousel_pic_next         | Стрелка вперёд| url | ../images/review-car-next.png */
+        /* param: carousel_pic_width        | Ширина стрелки | size | 40px */
+        /* param: carousel_pic_height       | Высота стрелки | size | 94px */
+        /* param: carousel_arr_mar          | Отступ стрелок | size | 0 */
+        /* param: carousel_dot_margin       | Отступ мужду булитами | size | 5px */
+        /* param: carousel_dot_width        | Размер булита | size | 6px */
+        /* param: carousel_dot_color        | Цвет булита | color | #dedede */
+        /* param: carousel_dot_color_active | Цвет активного булита | color | #222 */
+
+/*--------------------*/
+.b-carousel-reviews-single {
+    margin-bottom: 20px;
+}
+.b-carousel-reviews-single > .b-title-h2 {
+    padding-bottom: 20px;
+    margin: 0 0 [modules.guestbox.carousel.header.margin_bottom];
+    border-bottom: 1px solid [modules.guestbox.carousel.carousel_single.border_color];
+    font-style: [modules.guestbox.carousel.header.style];
+    font-family: [modules.guestbox.carousel.header.family];
+    font-weight: [modules.guestbox.carousel.header.weight];
+    font-size: [modules.guestbox.carousel.header.font_size];
+    text-align: [modules.guestbox.carousel.header.align];
+    color: [modules.guestbox.carousel.header.color];
+}
+.b-carousel-reviews-single .carousel-reviews-single__item {
+    text-align: [modules.guestbox.carousel.carousel_single.align];
+    background: #fff;
+}
+.b-carousel-reviews-single .carousel-reviews-single__content {
+    padding-left: [modules.guestbox.carousel.carousel_single.carousel_pic_width];
+    padding-right: [modules.guestbox.carousel.carousel_single.carousel_pic_width];
+    max-width: 800px;
+    position: relative;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.b-carousel-reviews-single .carousel-reviews-single__contact--photo .carousel-reviews-single__photo {
+    padding-bottom: 15px;
+}
+.b-carousel-reviews-single .carousel-reviews-single__contact--photo .carousel-reviews-single__rating{
+    margin: 0 0 15px;
+}
+.b-carousel-reviews-single .carousel-reviews-single__contact--photo .carousel-reviews-single__rating .b-ratingstar{
+    display: inline-block;
+}
+.b-carousel-reviews-single .carousel-reviews-single__contact--photo .carousel-reviews-single__photo img {
+    vertical-align: middle;
+    max-height: 100px;
+    max-width: 100%;
+    -webkit-border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    border-radius: 1000px;
+    display: block;
+    width: auto;
+    height: auto;
+}
+.b-carousel-reviews-single .carousel-reviews-single__contact--photo .carousel-reviews-single__contact-data {
+    padding-bottom: 20px;
+}
+.b-carousel-reviews-single .carousel-reviews-single__name {
+    font-family: [modules.guestbox.title.font_family];
+    font-size: [modules.guestbox.title.size];
+    font-weight: [modules.guestbox.title.weight];
+    font-style: [modules.guestbox.title.style];
+    text-decoration: [modules.guestbox.title.decoration];
+    text-transform: [modules.guestbox.title.transform];
+    color: [modules.guestbox.title.color];
+}
+.b-carousel-reviews-single .carousel-reviews-single__date,
+.b-carousel-reviews-single .carousel-reviews-single__company,
+.b-carousel-reviews-single .carousel-reviews-single__city {
+    display: inline-block;
+    padding-right: 10px;
+    font-family: [modules.guestbox.date.font_family];
+    font-size: [modules.guestbox.date.size];
+    font-weight: [modules.guestbox.date.weight];
+    font-style: [modules.guestbox.date.style];
+    text-decoration: [modules.guestbox.date.decoration];
+    text-transform: [modules.guestbox.date.transform];
+    color: [modules.guestbox.date.color];
+}
+/*-- owl carousel */
+.b-carousel-reviews-single  .owl-carousel .owl-stage-outer:before,
+.b-carousel-reviews-single  .owl-carousel .owl-stage-outer:after {
+    content: '';
+    width: 10px;
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+    z-index: 1;
+}
+.b-carousel-reviews-single  .owl-carousel .owl-stage-outer:before {
+    left: 0;
+    background: -webkit-radial-gradient(left ellipse, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 75%) 0 center,
+    -webkit-radial-gradient(right ellipse, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 75%) 100% center;
+    background: radial-gradient(ellipse at left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 75%) 0 center,
+    radial-gradient(ellipse at right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 75%) 100% center;
+    background-size: 5px 100%, 0 100%;
+    background-attachment: scroll, scroll;
+    background-repeat: no-repeat;
+}
+.b-carousel-reviews-single  .owl-carousel .owl-stage-outer:after {
+    right: 0;
+    background: -webkit-radial-gradient(right ellipse, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 75%) 100% center,
+    -webkit-radial-gradient(left ellipse, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 75%) 0 center;
+    background: radial-gradient(ellipse at right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 75%) 100% center,
+    radial-gradient(ellipse at left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 75%) 0 center;
+    background-size: 5px 100%, 0 100%;
+    background-attachment: scroll, scroll;
+    background-repeat: no-repeat;
+}
+.b-carousel-reviews-single  .owl-carousel.owl-carousel-shadow-right .owl-stage-outer:after,
+.b-carousel-reviews-single  .owl-carousel.owl-carousel-shadow-left .owl-stage-outer:before {
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+}
+.b-carousel-reviews-single .owl-carousel .owl-nav .owl-prev,
+.b-carousel-reviews-single .owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: [modules.guestbox.carousel.carousel_single.carousel_pic_width];
+    height: [modules.guestbox.carousel.carousel_single.carousel_pic_height];
+}
+.b-carousel-reviews-single .owl-carousel .owl-nav .owl-prev {
+    left: [modules.guestbox.carousel.carousel_single.carousel_arr_mar];
+    opacity: 0.5;
+    background: url([modules.guestbox.carousel.carousel_single.carousel_pic_prev]) 50% 0 no-repeat;
+}
+.b-carousel-reviews-single .owl-carousel .owl-nav .owl-next {
+    right: [modules.guestbox.carousel.carousel_single.carousel_arr_mar];
+    opacity: 0.5;
+    background: url([modules.guestbox.carousel.carousel_single.carousel_pic_next]) 50% 0 no-repeat;
+}
+.b-carousel-reviews-single .owl-carousel .owl-nav .owl-next:hover,
+.b-carousel-reviews-single .owl-carousel .owl-nav .owl-prev:hover {
+    opacity: 1;
+}
+.b-carousel-reviews-single .owl-carousel .owl-nav .owl-prev.disabled,
+.b-carousel-reviews-single .owl-carousel .owl-nav .owl-next.disabled {
+    opacity: .5;
+    cursor: auto;
+}
+.b-carousel-reviews-single .owl-carousel .owl-dots {
+    text-align: center;
+}
+.b-carousel-reviews-single .owl-carousel .owl-dot {
+    margin: 0 [modules.guestbox.carousel.carousel_single.carousel_dot_margin];
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    border-radius: 1000px;
+    background: [modules.guestbox.carousel.carousel_single.carousel_dot_color];
+    width: [modules.guestbox.carousel.carousel_single.carousel_dot_width];
+    height: [modules.guestbox.carousel.carousel_single.carousel_dot_width];
+}
+.b-carousel-reviews-single .owl-carousel .owl-dot.active {
+    background: [modules.guestbox.carousel.carousel_single.carousel_dot_color_active];
+}

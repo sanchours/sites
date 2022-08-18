@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка обязательных полей</description>
+   <name>CheckRequieredFields</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2ea56878-7599-4500-9c2e-ab0448a83c52</testCaseGuid>
+</TestCaseEntity>

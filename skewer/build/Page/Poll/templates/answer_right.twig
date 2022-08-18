@@ -1,0 +1,9 @@
+<h3>{{aPoll.title|e}}</h3>
+<p><b>{{aPoll.question|e}}</b></p>
+{% for aAnswer in aAnswers %}
+<div class="formopros__line">
+    {{aAnswer.title|e}} ({{aAnswer.percent}}%)
+    <div {{aAnswer.style}}></div>
+</div>
+{% endfor %}
+<p>{{ Lang.get('poll.total_votes') }}: {{iAllCount}}</p>

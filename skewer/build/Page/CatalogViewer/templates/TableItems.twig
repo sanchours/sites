@@ -1,0 +1,98 @@
+{% if aObjectList is defined %}
+    <div class="g-nodisplay js_ecommerce_viewpage" >{{ ecommerceData }}</div>
+    <input type="hidden" name="sort" value="{{ sortState|e }}">
+    <input type="hidden" name="way" value="{{ sortWay|e }}">
+    {% set oFirst = aObjectList|first %}
+    <table>
+        <tr>
+            {% if oFirst.fields.title %}
+                {% if oFirst.fields.title.attrs.show_in_sortpanel and (filter is defined) %}
+                    <th>
+                        <span class="catalogbox__star js_tab_sort_control" curval="title">
+                            {{ oFirst.fields.title.title }}
+                            <ins class="catalogbox__stardown{% if sortState == 'title' and sortWay == 'down' %} catalogbox__stardownon{% endif %}"></ins>
+                            <ins class="catalogbox__starup{% if sortState == 'title' and sortWay == 'up' %} catalogbox__starupon{% endif %}"></ins>
+                        </span>
+                    </th>
+                {% else %}
+                    <th>{{ oFirst.fields.title.title }}</th>
+                {% endif %}
+            {% endif %}
+            {% if oFirst.fields.gallery %}<th></th>{% endif %}
+            {% for field in oFirst.fields %}
+                {% if field.attrs.show_in_table %}
+                    {% if field.attrs.show_in_sortpanel and (filter is defined) %}
+                        <th>
+                            <span class="catalogbox__star js_tab_sort_control" curval="{{ field.name }}">
+                                <span>
+                                    {{ field.title }}
+                                    <ins class="catalogbox__stardown{% if sortState == field.name and sortWay == 'down' %} catalogbox__stardownon{% endif %}"></ins>
+                                    <ins class="catalogbox__starup{% if sortState == field.name and sortWay == 'up' %} catalogbox__starupon{% endif %}"></ins>
+                                </span>
+                            </span>
+                        </th>
+                    {% else %}
+                        <th>{{ field.title }}</th>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+            {% if not hideBuy1lvlGoods %}
+            {% if oFirst.fields.countbuy and oFirst.fields.countbuy.value %}<th>{{ Lang.get('') }}{{ Lang.get('catalog.count')}}</th>{% endif %}
+            <th></th>
+            {% endif %}
+        </tr>
+    {% for iKey, aObject in aObjectList %}
+        {% if aObject.show_detail is defined %}
+            {% set show_detail =  aObject.show_detail %}
+        {% endif %}
+        <tr class="js_ecommerce_viewlist js_catalogbox_item" data-ecommerce='{{ aObject.ecommerce }}' >
+            {% if oFirst.fields.title %}
+                <td>
+                    <div class="catalogbox__title">{% if show_detail %}<a class="js_ecommerce_link" href="[{% if useMainSection %}{{ aObject.main_section }}{% else %}{{ section }}{% endif %}][CatalogViewer?{% if aObject.alias %}goods-alias={{ aObject.alias }}{% else %}item={{ aObject.id }}{% endif %}]">{% endif %}{{ aObject.title }}{% if show_detail %}</a>{% endif %}
+                    </div>
+                </td>
+            {% endif %}
+            {% if oFirst.fields.gallery %}
+            <td><div class="catalogbox__imgbox"><div class="catalogbox__img">{% if aObject.fields.gallery.first_img.images_data['small'].file is defined %}<img alt="{{ aObject.fields.gallery.first_img.alt_title|e }}" title="{{ aObject.fields.gallery.first_img.title|e }}" src="{{ aObject.fields.gallery.first_img.images_data['small'].file }}" title="{{ aObject.fields.gallery.first_img.title|e }}{% if aObject.fields.gallery.first_img.description %} {{ aObject.fields.gallery.first_img.description|e }}{% endif %}">{% else %}<img alt="" src="{{Design.get('modules.catalogbox.imgbox','nophoto_img','skewer\\build\\Page\\Main\\Asset')}}">{% endif %}</div></div></td>
+            {% endif %}
+            {% for field in aObject.fields %}
+                {% if field.attrs.show_in_table %}
+                    <td>
+                        {% if field.value and field.html %}
+                            {% if field.type == 'multicollection' and field.value|length %}
+                                <div class="catalogbox__param catalogbox__param__{{ field.name }}">
+                                    {% set aFirstMulti = field.item|first %}
+                                    {{ aFirstMulti.html }}
+                                </div>
+                            {% elseif (field.type == 'multiselect'
+                                or field.type == 'select'
+                                or field.type == 'collection'
+                                or field.type == 'selectimage'
+                                or field.type == 'multiselectimage')
+                                and field.value|length %}
+                                {{ field.tab }}
+                            {% elseif field.type == 'file' and field.value|length %}
+                                <a href="{{ field.value }}">{{ field.file_name }}</a>
+                            {% else %}
+                                {{ field.value }}
+                            {% endif %}
+                        {% endif %}
+                    </td>
+                {% endif %}
+            {% endfor %}
+            {% if not hideBuy1lvlGoods %}
+            {% if aObject.fields.countbuy and aObject.fields.countbuy.value %}
+            <td><div class="js_catalogbox_inputbox catalogbox__inputbox"><div class="catalogbox__minus js_catalogbox_minus">-</div><input class="js_count" type="text" data-id="{{ aObject.id }}" value="1" /><div class="catalogbox__plus js_catalogbox_plus">+</div></div></td>
+            {% endif %}
+            <td>
+                {% if aObject.fields.buy.value %}
+                <div class="catalogbox__btnbox"><a {% if useCart %}onclick="return false;"{% endif %} data-id="{{
+                    aObject.id }}" href="{% if not useCart %}[{{ form_section }}][From?objectId={{aObject.id}}]{% else %}#tocart{% endif %}" class="js-btnBuy btnBuy">{{ Lang.get(aObject.fields.buy.title) }}</a></div>
+                {% endif %}
+            </td>
+            {% endif %}
+        </tr>
+    {% endfor %}
+    </table>
+{% endif %}
+

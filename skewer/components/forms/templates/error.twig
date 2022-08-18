@@ -1,0 +1,35 @@
+<div class="b-answer">
+    {% if form_not_found_error==1 %}
+        <div>{{ Lang.get('forms.ans_not_found') }}</div>
+    {% endif %}
+    {% if form_not_exist_error==1 %}
+        <div>{{ Lang.get('forms.ans_not_exists') }}</div>
+    {% endif %}
+    {% if captcha_error==1 %}
+        <p>{{ Lang.get('forms.ans_captcha_error') }}</p>
+    {% endif %}
+    {% if file_mime_type==1 %}
+        <p>{{ Lang.get('forms.file_mime_type') }}</p>
+    {% endif %}
+    {% if agreed_error==1 %}
+        <p>{{ Lang.get('forms.error_no_agreement')}}</p>
+    {% endif %}
+    {% if validation_error==1 %}
+        <p>{{ Lang.get('forms.ans_validation') }}</p>
+    {% endif %}
+    {% if data_error==1 %}
+        <p>{{ Lang.get('forms.ans_data_error') }}</p>
+    {% endif %}
+    {% if fileupload_error==1 %}
+        <p>{{ Lang.get('forms.ans_upload') }}</p>
+    {% endif %}
+    {% if file_maxsize_error==1 %}
+        <p>{{ Lang.get('forms.ans_maxsize') }}</p>
+    {% endif %}
+    {% if filetype_error==1 %}
+        <p>{{ Lang.get('forms.ans_format') }}</p>
+    {% endif %}
+    {% if handler_not_found==1 %}
+        <p>{{ Lang.get('forms.ans_handler') }}</p>
+    {% endif %}
+</div>

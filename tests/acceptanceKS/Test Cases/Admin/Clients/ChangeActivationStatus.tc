@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Изменение статуса активации</description>
+   <name>ChangeActivationStatus</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d59dd0a4-dd85-4965-a04e-c6c9e09336d8</testCaseGuid>
+</TestCaseEntity>

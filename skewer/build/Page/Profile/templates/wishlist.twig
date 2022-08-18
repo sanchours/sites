@@ -1,0 +1,92 @@
+<div class="b-cabbox">
+    <div class="b-tab">
+        {% include "menu.twig" %}
+
+        {% if aMessages|length %}
+            <div class="b-wish">
+                <table class="wish__table">
+                {% for item in aMessages %}
+                    <tr>
+                        <div>
+                            <p>{{ Lang.get('WishList.wish_list_was_removed', item.text) }}</p>
+                        </div>
+                    </tr>
+                {% endfor %}
+                </table>
+            </div>
+        {% endif %}
+
+        {% if aWishList|length > 0 %}
+            <div class="b-wish b-wish--list js-wish__content">
+                <table class="wish__table">
+
+                    <tr class="hide-on-mobile">
+                        <th>{{ Lang.get('WishList.title')}}</th>
+                        <th>{{ Lang.get('WishList.price')}}, {{ Lang.get('Order.current_currency') }}</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    {% for item in aWishList %}
+                        <tr class="js-wish-row wish__row" data-id="{% if item.id_synthetic %}{{ item.id_synthetic }}{% else %}{{ item.id }}{% endif %}" data-title="{{ item.title|e }}">
+                            <td>
+                                <div class="wish__title">
+                                    <span class="wish__subtitle hide-on-desktop hide-on-tablet">{{ Lang.get('WishList.title')}}</span>
+                                {% if not item.id_synthetic and item.active and item.main_section and item.show_detail %}
+                                    <a href="{{ item.url }}"><strong>{{ item.title }}</strong></a>
+                                {% else %}
+                                    <div class="b-title b-title--xs b-title--bold b-title--upper">{{ item.title }}</div>
+                                    {% if item.composition %}
+                                        <div class="wish__description">{{ Lang.get('order.composition') }}: {{ item.composition }}</div>
+                                    {% endif %}
+                                {% endif %}
+                                </div>
+                            </td>
+                            {# <td class="wish__center">{{ item.fields.article.value }}</td> #}
+                            <td class="wish__center">
+                                <div class="wish__price">
+                                    <span class="wish__subtitle hide-on-desktop hide-on-tablet">{{ Lang.get('WishList.price')}}</span>
+                                    {{ item.fields.price.value|price_format }}
+                                    <span class="hide-on-desktop hide-on-tablet">{{ Lang.get('Order.current_currency') }}</span>
+                                </div>
+                                {#
+                                {% if item.fields.price_old.value %}<s><span class="item_price">{{ item.fields.price_old.value|number_format(2, '.',' ') }} </span></s>{% endif %}
+                                <span class="item_price">{{ item.fields.price.value|number_format(2, '.',' ') }} </span>
+                                #}
+                            </td>
+                            {#
+                            <td class="wish__center">{% if item.active %} {{ Lang.get('WishList.Yes')}} {% else %} {{ Lang.get('WishList.No')}} {% endif %}</td>
+                            #}
+                            <td class="wish__center wish__btn">
+                                {% if item.active and item.main_section and item.fields.buy.value %}
+                                    <a class="b-btnbox b-btnbox--auth js-btnBuy btnBuy" data-id="{% if item.id_synthetic %}{{ item.id_synthetic }}{% else %}{{ item.id }}{% endif %}" href="#tocart">{{ Lang.get('WishList.buy')}}</a>
+                                {% endif %}
+                            </td>
+                            <td class="wish__center wish__btn">
+                                <div class="wish__delete">
+                                    <a data-id="{% if item.id_synthetic %}{{ item.id_synthetic }}{% else %}{{ item.id }}{% endif %}" class="js-wish-del-one" href="#">{{ Lang.get('WishList.delete')}}</a>
+                                </div>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </table>                
+                <div class="g-align-centr">
+                    <div class="wish__buttons">
+                        <div class="wish__clear js-wish-clear">
+                            <a class="b-btnbox b-btnboxfull b-btnboxfull4" href="#">{{ Lang.get('WishList.clear')}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+        <div class="js-wish__empty"{% if aWishList|length > 0 %} style="display: none;" {% endif %}>
+            <p>{{ Lang.get('WishList.wishlist_empty')}}</p>
+        </div>
+    </div>
+</div>
+<div id="js_translate_msg_dell_all" style="display: none;">
+    {{ Lang.get('WishList.msg_dell_all') }}
+</div>
+
+{% if aConfirmTexts %}{{ aConfirmTexts }}{% endif %}
+
+{% include "paginator.twig" %}

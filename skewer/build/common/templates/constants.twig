@@ -1,0 +1,40 @@
+<?php
+/**
+ * Этот файл генерируется автоматически!
+ * @date {{ "now"|date("d-m-Y h:i:s") }}
+ * @project Skewer
+ * @package Site
+ */
+
+define('USECLUSTERBUILD', {{ USECLUSTERBUILD|default('true') }});
+define('INCLUSTER', {{ inCluster|default('true') }});
+
+{# Имя сборки Canape #}
+{% if buildName %}
+define('BUILDNAME', '{{ buildName }}');
+{% endif %}
+
+{# Номер сборки Canape #}
+{% if buildNumber %}
+define('BUILDNUMBER', '{{ buildNumber }}');
+{% endif %}
+
+{# Путь к корневой директории сайта #}
+{% if rootPath %}
+define('ROOTPATH', '{{ rootPath }}');
+{% endif %}
+
+{# Путь к корневой директории релиза #}
+{% if releasePath %}
+define('RELEASEPATH', '{{ releasePath }}');
+{% endif %}
+
+{# Уникальный ключ приложения #}
+{% if appKey %}
+define('APPKEY', '{{ appKey }}');
+{% endif %}
+
+{# Путь к шлюзу CRM #}
+{% if clusterGateway %}
+define('CLUSTERGATEWAY', '{{ clusterGateway }}');
+{% endif %}

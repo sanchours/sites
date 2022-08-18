@@ -1,0 +1,47 @@
+{% if form_anchor %}
+    <div id="form-answer"></div>
+{% endif %}
+<div class="b-answer{% if popup_result_page %} b-answer--popup{% endif %}">
+    {% if SuccAnswer %}
+        {# Альтернативный ответ из настроек формы #}
+        <p>{{ SuccAnswer }}</p>
+    {% else %}
+
+        {% if successAjax==1 %}
+
+            {% if popup_result_page %}
+                <p>{{ Lang.get('forms.ans_success') }}</p>
+            {% else %}
+                <p>{{ Lang.get('forms.ans_success') }}</p>
+            {% endif %}
+
+        {% endif %}
+
+        {% if success==1 %}
+            <p>{{ Lang.get('forms.ans_success') }}</p>
+        {% endif %}
+
+        {% if success_otziv==1 %}
+            <p>{{ Lang.get('forms.ans_success_otziv') }}</p>
+        {% endif %}
+
+    {% endif %}
+
+    {% if check_back %}
+        {% if answer_review == true %}
+            <p><a href="">{{ Lang.get('page.back') }}</a></p>
+        {% else %}
+            {% if success==1 %}
+                <p><a href="{% if form_page_url %}{{ form_page_url }}{% else %}[{{ form_section }}]{% endif %}">{{ Lang.get('page.back') }}</a></p>
+            {% elseif successAjax!=1 %}
+                <p><a href="javascript: history.go(-1);">{{ Lang.get('Forms.back') }}</a></p>
+            {% elseif successAjax==1 %}
+                <p><a href="javascript: top.location.reload(false);">{{ Lang.get('Forms.back') }}</a></p>
+            {% endif %}
+        {% endif %}
+    {% endif %}
+
+{% if ecommerce %}{{ ecommerce }}{% endif %}
+{% if reachGoals %}{{ reachGoals }}{% endif %}
+
+</div>

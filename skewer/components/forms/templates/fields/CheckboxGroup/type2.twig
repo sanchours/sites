@@ -1,0 +1,27 @@
+{# fieldCheckboxGroup2 #}
+<!-- Чекбоксы обычные тема 2-->
+<div class="form__col-{{oField.getClassVal()}}">
+    <div class="form__item form__item--checkboxes form__item--label-{{ oField.settings.labelPosition }} {{ oField.settings.classModify }}">
+        {% if (oField.settings.labelPosition != 'right') %}
+            <div class="form__label">{{oField.settings.title}}{% if oField.settings.required==1 %} <ins class="form__mark">*</ins>{% endif %}</div>
+        {% endif %}
+        <div class="form__input-wrap {% if oField.settings.required==1 %}js_required_group{% endif %}">
+            {% set aItems = oField.getViewItems() %}
+            {% for aItem in aItems %}
+                <div class="form__input form__input--checkbox-2 {%  if oField.getError() %} form__item--error {% endif %}">
+                    <input data-hash="{{templateForm.formHash}}" data-name="{{oField.settings.title}}" type="checkbox" name="{{oField.settings.slug}}[]" id="chck-grp-{{aItem.paramId}}_{{templateForm.formHash}}"  {% if aItem.checked %} checked {% endif %} value="{{aItem.value}}" {{oField.settings.specStyle}}>
+                    <div class="form__checkbox js-checkbox">
+                        <label class="form__checkbox-trigger" for="chck-grp-{{aItem.paramId}}_{{templateForm.formHash}}">
+                            <span class="fa fa-check" for="chck-grp-{{aItem.paramId}}_{{templateForm.formHash}}"></span>
+                        </label>
+                    </div>
+                    <label class="form__checkbox-label" for="chck-grp-{{aItem.paramId}}_{{templateForm.formHash}}">{{aItem.title}}</label>
+                </div>
+            {% endfor %}
+            {% if (oField.settings.labelPosition == 'right') %}
+                <div class="form__label">{{oField.settings.title}}{% if oField.settings.required==1 %} <ins class="form__mark">*</ins>{% endif %}</div>
+            {% endif %}
+            {% if oField.settings.description!='' %}<div class="form__info">{{oField.settings.description}}</div>{% endif %}
+        </div>
+    </div>
+</div>

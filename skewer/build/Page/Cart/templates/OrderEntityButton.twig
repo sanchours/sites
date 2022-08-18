@@ -1,0 +1,18 @@
+<div class="form__col-1-2 form__col-align-middle">
+    {% if fastBuy != '1' %}
+    <div class="form__item">
+        <a href="{{section_path}}">{{ Lang.get('order.back_to_cart') }}</a>
+    </div>
+    {% endif %}
+</div>
+<div class="form__col-1-2 form__col-align-middle">
+    <div class="form__item form__item--ta-right">
+        <button type="submit" class="b-btnbox">
+            {% if Lang.get(form_button) and Lang.get(form_button)|trim %}
+                {{ Lang.get(form_button) }}
+            {% else %}
+                {{ Lang.get('order.checkout') }}
+            {% endif %}
+        </button>
+    </div>
+</div>

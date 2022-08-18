@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка добавления в корзину с детальной</description>
+   <name>CheckGoodsInCartDetail</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6245bc18-157e-41c9-8242-c928d869b378</testCaseGuid>
+</TestCaseEntity>

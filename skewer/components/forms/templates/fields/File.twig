@@ -1,0 +1,38 @@
+<div class="form__col-{{ oField.getClassVal() }} {% if oField.getError() %} form__item--error {% endif %}">
+	<div class="form__item form__item--label-{{ oField.settings.labelPosition }} {{ oField.settings.classModify }}">
+		{% if (oField.settings.labelPosition != 'right') %}
+			<div class="form__label">{{ oField.settings.title }}
+				{% if oField.settings.required==1 %}
+					<ins class="form__mark">*</ins>
+				{% endif %}
+			</div>
+		{% endif %}
+		<div class="form__input form__input--file js-inputfile">
+			<input class="file_upload js-inputfile-input" type="file" data-hash="{{ templateForm.formHash }}" data-name="{{ oField.settings.title }}" data-multiple-caption="Файлов выбрано {count}" name="{{ oField.settings.slug }}" id="file-{{ oField.settings.slug }}_{{ templateForm.formHash }}" value="{{ oField.value|e }}" {{ oField.settings.specStyle }}/>
+			<label class="js-inputfile-label" for="file-{{ oField.settings.slug }}_{{ templateForm.formHash }}">
+				{% if 'placeholder' in oField.settings.specStyle %}
+					<span class="form__label-file js-inputfile-placeholder">{{ oField.settings.specStyle }}</span>
+				{% elseif oField.settings.labelPosition == 'none' %}
+					<span>{{oField.settings.title}}
+						{% if oField.settings.required==1 %}
+							<ins class="form__mark">*</ins>
+						{% endif %}
+					</span>
+				{% else %}
+					<span>&nbsp;</span>
+				{% endif %}
+			</span>
+			<strong>{{ Lang.get('forms.select_file') }}</strong>
+		</label>
+	</div>
+	{% if (oField.settings.labelPosition == 'right') %}
+		<div class="form__label">{{ oField.settings.title }}
+			{% if oField.settings.required==1 %}
+				<ins class="form__mark">*</ins>
+			{% endif %}
+		</div>
+	{% endif %}
+	{% if oField.settings.description!='' %}
+		<div class="form__info">{{ oField.settings.description }}</div>
+	{% endif %}
+</div></div>

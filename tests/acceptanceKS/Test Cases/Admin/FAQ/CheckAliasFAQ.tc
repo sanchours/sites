@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка перехода на страницу ВИО + проверка псевдонима</description>
+   <name>CheckAliasFAQ</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f130f724-4f27-44f0-abfb-438289ed0f5c</testCaseGuid>
+</TestCaseEntity>

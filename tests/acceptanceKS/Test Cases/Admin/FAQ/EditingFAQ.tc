@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Редактирование вио</description>
+   <name>EditingFAQ</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c8e09ab3-95a0-4fc9-9a97-974fb406b7a1</testCaseGuid>
+</TestCaseEntity>

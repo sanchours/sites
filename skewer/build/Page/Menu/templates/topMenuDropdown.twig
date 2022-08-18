@@ -1,0 +1,53 @@
+<div class="b-header {{ html_class }}"{{ Design.write(' sklayout="head"') }}>
+    <div class="b-sevice b-sevice--bilberry hide-on-tablet hide-on-mobile"{{ Design.write(' sktag="menu.top"') }}>
+        <div class="sevice__inner">
+            <ul class="sevice__level-1"{{ Design.write(' sktag="menu.top.level1"') }}>
+            {%for item in items%}
+            {% if item.show %}
+                <li class="sevice__item-1 sevice__item-id-{{item['id']}}{% if item.selected %} sevice__item-1--on{% endif %}{% if loop.last %} sevice__item-last{% endif %}{% if item.items|length > 0 %} sevice__item-1--haschild{% endif %}{% if icon[item['id']] is defined %} sevice__item-1--hasicon{% endif %}">
+                    <span>
+                        <a href="{{item.href}}" {% if aTargetBlank[item.id] is defined %} target="_blank" {% endif %}>
+                            {% if icon[item['id']] is defined %}
+                                <em style="background-image: url({{ icon[item['id']] }});"></em>
+                            {% else %}
+                                <ins></ins>
+                            {% endif %}
+                            {{item.title}}
+                        </a>
+                    </span>
+                    {% if item.items|length > 0 %}
+                    <ul class="sevice__level-2"{{ Design.write(' sktag="menu.top.level2"') }}>
+                        {%for item2 in item.items%}
+                        {% if item2.show %}
+                            <li class="sevice__item-2{% if item2.items|length > 0 %} sevice__item-2--haschild{% endif %}{% if item2.selected %} sevice__item-2--on{% endif %}{% if loop.last %} sevice__item-2--last{% endif %}">
+                                <span>
+                                    <a href="{{item2.href}}" {% if aTargetBlank[item2.id] is defined %} target="_blank" {% endif %}>
+                                        {{item2.title}} 
+                                        <span class="sevice__child-icon"></span>
+                                    </a>
+                                </span>
+                                {% if item2.items|length > 0 %}
+                                <ul class="sevice__level-3"{{ Design.write(' sktag="menu.top.level3"') }}>
+                                    {%for item3 in item2.items%}
+                                        {% if item3.show %}
+                                            <li class="sevice__item-3{% if item3.selected %} sevice__item-3--on{% endif %}{% if loop.last %} sevice__item-3--last{% endif %}">
+                                                <span>
+                                                    <a href="{{item3.href}}" {% if aTargetBlank[item3.id] is defined %} target="_blank" {% endif %}>{{item3.title}}</a>
+                                                </span>
+                                            </li>
+                                        {% endif %}
+                                    {% endfor %}
+                                </ul>
+                                {% endif %}
+                            </li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </li>
+            {% endif %}
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

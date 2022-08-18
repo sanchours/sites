@@ -1,0 +1,58 @@
+{% if aPages.items|length > 1 or aPages.page > 1%}
+
+    {% if aPages.parameters %}
+        {% set PageParams = '&'~aPages.parameters %}
+    {% else %}
+        {% set PageParams = '' %}
+    {% endif %}
+
+    <div class="b-pageline" {{ Design.write('skTest="paginator"') }}>
+
+        {%  if aPages.firstPage %}
+            {%  if aPages.firstPage.isActive %}
+                <a class="pageline__back1" href="[{{ aPages.sectionId }}]{%if aPages.parameters %}[{{ aPages.module }}?{{aPages.parameters}}]{%endif%}">{{aPages.firstPage.title}}</a>
+            {% endif %}
+        {% endif %}
+
+        {%  if aPages.prevGroup %}
+            {%  if aPages.prevGroup.isActive %}
+                <a class="pageline__back1" href="[{{ aPages.sectionId }}][{{ aPages.module }}?page={{aPages.prevGroup.page}}{{PageParams}}]">{{aPages.prevGroup.title}}</a>
+            {% endif %}
+        {% endif %}
+
+        {%  if aPages.prevPage %}
+            {%  if aPages.prevPage.isActive %}
+                <a class="pageline__back2" href="[{{ aPages.sectionId }}]{%if aPages.prevPage.page > 1%}[{{ aPages.module }}?page={{aPages.prevPage.page}}{{PageParams}}]{%elseif aPages.parameters %}[{{ aPages.module }}?{{aPages.parameters}}]{%endif%}">{{aPages.prevPage.title}}</a>
+            {% endif %}
+        {% endif %}
+
+        {%  if aPages.itemsIsActive %}
+            {% for page in aPages.items %}
+                {% if page.isActive %}
+                    <a class="pageline__on" href="">{{page.title}}</a>
+                {% else %}
+                    <a href="[{{ aPages.sectionId }}]{%if page.page > 1%}[{{ aPages.module }}?page={{page.page}}{{PageParams}}]{%elseif aPages.parameters %}[{{ aPages.module }}?{{aPages.parameters}}]{%endif%}">{{page.title}}</a>
+                {% endif %}
+            {%endfor%}
+        {% endif %}
+
+        {%  if aPages.nextPage %}
+            {%  if aPages.nextPage.isActive %}
+                <a class="pageline__next2" href="[{{ aPages.sectionId }}][{{ aPages.module }}?page={{aPages.nextPage.page}}{{PageParams}}]">{{aPages.nextPage.title}}</a>
+            {% endif %}
+        {% endif %}
+
+        {%  if aPages.nextGroup %}
+            {%  if aPages.nextGroup.isActive %}
+                <a class="pageline__next1" href="[{{ aPages.sectionId }}][{{ aPages.module }}?page={{aPages.nextGroup.page}}{{PageParams}}]">{{aPages.nextGroup.title}}</a>
+            {% endif %}
+        {% endif %}
+
+        {%  if aPages.lastPage %}
+            {%  if aPages.lastPage.isActive %}
+                <a class="pageline__next1" href="[{{ aPages.sectionId }}][{{ aPages.module }}?page={{aPages.lastPage.page}}{{PageParams}}]">{{aPages.lastPage.title}}</a>
+            {% endif %}
+        {% endif %}
+
+    </div>
+{% endif %}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Галлерея в отзывах</description>
+   <name>GalleryInReview</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>06982b86-923f-43db-b19b-ffba49ffe6a4</testCaseGuid>
+</TestCaseEntity>

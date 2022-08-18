@@ -1,0 +1,87 @@
+/* layer: default */
+/* modules.formopros - Голосование */
+
+.b-formopros {
+    border: 1px [modules.formopros.borderstyle] [modules.formopros.bordercolor];
+    padding: 10px;
+    margin-bottom: 2em;
+    -webkit-border-radius: [modules.formopros.radius];
+    -moz-border-radius: [modules.formopros.radius];
+    border-radius: [modules.formopros.radius];
+    background: [modules.formopros.bgcolor1]; /* Old browsers */
+    background: -moz-linear-gradient(top, [modules.formopros.bgcolor1] 0%, [modules.formopros.bgcolor2] 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,[modules.formopros.bgcolor1]), color-stop(100%,[modules.formopros.bgcolor2])); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, [modules.formopros.bgcolor1] 0%,[modules.formopros.bgcolor2] 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, [modules.formopros.bgcolor1] 0%,[modules.formopros.bgcolor2] 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, [modules.formopros.bgcolor1] 0%,[modules.formopros.bgcolor2] 100%); /* IE10+ */
+    background: linear-gradient(to bottom, [modules.formopros.bgcolor1] 0%,[modules.formopros.bgcolor2] 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='[modules.formopros.bgcolor1]', endColorstr='[modules.formopros.bgcolor2]',GradientType=0 ); /* IE6-9 */
+}
+.b-formopros .formopros__line {
+    margin-bottom: 0.5em;
+}
+.b-formopros .formopros__line:after {
+    content: "";
+    display: block;
+    clear: both;
+    font-size: 0;
+}
+.b-formopros .formopros__line input {
+    float: left;
+}
+.b-formopros .formopros__line label {
+    overflow: hidden;
+    cursor: pointer;
+}
+.b-formopros p {
+    margin: 0;
+    padding: 0 0 1.5em 0;
+}
+.b-formopros .formopros__btnbox {
+    padding-top: 0.5em;
+    text-align: center;
+}
+.b-formopros .formopros__btn {
+    margin: 0;
+    width: [modules.buttons.width_btn];
+    padding: [modules.buttons.padding];
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    color: [modules.buttons.color_btn];
+    font-family: [modules.buttons.font_family_btn];
+    font-size: [modules.buttons.size_btn];
+    font-weight: [modules.buttons.weight_btn];
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    -webkit-border-radius: [modules.buttons.radius_btn];
+    -moz-border-radius: [modules.buttons.radius_btn];
+    border-radius: [modules.buttons.radius_btn];
+    background: [modules.buttons.img_btn_color1]; /* Old browsers */
+    background: -moz-linear-gradient(top, [modules.buttons.img_btn_color1] 0%, [modules.buttons.img_btn_color2] 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,[modules.buttons.img_btn_color1]), color-stop(100%,[modules.buttons.img_btn_color2])); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, [modules.buttons.img_btn_color1] 0%,[modules.buttons.img_btn_color2] 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, [modules.buttons.img_btn_color1] 0%,[modules.buttons.img_btn_color2] 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, [modules.buttons.img_btn_color1] 0%,[modules.buttons.img_btn_color2] 100%); /* IE10+ */
+    background: linear-gradient(to bottom, [modules.buttons.img_btn_color1] 0%,[modules.buttons.img_btn_color2] 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='[modules.buttons.img_btn_color1]', endColorstr='[modules.buttons.img_btn_color2]',GradientType=0 ); /* IE6-9 */
+}
+.b-formopros .formopros__btn:hover {
+    box-sizing: border-box;
+    color: [modules.buttons.hcolor_btn];
+    text-decoration: none;
+    -webkit-border-radius: [modules.buttons.radius_btn];
+    -moz-border-radius: [modules.buttons.radius_btn];
+    border-radius: [modules.buttons.radius_btn];
+    background: [modules.buttons.img_btn_hcolor1]; /* Old browsers */
+    background: -moz-linear-gradient(top, [modules.buttons.img_btn_hcolor1] 0%, [modules.buttons.img_btn_hcolor2] 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,[modules.buttons.img_btn_hcolor1]), color-stop(100%,[modules.buttons.img_btn_hcolor2])); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, [modules.buttons.img_btn_hcolor1] 0%,[modules.buttons.img_btn_hcolor2] 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, [modules.buttons.img_btn_hcolor1] 0%,[modules.buttons.img_btn_hcolor2] 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, [modules.buttons.img_btn_hcolor1] 0%,[modules.buttons.img_btn_hcolor2] 100%); /* IE10+ */
+    background: linear-gradient(to bottom, [modules.buttons.img_btn_hcolor1] 0%,[modules.buttons.img_btn_hcolor2] 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='[modules.buttons.img_btn_hcolor1]', endColorstr='[modules.buttons.img_btn_hcolor2]',GradientType=0 ); /* IE6-9 */
+}
+/*-------------------------------*/

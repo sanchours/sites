@@ -1,0 +1,11 @@
+<div class="b-authmain-head{% if designMode %} g-ramaborder js-designDrag-right{% endif %}"{% if designMode %} sktag="modules.auth.authhead"{% endif %}>
+    {% if designMode %}
+        <div class="b-desbtn"><span>Auth</span><ins></ins></div>
+    {% endif %}
+
+    {% if current_user %}
+        <a href="{{ profile_url }}">{{ Lang.get('auth.profile') }}</a><span>/</span><a href="[{{ page }}][Auth?cmd=logout]">{{ Lang.get('auth.logout') }}</a>
+    {% else %}
+        <a href="{{ auth_url }}">{{ Lang.get('auth.login_head') }}</a><span>/</span><a href="[{{ page }}][Auth?cmd=register]">{{ Lang.get('auth.reg_head') }}</a>
+    {% endif %}
+</div>

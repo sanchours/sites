@@ -1,0 +1,45 @@
+{% if revert==0 %}
+
+    {{ form }}
+
+    {% if back_link is defined %}
+        {% if msg is defined %}
+            <div class="b-msgbox">
+                {{ msg }}
+            </div>
+        {% endif %}
+    {% endif %}
+{% endif %}
+<div class="b-faq"{{ Design.write(' sktag="modules.faq"') }}>
+    <div class="faq__msgtext"></div>
+    
+    {%  for aItem in list.items  %}
+    <div class="faq__item">
+        <div class="faq__leftside">
+            <div class="faq__title">{{aItem.name}} </div>
+            <div class="faq__date">{{aItem.date_time}} </div>
+            <div class="faq__city">{{aItem.city}} </div>
+        </div>
+        <div class="faq__rightside">
+            <div class="b-editor">
+                <p><b>{{ Lang.get('faq.question') }}:</b> <a href="[{{ section }}][FAQ?{% if aItem.alias %}alias={{ aItem.alias }}{% else %}]id={{aItem.id}}{% endif %}]">{{aItem.content}}</a></p>
+                <div><b>{{ Lang.get('faq.answer') }}:</b> {{aItem.answer}} </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% include "paginator.twig" %}
+
+{% if revert==1 %}
+
+    {{ form }}
+
+    {% if back_link is defined %}
+        {% if msg is defined %}
+            <div class="b-msgbox">
+                {{ msg }}
+            </div>
+        {% endif %}
+    {% endif %}
+{% endif %}

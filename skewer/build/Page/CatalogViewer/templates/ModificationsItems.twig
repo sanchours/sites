@@ -1,0 +1,52 @@
+{% if ModificationsItems is defined %}
+    <div class="b-catalogbox b-catalogbox-table js_goods_container">
+        {% set oFirst = aAngObjList|first %}
+        <table>
+            <tr>
+                {% for field in oFirst.fields %}
+
+                {% if ((field == 'countbuy') and field.value) %}
+                        <th>{{ Lang.get('') }}{{ Lang.get('catalog.count')}}</th>
+                {%  else %}
+                    {% if field.attrs.show_in_modification == 1 %}
+                        <th>{{ field.title }}</th>
+                    {% endif %}
+                {% endif %}
+                {% endfor %}
+            </tr>
+            {% for iKey, aObject in aAngObjList %}
+                <tr class="js_ecommerce_viewlist js_catalogbox_item" data-ecommerce='{{ aObject.ecommerce }}' >
+                    {% for field, aField in aObject.fields %}
+                        {% if aField.attrs.show_in_modification == 1 %}
+                            {% if field == 'title' %}
+                                <td><div class="catalogbox__title">{% if not hide2lvlGoodsLinks %}{% if show_detail %}<a class="js_ecommerce_link" href="[{{ ModificationsItems.section }}][CatalogViewer?{% if aObject.alias %}goods-alias={{ aObject.alias }}{% else %}item={{ aObject.id }}{% endif %}]">{% endif %}{% endif %}{{ aObject.title }}{% if not hide2lvlGoodsLinks %}{% if show_detail %}</a>{% endif %}{% endif %}</div></td>
+                            {% elseif field == 'gallery' %}
+                                <td><div class="catalogbox__imgbox"><div class="catalogbox__img">{% if aObject.fields.gallery.first_img.images_data['small'].file is defined %}<img alt="{{ aObject.fields.gallery.first_img.alt_title|e }}" src="{{ aObject.fields.gallery.first_img.images_data['small'].file }}" title="{{ aObject.fields.gallery.first_img.title|e }}{% if aObject.fields.gallery.first_img.description %} {{ aObject.fields.gallery.first_img.description|e }}{% endif %}">{% else %}<img alt="" src="{{Design.get('modules.catalogbox.imgbox','nophoto_img','skewer\\build\\Page\\Main\\Asset')}}">{% endif %}</div></div></td>
+                            {% elseif field == 'price' %}
+                                <td><div class="catalogbox__price">{{ aObject.fields.price.value|price_format }}</div></td>
+                            {% elseif field == 'countbuy' and aField.value %}
+                                <td><div class="js_catalogbox_inputbox catalogbox__inputbox"><div class="catalogbox__minus js_catalogbox_minus">-</div><input class="js_count" type="text" data-id="{{ aObject.id }}" value="1" /><div class="catalogbox__plus js_catalogbox_plus">+</div></div></td>
+                            {% elseif field == 'buy' %}
+                                <td>
+                                    {% if aField.value %}
+                                        <div class="catalogbox__btnbox"><a {% if useCart %}onclick="return false;"{% endif %}
+                                                                           data-id="{{ aObject.id }}" href="{% if not useCart %}[{{
+                                            form_section }}][From?objectId={{aObject.id}}]{% else %}#tocart{% endif %}"
+                                                                           class="js-btnBuy btnBuy">{{ Lang.get(aObject.fields.buy.title) }}</a></div>
+                                    {% else %}
+                                    {% endif %}
+                                </td>
+                            {% elseif field == 'article' %}
+                                <td><div class= {{  'catalogbox__'~iKey }}>{{ aField.value }}</div></td>
+                            {% elseif aField.type == 'select' or aField.type == 'multiselect' or aField.type == 'selectimage' or aField.type == 'multiselectimage'  %}
+                                <td><div class= {{  'catalogbox__'~iKey }}>{{ aField.tab }}</div></td>
+                            {% else %}
+                                <td><div class= {{  'catalogbox__'~iKey }}>{{ aField.html }}</div></td>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endif %}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Изменение кол-ва товаров в корзине</description>
+   <name>SelectionQuantityGoodsInCart</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4db01448-c5be-4ba8-9ab7-a719a642ef33</testCaseGuid>
+</TestCaseEntity>

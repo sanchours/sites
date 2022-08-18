@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Отправка отзыва с детальной товара</description>
+   <name>SendReviewOnTheDetail</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e80dd88e-f1ff-4896-94e9-d37f8adec932</testCaseGuid>
+</TestCaseEntity>

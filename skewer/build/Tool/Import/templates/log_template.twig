@@ -1,0 +1,162 @@
+<div style="margin-left: 30px;">
+    {% if log.copy_file is defined %}
+        <p>{{ Lang.get('import.copy_file') }}: {{ log.copy_file }}</p>
+    {% endif %}
+    <p>{{ Lang.get('import.status') }}: {{ log.status }}</p>
+    <p>{{ Lang.get('import.start') }}: {{ log.start }}</p>
+    {% if log.finish %}<p>{{ Lang.get('import.finish') }}: {{ log.finish }}</p>{% endif %}
+
+    <hr>
+
+    {% if log.new is defined %}
+        <div>
+            <p>{{ Lang.get('import.added') }}: {{ log.new }} </p>
+        </div>
+    {% endif %}
+    {% if log.update is defined %}
+        <div>
+            <p>{{ Lang.get('import.update') }}: {{ log.update }}</p>
+        </div>
+    {% endif %}
+    {% if log.skip is defined %}
+        <div>
+            <p><b>{{ Lang.get('import.skip') }}: {{ log.skip }}</b></p>
+        </div>
+    {% endif %}
+    {% if log.not_activity is defined %}
+        <div>
+            <p><b>{{ Lang.get('import.not_activity') }}: {{ log.not_activity }}</b></p>
+        </div>
+    {% endif %}
+    {% if log.delete is defined %}
+        <div>
+            <p>{{ Lang.get('import.delete') }}: {{ log.delete }} </p>
+        </div>
+    {% endif %}
+    {% if log.error is defined %}
+        <div>
+            <p><b>{{ Lang.get('import.error') }}: {{ log.error }}</b></p>
+        </div>
+    {% endif %}
+    {% if log.add_photo is defined %}
+        <div>
+            <p>{{ Lang.get('import.add_photo') }}: {{ log.add_photo }} </p>
+        </div>
+    {% endif %}
+    {% if log.no_section is defined %}
+        <div>
+            <p><b>{{ Lang.get('import.no_section') }}:</b></p>
+            <table>
+                {% for item in log.no_section %}
+                    <tr>
+                        <td>{{ item }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    {% endif %}
+    {% if log.create_section is defined %}
+        <div>
+            <p><b>{{ Lang.get('import.create_section') }}:</b></p>
+            <table>
+                {% for item in log.create_section_list %}
+                    <tr>
+                        <td>{{ item }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    {% endif %}
+    {% if log.create_collection_element is defined %}
+        <div>
+            <p><b>{{ Lang.get('import.create_collection_element') }}:</b></p>
+            <table>
+                {% for item in log.create_collection_list %}
+                    <tr>
+                        <td>{{ item }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    {% endif %}
+    <hr>
+
+    {% if log.new_list is defined %}
+    <div style="margin-top: 15px;">
+        <p><b>{{ Lang.get('import.added') }}:</b></p>
+        <table>
+            {% for item in log.new_list %}
+                <tr>
+                    <td>{{ item }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+    {% endif %}
+
+    {% if log.update_list is defined %}
+    <div style="margin-top: 15px;">
+        <p><b>{{ Lang.get('import.update') }}:</b></p>
+        <table>
+            {% for item in log.update_list %}
+                <tr>
+                    <td>{{ item }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+    {% endif %}
+
+    {% if log.skip_list is defined %}
+    <div style="margin-top: 15px;">
+        <p><b>{{ Lang.get('import.skip') }}:</b></p>
+        <table>
+            {% for item in log.skip_list %}
+                <tr>
+                    <td>{{ item }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+    {% endif %}
+
+    {% if log.not_activity_list is defined %}
+        <div style="margin-top: 15px;">
+            <p><b>{{ Lang.get('import.not_activity_list') }}:</b></p>
+            <table>
+                {% for item in log.not_activity_list %}
+                    <tr>
+                        <td>{{ item }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    {% endif %}
+
+    {% if log.delete_list is defined %}
+    <div style="margin-top: 15px;">
+        <p><b>{{ Lang.get('import.delete') }}:</b></p>
+        <table>
+            {% for item in log.delete_list %}
+                <tr>
+                    <td>{{ item }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+    {% endif %}
+
+    {% if log.error_list is defined %}
+        <div style="margin-top: 15px;">
+            <p><b>{{ Lang.get('import.error_list') }}:</b></p>
+            <table>
+                {% for item in log.error_list %}
+                    <tr>
+                        <td>{{ item }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    {% endif %}
+
+</div>

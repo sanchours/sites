@@ -1,0 +1,37 @@
+<div class="b-regions-wrap {{ classModifier }}">
+    <div class="b-regions" id="js-region">
+        <img alt="" src="{{ Design.get('modules.regions','icon','skewer\\build\\Page\\Regions\\Asset') }}">
+        {{ Lang.get('regions.select_region') }} <span>{{ currentRegion.city }}</span>
+    </div>
+</div>
+
+{% if show_fancy %}
+    <div id="js-show_fancy" style="display: none"></div>
+{% endif %}
+
+<div class="b-region-confirmation" id="js-region-confirmation" style="display: none">
+    <div class="b-confirm-window">
+        <div class="confirm-window__content">{{ Lang.get('regions.fancy_city') }}{{ currentRegion.city }} ?</div>
+        <div class="confirm-window__btnbox">
+            <button class="b-btnbox b-btnbox--confirm" data-value="1" data-fancybox-close>{{ Lang.get('regions.yes') }}</button>
+            <button class="b-btnbox b-btnbox--confirm" data-value="0" data-fancybox-close>{{ Lang.get('regions.no') }}</button>
+        </div>
+    </div>
+</div>
+
+<div id="js-region-fancy" style="display: none">
+    <div class="b-regions-list">
+        <h3>{{ Lang.get('regions.fancy_city') }}{{ currentRegion.city }}</h3>
+
+        {% if regionsWithoutCurrent %}
+            <p>{{ Lang.get('regions.fancy_select_region') }}</p>
+            <ul id="js-list_region">
+                {% for region in regionsWithoutCurrent %}
+                    <li>
+                        <a href="{{ region.url }}">{{ region.city }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+</div>

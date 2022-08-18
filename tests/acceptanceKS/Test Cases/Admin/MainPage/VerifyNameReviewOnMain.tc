@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка Заголовка отзывов на главной</description>
+   <name>VerifyNameReviewOnMain</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0f4f8f9f-e152-4161-bc45-5ec58cc4f371</testCaseGuid>
+</TestCaseEntity>

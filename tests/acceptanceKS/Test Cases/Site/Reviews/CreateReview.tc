@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка созданного отзыва</description>
+   <name>CreateReview</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d17d10f7-8526-474b-b1f3-9ba36a5816cf</testCaseGuid>
+</TestCaseEntity>

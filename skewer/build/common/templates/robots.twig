@@ -1,0 +1,95 @@
+{%if domain_exist %}
+User-Agent: *
+Disallow: /admin/
+Disallow: /search/
+Disallow: /profile/
+Disallow: /pda/
+Disallow: /cart/
+Disallow: /auth/
+Disallow: /ajax/
+Disallow: */?
+Disallow: /assets/
+Disallow: /index-test.php
+Disallow: /redirect.php
+{% if pattern is defined%}
+{% for params in pattern.disallow %}
+Disallow: {{ params }}
+{% endfor %}
+{% for params in pattern.allow %}
+Allow: {{ params }}
+{% endfor %}
+{% endif %}
+
+User-agent: GoogleBot
+Disallow: /admin/
+Disallow: /search/
+Disallow: /profile/
+Disallow: /pda/
+Disallow: /cart/
+Disallow: /auth/
+Disallow: /ajax/
+Disallow: */?
+Disallow: /assets/
+Disallow: /index-test.php
+Disallow: /redirect.php
+{% if pattern is defined%}
+{% for params in pattern.disallow %}
+Disallow: {{ params }}
+{% endfor %}
+{% for params in pattern.allow %}
+Allow: {{ params }}
+{% endfor %}
+{% endif %}
+Allow: /assets/*.js
+Allow: /assets/*.css
+Allow: *.js
+Allow: *.css
+Allow: *.png
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.gif
+
+User-agent: Yandex
+Disallow: /admin/
+Disallow: /search/
+Disallow: /profile/
+Disallow: /pda/
+Disallow: /cart/
+Disallow: /auth/
+Disallow: /ajax/
+Disallow: */?
+Disallow: /assets/
+Disallow: /index-test.php
+Disallow: /redirect.php
+{% if pattern is defined%}
+{% for params in pattern.disallow %}
+Disallow: {{ params }}
+{% endfor %}
+{% for params in pattern.allow %}
+Allow: {{ params }}
+{% endfor %}
+{% endif %}
+Allow: /assets/*.js
+Allow: /assets/*.css
+Allow: *.js
+Allow: *.css
+Allow: *.png
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.gif
+Clean-Param: utm_source&utm_medium&utm_campaign
+
+{% if system_service %}
+{% for item in system_service %}
+Disallow: {{ item }}
+{% endfor %}
+{% endif %}
+{% if pattern is defined%}
+{% if not bOnlyRules %}
+{% include 'robots_host.twig' %}
+{% endif %}
+{% endif %}
+{%else%}
+User-Agent: *
+Disallow: /
+{% endif %}

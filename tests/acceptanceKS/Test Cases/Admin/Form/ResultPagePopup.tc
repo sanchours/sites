@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Всплывающая результирующая</description>
+   <name>ResultPagePopup</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dd0f8649-133f-4892-a482-5b2804027f85</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,22 @@
+{% if aRelObjList is defined %}
+    {% set useMainSection = 1 %}
+    {% set aObjectList = aRelObjList %}
+    <div class="b-catrelated">
+        <div class="b-title-h2">{{ Lang.get('catalog.related_product')}}</div>
+        {% if relatedTpl == 'gallery' %}
+            <div class="b-catalogbox b-catalogbox-gal{{ Adaptive.write(' b-catalogbox-carousel') }}{% if show_shadows=='enabled' %} b-catalogbox-boxshadow{% endif %} js_goods_container">
+                <div class="js-owl-carousel owl-carousel owl-carousel-relatedtheme"  data-carousel-options="{{ gallerySettings_related }}">
+                    {% include "GalleryItems.twig" %}
+                </div>
+            </div>
+        {% elseif relatedTpl == 'list' %}
+            <div class="b-catalogbox b-catalogbox-list js_goods_container">
+                {% include "ListItems.twig" %}
+            </div>
+        {% elseif relatedTpl == 'table' %}
+            <div class="b-catalogbox b-catalogbox-table js_goods_container">
+                {% include "TableItems.twig" %}
+            </div>
+        {% endif %}
+    </div>
+{% endif %}

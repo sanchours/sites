@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Удаление заказа из списка</description>
+   <name>DeleteOrderList</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c987221a-6972-4cdd-8313-8d7e8252f95f</testCaseGuid>
+</TestCaseEntity>

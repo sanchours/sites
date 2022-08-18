@@ -1,0 +1,40 @@
+/* layer: default */
+
+/* group: modules.rating | Рейтинг  */
+/* param: width           | Ширина звезды | size | 15px */
+/* param: height          | Высота звезды | size | 15px */
+/* param: star_img        | Картинка      | url | ../images/rating_star.png */
+/* param: margin_r        | Отступ справа | size | 5px */
+
+.b-ratbox-form {
+    margin-bottom: 5px;
+    font-size: 0;
+    float: right;
+}
+.b-ratbox-form:after {
+    display: none;
+}
+.b-ratbox-form .ratbox__item:hover,
+.b-ratbox-form .star-rating-on,
+/*-------------------------------*/
+
+.b-ratingstar {
+    /*margin-bottom: 0.5em;*/
+}
+.b-ratingstar:after {
+    content: "";
+    display: block;
+    clear: both;
+    font-size: 0;
+}
+.b-ratingstar .ratingstar__item {
+    width: [modules.rating.width];
+    height: [modules.rating.height];
+    background: url("[modules.rating.star_img]");
+    margin-right: [modules.rating.margin_r];
+    float: left;
+}
+.b-ratingstar .ratingstar__count {
+    float: left;
+    line-height: 1;
+}

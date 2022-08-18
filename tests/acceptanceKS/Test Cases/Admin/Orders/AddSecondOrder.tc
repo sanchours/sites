@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Добавление второго заказа</description>
+   <name>AddSecondOrder</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6a0587dd-f5d0-4065-8833-84ed5defc2c1</testCaseGuid>
+</TestCaseEntity>

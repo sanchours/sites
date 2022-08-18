@@ -1,0 +1,27 @@
+{# fieldRadio3 #}
+<!--Radio Слайд Тема 2-->
+<div class="form__col-{{oField.getClassVal()}}">
+    <div class="form__item form__item--radios form__item--label-{{oField.settings.labelPosition}} {{ oField.settings.classModify }}">
+        {% if (oField.settings.labelPosition != 'right') %}
+            <div class="form__label">{{oField.settings.title}}{% if oField.settings.required==1 %} <ins class="form__mark">*</ins>{% endif %}</div>
+        {% endif %}
+        <div class="form__input-wrap">
+            {% set aItems = oField.getViewItems() %}
+            {% for aItem in aItems %}
+                <div class="form__input form__input--radio-slide-2 {%  if oField.getError() %} form__item--error {% endif %}">
+                    <input data-hash="{{templateForm.formHash}}" data-name="{{oField.settings.title}}" type="radio" name="{{oField.settings.slug}}" id="radio-{{aItem.paramId}}_{{templateForm.formHash}}"  {{aItem.checked}} value="{{aItem.value}}" {{oField.settings.specStyle}}>
+                    <div class="form__radio js-radio">
+                        <label class="form__radio-trigger" for="radio-{{aItem.paramId}}_{{templateForm.formHash}}">
+                            <span class='js-handle-radio' for="radio-{{aItem.paramId}}_{{templateForm.formHash}}"></span>
+                        </label>
+                    </div>
+                    <label class="form__radio-label js-radio-label" for="radio-{{aItem.paramId}}_{{templateForm.formHash}}">{{aItem.title}}</label>
+                </div>
+            {% endfor %}
+        </div>
+        {% if (oField.settings.labelPosition == 'right') %}
+            <div class="form__label">{{oField.settings.title}}{% if oField.settings.required==1 %} <ins class="form__mark">*</ins>{% endif %}</div>
+        {% endif %}
+        {% if oField.settings.description!='' %}<div class="form__info">{{oField.settings.description}}</div>{% endif %}
+    </div>
+</div>

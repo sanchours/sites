@@ -1,0 +1,83 @@
+<div id="js-{{ templateForm.slug }}"
+     class="b-form js-form {{ templateForm.addClass }} {{ templateForm.commonClass }}" {{ Design.write(' sktag="modules.forms"') }}>
+    {% if templateForm.showHeader %}
+        <div class="form__header">
+            <div class="b-title-h2">{{ templateForm.title }}</div>
+        </div>
+    {% endif %}
+    <form id="form_{{ templateForm.formHash }}" method="{{ templateForm.method }}"
+          data-form_name="{{ templateForm.slug }}"
+          action="{{ templateForm.tagAction }}" data-module_name="{{ templateForm.moduleName }}"
+          data-hash="{{ templateForm.formHash }}" enctype="multipart/form-data"
+            {% if templateForm.ajaxForm %} data-ajaxForm="1"{% endif %}
+            {% if templateForm.popupResultPage %} data-popup_result_page="1"{% endif %}
+          data-check-use-js="{{ templateForm.blockJs }}">
+
+        <div class="form__cols-wrap">
+
+            {% for oField in templateForm.fields %}
+                {% set sGroup = oField.getGroup() %}
+                {% if sGroup and sGroup != "</div>" %}
+                    {{ sGroup }}
+                {% endif %}
+                {% set sType = oField.getTypeTemplate() %}
+                {% include sType %}
+                {% if sGroup == "</div>" %}
+                    {{ sGroup }}
+                {% endif %}
+            {% endfor %}
+
+            {{ templateForm.captcha }}
+
+            {{ templateForm.license }}
+
+            <!--Показ фразы об обязательных полях-->
+            {{ templateForm.phraseRequiredFields }}
+
+            <div class="form__col-1" id="js-error_block_{{ templateForm.formHash }}"
+                 style="display:{% if templateForm.isErrorField %}block{% else %}none{% endif %}">
+                <div class="form__errors">
+                    <div class="form__label"
+                         id="js-error_required_title_{{ templateForm.formHash }}"
+                         style="display:{% if templateForm.isErrorField %}none{% else %}block{% endif %}">
+                        {{ Lang.get('forms.err_empty_fields') }}
+                    </div>
+                    <ul id="js-error_required_{{ templateForm.formHash }}"
+                        style="display:{% if templateForm.isErrorField %}none{% else %}block{% endif %}">
+                    </ul>
+                    <div class="form__label"
+                         id="js-error_valid_title_{{ templateForm.formHash }}">
+                        {{ Lang.get('forms.err_validation_fields') }}
+                    </div>
+                    <ul id="js-error_valid_{{ templateForm.formHash }}">
+                        {% if templateForm.isErrorField %}
+                            {% for oField in templateForm.fields %}
+                                {% for errField in oField.getError() %}
+                                    <li>"{{ oField.settings.title }}" {{ errField }}</li>
+                                {% endfor %}
+                            {% endfor %}
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+
+            <div class="form__col-1" id="js-error_block_system_{{ templateForm.formHash }}"
+                 style="display:{% if templateForm.getError() %}block{% else %}none{% endif %}">
+                <div class="form__errors">
+                    <ul id="js-error_form_{{ templateForm.formHash }}">
+                        {% for sErr in templateForm.getError() %}
+                            <li>{{ sErr }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            {{ templateForm.button }}
+
+
+            {{ templateForm.input }}
+
+        </div>
+    </form>
+</div>
+{{ templateForm.reachGoals }}
+{{ templateForm.addParam }}

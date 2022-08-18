@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка очистки корзины</description>
+   <name>ResetCart</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>eb54f706-3244-4f56-8a86-c938797d1e0a</testCaseGuid>
+</TestCaseEntity>

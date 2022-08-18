@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Отклонение ВИО кнопкой</description>
+   <name>RejectFAQButton</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0eaae75e-3c9c-4c63-ab88-dcc8df118480</testCaseGuid>
+</TestCaseEntity>

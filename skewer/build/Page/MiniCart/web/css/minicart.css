@@ -1,0 +1,94 @@
+/* layer: default */
+/* group: modules.basketmain             | Миникорзина */
+/* param: margin_b                       | Отступ снизу | size | 18px */
+/* param: padding_l                      | Отступ слева | size | 79px */
+/* param: padding_r                      | Отступ справа | size | 0 */
+/* param: height                         | Высота | size | 68px */
+/* param: backcolor                      | Цвет фона | color | #f5f5f5 */
+/* param: color                          | Цвет текста | color | #1071ae */
+/* param: backimg                        | Фоновое изображение | url  | ../images/basket.bg.gif */
+/* param: backhposition                  | Выравнивание фона по горизонтали | h-position | 4px */
+/* param: backvposition                  | Выравнивание фона по вертикали | v-position | 50% */
+/* param: backrepeat                     | Повторение фона | repeat | no-repeat */
+/* param: bordercolor                    | Цвет бордера | color | #d8d8d8 */
+/* group: modules.basketmain.head        | Миникорзина в шапке */
+/* param: v_value                        | Отступ сверху | size | 90px */
+/* param: h_value                        | Отступ справа | size | 10px */
+/* param: h_position                     | Горизонтальное выравнивание | h-position-abs | right  */
+/* param: width                          | Ширина | size | 180px */
+
+.b-basketmain {
+    margin-bottom: [modules.basketmain.margin_b];
+    width: 100%;
+    display: table;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.b-basketmain ins {
+    text-decoration: none;
+}
+.b-basketmain .basketmain__wrap {
+    height: [modules.basketmain.height];
+    line-height: [modules.basketmain.height];
+    border: 1px solid [modules.basketmain.bordercolor];
+    background: [modules.basketmain.backcolor] url("[modules.basketmain.backimg]") [modules.basketmain.backrepeat] scroll [modules.basketmain.backhposition] [modules.basketmain.backvposition];
+}
+.b-basketmain .basketmain__wrap > a:link,
+.b-basketmain .basketmain__wrap > a:active,
+.b-basketmain .basketmain__wrap > a:visited,
+.b-basketmain .basketmain__wrap > a:hover {
+    display: block;
+    height: [modules.basketmain.height];
+    color: [modules.basketmain.color];
+}
+.b-basketmain .basketmain__content {
+    margin: -5px 0 0;
+    padding: 0 [modules.basketmain.padding_r] 0 [modules.basketmain.padding_l];
+    width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 1.2;
+    box-sizing: border-box;
+}
+.b-basketmain .basketmain__content * {
+    line-height: 1.2;
+}
+.b-basketmain .basketmain__empty-hidden{
+    display: none;
+}
+.b-basketmain .basketmain__not-empty-hidden{
+    display: none;
+}
+.b-basketmain .basketmain__content > ins {
+    display: block;
+    color: [modules.basketmain.color];
+}
+/*-------------------------*/
+.b-basketmain-wrap {
+    margin: 0 auto;
+}
+/*-------------------------*/
+.b-basketmain-head {
+    position: absolute;
+    top: [modules.basketmain.head.v_value];
+    [modules.basketmain.head.h_position]: [modules.basketmain.head.h_value];
+    width: [modules.basketmain.head.width];
+    z-index: 40;
+}
+.b-basketmain-head .basketmain__count {
+    width: 15px;
+    height: 15px;
+    border-radius: 1000px;
+    position: absolute;
+    left: 50px;
+    top: -7px;
+    background-color: #ff5151;
+    line-height: 15px;
+    font-size: 11px;
+    text-align: center;
+    color: #fff;
+}
+/*-------------------------*/
+/*-------------------------*/
+/*-------------------------*/
+/*-------------------------*/

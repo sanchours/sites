@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Добавление товара разными методами</description>
+   <name>AddGoodsDifferentMethods</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bb89cf61-6cf6-4409-adc6-f3e0ab01b0bd</testCaseGuid>
+</TestCaseEntity>

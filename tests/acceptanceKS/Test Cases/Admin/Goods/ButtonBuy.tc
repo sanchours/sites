@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Кнопка купить</description>
+   <name>ButtonBuy</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>06f6de19-d6e4-4a62-ba5a-4264df4f8d08</testCaseGuid>
+</TestCaseEntity>

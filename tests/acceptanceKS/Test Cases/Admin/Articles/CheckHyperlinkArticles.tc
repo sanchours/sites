@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка ссылки в статье</description>
+   <name>CheckHyperlinkArticles</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8bda6260-5ac7-4809-b41d-d494916daa69</testCaseGuid>
+</TestCaseEntity>

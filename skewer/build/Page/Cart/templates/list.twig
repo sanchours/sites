@@ -1,0 +1,109 @@
+<div class="b-cart">
+    {% if order.getItems()|length %}
+        <div class="js_cart_content cart__content">
+            <div class="cart__table">
+                {% for item in order.getItems() %}
+                    <div class="cart__item js-cart__row" data-id="{{ item.id_goods }}" data-ecommerce='{{ item.ecommerce }}' data-count_goods_before_recount="{{ item.count }}" >
+                        <div class="cart__photo">
+                            {% if item.image.mini.file is defined %}
+                                <img src="{{ item.image.small.file }}" alt=""/>
+                            {% else %}
+                                <img alt="" src="{{  Design.get('modules.cart','lk_photo','skewer\\build\\Page\\Cart\\Asset') }}">
+                            {% endif %}
+                        </div>
+                        <div class="cart__desc">
+                            <div class="cart__title">
+                                {% if item.show_detail %}<a href="{{ item.url }}">{% endif %}<strong>{{ item.title }}</strong>{% if item.show_detail %}</a>{% endif %}
+                            </div>
+
+                            {% if isArticle and item.article != false %}
+                            <div class="cart__article">
+                                {{ Lang.get('order.article')}}:
+                                {{ item.article }}
+                            </div>
+                            {% endif %}
+                            <div class="cart__price">
+                                {{ Lang.get('order.price')}}:
+                                <b>
+                                    <span class="js_price_good item_price">{{ item.price|price_format }} </span>
+                                    {{ Lang.get('order.current_currency') }}
+                                </b>
+                            </div>
+
+                            {% if item.not_available==1 %}
+                                <div class="good_is_not_available cart__notavailable">
+                                    {{ Lang.get('order.good_not_available') }}
+                                </div>
+                            {% else %}
+                                <div class="cart__cost-refresh">
+                                    {% if item.not_actual_price == 1 %}
+                                        <div class="js_warning_about_not_actual_price cart__cost-refresh-title">
+                                            Цена товара была изменена
+                                        </div>
+                                        <div class="cart__cost-refresh-btn">
+                                            <a href="#" class="js_recosting_price_good" data-id="{{ item.id_goods }}" ><i class="fas fa-sync-alt"></i> Пересчитать</a>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            {% endif %}
+                            <div class="cart__remove hide-on-mobile">
+                                <a data-id="{{ item.id_goods }}" class="js_cart_remove" href="#">{{ Lang.get('order.delete')}}</a>
+                            </div>
+                        </div>
+                        <div class="cart__count">
+                            <div class="cart__count-catalog b-catalogbox b-catalogbox-cart">
+                                <div class="js_catalogbox_inputbox catalogbox__inputbox">
+                                    <div class="catalogbox__minus js_cart_minus" data-id="{{ item.id_goods }}"></div>
+                                    <input data-id="{{ item.id_goods }}" class="js_cart_amount" type="text" value="{{ item.count }}"/>
+                                    <div class="catalogbox__plus js_cart_plus" data-id="{{ item.id_goods }}"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart__total-price">
+                            <ins class="hide-on-desktop hide-on-tablet">{{ Lang.get('order.sum') }}: <br></ins>
+                            <b>
+                                <span class="item_total js-item_total">{{ item.total|price_format }}</span>
+                                {{ Lang.get('order.current_currency') }}
+                            </b>
+                        </div>
+                        <div class="cart__remove hide-on-desktop hide-on-tablet">
+                            <a data-id="{{ item.id_goods }}" class="js_cart_remove" href="#">{{ Lang.get('order.delete')}}</a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="cart__total-row">
+                <div>
+                    {{ Lang.get('order.payable')}}:
+                    <b>
+                        <span class="js_cart_total">
+                            <span class="total">{{ order.getTotalPrice()|price_format }}</span> {{ Lang.get('order.current_currency') }}
+                        </span>
+                    </b>
+                </div>
+            </div>
+            <div class="cart__btns">
+                <div class="cart__back">
+                    <a href="[{{ mainSection }}]">{{ Lang.get('order.back')}}</a>
+                </div>
+                <div class="cart__reset js_cart_reset ">
+                    <a href="#">{{ Lang.get('order.clear')}}</a>
+                </div>
+                <div class="cart__confirm">
+                    <a class="b-btnbox b-btnboxfull" href="[{{ sectionId }}][Cart?action=checkout]">{{ Lang.get('order.checkout')}}</a>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+    <div class="js_cart_empty {% if order.getItems()|length %} cart__empty-hidden{% endif %}">
+        <p>{{ Lang.get('order.cart_empty')}}</p>
+    </div>
+</div>
+<div id="js_translate_msg_count_gt_zero" style="display: none;">
+    {{ Lang.get('order.msg_count_gt_zero') }}
+</div>
+<div id="js_translate_msg_dell_all" style="display: none;">
+    {{ Lang.get('order.msg_dell_all') }}
+</div>
+
+{% include 'delete_confirm.twig' %}

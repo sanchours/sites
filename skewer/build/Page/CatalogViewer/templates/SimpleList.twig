@@ -1,0 +1,7 @@
+{% include "FilterList.twig" %}
+<div class="b-catalogbox b-catalogbox-list {% if show_shadows=='enabled' %}b-catalogbox-boxshadow{% endif %} js_goods_container">
+    {% include "ListItems.twig" %}
+</div>
+
+{# из skewer/build/common/templates #}
+{% include "paginator.twig" %}

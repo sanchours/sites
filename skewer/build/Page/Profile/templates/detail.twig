@@ -1,0 +1,111 @@
+<div class="b-cabbox b-cabbox-detal">
+<div class="cabbox__sidebox cabbox__sidebox2">
+    <div class="cabbox__leftside"><div class="b-title-h2">{{ Lang.get('auth.order')}} {{ order.id }}</div></div>
+    <div class="cabbox__rightside">{% if token is not defined %}<a href="{% if backlink is defined %}{{ backlink }}{% else %}[{{ page }}]{% endif %}">{{ Lang.get('auth.back')}}</a>{% endif %}</div>
+</div>
+<div class="b-tab">
+    <div style="display: block;">
+    <div class="cabbox__item">
+        <div class="cabbox__title">
+            <div class="cabbox__tcol1">{{ Lang.get('auth.order_number')}}: <strong>{{ order.id }}</strong></div>
+            <div class="cabbox__tcol2">{{ Lang.get('auth.date')}}: <strong>{{  order.date|date("d.m.Y H:i") }}</strong></div>
+            <div class="cabbox__tcol3">{{ Lang.get('auth.status')}}: <strong>{{ order.text_status }}</strong></div>
+        </div>
+        <table class="cabbox__table">
+            <tbody>
+            <tr>
+                    <th class="cabbox__title1">{{ Lang.get('auth.photo') }}</th>
+                    <th>{{ Lang.get('order.title') }}</th>                    
+                </tr>
+            {% for item  in items %}
+            <tr>
+                <td>
+                    <span class="cabbox__phonebox">
+                        {% if item.url and item.show_detail %}<a href="{{ item.url }}" target="_blank">{% endif %}
+                            {% if item.image %}
+                                <img src="{{ item.image }}" alt=""/>
+                            {% else %}
+                                <img alt="" src="/images/lk.photo.png">
+                            {% endif %}
+                        {% if item.url and item.show_detail %}</a>{% endif %}
+                    </span>
+                </td>
+                <td>
+                    <p>
+                       {% if item.url and item.show_detail %}
+                           <a href="{{ item.url }}" target="_blank">{{ item.title }}</a>
+                       {% else %}
+                           {{ item.title }}
+                       {% endif %}
+                    </p>
+                    <p>{{ Lang.get('auth.price') }}, {{ Lang.get('order.current_currency') }}: <strong>{{ item.price|price_format }}</strong></p>
+                    <p>{{ Lang.get('auth.count') }}: <strong>{{ item.count }}</strong></p>
+                    <p><strong>{{ Lang.get('auth.total') }}, {{ Lang.get('order.current_currency') }}: {{ item.total|price_format }}</strong></p>
+                </td>
+            </tr> 
+            {% endfor %}
+            <tr class="cabbox__tablast">
+                <td></td>
+                <td>
+                    <span>{% if order.delivery_parameters.paid_delivery %}{{ Lang.get('order.payable') }}{% else %}{{ Lang.get('order.to_pay') }}{% endif %}
+                        :</span>
+                    <span class="cabbox__prices">{{ order.goods.sum|price_format }} {{ Lang.get('order.current_currency') }}</span>
+                </td>
+            </tr>
+            {% if order.delivery_parameters.paid_delivery %}
+            <tr class="cabbox__tablast">
+                <td></td>
+                <td><span>{{ Lang.get('order.price_delivery')}}:</span> <span class="cabbox__prices">{{ order.delivery_parameters.price_delivery|price_format }}
+                        {% if order.delivery_parameters.currency %}{{ Lang.get('order.current_currency')}}{% endif %}</span></td>
+            </tr>
+            <tr class="cabbox__tablast">
+                <td></td>
+                <td><span>{{ Lang.get('order.to_pay')}}:</span> <span class="cabbox__prices">{{ order.sum_to_pay|price_format }} {{ Lang.get('order.current_currency')}}</span></td>
+            </tr>
+            {% endif %}
+
+            </tbody>
+        </table>
+        
+        <div class="cabbox__btnbox">
+            {% if (order.paymentForm is defined) %}
+                {{ order.paymentForm }}
+            {% endif %}
+        </div>
+        <div class="cabbox__title"><div class="cabbox__tcol1"><strong>{{ Lang.get('order.order_data') }}:</strong></div></div>
+        <div class="cabbox__sidebox">
+            <div>
+                <table class="cabbox__table2">
+                    <tbody>
+                        {% for order_param in orderFields %}
+                            {% set nameVariable = 'auth.'~order_param %}
+                            <tr>
+                                <td><span><strong>{{ Lang.get(nameVariable)}}:</strong></span></td>
+                                <td><span>{{ order[order_param]|escape }}</span></td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        {% if historyList is defined %}
+        <div class="cabbox__title"><div class="cabbox__tcol1"><strong>{{ Lang.get('order.history_list') }}:</strong></div></div>
+        <div class="cabbox__sidebox">
+            <table class="cabbox__table">
+                <tr>
+                    <th>{{ Lang.get('order.field_change_data') }}</th>
+                    <th>{{ Lang.get('order.field_new_status') }}</th>
+                </tr>
+                {% for item in historyList %}
+                    <tr>
+                        <td>{{ item.change_date }}</td>
+                        <td>{{ item.title_new_status }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+        {% endif %}
+    </div>
+</div>
+</div>
+</div>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Количество товаров, хитов и новинок на главной</description>
+   <name>NumberGoodsHitNewOnMain</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b294881a-665c-4ff1-adf4-1a1770be360a</testCaseGuid>
+</TestCaseEntity>

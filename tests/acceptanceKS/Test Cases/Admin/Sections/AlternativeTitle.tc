@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Альтернативный заголовок</description>
+   <name>AlternativeTitle</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>da35f98f-9785-41f8-99b1-c49110ff2c08</testCaseGuid>
+</TestCaseEntity>

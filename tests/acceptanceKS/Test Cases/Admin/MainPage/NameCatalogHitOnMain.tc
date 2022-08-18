@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Заголовок каталога хитов на главной</description>
+   <name>NameCatalogHitOnMain</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>62b7936f-9cdc-4ff7-a65c-46c1e3aede90</testCaseGuid>
+</TestCaseEntity>

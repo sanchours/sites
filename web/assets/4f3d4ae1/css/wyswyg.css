@@ -1,0 +1,7 @@
+body {
+    padding: 0 3px 0 3px !important;
+    height: auto;
+}
+pre {
+    white-space: pre-wrap;
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Удаление формы</description>
+   <name>DeleteForm</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>426d7482-9dfa-45db-a40f-66bfb94dc12e</testCaseGuid>
+</TestCaseEntity>

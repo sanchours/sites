@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Отклонение ВИО из выпадающего списка</description>
+   <name>RejectFAQList</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a80facfc-6abf-4107-8b32-93ad84bcb5c8</testCaseGuid>
+</TestCaseEntity>

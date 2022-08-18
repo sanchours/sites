@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Создание и проверка новости со ссылкой</description>
+   <name>CreateAndCheckHyperlinkNews</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fb848b03-1fca-4a98-83cd-bcdd1c7b31b9</testCaseGuid>
+</TestCaseEntity>

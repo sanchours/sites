@@ -1,0 +1,7 @@
+<div>
+    {% if isSocialNetworkUser %}
+        <p>{{ Lang.get('auth.social_network_user')}}</p>
+    {% else %}
+        <p>{{ Lang.get('auth.no_auth')}}</p>
+    {% endif %}
+</div>

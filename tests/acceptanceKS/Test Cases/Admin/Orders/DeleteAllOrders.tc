@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Удвление всех заказов</description>
+   <name>DeleteAllOrders</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1304ca5f-86d6-4c32-8156-b59926c01fc8</testCaseGuid>
+</TestCaseEntity>

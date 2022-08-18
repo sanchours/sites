@@ -1,0 +1,21 @@
+{
+    "editor.codeActionsOnSave": { "source.fixAll.eslint": true }, 
+    "editor.formatOnSave": true, 
+    "eslint.alwaysShowStatus": true, 
+    "eslint.options": {
+        "extensions": [".js", ".jsx"]
+    },
+    "[css]": {
+        "editor.formatOnSave": false,
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[php]": {
+        "editor.formatOnSave": false,
+    },
+    "[html]": {
+        "editor.formatOnSave": false,
+    },
+    "files.autoSave": "onFocusChange",
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Заголовок каталога новых товаров на главной</description>
+   <name>NameCatalogNewOnMain</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>db4c6fc4-fe39-47ac-8666-07056286b943</testCaseGuid>
+</TestCaseEntity>

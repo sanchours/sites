@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Создание раздела статьи</description>
+   <name>CreateArticlesSection</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d936116e-11cb-45c9-a2b5-4b4271cdedef</testCaseGuid>
+</TestCaseEntity>

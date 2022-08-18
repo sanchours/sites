@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Заголовок блока &quot;Отзывы&quot; на главной</description>
+   <name>HeaderReviewOnTheMain</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bf88d3e3-97ac-43fb-b296-af8a743f2b4d</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,179 @@
+/* layer: default */
+/*---------------------------------*/
+@media handheld, only screen and (min-width: [adaptive.break_desktop]) { /*-DESKTOP-*/
+    /*--------------------------*/
+    .hide-on-desktop {
+        display: none !important;
+    }
+    /*--------------------------*/
+    /*--------------------------*/
+}
+/*---------------------------------*/
+@media handheld, only screen and (min-width: [adaptive.break_desktop]) and (max-width: 1400px) { /*-SMALL DESKTOP-*/
+    /*--------------------------*/
+    .l-grid .grid__item4 {
+        left: 17.3%;
+        width: 58.7%;
+    }
+    /*--------------------------*/
+
+    /*--------------------------*/
+}
+/*---------------------------------*/
+@media handheld, only screen and (min-width: [adaptive.break_tablet]) and (max-width: [adaptive.break_desktop] - 1px ) { /*-TABLET-*/
+    /*--------------------------*/
+    .hide-on-tablet {
+        display: none !important;
+    }
+    /*--------------------------*/
+    .l-layout .layout__wrap {
+        padding-bottom: 480px;
+    }
+    /*--------------------------*/
+    .l-footerbox {
+        margin-top: -480px;
+        min-height: 480px;
+        background-size: 1100px auto;
+    }
+    .l-footerbox:before {
+        content: none;
+    }
+    /*--------------------------*/
+    .l-grid {
+        height: 480px;
+    }
+    .l-grid [class^="grid__item"] {
+        left: 30px;
+        right: 30px;
+        width: auto;
+        text-align: center;
+    }
+    .l-grid .grid__item1 {        
+        top: 377px;
+    }
+    .l-grid .grid__item4 {
+        top: 160px;
+        text-align: left;
+    }
+    .l-grid .grid__item5 {
+        top: 43px;
+        left: 50%;
+        width: 130px;
+        margin-left: -65px;
+    }
+    .l-grid .grid__item7 {
+        top: 442px;
+    }
+    /*--------------------------*/
+    .b-copyright-dev {
+        text-align: center;
+    }
+    /*--------------------------*/
+    .b-foot-contacts .foot-contacts__colleft {
+        float: left;
+        width: 30%;
+        text-align: left;
+    }
+    .b-foot-contacts .foot-contacts__colright {
+        float: right;
+        width: 30%;
+        text-align: right;
+    }
+    /*--------------------------*/
+}
+/*--------------------------*/
+@media handheld, all and (min-device-width: [adaptive.break_tablet]) and (max-device-width: 1024px) and (orientation: landscape) { /*-TABLET LANDSCAPE-*/
+    /*--------------------------*/
+    .hide-on-tablet {
+        display: none !important;
+    }
+    .show-on-tablet-l {
+        display: block !important;
+    } 
+    /*--------------------------*/
+}
+/*--------------------------*/
+@media handheld, only screen and (max-width: [adaptive.break_tablet] - 1px ) { /*-MOBILE-*/
+    /*--------------------------*/
+    .hide-on-mobile {
+        display: none !important;
+    }
+    /*--------------------------*/
+    .l-layout .layout__wrap {
+        padding-bottom: 460px;
+    }
+    /*--------------------------*/
+    .l-footerbox {
+        margin-top: -460px;
+        min-height: 460px;
+        background-size: 937px auto;
+    }
+    /*--------------------------*/
+    .l-grid {
+        height: 460px;
+    }
+    .l-grid [class^="grid__item"] {
+        left: 0;
+        right: 0;
+        width: auto;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .l-grid .grid__item1 {
+        top: 341px;
+    }
+    .l-grid .grid__item3 {
+        top: 144px;
+    }
+    .l-grid .grid__item5 {
+        top: 30px;
+    }
+    .l-grid .grid__item7 {
+        top: 422px;
+    }
+    /*--------------------------*/
+    .b-foot-contacts {
+        text-align: center;
+    }
+    .b-foot-contacts [class^="foot-contacts__col"] {
+        margin-bottom: 27px;
+    }
+    /*--------------------------*/
+    .b-copyright-dev {
+        text-align: center;
+    }
+    /*--------------------------*/
+    /*--------------------------*/
+    /*--------------------------*/
+}
+/*--------------------------*/
+@media handheld, only screen and (max-width: [adaptive.break_tablet] - 1px ) and (orientation:landscape) { /*-MOBILE LANDSCAPE-*/
+    /*--------------------------*/
+    /*--------------------------*/
+}
+/*--------------------------*/
+@media handheld, only screen and (max-width: 320px) { /*SMALL MOBILE-*/ 
+    /*--------------------------*/
+    /*--------------------------*/
+}
+/*--------------------------*/
+@media handheld, only screen and (max-width: [adaptive.break_desktop] - 1px ) { /*-ONLY HANDHELD-*/
+    /*---------------------------------*/
+    .b-foot-contacts .foot-contacts__application {
+        margin-bottom: 17px;
+    }
+    .b-foot-contacts .foot-contacts__icon {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        max-width: 190px;
+        text-align: center;
+    }
+    .b-foot-contacts .foot-contacts__icon-item {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /*---------------------------------*/
+    /*---------------------------------*/
+    /*---------------------------------*/
+}

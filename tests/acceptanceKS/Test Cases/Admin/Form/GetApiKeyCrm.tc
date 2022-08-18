@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Получение ключа API из CRM</description>
+   <name>GetApiKeyCrm</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f61ad1f3-b9e9-45bc-8cd6-362c0a766a58</testCaseGuid>
+</TestCaseEntity>

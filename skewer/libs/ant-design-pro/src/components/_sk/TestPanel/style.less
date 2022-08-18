@@ -1,0 +1,116 @@
+@import '~antd/lib/style/themes/default.less';
+
+:global {
+  .ant-collapse {
+    border: none;
+  }
+  .sk-main-button--white {
+    margin: 0 auto 5px auto;
+    color: #222;
+    background: transparent;
+    &:hover,
+    &:focus {
+      color: #222;
+      background: #FFD156;
+      border-color: #FFD156;
+    }
+  }
+
+  .panel__header {
+    padding: 15px 30px;
+    color: #222;
+    font-weight: normal;
+    font-size: 22px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-style: normal;
+    line-height: 28px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  .sk-left-btn__icon {
+    margin-right: 8px;
+  }
+
+  .panel__leftColumn {
+    width: 210px;
+    min-height: calc(100vh - 215px);
+    border-right: 1px solid #e7e7e7;
+    background: #fafafa;
+    & > button.ant-btn {
+      display: flex;
+      width: 100%;
+      height: auto;
+      padding: 10px 10px 10px 15px;
+      color: #222;
+      font-weight: normal;
+      font-size: 14px;
+      font-style: normal;
+      white-space: pre-wrap;
+      text-align: left;
+      text-shadow: none;
+      background: none;
+      border-color: transparent;
+      border-bottom: 1px solid #e7e7e7;
+      border-radius: 0;
+      box-shadow: none;
+      transition-duration: 0s;
+      &:hover,
+      &:focus {
+        color: #222;
+        background: #FFF2CD;
+        border-color: transparent;
+        border-bottom: 1px solid #e7e7e7;
+      }
+    }
+    @media screen and (max-width: @screen-xs) {
+      & {
+        width: 100%;
+        min-height: auto;
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  .panel__centerColumn {
+    width: calc(100% - 210px);
+    max-height: calc(100vh - 215px);
+    padding: 15px 30px 15px 30px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    .ant-collapse {
+      border-bottom: none;
+    }
+    &--alone {
+      width: 100%;
+      padding: 15px 30px;
+    }
+    @media screen and (max-width: @screen-xs) {
+      & {
+        width: 100%;
+        overflow: auto;
+        min-height: auto;
+        max-height: none;
+      }
+    }
+  }
+  .panel__link:link,
+  .panel__link:active,
+  .panel__link:hover,
+  .panel__link:visited,
+  .panel__link:focus {
+    margin-left: 10px;
+    color: #3E8BD1;
+    font-weight: normal;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 18px;
+  }
+  .panel__link:hover,
+  .panel__link:focus {
+    text-decoration: underline;
+  }
+
+  button:disabled {
+    opacity: 0.5;
+  }
+}

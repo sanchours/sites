@@ -1,0 +1,24 @@
+{% if aObjectList is defined %}
+    <div class="b-brend">
+    {% for iKey, aObject in aObjectList %}
+            <div class="brend__item">
+                <div class="brend__img">
+                    {% if show_detail %}<a href="[{% if useMainSection %}{{ aObject.main_section }}{% else %}{{ section }}{% endif %}][CatalogViewer?{% if aObject.alias %}goods-alias={{ aObject.alias }}{% else %}item={{ aObject.id }}{% endif %}]" title="{% if aObject.fields.gallery.first_img.title %}{{ aObject.fields.gallery.first_img.title|e }}{% endif %}{% if aObject.fields.gallery.first_img.description %} {{ aObject.fields.gallery.first_img.description|e }}{% endif %}">{% endif %}
+                    {% if aObject.fields.gallery.first_img.images_data['colmin'].file is defined %}
+                        <img alt="{{ aObject.fields.gallery.first_img.alt_title|e }}" src="{{ aObject.fields.gallery.first_img.images_data['colmin'].file }}">
+                    {% else %}
+                        <img alt="" src="{{Design.get('modules.brend','nophoto_img','skewer\\build\\Page\\Main\\Asset')}}" style="width: 160px; height: 98px;">
+                    {% endif %}
+                    {% if show_detail %}</a>{% endif %}
+                </div>
+                <div class="brend__title">
+                    {% if show_detail %}<a href="[{% if useMainSection %}{{ aObject.main_section }}{% else %}{{ section }}{% endif %}][CatalogViewer?{% if aObject.alias %}goods-alias={{ aObject.alias }}{% else %}item={{ aObject.id }}{% endif %}]">{% endif %}
+                        {{ aObject.title }}
+                    {% if show_detail %}</a>{% endif %}
+                </div>
+            </div>
+    {% endfor %}
+    </div>
+{% endif %}
+{# из skewer/build/common/templates #}
+{% include "paginator.twig" %}

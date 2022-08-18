@@ -1,0 +1,65 @@
+<?php
+
+$aLanguage = [];
+
+$aLanguage['ru']['Settings.Catalog.tab_name'] = 'Настройки';
+$aLanguage['ru']['goods_include'] = 'Комплекты товаров';
+$aLanguage['ru']['goods_related'] = 'Сопутствующие товары';
+$aLanguage['ru']['goods_modifications'] = 'Модификации товаров';
+$aLanguage['ru']['goods_recentlyViewed'] = 'Ранее просмотренные товары';
+$aLanguage['ru']['parametric_search'] = 'Параметрический поиск';
+$aLanguage['ru']['hide_price_fractional'] = 'Скрыть копейки';
+$aLanguage['ru']['countShowGoods'] = 'Количество товаров в списке (CMS)';
+$aLanguage['ru']['countShowGoodsError'] = 'Количество выводимых записей должно быть больше нуля';
+$aLanguage['ru']['hide2lvlGoodsLinks'] = 'Скрыть подробное описание товара 2 уровня';
+$aLanguage['ru']['hideBuy1lvlGoods'] = 'Запрет покупки товара 1 уровня';
+$aLanguage['ru']['shadow_param_filter'] = 'Раскраска недоступных значений полей фильтра';
+$aLanguage['ru']['guest_book_show'] = 'Отзывы в товарах';
+$aLanguage['ru']['currency_type'] = 'Тип валюты (микроразметка)';
+$aLanguage['ru']['show_rating'] = 'Рейтинг товаров';
+$aLanguage['ru']['section_filling'] = 'Раздел в стадии наполнения';
+$aLanguage['ru']['random_related'] = 'Выводить случайные сопутствующие';
+$aLanguage['ru']['random_related_count'] = 'Количество случайных сопутствующих';
+$aLanguage['ru']['hide_form'] = 'Скрывать форму отзывов';
+$aLanguage['ru']['redirect_hide_good'] = 'Редирект для скрытого товара';
+$aLanguage['ru']['redirect_hide_collection'] = 'Редирект для скрытого элемента коллекции';
+$aLanguage['ru']['copy_modification'] = 'Копировать с модификациями';
+$aLanguage['ru']['min_value_error'] = 'Значение параметра [{param_name}] должно быть в диапазоне от {minValue} до {maxValue}';
+$aLanguage['ru']['show_text_pagin'] = 'Выводить текст на страницах пагинации';
+$aLanguage['ru']['filter_type'] = 'Тип фильтра';
+$aLanguage['ru']['filter_type_standard'] = 'Стандартный';
+$aLanguage['ru']['filter_type_indexed'] = 'Индексируемый поисковыми системами';
+$aLanguage['ru']['e_commerce'] = 'Активировать e-commerce';
+$aLanguage['ru']['quick_view_show'] = 'Активировать быстрый просмотр';
+
+$aLanguage['en']['Settings.Catalog.tab_name'] = 'Settings';
+$aLanguage['en']['goods_include'] = 'Include goods';
+$aLanguage['en']['goods_related'] = 'Related goods';
+$aLanguage['en']['goods_modifications'] = 'Goods modifications';
+$aLanguage['en']['goods_recentlyViewed'] = 'Recently Viewed Items';
+$aLanguage['en']['parametric_search'] = 'Parametric search';
+$aLanguage['en']['hide_price_fractional'] = 'Hide price fractional';
+$aLanguage['en']['countShowGoods'] = 'Number of products on the list (CMS)';
+$aLanguage['en']['countShowGoodsError'] = 'Number of output records must be greater than zero';
+$aLanguage['en']['hide2lvlGoodsLinks'] = 'Hide detailed description of the product 2 level';
+$aLanguage['en']['hideBuy1lvlGoods'] = 'The ban purchases of goods Level 1';
+$aLanguage['en']['shadow_param_filter'] = 'Coloring inaccessible field values filter';
+$aLanguage['en']['guest_book_show'] = 'Reviews in goods';
+$aLanguage['en']['currency_type'] = 'Сurrency type (microdata)';
+$aLanguage['en']['show_rating'] = 'Rating goods';
+$aLanguage['en']['section_filling'] = 'Section in the filling stage';
+$aLanguage['en']['random_related'] = 'Show random related items';
+$aLanguage['en']['random_related_count'] = 'Random related count';
+$aLanguage['en']['hide_form'] = 'Hide form';
+$aLanguage['en']['redirect_hide_good'] = 'Redirect for hidden good';
+$aLanguage['en']['redirect_hide_collection'] = 'Redirect for hidden collection item';
+$aLanguage['en']['copy_modification'] = 'Copy with modifications';
+$aLanguage['en']['min_value_error'] = 'The value of the parameter [{param_name}] must be in the range from {minValue} to {maxValue}';
+$aLanguage['en']['show_text_pagin'] = 'Show the text on page with pagination';
+$aLanguage['en']['filter_type'] = 'Type of filter';
+$aLanguage['en']['filter_type_standard'] = 'Standard';
+$aLanguage['en']['filter_type_indexed'] = 'Indexed by search engines';
+$aLanguage['en']['e_commerce'] = 'Activate e-commerce';
+$aLanguage['en']['quick_view_show'] = 'Activate quick view';
+
+return $aLanguage;

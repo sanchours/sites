@@ -1,0 +1,26 @@
+{% if paramsId %}
+{
+    "meta": {
+        "type":0
+    },
+    "catalog":{{ paramsId.catalog }},
+    "news":{{ paramsId.news }},
+    "main": {
+{# products [] - товары, которые подгружаются на главной. поддерживаются значения #}
+    "products": [
+        "hit","new"
+        ]
+    },
+    "side_menu":{
+      "primary_items":[
+        0,
+        1,
+        4,
+        5
+      ],
+{# section - номер раздела, из подразделов которого будут подгружены дополнительные пункты меню #}
+    "section":{{ paramsId.addSection }}
+},
+    "product_details": []
+}
+{% endif %}

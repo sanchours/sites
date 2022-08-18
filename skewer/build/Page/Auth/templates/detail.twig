@@ -1,0 +1,24 @@
+{% if current_user or msg or msg2 %}
+<div class="b-authmain">
+  <div class="authmain__wrap">
+    {% if (msg) %}
+        <div class="authmain__item"><p>{{ msg }}</p></div>
+    {% endif %}
+    {% if (msg2) %}
+        <div class="authmain__item"><p>{{ msg2 }}</p></div>
+    {% endif %}
+    {% if (current_user) %}
+    <div class="authmain__item">
+        <p>{{ Lang.get('auth.logged') }} <strong>{{ current_user.login }}</strong></p>
+    </div>
+    <div class="authmain__item authmain__item2">
+        <p><a href="{{ profile_url }}">{{ Lang.get('auth.profile') }}</a></p>
+        <p><a href="{{ auth_url }}?cmd=logout">{{ Lang.get('auth.logout') }}</a></p>
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
+{% if form is defined %}
+    {{ form }}
+{% endif %}

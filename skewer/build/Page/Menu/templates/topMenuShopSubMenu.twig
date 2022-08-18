@@ -1,0 +1,49 @@
+<li class="sevice__item-1 sevice__catalog sevice__item-1--haschild {{ html_class }}">
+    <span>
+        <a href="#">
+            <ins></ins>
+            Каталог
+        </a>
+    </span>
+    <div class="sevice__wrap">
+        <div class="sevice__inner">
+            <ul class="sevice__level-2">
+                {%for item in items%}
+                {% if item.show %}
+                <li class="sevice__item-2">
+                    <span>
+                        <a href="{{item.href}}" {% if aTargetBlank[item.id] is defined %} target="_blank" {% endif %}>
+                            {{item.title}}
+                        </a>
+                        {% if icon[item['id']] is defined %}
+                            <ins><img src="{{ icon[item['id']] }}" alt="" /></ins>
+                            {% else %}
+                            <ins></ins>
+                        {% endif %}
+                    </span>
+
+                    {% if item.items|length > 0 %}
+                    <ul class="sevice__level-3">
+                        {%for item2 in item.items%}
+                        {% if item2.show %}
+                        <li class="sevice__item-3">
+                            <a href="{{item2.href}}" {% if aTargetBlank[item2.id] is defined %} target="_blank" {% endif %}>{{item2.title}}</a>
+                            {% if icon[item['id']] is defined %}
+                                <ins><img src="{{ icon[item['id']] }}" alt="" /></ins>
+                            {% else %}
+                                <ins></ins>
+                            {% endif %}
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+
+                </li>
+                {% endif %}
+                {% endfor %}
+
+            </ul>
+        </div>
+    </div>
+</li>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Изменение кол-ва товара из списка сопутствующих товаров</description>
+   <name>SelectionQuantityGoodsAssocieted</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e39a78db-7378-4bde-96e9-a502b4a75f18</testCaseGuid>
+</TestCaseEntity>

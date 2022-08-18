@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка поиска по заказам</description>
+   <name>CheckSearchOrders</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3a3ea07b-f539-4bdb-a779-c75d06952818</testCaseGuid>
+</TestCaseEntity>

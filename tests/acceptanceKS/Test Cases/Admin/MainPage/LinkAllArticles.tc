@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Ссылка &quot;Все статьи&quot;</description>
+   <name>LinkAllArticles</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cd45e6c5-a5e3-4b58-b86c-a5f14a1477f3</testCaseGuid>
+</TestCaseEntity>

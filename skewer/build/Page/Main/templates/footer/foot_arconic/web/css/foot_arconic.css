@@ -1,0 +1,124 @@
+/* layer: default */
+
+/*---------------------------------*/
+.l-footerbox {
+    position: relative;
+    background: [page.footer.color] url([page.footer.image]) [page.footer.position_h] [page.footer.position_v] [page.footer.repeat];
+}
+.l-footerbox .footerbox__wrapper {
+    background: none;
+}
+.l-footerbox .footerbox__bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    background-color: [page.footer.color];
+}
+/*---------------------------------*/
+.l-grid p {
+    margin-bottom: 3px;
+}
+/*---------------------------------*/
+.b-foot-menu {
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+}
+.b-foot-menu a:link,
+.b-foot-menu a:visited {
+    color: #fff;
+}
+.b-foot-menu ul {
+    list-style: none;
+    padding: 0;
+}
+.b-foot-menu li {
+    margin-bottom: 11px;
+}
+.b-foot-menu .foot-menu__inner {
+    margin: 0 -10px;
+}
+.b-foot-menu .foot-menu__col {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -0.275em;
+    padding: 0 10px;
+    width: 25%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.b-foot-menu .foot-menu__title {
+    margin-bottom: 31px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+}
+/*---------------------------------*/
+.b-foot-contacts {
+    text-align: right;
+    font-weight: 300;
+    font-size: 15px;
+}
+.b-foot-contacts [class^="foot-contacts__col"] {
+    margin-bottom: 36px;
+}
+.b-foot-contacts .foot-contacts__phone {
+    font-size: 23px;
+    font-weight: bold;
+}
+.b-foot-contacts .foot-contacts__email:link,
+.b-foot-contacts .foot-contacts__email:visited {
+    color: #fff;
+}
+.b-foot-contacts .foot-contacts__application {
+    margin-bottom: 48px;
+}
+.b-foot-contacts .foot-contacts__application a:link,
+.b-foot-contacts .foot-contacts__application a:active,
+.b-foot-contacts .foot-contacts__application a:visited,
+.b-foot-contacts .foot-contacts__application a:hover {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    max-width: 190px;
+    padding: 12px 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #12aeba;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+}
+.b-foot-contacts .foot-contacts__application a:hover {
+    background-color: #119ea9;
+}
+.b-foot-contacts .foot-contacts__icon {
+    font-size: 0;
+}
+.b-foot-contacts .foot-contacts__icon-item {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 30px;
+}
+/*---------------------------------*/
+.b-copyright {
+    font-weight: 300;
+    color: #8a8a8a;
+}
+/*---------------------------------*/
+.b-copyright-dev {
+    text-align: right;
+    font-weight: 300;
+    color: #969696;
+}
+/*---------------------------------*/

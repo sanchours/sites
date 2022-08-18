@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка количества новостей на главной</description>
+   <name>VerifyNumberNewsOnMain</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>31417f9d-6a0c-4b1d-9edb-60c9f5bfff57</testCaseGuid>
+</TestCaseEntity>

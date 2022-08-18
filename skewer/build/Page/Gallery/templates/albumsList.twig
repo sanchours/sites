@@ -1,0 +1,27 @@
+<div class="b-galbox"{% if Design.modeIsActive() %} sktag="modules.gallery" sklabel="{{_objectId}}"{% endif %}>
+    <div class="galbox__wrapper">
+    {% if albums %}
+        {%  for iKey, aAlbum in albums  %}
+            {% if aAlbum.album_count %}
+                <div class="galbox__item">
+                    <div class="galbox__pic">
+                        <a href="[{{sectionId}}][Gallery?{% if aAlbum.alias %}alias={{aAlbum.alias}}{% else %}id={{aAlbum.id}}{% endif %}]" title="{% if aAlbum.titleImage %}{{ aAlbum.titleImage|e }}{% endif %}{% if aAlbum.descriptionImage %}{{ aAlbum.descriptionImage|e }}{% endif %}">
+                            <img src="{{aAlbum.album_img}}" alt="{{aAlbum.alt_title|e}}">
+                        </a>
+                    </div>
+                    {% if aAlbum.title %}
+                    <div class="galbox__title">
+                        <a href="[{{sectionId}}][Gallery?{% if aAlbum.alias %}alias={{aAlbum.alias}}{% else %}id={{aAlbum.id}}{% endif %}]">
+                            {{aAlbum.title}}
+                        </a>
+                    </div>
+                    {% endif %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+    </div>
+</div>
+
+{# из skewer/build/common/templates #}
+{% include "paginator.twig" %}

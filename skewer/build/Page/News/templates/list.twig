@@ -1,0 +1,59 @@
+{#
+/**
+ * @var array aNews
+ * @var string _objectId
+ * @var bool showDetailLink
+ * @var bool hideDate
+ * @var string defImg
+ * @var bool bShowGallery
+ */
+#}
+
+{% if aNews is defined %}
+    {% if aNews|length > 0 %}
+        <div class="b-news b-news--list {{ html_class }}" {{ Design.write(' sktag="modules.news"') }}{% if Design.modeIsActive() %} sklabel="{{ _objectId }}"{% endif %}>
+            {% for aItem in aNews %}
+            <div class="news__item">
+                {% if bShowGallery %}
+                <div class="news__imgbox">
+                        {% if aItem.hasDetailLink %}<a href="{{ aItem.getUrl }}" {% if aItem.isExternalHyperLink %} target="_blank"{% endif %}>{% endif %}
+                            {% set firstImg = aItem.gallery.first_img %}
+                            {% if firstImg.images_data[sFormatImage].file %}
+                                <img src="{{ firstImg.images_data[sFormatImage].file }}" title="{{ firstImg.title|escape }}" alt="{{ firstImg.alt_title|e }}">
+                            {% elseif defImg is defined %}
+                                <img src="{{ defImg }}">
+                            {% else %}
+                                <img src="{{ asset_path }}/images/news.noimg_list.gif">
+                            {% endif %}
+                        {% if aItem.hasDetailLink %}</a>{% endif %}
+                </div>
+                {% endif %}
+                <div class="news__wrap">
+                    <div class="news__title">
+                        {% if aItem.hasDetailLink %}
+                            <a {{ Design.write(' sktag="modules.news.normal"') }} href="{{ aItem.getUrl }}" {% if aItem.isExternalHyperLink %} target="_blank"{% endif %}>{{ aItem.title }}</a>
+                        {% else %}
+                            <span {{ Design.write(' sktag="modules.news.normal"') }}>{{ aItem.title }}</span>
+                        {% endif %}
+                    </div>
+                    {% if not hideDate  %}
+                        <div class="news__date"{{ Design.write(' sktag="modules.news.date"') }}>{{ aItem.publication_date | date('d.m.Y') }}</div>
+                    {% endif %}
+                <div class="b-editor"{{ Design.write(' sktag="editor"') }}>{{ aItem.announce }}</div>
+                <div class="g-clear"></div>
+                {% if showDetailLink and aItem.hasDetailLink  %}
+                <p class="news__linkback">
+                    <a href="{{ aItem.getUrl }}" {% if aItem.isExternalHyperLink %} target="_blank"{% endif %}>{{ Lang.get('page.readmore') }}</a>
+                </p>
+                {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endif %}
+
+{# из skewer/build/common/templates #}
+{% if showPagination %}
+    {% include "paginator.twig" %}
+{% endif %}

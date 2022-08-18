@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка работы поля источник</description>
+   <name>CheckSourcelinkArticles</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d5cd7859-6a3f-459c-a2ac-7aa4254b4e82</testCaseGuid>
+</TestCaseEntity>

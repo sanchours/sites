@@ -1,0 +1,414 @@
+/* layer: default */
+/* group: adaptive                                  | Адаптивный мод */
+        /* param: break_desktop_top                 | Брейкпоинт Десктоп топ | size | 1920px  */
+        /* param: break_desktop                     | Брейкпоинт Десктоп     | size | 980px  */
+        /* param: break_tablet                      | Брейкпоинт Таблетка    | size | 768px  */
+        /* param: break_mobile_down                 | Брейкпоинт Мобильный   | size | 350px  */
+
+    /* group: adaptive.sidebar                      | Сайдбар */
+
+        /* group: adaptive.sidebar.params           | Параметры */
+            /* param: background_color              | Фон | color | #fff  */
+            /* param: background_color_layout       | Фон подложка | color | rgba(0, 0, 0, .3)  */
+            /* param: max_width                     | Максимальная ширина | size | 350px  */
+            /* param: font_color                    | Цвет шрифта | color | #fff  */
+            /* param: link_color                    | Цвет ссылок | color | #fff  */
+            /* parentParam: default..base.userbase.fontfamily.color_link */
+            /* param: padding                       | Внутренний отступ | size | 20px */
+
+        /* group: adaptive.sidebar.icon_close       | Кнопка закрытия */
+            /* param: pic                           | Картинка кнопки | url | ../images/sidebar.close.png  */
+            /* param: background_color_block        | Фон плашки | color | #fff  */
+            /* param: width                         | Ширина кнопки | size | 50px  */
+            /* param: height                        | Высота кнопки | size | 50px  */
+            /* param: hor_pos                       | Положение по горизонтали | h-position | left  */
+
+        /* group: adaptive.sidebar.icon_sandwich    | Кнопка Сэндвич */
+            /* param: pic                           | Картинка кнопки | url | ../images/icon-sandwich.png  */
+            /* param: width                         | Ширина кнопки | size | 60px  */
+            /* param: height                        | Высота кнопки | size | 50px  */
+
+    /* group: adaptive.side_menu                    | Меню */
+        /* param: separ_color                       | Цвет нижнего разделителя | color | #fff  */
+        /* param: separ_size                        | Высота нижнего разделителя | size | 0  */
+        /* param: mar_open                          | Маркер развернуть | url | ../images/sidebar-mar.png  */
+        /* param: mar_close                         | Маркер свернуть | url | ../images/sidebar-mar-on.png  */
+        /* param: mar_width                         | Маркер ширина | size | 60px  */
+        /* param: mar_height                        | Маркер высота | size | 100%  */
+        /* param: mar_background                    | Маркер фон | color | #3dade1  */
+
+        /*group: adaptive.side_menu.first_level                  | 1-ый уровень */
+        
+            /*group: adaptive.side_menu.first_level.static           | Обычный пункт */
+                /* param: color                                      | Цвет | color | #000000  */
+                /* param: padding                                    | Отступы | size |  10px 20px */
+                /* param: weight                                     | Толщина шрифта | font-weight | normal  */
+                /* param: size                                       | Размер | size | 20px  */
+                /* param: decoration                                 | Подчеркивание | text-decoration | none */
+                /* param: transform                                  | Регистр | text-transform | none */
+                /* param: background                                 | Фон | color | transparent */
+
+            /*group: adaptive.side_menu.first_level.active           | Выбранный пункт */
+                /* param: color                                      | Цвет | color | #1071ae  */
+                /* param: padding                                    | Отступы | size |  10px 20px */
+                /* param: weight                                     | Толщина шрифта | font-weight | normal  */
+                /* param: size                                       | Размер | size | 20px  */
+                /* param: decoration                                 | Подчеркивание | text-decoration | none */
+                /* param: transform                                  | Регистр | text-transform | none */
+                /* param: background                                 | Фон | color | transparent */
+
+        /*group: adaptive.side_menu.second_level                 | 2-ый уровень */
+            /* param: padding                                    | Отступы | size |  8px 0 */
+            /* param: background                                 | Фон | color | transparent */
+
+            /*group: adaptive.side_menu.second_level.static          | Обычный пункт */
+                /* param: color                                      | Цвет | color | #000000  */
+                /* param: padding                                    | Отступы | size |  5px 20px */
+                /* param: weight                                     | Толщина шрифта | font-weight | normal  */
+                /* param: size                                       | Размер | size | 18px  */
+                /* param: decoration                                 | Подчеркивание | text-decoration | none */
+                /* param: transform                                  | Регистр | text-transform | none */
+                /* param: background                                 | Фон | color | transparent */
+
+            /*group: adaptive.side_menu.second_level.active          | Выбранный пункт */
+                /* param: color                                      | Цвет | color | #1071ae  */
+                /* param: padding                                    | Отступы | size |  5px 20px */
+                /* param: weight                                     | Толщина шрифта | font-weight | normal  */
+                /* param: size                                       | Размер | size | 18px  */
+                /* param: decoration                                 | Подчеркивание | text-decoration | none */
+                /* param: transform                                  | Регистр | text-transform | none */
+                /* param: background                                 | Фон | color | transparent */
+
+        /*group: adaptive.side_menu.third_level                  | 3-ый уровень */
+            /* param: padding                                    | Отступы | size |  5px 0 */
+            /* param: background                                 | Фон | color | transparent */
+
+            /*group: adaptive.side_menu.third_level.static           | Обычный пункт */
+                /* param: color                                      | Цвет | color | #000000  */
+                /* param: padding                                    | Отступы | size |  3px 20px */
+                /* param: weight                                     | Толщина шрифта | font-weight | normal  */
+                /* param: size                                       | Размер | size | 16px  */
+                /* param: decoration                                 | Подчеркивание | text-decoration | none */
+                /* param: transform                                  | Регистр | text-transform | none */
+                /* param: background                                 | Фон | color | transparent */
+
+            /*group: adaptive.side_menu.third_level.active           | Выбранный пункт */
+                /* param: color                                      | Цвет | color | #1071ae  */
+                /* param: padding                                    | Отступы | size |  3px 20px */
+                /* param: weight                                     | Толщина шрифта | font-weight | normal  */
+                /* param: size                                       | Размер | size | 16px  */
+                /* param: decoration                                 | Подчеркивание | text-decoration | none */
+                /* param: transform                                  | Регистр | text-transform | none */
+                /* param: background                                 | Фон | color | transparent */
+
+/*--------------------*/
+.b-sandwich {
+    position: relative;
+    background-color: [menu.top.level1.level1_bg.color];
+    z-index: 1;
+}
+.b-sandwich .sandwich__icon {
+    width: [adaptive.sidebar.icon_sandwich.width];
+    height: [adaptive.sidebar.icon_sandwich.height];
+    background: url([adaptive.sidebar.icon_sandwich.pic]) 50% 50% no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+/*---------------------------------*/
+.l-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: [adaptive.sidebar.params.background_color_layout];
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+}
+.l-sidebar--open {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+}
+.l-sidebar-block {
+    position: fixed;
+    z-index: 1000;
+    background-color: [adaptive.sidebar.params.background_color];
+    overflow: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    max-width: [adaptive.sidebar.params.max_width];
+    -webkit-box-shadow: 0 0 15px 5px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, .3);
+    box-sizing: border-box;
+}
+.l-sidebar-block--left {
+    top: 0;
+    left: -150%;
+    bottom: 0;
+    -webkit-transition: left 0.5s ease-out;
+    transition: left 0.5s ease-out;
+}
+.l-sidebar-block--right {
+    top: 0;
+    right: -150%;
+    bottom: 0;
+    -webkit-transition: right 0.5s ease-out;
+    transition: right 0.5s ease-out;
+}
+.l-sidebar-block--top {
+    left: 0;
+    right: 0;
+    height: 100%;
+    max-width: 100%;
+    top: -150%;
+    -webkit-transition: top 0.5s ease-out;
+    transition: top 0.5s ease-out;
+}
+.l-sidebar-block--bottom {
+    left: 0;
+    right: 0;
+    height: 100%;
+    max-width: 100%;
+    bottom: -150%;
+    -webkit-transition: bottom 0.5s ease-out;
+    transition: bottom 0.5s ease-out;
+}
+.l-sidebar-block--open {
+    z-index: 1000;
+}
+.l-sidebar-block--open.l-sidebar-block--left {
+    left: 0;
+    -webkit-transition: left 0.5s ease-out;
+    transition: left 0.5s ease-out;
+}
+.l-sidebar-block--open.l-sidebar-block--right {
+    right: 0;
+    -webkit-transition: right 0.5s ease-out;
+    transition: right 0.5s ease-out;
+}
+.l-sidebar-block--open.l-sidebar-block--top {
+    top: 0;
+    -webkit-transition: top 0.5s ease-out;
+    transition: top 0.5s ease-out;
+}
+.l-sidebar-block--open.l-sidebar-block--bottom {
+    bottom: 0;
+    -webkit-transition: bottom 0.5s ease-out;
+    transition: bottom 0.5s ease-out;
+}
+/*---------------------------------*/
+.b-sidebar {
+    position: relative;
+    color: [adaptive.sidebar.params.font_color];
+}
+.b-sidebar a:link,
+.b-sidebar a:visited,
+.b-sidebar a:hover,
+.b-sidebar a:active {
+    color: [adaptive.sidebar.params.link_color];
+}
+.b-sidebar .sidebar__close {
+    background-color: [adaptive.sidebar.icon_close.background_color_block];
+    text-align: [adaptive.sidebar.icon_close.hor_pos];
+}
+.b-sidebar .sidebar__close-btn {
+    display: inline-block;
+    vertical-align: middle;
+    top: 0;
+    background: url([adaptive.sidebar.icon_close.pic]) 50% 50% no-repeat;
+    width: [adaptive.sidebar.icon_close.width];
+    height: [adaptive.sidebar.icon_close.height];
+    z-index: 100;
+    cursor: pointer;
+}
+.b-sidebar .sidebar__content {
+    padding: [adaptive.sidebar.params.padding];
+}
+.b-sidebar .sidebar__item {
+    padding-bottom: 20px;
+}
+.b-sidebar .sidebar__contacts > *,
+.b-sidebar .sidebar__contacts a:link,
+.b-sidebar .sidebar__contacts a:visited {
+    border-bottom-color: #fff;
+    color: #fff;
+}
+/*---------------------------------*/
+.b-sidebar-menu .sidebar-menu__level-1 {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.b-sidebar-menu .sidebar-menu__item-1 > span {
+    position: relative;
+    display: block;
+}
+.b-sidebar-menu .sidebar-menu__item-1 > span a:link, 
+.b-sidebar-menu .sidebar-menu__item-1 > span a:visited {
+    display: block;
+    position: relative;
+    text-transform: [adaptive.side_menu.first_level.static.transform];
+    text-decoration: [adaptive.side_menu.first_level.static.decoration];
+    font-weight: [adaptive.side_menu.first_level.static.weight];
+    font-size: [adaptive.side_menu.first_level.static.size];
+    color: [adaptive.side_menu.first_level.static.color];
+    background: [adaptive.side_menu.first_level.static.background];
+    padding: [adaptive.side_menu.first_level.static.padding];
+}
+.b-sidebar-menu .sidebar-menu__item-1 > span a:active, 
+.b-sidebar-menu .sidebar-menu__item-1 > span a:hover, 
+.b-sidebar-menu .sidebar-menu__item-1--on > span a:link, 
+.b-sidebar-menu .sidebar-menu__item-1--on > span a:visited, 
+.b-sidebar-menu .sidebar-menu__item-1--on > span a:hover, 
+.b-sidebar-menu .sidebar-menu__item-1--on > span a:active {
+    position: relative;
+    display: block;
+    text-transform: [adaptive.side_menu.first_level.active.transform];
+    text-decoration: [adaptive.side_menu.first_level.active.decoration];
+    font-weight: [adaptive.side_menu.first_level.active.weight];
+    font-size: [adaptive.side_menu.first_level.active.size];
+    color: [adaptive.side_menu.first_level.active.color];
+    background: [adaptive.side_menu.first_level.active.background];
+    padding: [adaptive.side_menu.first_level.active.padding];
+}
+.b-sidebar-menu .sidebar-menu__item-1--haschild > span {
+    padding-right: [adaptive.side_menu.mar_width];
+}
+.b-sidebar-menu .sidebar-menu__item-1--haschild > span .sidebar-menu__dropicon {
+    display: block;
+    background: [adaptive.side_menu.mar_background] url([adaptive.side_menu.mar_open]) no-repeat scroll 50% 50%;
+    height: 100%;
+    width: [adaptive.side_menu.mar_width];
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+.b-sidebar-menu .sidebar-menu__item-1--haschild.sidebar-menu__item--open > span .sidebar-menu__dropicon {
+    background: [adaptive.side_menu.mar_background] url([adaptive.side_menu.mar_close]) no-repeat scroll 50% 50%;
+}
+.b-sidebar-menu .sidebar-menu__level-2 {
+    display: none;
+    margin: 0;
+    list-style-type: none;
+    padding: [adaptive.side_menu.second_level.padding];
+    background: [adaptive.side_menu.second_level.background];
+}
+.b-sidebar-menu .sidebar-menu__item-2 > span a:link, 
+.b-sidebar-menu .sidebar-menu__item-2 > span a:visited {
+    display: block;
+    position: relative;
+    text-transform: [adaptive.side_menu.second_level.static.transform];
+    text-decoration: [adaptive.side_menu.second_level.static.decoration];
+    font-weight: [adaptive.side_menu.second_level.static.weight];
+    font-size: [adaptive.side_menu.second_level.static.size];
+    color: [adaptive.side_menu.second_level.static.color];
+    background: [adaptive.side_menu.second_level.static.background];
+    padding: [adaptive.side_menu.second_level.static.padding];
+}
+.b-sidebar-menu .sidebar-menu__item-2 > span a:active, 
+.b-sidebar-menu .sidebar-menu__item-2 > span a:hover, 
+.b-sidebar-menu .sidebar-menu__item-2--on > span a:link, 
+.b-sidebar-menu .sidebar-menu__item-2--on > span a:visited, 
+.b-sidebar-menu .sidebar-menu__item-2--on > span a:hover, 
+.b-sidebar-menu .sidebar-menu__item-2--on > span a:active {
+    position: relative;
+    display: block;
+    text-transform: [adaptive.side_menu.second_level.active.transform];
+    text-decoration: [adaptive.side_menu.second_level.active.decoration];
+    font-weight: [adaptive.side_menu.second_level.active.weight];
+    font-size: [adaptive.side_menu.second_level.active.size];
+    color: [adaptive.side_menu.second_level.active.color];
+    background: [adaptive.side_menu.second_level.active.background];
+    padding: [adaptive.side_menu.second_level.active.padding];
+}
+.b-sidebar-menu .sidebar-menu__item-2 > span {
+    position: relative;
+    display: block;
+}
+.b-sidebar-menu .sidebar-menu__item-2--haschild > span {
+    padding-right: [adaptive.side_menu.mar_width];
+}
+.b-sidebar-menu .sidebar-menu__item-2--haschild > span .sidebar-menu__dropicon {
+    display: block;
+    background: [adaptive.side_menu.mar_background] url([adaptive.side_menu.mar_open]) no-repeat scroll 50% 50%;
+    height: 100%;
+    width: [adaptive.side_menu.mar_width];
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+.b-sidebar-menu .sidebar-menu__item-2--haschild.sidebar-menu__item--open > span .sidebar-menu__dropicon {
+    background: [adaptive.side_menu.mar_background] url([adaptive.side_menu.mar_close]) no-repeat scroll 50% 50%;
+}
+.b-sidebar-menu .sidebar-menu__level-3 {
+    display: none;
+    margin: 0;
+    list-style-type: none;
+    padding: [adaptive.side_menu.third_level.padding];
+    background: [adaptive.side_menu.third_level.background];
+}
+.b-sidebar-menu .sidebar-menu__item-3 > span a:link, 
+.b-sidebar-menu .sidebar-menu__item-3 > span a:visited {
+    display: block;
+    position: relative;
+    text-transform: [adaptive.side_menu.third_level.static.transform];
+    text-decoration: [adaptive.side_menu.third_level.static.decoration];
+    font-weight: [adaptive.side_menu.third_level.static.weight];
+    font-size: [adaptive.side_menu.third_level.static.size];
+    color: [adaptive.side_menu.third_level.static.color];
+    background: [adaptive.side_menu.third_level.static.background];
+    padding: [adaptive.side_menu.third_level.static.padding];
+}
+.b-sidebar-menu .sidebar-menu__item-3 > span a:active, 
+.b-sidebar-menu .sidebar-menu__item-3 > span a:hover, 
+.b-sidebar-menu .sidebar-menu__item-3--on > span a:link, 
+.b-sidebar-menu .sidebar-menu__item-3--on > span a:visited, 
+.b-sidebar-menu .sidebar-menu__item-3--on > span a:hover, 
+.b-sidebar-menu .sidebar-menu__item-3--on > span a:active {
+    display: block;
+    position: relative;
+    text-transform: [adaptive.side_menu.third_level.active.transform];
+    text-decoration: [adaptive.side_menu.third_level.active.decoration];
+    font-weight: [adaptive.side_menu.third_level.active.weight];
+    font-size: [adaptive.side_menu.third_level.active.size];
+    color: [adaptive.side_menu.third_level.active.color];
+    background: [adaptive.side_menu.third_level.active.background];
+    padding: [adaptive.side_menu.third_level.active.padding];
+}
+/*---------------------------------*/
+.b-sidebar .b-auth-wrap {
+    position: static;
+}
+/*---------------------------------*/
+.b-sidebar .b-auth-head {
+    right: 0;
+}
+/*---------------------------------*/
+.b-sidebar .b-basketmain-head {
+    position: static;
+    width: 100%;
+}
+@media handheld, only screen and (min-width: [adaptive.break_desktop]) { /*-DESKTOP-*/
+    /*--------------------------*/
+    .hide-on-desktop {
+        display: none !important;
+    }
+    /*--------------------------*/
+}
+/*---------------------------------*/
+@media handheld, only screen and (min-width: [adaptive.break_desktop]) and (max-width: 1400px) { /*-SMALL DESKTOP-*/
+    /*--------------------------*/
+    /*--------------------------*/
+}
+/*---------------------------------*/

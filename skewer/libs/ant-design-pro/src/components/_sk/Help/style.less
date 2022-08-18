@@ -1,0 +1,21 @@
+:global {
+	.top-nav_cache {
+		border: none;
+		box-shadow: none;
+		svg {
+			position: relative;
+			top: 4px;
+			path {
+				opacity: 0.6;
+				transition: opacity 0.3s;
+				fill: #5C91E0;
+			}
+		} 
+		&:hover svg path,
+		&:focus svg path {
+			opacity: 1;
+			fill: #5C91E0;
+		}
+	}
+	
+}

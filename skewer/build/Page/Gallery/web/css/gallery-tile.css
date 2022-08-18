@@ -1,0 +1,78 @@
+/* layer: default */
+    /* group: modules.gallery | Галерея */
+        /* param: width            | Ширина блока | size  | 33.33% */
+        /* param: height           | Высота блока | size | auto */
+        /* param: padding_hor      | Горизотальный отступ блока | size | 5px */
+        /* param: padding_ver      | Нижний отступ блока | size | 10px */
+
+        /* group: modules.gallery.title | Заголовок изображения */
+            /* param: title_padding         | Отступы заголовка | size | 10px 0 0 */
+            /* param: title_font            | Шрифт | family | Arial, sans-serif */
+            /* param: title_align           | Выравнивание | h-position | center */
+            /* param: title_weight          | Толщина шрифта | font-weight | normal */
+            /* param: title_style           | Стиль шрифта | font-style | normal */
+            /* param: title_size            | Размер | size | 14px */
+                /* parentParam: default..base.userbase.fontfamily.font-size */
+            /* param: title_color           | Цвет | color | #000 */
+                /* parentParam: default..base.userbase.fontfamily.color_text */
+/*-------------------------------*/
+/* modules.gallery - Галерея */
+.b-galbox {
+    margin: 0 -[modules.gallery.padding_hor] 20px;
+}
+.b-galbox *:focus {
+    outline: none;
+}
+.b-galbox .galbox__item {
+    margin-right: -.275em;
+    padding: 0 [modules.gallery.padding_hor] [modules.gallery.padding_ver] ;
+    width: [modules.gallery.width];
+    height: [modules.gallery.height];
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    color: #000;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.b-galbox .galbox__pic img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+}
+.b-galbox .galbox__title {
+    padding: [modules.gallery.title.title_padding];
+    font-size: [modules.gallery.title.title_align];
+    font-family: [modules.gallery.title.title_font];
+    font-weight: [modules.gallery.title.title_weight];
+    font-style: [modules.gallery.title.title_style];
+    text-align: [modules.gallery.title.title_align];
+    color: [modules.gallery.title.title_color];
+}
+.b-galbox .galbox__contentbox {
+    margin-bottom: 20px;
+}
+.b-galbox .galbox__date {
+    font-size: 0.92em;
+}
+.b-galbox .galbox__pageline {
+    text-align: center;
+}
+.b-galbox .galbox__pageline a {
+    padding: 0 0.5em;
+}
+.b-galbox .galbox__item a:active,
+.b-galbox .galbox__item a:focus {
+    outline: 0;
+}
+/*-------------------------------*/
+.b-galbox--inline {
+    margin: 0;
+}
+/*-------------------------------*/
+.b-galbox-fotorama {
+    margin: 0;
+}
+/*-------------------------------*/

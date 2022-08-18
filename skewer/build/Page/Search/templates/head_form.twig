@@ -1,0 +1,14 @@
+<div class="b-search_wrap">
+    <div class="b-search b-search_head js-search-block"{{ Design.write(' sktag="modules.search"') }}>
+        <div class="search__inner">
+            <form method="GET" class="" action="[{{ search_section }}]">
+                <div class="search__open js-search-open"></div>
+                <button class="search__btn" type="submit"></button>
+                <div class="search__close js-search-close"></div>
+                <div class="search_inputbox js-search-content">
+                    <input value="" onfocus="this.value=''" placeholder="{{ Lang.get('search.search') }} " name="search_text" id="search_text_{{ label }}" />
+                </div>
+            </form>        
+        </div>         
+    </div>
+</div>

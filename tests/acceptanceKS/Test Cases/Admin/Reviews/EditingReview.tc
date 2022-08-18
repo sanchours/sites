@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Редактирование отзыва</description>
+   <name>EditingReview</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7d539e3c-3a55-4e19-91d7-46b12bb18bbe</testCaseGuid>
+</TestCaseEntity>

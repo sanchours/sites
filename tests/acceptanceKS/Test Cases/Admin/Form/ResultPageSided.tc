@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Сторонняя всплывающая</description>
+   <name>ResultPageSided</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ff893822-6ee6-4c74-9ef9-f039a293f0d7</testCaseGuid>
+</TestCaseEntity>

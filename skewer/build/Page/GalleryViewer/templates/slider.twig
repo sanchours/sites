@@ -1,0 +1,26 @@
+{% if list|length %}
+    <div class="b-slide-title">
+        {% if titleOnMain or Design.modeIsActive() %}
+            <div class="b-title-h2"{{ Design.write(' sktag="editor.h2" skeditor="GalleryViewer/titleOnMain"') }}>{{ titleOnMain }}</div>
+        {% endif %}
+    </div>
+    <div class="b-gallery-carousel {{ html_class }}">
+        <div class="gallery-carousel__inner">
+            <div class="js-owl-carousel owl-carousel owl-carousel-gallerytheme" data-carousel-options='{{ gallerySettings }}'>
+                {%  for aItem in list  %}
+
+                    {% if aItem.images_data.preview.file != '' %}
+                        {% if aItem.images_data.med.file != '' %}
+                            <div class="gallery-carousel__item">
+                                <a class="single_3" data-fancybox="gallery_{{ labelModule }}" href="{{ aItem.images_data.med.file }}">
+                                    <img class="owl-lazy" data-src="{{ aItem.images_data.preview.file }}" alt="{{ aItem.alt_title }}"/>
+                                </a>
+                            </div>
+                        {% endif %}
+                    {% endif %}
+
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endif %}

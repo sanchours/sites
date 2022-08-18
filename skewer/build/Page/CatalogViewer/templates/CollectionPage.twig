@@ -1,0 +1,42 @@
+<div class="b-brenddet">
+    <div class="brenddet__wrap">
+        <div class="brenddet__img">
+            {% if collection.fields.gallery.first_img.images_data['colmed'].file is defined %}
+                <img alt="{{ collection.fields.gallery.first_img.alt_title|e }}" src="{{ collection.fields.gallery.first_img.images_data['colmed'].file }}" title="{% if collection.fields.gallery.first_img.title %}{{ collection.fields.gallery.first_img.title|e }}{% endif %}{% if collection.fields.gallery.first_img.description %} {{ collection.fields.gallery.first_img.description|e }}{% endif %}">
+            {% else %}
+                <img alt="" src="{{Design.get('modules.catalogbox.imgbox','nophoto_img','skewer\\build\\Page\\Main\\Asset')}}">
+            {% endif %}
+        </div>
+        <div class="brenddet__content">
+            <div class="b-editor">{{ collection.fields.info.html }}</div>
+        </div>
+    </div>
+</div>
+
+{% if nearItems is defined %}
+    <div class="b-catslider">
+        <a class="catslider__back"
+           href="[{{ nearItems.section }}][CatalogViewer?{% if nearItems.prev.alias %}goods-alias={{ nearItems.prev.alias }}{% else %}item={{ nearItems.prev.id }}{% endif %}]">{{ Lang.get('Main.page_prev') }}<ins></ins></a>
+        <a class="catslider__mid" href="[{{ nearItems.section }}]">{{ Lang.get('CatalogViewer.back_to_products') }}</a>
+        <a class="catslider__next"
+           href="[{{ nearItems.section }}][CatalogViewer?{% if nearItems.next.alias %}goods-alias={{ nearItems.next.alias }}{% else %}item={{ nearItems.next.id }}{% endif %}]">{{ Lang.get('Main.page_next') }}<ins></ins></a>
+    </div>
+{% endif %}
+
+{% if aObjectList is defined %}
+    {% if view == 'list' %}
+        {% include "FilterList.twig" %}
+        <div class="b-catalogbox b-catalogbox-list">
+            {% include "ListItems.twig" %}
+        </div>
+    {% elseif view == 'table' %}
+        <div class="b-catalogbox b-catalogbox-table">
+            {% include "TableItems.twig" %}
+        </div>
+    {% else %}
+        {% include "GalleryList.twig" %}
+    {% endif %}
+{% endif %}
+
+{# из skewer/build/common/templates #}
+{% include "paginator.twig" %}

@@ -1,0 +1,9 @@
+<div class="catalogbox__tile-gallery js-get-data" data-fancybox-protect="{{ protect }}" data-fancybox-transition-effect="{{ transitionEffect }}">
+    {% for iKey, aImage in aImages %}
+        <div class="catalogbox__tile-gallery-item">
+            <a data-fancybox="good" class="js-gallery_resize" href="{{ aImage.images_data.big.file }}" title="{{ aImage.title|e }}{% if aImage.description %} {{ aImage.description|e }}{% endif %}">
+                <img src="{{ aImage.images_data['tile'].file }}" alt="{{ aImage.alt_title|e }}" />
+            </a>
+        </div>
+    {% endfor %}
+</div>

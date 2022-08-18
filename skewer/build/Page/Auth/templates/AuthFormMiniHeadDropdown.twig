@@ -1,0 +1,17 @@
+<div class="b-auth-wrap">
+    <div class="b-auth-head hide-on-mobile show-on-sidebar js-head-auth"{% if designMode %} sktag="modules.auth.authhead"{% endif %}>
+        {% if current_user %}
+            <!-- Авторизованный пользователь -->
+            <a class="auth-head__link" href="{{ profile_url }}">{{ Lang.get('auth.my_account') }}</a>
+            <ins>|</ins>
+            <a class="auth-head__logout" href="{{ auth_url }}?cmd=logout">{{ Lang.get('auth.authLogoutButton') }}</a>
+        {% else %}
+            <!-- Неавторизованный пользователь -->
+            <span class="auth-head__btn hide-on-tablet hide-on-mobile js-head-auth-show">{{ Lang.get('auth.my_account') }}</span>
+            <a href="/auth" class="auth-head__btn hide-on-desktop">{{ Lang.get('auth.my_account') }}</a>
+            <div class="auth-head__form hide-on-tablet hide-on-mobile">
+                {{ form }}
+            </div>
+        {% endif %}
+    </div>
+</div>

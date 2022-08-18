@@ -1,0 +1,26 @@
+{%  for aItem in items  %}
+
+    <div {% if bIsReview4Good %}itemprop="review"{% endif %} itemscope itemtype="{{ Site.getWebProtocol() }}schema.org/Review" style="display:none">
+        <a itemprop="url" href="{{ url | escape }}" ></a>
+        <div itemprop="author" itemscope itemtype="{{ Site.getWebProtocol() }}schema.org/Person">
+            <div itemprop="name">{{ aItem.name }}</div>
+            <div itemprop="email">{{ aItem.email }}</div>
+            <div itemprop="address">{{ aItem.city }}</div>
+        </div>
+
+        <div itemprop="datePublished">{{ aItem.date_time | date('Y-m-d')}}</div>
+        <div itemprop="reviewBody">{{ aItem.content }}</div>
+
+        <div itemprop="reviewRating" itemscope itemtype="{{ Site.getWebProtocol() }}schema.org/AggregateRating">
+            <span itemprop="worstRating">0</span>
+            <span itemprop="ratingValue">{{ aItem.rating_id }}</span>
+            <span itemprop="bestRating">{{ aItem.rating_id }}</span>
+            <span itemprop="ratingCount">1</span>
+        </div>
+
+        {% if not bIsReview4Good %}
+            {% include 'MicroDataOrganization.twig' %}
+        {% endif %}
+
+    </div>
+{% endfor %}

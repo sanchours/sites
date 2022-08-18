@@ -1,0 +1,46 @@
+<div class="b-picture fotorama-container js-fotorama-container">
+
+    {# Резервируем блок под фотораму #}
+    <style>
+
+        .b-picture > .picture__fotorama:not(.fotorama) {
+            padding-bottom: calc({{ aDimensionsFirstImage.height }} * 100% / {{ aDimensionsFirstImage.width }});
+        }
+
+        {% if configArray.maxHeight %}
+
+            .fotorama-container{
+                max-height: {{ configArray.maxHeight }}px;
+            }
+
+        {% endif %}
+
+    </style>
+
+
+    <div class="picture__fotorama js-fotorama-slider fotorama-picture"  data-ratioFirstImage='{{ aDimensionsFirstImage.ratio }}' data-config='{{ config }}' data-minheight='{{ aMinHeight }}'{{ Design.write(' sktag="modules.slider"') }}>
+        {% for item in banner %}
+        <div class="picture__item picture__item_{{ item.id }}" data-img="{{ item.img }}">
+            <div class="picture__inner">
+                {% if item.slide_link %}<a class="picture__link" href="{{ item.slide_link }}" target="{{ item.link_target }}" rel="nofollow noopener"></a>{% endif %}
+                <div class="picture__text picture__text1" style="{% if item.text1_h %}left: {{ item.text1_h }}px;{% endif %}{% if item.text1_v %}top: {{ item.text1_v }}px;{% endif %}">
+                    {{ item.text1 }}
+                </div>
+                <div class="picture__text picture__text2" style="{% if item.text2_h %}left: {{ item.text2_h }}px;{% endif %}{% if item.text2_v %}top: {{ item.text2_v }}px;{% endif %}">
+                    {{ item.text2 }}
+                </div>
+                <div class="picture__text picture__text3" style="{% if item.text3_h %}left: {{ item.text3_h }}px;{% endif %}{% if item.text3_v %}top: {{ item.text3_v }}px;{% endif %}">
+                    {{ item.text3 }}
+                </div>
+                <div class="picture__text picture__text4" style="{% if item.text4_h %}left: {{ item.text4_h }}px;{% endif %}{% if item.text4_v %}top: {{ item.text4_v }}px;{% endif %}">
+                    {{ item.text4 }}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    {% if adaptiveBreakpoints %}
+        <div class='js-breakpoints' style='display: none;' data-breakpoints='{{ adaptiveBreakpoints }}'></div>
+    {% endif %}
+</div>

@@ -1,0 +1,907 @@
+h1 {
+    font-family: Arial;
+    font-weight: bold;
+}
+h2,
+h2 a:link,
+h2 a:active,
+h2 a:visited,
+h2 a:hover,
+a:link h2,
+a:active h2,
+a:visited h2,
+a:hover h2 {
+    font-family: Arial;
+    font-weight: bold;
+}
+a:link, a:visited {
+    text-decoration: underline;
+}
+a:hover, a:active {
+    text-decoration: none;
+}
+/*-----------------------------*/
+.b-sppanel {
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    width: 425px;
+    color: #000;
+    z-index: 25;
+    font-size: 16px;
+    letter-spacing: normal;
+}
+.b-sppanel a:link,
+.b-sppanel a:visited {
+    color: #000;
+    text-decoration: none;
+}
+.b-sppanel .sppanel__col {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 25px;
+}
+.b-sppanel .sppanel__btnbox {
+    position: relative;
+}
+.b-sppanel .sppanel__btn {
+    padding: 12px 40px 11px 40px;
+    font-family: 'Arial Black', Arial, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+    -webkit-border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    border-radius: 1000px;
+}
+.b-sppanel .sppanel__btnbox:hover .sppanel__prop {
+    display: block;
+}
+.b-sppanel .sppanel__prop {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 580px;
+    color: #fff;
+    overflow: hidden;
+    background: #212121;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    border-radius: 22px;
+}
+.b-sppanel .sppanel__prop a:link,
+.b-sppanel .sppanel__prop a:visited {
+    color: #fff;
+}
+.b-sppanel .sppanel__prop h2 {
+    margin: 0;
+    font-family: 'Arial Black', Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+}
+.b-sppanel .sppanel__prop p {
+    margin: 0 0 1em 0;
+}
+.b-sppanel .sppanel__prop input[type="radio"] {
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+    margin: 0 20px 0 0;
+}
+.b-sppanel .sppanel__prop input[type="radio"] + label {
+    cursor: pointer;
+}
+.b-sppanel .sppanel__prop input[type="radio"]:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+.b-sppanel .sppanel__prop input[type="radio"]:not(checked) + label {
+    position: relative;
+    padding: 0 0 0 40px;
+}
+.b-sppanel .sppanel__prop input[type="radio"]:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #FFF;
+    -webkit-transform: translate(0,-50%);
+    -moz-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    -o-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+}
+.b-sppanel .sppanel__prop input[type="radio"]:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #000000;
+    opacity: 0;
+    -webkit-transform: translate(0,-50%);
+    -moz-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    -o-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+.b-sppanel .sppanel__prop input[type="radio"]:checked + label:after {
+    opacity: 1;
+}
+.b-sppanel .sppanel__prop input[type="radio"]:focus + label:before {
+
+}
+.b-sppanel .sppanel__prop-header {
+    padding: 12px 40px 11px 40px;
+    background: #000;
+}
+.b-sppanel .sppanel__prop-inner {
+    padding: 35px 40px 0 40px;
+}
+.b-sppanel .sppanel__title {
+    font-weight: bold;
+}
+.b-sppanel .sppanel__prop-row {
+    margin: 0 -10px;
+}
+.b-sppanel .sppanel__prop-col {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -0.275em;
+    margin-bottom: 30px;
+    width: 50%;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.b-sppanel .sppanel__prop-colleft {
+    width: 40%;
+}
+.b-sppanel .sppanel__prop-colright {
+    width: 60%;
+}
+.b-sppanel .sppanel__item {
+    padding: 0 0 12px 0;
+}
+.b-sppanel .sppanel__item-size1 .sppanel__label {
+    font-size: 14px;
+    line-height: 1;
+}
+.b-sppanel .sppanel__item-size2 .sppanel__label {
+    font-size: 18px;
+    line-height: 1;
+}
+.b-sppanel .sppanel__item-size3 .sppanel__label {
+    font-size: 28px;
+    line-height: 1;
+}
+.b-sppanel .sppanel__item-space1 .sppanel__label {
+    letter-spacing: 0;
+}
+.b-sppanel .sppanel__item-space2 .sppanel__label {
+    letter-spacing: 0.1875em;
+}
+.b-sppanel .sppanel__item-space3 .sppanel__label {
+    letter-spacing: 0.375em;
+}
+.b-sppanel .sppanel__item-color1 .sppanel__label-inner {
+    padding: 0 10px;
+    background: #fff;
+    color: #000;
+}
+.b-sppanel .sppanel__item-color2 .sppanel__label-inner {
+    padding: 0 10px;
+    background: #000;
+    color: #fff;
+}
+.b-sppanel .sppanel__item-color3 .sppanel__label-inner {
+    padding: 0 10px;
+    background: #2dbefe;
+    color: #063462;
+}
+.b-sppanel .sppanel__wordbox {
+    line-height: 1;
+}
+.b-sppanel .sppanel__word-1 {
+    padding: 0 3px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.b-sppanel .sppanel__word-2 {
+    padding: 0 3px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.b-sppanel .sppanel__word-3 {
+    padding: 0 3px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.b-sppanel .sppanel__colorbox [class^="sppanel__color"] {
+    display: inline-block;
+    vertical-align: top;
+    width: 25px;
+    height: 25px;
+    margin-right: 6px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.b-sppanel .sppanel__color-1 {
+    background: #000;
+}
+.b-sppanel .sppanel__color-2 {
+    background: #2dbefe;
+}
+.b-sppanel .sppanel__color-3 {
+    background: #e5e5e5;
+}
+/*-------------------------*/
+.b-pilot {
+    color: #000;
+}
+.b-pilot a:link,
+.b-pilot a:visited {
+    color: #000;
+}
+.b-pilot .pilot__1,
+.b-pilot .pilot__2,
+.b-picture,
+.b-addban {
+    display: none;
+}
+/*-------------------------*/
+.b-picture2 {
+    background: #fff;
+}
+/*-------------------------*/
+.b-search input {
+    color: #000;
+}
+.g-size .b-search input{
+    font-size: inherit;
+}
+/*-------------------------*/
+.b-search-top {
+    border: 1px solid #8c8c8c;
+}
+.b-search-top ::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #000000;
+}
+.b-search-top :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #000000;
+    opacity:  1;
+}
+.b-search-top ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #000000;
+    opacity:  1;
+}
+.b-search-top :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #000000;
+}
+/*------------------------------*/
+.b-blind .blind__text-1 {
+    display: none;
+}
+.b-blind .blind__text-2 {
+    display: block;
+}
+/*------------------------------*/
+.b-benefit .benefit__img {
+    display: none;
+}
+/*------------------------------*/
+.b-news .news__title a:link,
+.b-news .news__title a:visited {
+    text-decoration: underline;
+}
+.b-news .news__title a:hover,
+.b-news .news__title a:active {
+    text-decoration: none;
+}
+/*------------------------------*/
+.b-headcontact [class] {
+    font-family: Arial;
+}
+/*------------------------------*/
+.b-headslogan {
+    font-family: Arial;
+    font-weight: bold;
+}
+/*------------------------------*/
+/*------------------------------*/
+.g-space1 {
+    letter-spacing: 0px;
+}
+.g-space1 .b-form {
+    letter-spacing: 0px;
+}
+.g-space1 .b-form input[type="text"],
+.g-space1 .b-form input[type="password"],
+.g-space1 .b-form textarea,
+.g-space1 .b-form select {
+    letter-spacing: 0px;
+}
+/*-------------------------*/
+.g-space2 {
+    letter-spacing: 3px;
+}
+.g-space2 .b-form {
+    letter-spacing: normal;
+}
+.g-space2 .b-form [class]:not([class^="form__col-"]) {
+    letter-spacing: 3px;
+}
+.g-space2 .b-form input[type="text"],
+.g-space2 .b-form input[type="password"],
+.g-space2 .b-form textarea,
+.g-space2 .b-form select {
+    letter-spacing: 3px;
+}
+.g-space2 .b-picture3 {
+    height: 280px;
+}
+.g-space2 .b-catalogbox-gal {
+    letter-spacing: normal;
+}
+.g-space2 .b-catalogbox-gal :not(.catalogbox__item) {
+    letter-spacing: 3px;
+}
+.g-space2 .b-catalogbox .catalogbox__imgbox {
+    letter-spacing: normal;
+}
+.g-space2 .b-headcontact .headcontact__row {
+    letter-spacing: normal;
+}
+.g-space2 .b-headcontact .headcontact__row :not(.headcontact__col) {
+    letter-spacing: 3px;
+}
+.g-space2 .b-news-main .news__row {
+    letter-spacing: normal;
+}
+.g-space2 .b-news-main .news__row :not(.news__item) {
+    letter-spacing: 6px;
+}
+.g-space2 .b-partner .partner__row {
+    letter-spacing: normal;
+}
+.g-space2 .b-partner .partner__row :not(.partner__item) {
+    letter-spacing: 6px;
+}
+.g-space2 .b-question .question__row {
+    letter-spacing: normal;
+}
+.g-space2 .b-question .question__row :not(.question__item) {
+    letter-spacing: 6px;
+}
+/*-------------------------*/
+.g-space3 {
+    letter-spacing: 6px;
+}
+.g-space3 .b-form {
+    letter-spacing: normal;
+}
+.g-space3 .b-form [class]:not([class^="form__col-"]) {
+    letter-spacing: 6px;
+}
+.g-space3 .b-form input[type="text"],
+.g-space3 .b-form input[type="password"],
+.g-space3 .b-form textarea,
+.g-space3 .b-form select {
+    letter-spacing: 6px;
+}
+.g-space3 .b-picture3 {
+    height: 280px;
+}
+.g-space3 .b-catalogbox-gal {
+    letter-spacing: normal;
+}
+.g-space3 .b-catalogbox-gal :not(.catalogbox__item) {
+    letter-spacing: 6px;
+}
+.g-space3 .b-catalogbox .catalogbox__imgbox {
+    letter-spacing: normal;
+}
+.g-space3 .b-headcontact .headcontact__row {
+    letter-spacing: normal;
+}
+.g-space3 .b-headcontact .headcontact__row :not(.headcontact__col) {
+    letter-spacing: 6px;
+}
+.g-space3 .b-news-main .news__row {
+    letter-spacing: normal;
+}
+.g-space3 .b-news-main .news__row :not(.news__item) {
+    letter-spacing: 6px;
+}
+.g-space3 .b-partner .partner__row {
+    letter-spacing: normal;
+}
+.g-space3 .b-partner .partner__row :not(.partner__item) {
+    letter-spacing: 6px;
+}
+.g-space3 .b-question .question__row {
+    letter-spacing: normal;
+}
+.g-space3 .b-question .question__row :not(.question__item) {
+    letter-spacing: 6px;
+}
+/*------------------------------*/
+/** ---- Верхнее меню ----- */
+.g-size .b-sevice .sevice__item-1 > span a:link,
+.g-size .b-sevice .sevice__item-1 > span a:visited,
+.g-size .b-sevice .sevice__item-1:hover > span a:link,
+.g-size .b-sevice .sevice__item-1:hover > span a:visited,
+.g-size .b-sevice .sevice__item-1--on > span a:link,
+.g-size .b-sevice .sevice__item-1--on > span a:visited,
+.g-size .b-sevice .sevice__item-1--on > span a:hover,
+.g-size .b-sevice .sevice__item-1--on > span a:active,
+
+.g-size .b-sevice .sevice__item-2 > span a:link,
+.g-size .b-sevice .sevice__item-2 > span a:visited,
+.g-size .b-sevice .sevice__item-2:hover > span a:link,
+.g-size .b-sevice .sevice__item-2:hover > span a:visited,
+.g-size .b-sevice .sevice__item-2--on > span a:link,
+.g-size .b-sevice .sevice__item-2--on > span a:visited,
+.g-size .b-sevice .sevice__item-2--on > span a:hover,
+.g-size .b-sevice .sevice__item-2--on > span a:active,
+
+.g-size .b-sevice .sevice__item-3 > span a:link,
+.g-size .b-sevice .sevice__item-3 > span a:visited,
+.g-size .b-sevice .sevice__item-3:hover > span a:link,
+.g-size .b-sevice .sevice__item-3:hover > span a:visited,
+.g-size .b-sevice .sevice__item-3--on > span a:link,
+.g-size .b-sevice .sevice__item-3--on > span a:visited,
+.g-size .b-sevice .sevice__item-3--on > span a:hover,
+.g-size .b-sevice .sevice__item-3--on > span a:active {
+    font-size: inherit;
+}
+
+/** ---------- Левое меню --------------- */
+.g-size .b-menu .menu__item-1 > span a:link,
+.g-size .b-menu .menu__item-1 > span a:visited,
+.g-size .b-menu .menu__item-1:hover > span a:link,
+.g-size .b-menu .menu__item-1:hover > span a:visited,
+.g-size .b-menu .menu__item-1--on > span a:link,
+.g-size .b-menu .menu__item-1--on > span a:visited,
+.g-size .b-menu .menu__item-1--on > span a:hover,
+.g-size .b-menu .menu__item-1--on > span a:active,
+
+.g-size .b-menu .menu__item-2 > span a:link,
+.g-size .b-menu .menu__item-2 > span a:visited,
+.g-size .b-menu .menu__item-2:hover > span a:link,
+.g-size .b-menu .menu__item-2:hover > span a:visited,
+.g-size .b-menu .menu__item-2--on > span a:link,
+.g-size .b-menu .menu__item-2--on > span a:visited,
+.g-size .b-menu .menu__item-2--on > span a:hover,
+.g-size .b-menu .menu__item-2--on > span a:active,
+
+.g-size .b-menu .menu__item-3 > span a:link,
+.g-size .b-menu .menu__item-3 > span a:visited,
+.g-size .b-menu .menu__item-3:hover > span a:link,
+.g-size .b-menu .menu__item-3:hover > span a:visited,
+.g-size .b-menu .menu__item-3--on > span a:link,
+.g-size .b-menu .menu__item-3--on > span a:visited,
+.g-size .b-menu .menu__item-3--on > span a:hover,
+.g-size .b-menu .menu__item-3--on > span a:active {
+    font-size: inherit;
+}
+
+/** ----- Разводка "стандартная заголовок внизу" и "стандартная заголовок вверху" -------*/
+.g-size .b-category .category__title span,
+.g-size .b-category .category__title a:link,
+.g-size .b-category .category__title a:visited,
+.g-size .b-category .category__item:hover .category__title span,
+.g-size .b-category .category__item:hover .category__title a:link,
+.g-size .b-category .category__item:hover .category__title a:visited,
+.g-size .b-category .category__item:hover .category__title a:hover,
+.g-size .b-category .category__item:hover .category__title a:active{
+    font-size: inherit;
+}
+/*------------------------------------------------------------------------------------------*/
+
+
+
+/*---- Разводка "Материалы" --------------------------------------*/
+.g-size .b-category-4 .category__title span,
+.g-size .b-category-4 .category__title a:link,
+.g-size .b-category-4 .category__title a:visited,
+.g-size .b-category-4 .category__item:hover .category__title span,
+.g-size .b-category-4 .category__item:hover .category__title a:link,
+.g-size .b-category-4 .category__item:hover .category__title a:visited,
+.g-size .b-category-4 .category__item:hover .category__title a:hover,
+.g-size .b-category-4 .category__item:hover .category__title a:active{
+    font-size: inherit;
+}
+
+.g-size .b-category-4 .category__link a:link,
+.g-size .b-category-4 .category__link a:active,
+.g-size .b-category-4 .category__link a:visited,
+.g-size .b-category-4 .category__link a:hover{
+    font-size: 0.8em;
+}
+/*-----------------------------------------------------------------*/
+
+
+
+/** --------Разводка "Гаджеты"----------------------------------------*/
+.g-size .b-category-3 .category__link a:link,
+.g-size .b-category-3 .category__link a:active,
+.g-size .b-category-3 .category__link a:visited,
+.g-size .b-category-3 .category__link a:hover{
+    font-size: inherit;
+}
+/*--------------------------------------------------------------------*/
+
+
+
+/*-----------Разводка "Еда"-------------------------------------------*/
+.g-size .b-category-1 .category__title{
+    font-size: inherit;
+}
+/*--------------------------------------------------------------------*/
+
+
+
+/*-----------Разводка "Одежда"----------------------------------------*/
+.g-size .b-category-2 .category__title{
+    font-size: inherit;
+}
+
+.g-size .b-category-2 .category__link a:link,
+.g-size .b-category-2 .category__link a:active,
+.g-size .b-category-2 .category__link a:visited,
+.g-size .b-category-2 .category__link a:hover{
+    font-size: 0.8em;
+}
+/*--------------------------------------------------------------------*/
+
+
+.g-size1 {
+    font-size: 14px;
+}
+.g-size1 .l-grid {
+    font-size: inherit;
+}
+.g-size1 h1,
+.g-size1 h2,
+.g-size1 h3 {
+    font-size: 2em;
+}
+.g-size1 .b-path * {
+    font-size: inherit;
+}
+.g-size1 .b-headslogan {
+    font-size: 1.5em;
+}
+.g-size1 .b-copyright_dev {
+    font-size: inherit;
+}
+.g-size1 .b-copyright {
+    font-size: inherit;
+}
+
+.g-size1 .b-headcontact [class] {
+    font-size: inherit;
+}
+.g-size1 .b-catslider {
+    font-size: inherit;
+}
+.g-size1 .b-news [class],
+.g-size1 .b-news [class] a:link,
+.g-size1 .b-news [class] a:active,
+.g-size1 .b-news [class] a:visited,
+.g-size1 .b-news [class] a:hover {
+    font-size: inherit;
+}
+.g-size1 .b-form [class],
+.g-size1 .b-form [type],
+.g-size1 .b-form,
+.g-size1 .b-form * {
+    font-size: inherit;
+}
+.g-size1 .b-form-main h2 {
+    font-size: 2em;
+}
+.g-size1 .b-guestbox [class] {
+    font-size: inherit;
+}
+.g-size1 .b-catalogbox [class] :link,
+.g-size1 .b-catalogbox [class] :visited {
+    font-size: inherit;
+}
+.g-size1 .b-catalogbox-gal {
+    font-size: 0;
+}
+.g-size1 .b-catalogbox-gal .catalogbox__item {
+    font-size: 14px;
+}
+.g-size1 .b-benefit .benefit__title:link,
+.g-size1 .b-benefit .benefit__title:visited {
+    font-size: inherit;
+}
+.g-size1 .b-question [class],
+.g-size1 .b-question [class] :link,
+.g-size1 .b-question [class] :visited {
+    font-size: inherit;
+}
+/*------------------------------*/
+.g-size2 {
+    font-size: 20px;
+}
+.g-size2 .l-grid {
+    height: 280px;
+    font-size: inherit;
+}
+.g-size2 h1,
+.g-size2 h2,
+.g-size2 h3 {
+    font-size: 2em;
+}
+.g-size2 .b-picture3 {
+    height: 280px;
+}
+.g-size2 .b-path * {
+    font-size: inherit;
+}
+.g-size2 .b-headslogan {
+    font-size: 1.5em;
+}
+.g-size2 .b-copyright_dev {
+    font-size: inherit;
+}
+.g-size2 .b-copyright {
+    font-size: inherit;
+}
+
+.g-size2 .b-headcontact [class] {
+    font-size: inherit;
+}
+.g-size2 .b-catslider {
+    font-size: inherit;
+}
+.g-size2 .b-news [class],
+.g-size2 .b-news [class] a:link,
+.g-size2 .b-news [class] a:active,
+.g-size2 .b-news [class] a:visited,
+.g-size2 .b-news [class] a:hover {
+    font-size: inherit;
+}
+.g-size2 .b-form [class],
+.g-size2 .b-form [type],
+.g-size2 .b-form,
+.g-size2 .b-form * {
+    font-size: inherit;
+}
+.g-size2 .b-form-main h2 {
+    font-size: 2em;
+}
+.g-size2 .b-guestbox [class] {
+    font-size: inherit;
+}
+.g-size2 .b-catalogbox [class] :link,
+.g-size2 .b-catalogbox [class] :visited {
+    font-size: inherit;
+}
+.g-size2 .b-catalogbox-gal {
+    font-size: 0;
+}
+.g-size2 .b-catalogbox-gal .catalogbox__item {
+    font-size: 20px;
+}
+.g-size2 .b-benefit .benefit__title:link,
+.g-size2 .b-benefit .benefit__title:visited {
+    font-size: inherit;
+    word-wrap: break-word;
+}
+.g-size2 .b-question [class],
+.g-size2 .b-question [class] :link,
+.g-size2 .b-question [class] :visited {
+    font-size: inherit;
+}
+.g-size2 .b-btnbox,
+.g-size2 a.b-btnbox:link,
+.g-size2 a.b-btnbox:visited {
+    width: 250px;
+}
+/*------------------------------*/
+.g-size3 {
+    font-size: 28px;
+}
+.g-size3 .l-grid {
+    height: 350px;
+    font-size: inherit;
+}
+.g-size3 .l-footerbox-stop {
+    height: 1060px;
+}
+.g-size3 h1,
+.g-size3 h2,
+.g-size3 h3 {
+    font-size: 2em;
+}
+.g-size3 .b-picture3 {
+    height: 360px;
+}
+.g-size3 .b-path * {
+    font-size: inherit;
+}
+.g-size3 .b-headslogan {
+    font-size: 1.5em;
+}
+.g-size3 .b-copyright_dev {
+    font-size: inherit;
+}
+.g-size3 .b-copyright {
+    font-size: inherit;
+}
+
+.g-size3 .b-headcontact [class] {
+    font-size: inherit;
+}
+.g-size3 .b-catslider {
+    font-size: inherit;
+}
+.g-size3 .b-news [class],
+.g-size3 .b-news [class] span,
+.g-size3 .b-news [class] a:link,
+.g-size3 .b-news [class] a:active,
+.g-size3 .b-news [class] a:visited,
+.g-size3 .b-news [class] a:hover {
+    font-size: inherit;
+}
+.g-size3 .b-form [class],
+.g-size3 .b-form [type],
+.g-size3 .b-form,
+.g-size3 .b-form * {
+    font-size: inherit;
+}
+.g-size3 .b-form-main h2 {
+    font-size: 2em;
+}
+.g-size3 .b-guestbox [class] {
+    font-size: inherit;
+}
+.g-size3 .b-catalogbox [class] :link,
+.g-size3 .b-catalogbox [class] :visited {
+    font-size: inherit;
+}
+.g-size3 .b-catalogbox-gal {
+    font-size: 0;
+}
+.g-size3 .b-catalogbox-gal .catalogbox__item {
+    font-size: 28px;
+}
+.g-size3 .b-benefit .benefit__title:link,
+.g-size3 .b-benefit .benefit__title:visited {
+    font-size: inherit;
+    word-wrap: break-word;
+}
+.g-size3 .b-question [class],
+.g-size3 .b-question [class] :link,
+.g-size3 .b-question [class] :visited {
+    font-size: inherit;
+}
+.g-size3 .b-btnbox,
+.g-size3 a.b-btnbox:link,
+.g-size3 a.b-btnbox:visited {
+    width: 300px;
+}
+/*----------------------------------*/
+.g-space3.g-size3 .b-picture3 {
+    height: 440px;
+}
+/*----------------------------------*/
+.g-noimg img {
+    display: none;
+}
+.g-noimg .b-gallery {
+    display: none;
+}
+.g-moimg .b-partner {
+    display: none;
+}
+
+/*----------------Статьи-----------------------*/
+.g-size .b-article [class],
+.g-size .b-article [class] span,
+.g-size .b-article [class] a:link,
+.g-size .b-article [class] a:visited,
+.g-size .b-article [class] a:hover,
+.g-size .b-article [class] a:active{
+    font-size: inherit;
+}
+
+.g-size .b-article [class] a:link,
+.g-size .b-article [class] a:visited{
+    text-decoration: underline;
+}
+
+.g-size .b-article [class] a:hover,
+.g-size .b-article [class] a:active{
+    text-decoration: none;
+}
+/*---------------------------------------------*/
+
+/*---------------FAQ---------------------------*/
+.g-size .b-faq [class],
+.g-size .b-faq [class] a:link,
+.g-size .b-faq [class] a:visited,
+.g-size .b-faq [class] a:hover,
+.g-size .b-faq [class] a:active{
+    font-size: inherit;
+}
+
+.g-size .b-faq [class] a:link,
+.g-size .b-faq [class] a:visited{
+    text-decoration: underline;
+}
+
+.g-size .b-faq [class] a:hover,
+.g-size .b-faq [class] a:active{
+    text-decoration: none;
+}
+/*--------------------------------------------*/
+.g-size .b-catalogbox .catalogbox__param,
+.g-size .b-catalogbox input,
+.g-size .b-catalogbox .catalogbox__artical,
+.g-size .b-catalogbox .catalogbox__price span{
+    font-size: inherit;
+}
+
+.g-size2 .l-grid .grid__item1,
+.g-size2 .l-grid .grid__item2,
+.g-size2 .l-grid .grid__item3,
+.g-size2 .l-grid .grid__item4,
+.g-size2 .l-grid .grid__item5,
+.g-size2 .l-grid .grid__item6,
+.g-size2 .l-grid .grid__item7,
+
+.g-size3 .l-grid .grid__item1,
+.g-size3 .l-grid .grid__item2,
+.g-size3 .l-grid .grid__item3,
+.g-size3 .l-grid .grid__item4,
+.g-size3 .l-grid .grid__item5,
+.g-size3 .l-grid .grid__item6,
+.g-size3 .l-grid .grid__item7{
+    padding: 0 20px;
+    position: relative;
+    width: auto;
+    height: auto;
+    top: auto;
+    left: auto;
+    right: auto;
+    text-align: center;
+}
+
+.g-size2 .l-grid .grid__item3 p,
+.g-size2 .l-grid .grid__item6 p,
+
+.g-size3 .l-grid .grid__item3 p,
+.g-size3 .l-grid .grid__item6 p{
+    text-align: center !important;
+}
+
+.g-size2 .b-pilot .pilot__3 span,
+.g-size3 .b-pilot .pilot__3 span{
+    font-size: inherit !important;
+}

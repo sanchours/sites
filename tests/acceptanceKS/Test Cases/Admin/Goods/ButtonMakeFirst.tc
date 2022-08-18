@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Кнопка &quot;Сделать первым&quot;</description>
+   <name>ButtonMakeFirst</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>98889856-2d00-4275-9cc9-e7f1a5f70a5d</testCaseGuid>
+</TestCaseEntity>

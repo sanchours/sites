@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Письмо пользователю</description>
+   <name>LettersSection</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9c0fd81e-9fd3-4d3d-b93d-d1039e949524</testCaseGuid>
+</TestCaseEntity>

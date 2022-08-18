@@ -1,0 +1,11 @@
+<div class="b-social-network">
+    <div class="social-network__title">
+        Войти с помощью:
+    </div> 
+    <div class="social-network__wrap">
+    {{ socialNetwork }}
+    </div>
+    <div class="err-social-network social-network__error" {% if errSocialNetwork is empty %} style="display: none"{% endif %}>
+        {{ errSocialNetwork }}
+    </div>
+</div>

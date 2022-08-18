@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Скрытое поле для формы</description>
+   <name>HiddenField</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9a13e06f-7963-4dc0-89a9-1ec5bda1065f</testCaseGuid>
+</TestCaseEntity>

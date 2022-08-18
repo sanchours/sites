@@ -1,0 +1,14 @@
+{% if error is defined and Form %}
+    <p style="color:red">{{ Lang.get('payments.response_error') }}</p>
+{% elseif not Form %}
+    <p style="color:red">{{ Lang.get('payments.response_error_try_later') }}</p>
+{% endif %}
+{% if Form %}
+    <form class="b-robokassa" action="{{ Form.getAction() }}" method="{{ Form.getMethod() }}">
+        {% set aFields = Form.getFields() %}
+        {% for key, value in aFields %}
+            <input type="hidden" name="{{ key }}" value="{{ value|e }}">
+        {% endfor %}
+        <button class="b-btnbox send-button" type="submit">{% if error is defined %}{{ Lang.get('payments.button_pay_again') }}{% else %}{{ Lang.get('payments.button_label')}}{% endif %}</button>
+    </form>
+{% endif %}

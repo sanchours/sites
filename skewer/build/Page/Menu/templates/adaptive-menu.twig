@@ -1,0 +1,50 @@
+<div class="b-sidebar-menu {{ html_class }}">
+    <ul class="sidebar-menu__level-1">
+        {% for item in items %}
+            {% if item.show %}
+                <li class="sidebar-menu__item-1{% if item.selected %} sidebar-menu__item-1--on{% endif %}{% if loop.last %} sidebar-menu__item-1--last{% endif %}{% if item.items|length > 0 %} sidebar-menu__item-1--haschild{% endif %}{% if icon[item['id']] is defined %} sidebar-menu__item-1--hasicon{% endif %} js-sidebarmenu-item">
+                    <span class="js-sidebarmenu-achor-wrap">
+                        <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+                        <a href="{{ item.href }}" {% if aTargetBlank[item.id] is defined %} target="_blank" {% endif %}>
+                            {% if icon[item['id']] is defined %}
+                                <em style="background-image: url({{ icon[item['id']] }});"></em>
+                            {% else %}
+                                <ins></ins>
+                            {% endif %}
+                            {{ item.title }}
+                        </a>
+                    </span>
+                    {% if item.items|length > 0 %}
+                        <ul class="sidebar-menu__level-2 js-sidebarmenu-content">
+                            {% for item2 in item.items %}
+                                {% if item2.show %}
+                                    <li class="sidebar-menu__item-2{% if item2.selected %} sidebar-menu__item-2--on{% endif %}{% if loop.last %} sidebar-menu__item-2--last{% endif %}{% if item2.items|length > 0 %} sidebar-menu__item-2--haschild{% endif %} js-sidebarmenu-item">
+                                        <span class="js-sidebarmenu-achor-wrap">
+                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+                                            <a href="{{ item2.href }}" {% if aTargetBlank[item2.id] is defined %} target="_blank" {% endif %}>
+                                                {{ item2.title }}
+                                            </a>
+                                        </span>
+                                        {% if item2.items|length > 0 %}
+                                            <ul class="sidebar-menu__level-3 js-sidebarmenu-content">
+                                                {% for item3 in item2.items %}
+                                                    {% if item3.show %}
+                                                        <li class="sidebar-menu__item-3{% if item3.selected %} sidebar-menu__item-3--on{% endif %}{% if loop.last %} sidebar-menu__item-3--last{% endif %}">
+                                                            <span>
+                                                                <a href="{{ item3.href }}" {% if aTargetBlank[item3.id] is defined %} target="_blank" {% endif %}>{{ item3.title }}</a>
+                                                            </span>
+                                                        </li>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            </ul>
+                                        {% endif %}
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>

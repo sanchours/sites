@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Перход на интрефейс отзывов</description>
+   <name>GoingToTheReviewInterface</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fb7f10b0-ab70-4c37-b567-cb96bf68a9ae</testCaseGuid>
+</TestCaseEntity>

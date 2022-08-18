@@ -1,0 +1,77 @@
+{% if aObjectList is defined %}
+    {% if aObjectList is not empty  %}
+        {% if titleOnMain or Design.modeIsActive() %}
+            <div class="b-title-h2"{% if Design.modeIsActive() %} sktag="editor.h2" skeditor="{{ moduleGroup }}/titleOnMain"{% endif %}>{{ titleOnMain }}</div>
+        {% endif %}
+        <div class="b-catalogbox b-catalogbox-gal{% if show_shadows=='enabled' %} b-catalogbox-boxshadow{% endif %} js_goods_container">
+            <div>
+                {% for iKey, aObject in aObjectList %}
+                    {% if aObject.show_detail is defined %}
+                        {% set show_detail =  aObject.show_detail %}
+                    {% endif %}
+                    <div class="catalogbox__item js_ecommerce_viewlist js_catalogbox_item" data-ecommerce='{{ aObject.ecommerce }}' >
+                        <div class="catalogbox__imgbox"><div class="catalogbox__img">{% if aObject.fields.gallery.first_img.images_data['small'].file is defined %}<img alt="{{ aObject.fields.gallery.first_img.alt_title|e }}" src="{{ aObject.fields.gallery.first_img.images_data['small'].file }}">{% else %}<img alt="" src="{{Design.get('modules.catalogbox.imgbox','nophoto_img','skewer\\build\\Page\\Main\\Asset')}}">{% endif %}</div>
+                            <div class="catalogbox__helper"></div>
+                            <div class="catalogbox__salebox">
+                                {{ aObject.fields.discount.html }}
+                                {{ aObject.fields.hit.html }}
+                                {{ aObject.fields.new.html }}
+                            </div>
+                            {% if show_detail %}
+                                <div class="catalogbox__moreblock">
+                                    <a class="catalogbox__moreblock-link js_ecommerce_link" href="{{ aObject.url }}" ></a>
+                                    <div class="catalogbox__moreblock-center">
+                                        <a class="catalogbox__search-icon js_ecommerce_link" href="{{ aObject.url }}"></a>
+                                        {% if quickView %}
+                                            <div class="catalogbox__quick-view hide-on-mobile hide-on-tablet js-quick-view" data-id="{{ aObject.id }}" data-sectionId="{{ section }}">
+                                                <span>{{ Lang.get('catalog.quick_view') }}</span>
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            {% endif %}
+                        </div>
+                        <div class="catalogbox__content">
+                            <p class="catalogbox__title">{% if show_detail %}<a class="js_ecommerce_link" href="{{ aObject.url }}">{% endif %}{{ aObject.title }}{% if show_detail %}</a>{% endif %}</p>
+                            {% if aObject.Rating.html %}<div class="catalogbox__rating">{{ aObject.Rating.html }}</div>{% endif %}
+                            {% if aObject.fields.article.value %}<p class="catalogbox__artical">{% if aObject.fields.article.attrs.show_title == 1 %}{{ aObject.fields.article.title }}{% endif %} {{ aObject.fields.article.value }}</p>{% endif %}
+                            {% if aObject.fields.announce_HOLD.value %}<div class="catalogbox__param__{{ aObject.fields.announce_HOLD.name }}">{{ aObject.fields.announce.value }}</div>{% endif %}
+                            {% for field in aObject.fields %}
+                                {% if field.attrs.show_in_params %}
+                                    {{ field.html }}
+                                {% endif %}
+                            {% endfor %}
+
+                            {% if aObject.fields.old_price.value %}<p class="catalogbox__oldprice"><span>{{ aObject.fields.old_price.value|price_format }}
+                                    {{ aObject.fields.old_price.measure }}{% if aObject.fields.measure.value %}/{{ aObject.fields.measure.value  }}{% endif %}
+                            </span></p>{% endif %}
+                        </div>
+                        <div class="catalogbox__shcar">
+                            <div class="catalogbox__pricebox">
+                                {% if aObject.fields.price.value %}
+                                    <span class="catalogbox__price">
+                                        <span>{{ aObject.fields.price.value|price_format }}</span>
+                                        {{ aObject.fields.price.measure }}{% if aObject.fields.measure.value %}/{{ aObject.fields.measure.value  }}{% endif %}
+                                    </span>
+                                {% endif %}
+                            </div>
+                            <div class="catalogbox__btnbox">
+                                {% if aObject.fields.countbuy.value %}
+                                    <div class="js_catalogbox_inputbox catalogbox__inputbox"><div class="catalogbox__minus js_catalogbox_minus">-</div><input class="js_count" type="text" data-id="{{ aObject.id }}" value="1"><div class="catalogbox__plus js_catalogbox_plus">+</div></div>
+                                {% endif %}
+                            </div>
+                            <div class="g-clear"></div>
+                            {% if aObject.fields.fastbuy.value %}
+                                <div class="catalogbox__buynow"><a href="[{{ cartSectionId }}][Cart?action=checkoutOneClick&idObj={{ aObject.id }}]" data-section = "" class="js-callback" data-ajaxform="1" data-js_max_width="600" data-width-type="px" data-idobj="{{aObject.id}}" data-module="Cart" data-cmd="checkout">{% if aObject.fields.fastbuy.attrs.show_title == 1 %}{{ aObject.fields.fastbuy.title }}{% endif %}</a></div>
+                            {% endif %}
+                            {% if aObject.fields.buy.value %}
+                                <div class="catalogbox__btn"><a data-id="{{ aObject.id }}" {% if useCart
+                                    %}onclick="return false;"{% endif %} href="{% if not useCart %}[{{ form_section }}][From?objectId={{aObject.id}}]{% else %}#tocart{% endif %}" class="js-btnBuy btnBuy">{{ Lang.get(aObject.fields.buy.title) }}</a></div>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+{% endif %}
+{% endif %}

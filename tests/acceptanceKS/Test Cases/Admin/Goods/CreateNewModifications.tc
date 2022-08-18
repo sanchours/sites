@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Создание модификации товара</description>
+   <name>CreateNewModifications</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d59f2b40-d035-48bd-ab08-d0380b223538</testCaseGuid>
+</TestCaseEntity>

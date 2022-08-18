@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка сортировки баннеров</description>
+   <name>CheckSortingBanners</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a083785b-7f9b-4eb1-a88a-38fdbf433822</testCaseGuid>
+</TestCaseEntity>

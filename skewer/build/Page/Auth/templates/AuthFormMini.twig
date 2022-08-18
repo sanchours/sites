@@ -1,0 +1,30 @@
+<div class="b-authmain">
+    <div class="authmain__wrap">
+        <form id="form_{{templateForm.formHash}}" method="post" data-form_name="{{ templateForm.slug }}"
+              action="{{ templateForm.tag_action }}" data-module_name = "{{templateForm.moduleName}}" data-hash="{{templateForm.formHash}}"
+              enctype="multipart/form-data"
+              {% if templateForm.ajaxForm %}data-ajaxForm="1"{% endif %}
+              {% if templateForm.popupResultPage %} data-popup_result_page="1"{% endif %}
+              data-check-use-js="{{ templateForm.blockJs }}">
+
+            {% set aFieldList = templateForm.fields %}
+
+            {% set oField = aFieldList['login'] %}
+            <div class="authmain__item authmain__item--input">
+                <input type="text" name="{{oField.settings.slug|e}}" id="{{oField.settings.slug}}_{{formHash}}" value="{{oField.value|e}}" placeholder="{{oField.settings.title|e}}" />
+            </div>
+
+            {% set oField = aFieldList['password'] %}
+            <div class="authmain__item authmain__item--input">
+                <input type="password" name="{{oField.settings.slug|e}}" id="{{oField.settings.slug}}_{{formHash}}" value="{{oField.value|e}}" placeholder="{{oField.settings.title|e}}" />
+            </div>
+
+            <div class="authmain__item authmain__item--link">
+                {{ templateForm.button }}
+            </div>
+
+            {{ input }}
+        </form>
+        {{ addParam }}
+    </div>
+</div>

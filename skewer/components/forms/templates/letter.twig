@@ -1,0 +1,15 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>{{ templateLetter.formTitle }}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+{# Заголовок письма #}
+{{ introduction }}
+{# Ссылка на административное отображение формы #}
+{{ showLinkAdd }}
+{# Таблица данных о клиенте из формы #}
+{% include "tableForLetter.twig" %}
+</body>
+</html>

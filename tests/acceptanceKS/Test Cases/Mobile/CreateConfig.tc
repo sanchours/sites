@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This testCase is run once before testing the mobile application</description>
+   <name>CreateConfig</name>
+   <tag>mobile config</tag>
+   <comment></comment>
+   <testCaseGuid>ec60454b-8570-4f9c-856c-cec5bd02d899</testCaseGuid>
+</TestCaseEntity>

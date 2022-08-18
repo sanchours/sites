@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверяем тип вывода товаров</description>
+   <name>CheckingTypeOutputGoods</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b76552d3-dc35-4cd5-8d5b-10da301e1bf9</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE yml_catalog SYSTEM "shops.dtd">
+<yml_catalog date="{{ date }}">
+    <shop>
+        <name>{{ shopName }}</name>
+        <company>{{ companyName }}</company>
+        <url>{{ domain }}</url>
+        <currencies>
+            <currency id="RUR" rate="1" />
+        </currencies>
+        <categories>
+        {% for category in categories %}
+            <category id="{{ category.id }}" {% if category.parent %} parentId="{{ category.parent }}"{% endif %}>{{ category.title|htmlspecialchars }}</category>
+        {% endfor %}
+        </categories>
+        {% if localDeliveryCost %}
+            <local_delivery_cost>{{ localDeliveryCost|escape }}</local_delivery_cost>
+        {% endif %}
+        <offers>

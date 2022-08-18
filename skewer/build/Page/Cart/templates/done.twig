@@ -1,0 +1,18 @@
+    {% if ecommerce %}
+    <div class="b-editor">
+        {{ ecommerce }}
+    </div>
+    {% endif %}
+    {% if paymentForm is defined %}
+        {% if can_be_paid %}
+            {{ Lang.get('order.message_pay')}}
+        {% endif %}
+        <div class="b-editor">
+            <p>{{ paymentForm }}</p>
+        </div>
+    {% else %}
+        <div class="b-editor">
+            <p>{{ Lang.get('order.message_pay2')}}</p>
+            <p><a href="[{{ mainSection }}]">{{ Lang.get('order.to_main')}}</a></p>
+        </div>
+    {% endif %}

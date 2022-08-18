@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Отклонение отзыва с детальной</description>
+   <name>RejectReviewDetailed</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>86ebefd8-157d-4260-bf03-f80fa6d65a74</testCaseGuid>
+</TestCaseEntity>

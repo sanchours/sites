@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Вывод отзыва на главную</description>
+   <name>ReviewOnTheMain</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f2031a1b-fdd3-4a6b-8b51-9ae7740e61b1</testCaseGuid>
+</TestCaseEntity>

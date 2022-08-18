@@ -1,0 +1,124 @@
+/* layer: default */
+/*---------------------------------*/
+.l-footerbox {
+    min-height: 300px;
+    margin-top: -300px;
+}
+.l-footerbox .footerbox__wrapper {
+    border-bottom: 70px solid #3e4558;
+}
+.l-footerbox .footerbox__left,
+.l-footerbox .footerbox__right {
+    border-bottom: 70px solid #3e4558;
+    bottom: -70px;
+}
+/*---------------------------------*/
+.l-grid p {
+    margin: 0;
+    padding: 0 0 5px;
+}
+.l-grid .grid__item4 {
+    max-width: 870px;
+}
+/*---------------------------------*/
+.b-foot-btn {
+    padding-bottom: 20px;
+}
+.b-foot-btn a:link,
+.b-foot-btn a:visited {
+    padding: 15px 40px;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #6996c7;
+    color: #fff;
+}
+.b-foot-btn a:active,
+.b-foot-btn a:hover {
+    background-color: #618bb9;
+    text-decoration: none;
+    color: #fff;
+}
+/*---------------------------------*/
+.b-foot-phone,
+.b-foot-phone a:link[href^="tel"],
+.b-foot-phone a:active[href^="tel"],
+.b-foot-phone a:visited[href^="tel"],
+.b-foot-phone a:hover[href^="tel"]{
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+}
+.b-foot-phone {
+    padding-bottom: 15px;
+}
+/*---------------------------------*/
+.b-foot-social {
+    padding-top: 20px;
+}
+.b-foot-social img {
+    padding-right: 10px;
+    vertical-align: middle;
+}
+/*---------------------------------*/
+.b-foot-menu {}
+.b-foot-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.b-foot-menu ul li {
+    margin: 0;
+    padding: 0 0 10px;
+}
+.b-foot-menu .foot-menu__item {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -.275em;
+}
+.b-foot-menu a:link,
+.b-foot-menu a:visited {
+    text-decoration: none;
+    color: #a6acbb;
+}
+.b-foot-menu a:hover,
+.b-foot-menu a:active {
+    text-decoration: underline;
+    color: #a6acbb;
+}
+.b-foot-menu .foot-menu__item > span {
+    display: block;
+    padding-bottom: 15px;
+}
+.b-foot-menu .foot-menu__item > span,
+.b-foot-menu .foot-menu__item > span a:link,
+.b-foot-menu .foot-menu__item > span a:visited {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+}
+.b-foot-menu .foot-menu__item > span a:hover,
+.b-foot-menu .foot-menu__item > span a:active {
+    text-decoration: underline;
+    color: #fff;
+}
+/*---------------------------------*/
+.b-foot-copy-dev,
+.b-foot-copy-dev a:link,
+.b-foot-copy-dev a:visited {
+    text-align: right;
+    color: #7e8390;
+}
+/*---------------------------------*/
+.b-foot-copy,
+.b-foot-copy a:link,
+.b-foot-copy a:visited {
+    color: #fff;
+}
+/*---------------------------------*/
+.b-counter {
+    text-align: right;
+}
+/*---------------------------------*/

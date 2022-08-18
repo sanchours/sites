@@ -1,0 +1,95 @@
+/* layer: default */
+
+/* group: modules.faq | Вопрос-ответ */
+/* param: back_dot               | Изображение разделителя | url | ../images/faq.bg.gif */
+
+/* group: modules.faq.title | Имя */
+/* param: font_family            | Шрифт | family  | Arial, sans-serif */
+/* parentParam: default..base.userbase.fontfamily.font-family */
+/* param: size                   | Размер | size | 14px */
+/* param: weight                 | Толщина шрифта | font-weight | bold */
+/* param: style                  | Курсив | font-style | normal */
+/* param: decoration             | Подчеркивание | text-decoration | none */
+/* param: transform              | Регистр | text-transform | none */
+/* param: color                  | Цвет текста | color | #353535 */
+
+/* group: modules.faq.date  | Дата */
+/* param: font_family            | Шрифт | family  | Arial, sans-serif */
+/* parentParam: default..base.userbase.fontfamily.font-family */
+/* param: size                   | Размер | size | 14px */
+/* param: weight                 | Толщина шрифта | font-weight | normal */
+/* param: style                  | Курсив | font-style | normal */
+/* param: decoration             | Подчеркивание | text-decoration | none */
+/* param: transform              | Регистр | text-transform | none */
+/* param: color                  | Цвет текста | color | #999999 */
+
+/* group: modules.faq.city  | Город */
+/* param: font_family            | Шрифт | family  | Arial, sans-serif */
+/* parentParam: default..base.userbase.fontfamily.font-family */
+/* param: size                   | Размер | size | 14px */
+/* param: weight                 | Толщина шрифта | font-weight | normal */
+/* param: style                  | Курсив | font-style | normal */
+/* param: decoration             | Подчеркивание | text-decoration | none */
+/* param: transform              | Регистр | text-transform | none */
+/* param: color                  | Цвет текста | color | #999999 */
+
+/*-------------------------------*/
+
+.b-faq {}
+.b-faq .faq__item {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    background: url("[modules.faq.back_dot]") 0 100% repeat-x;
+}
+.b-faq .faq__item:after {
+    content: "";
+    display: block;
+    clear: both;
+    font-size: 0;
+}
+.b-faq .faq__msgtext {
+    text-align: center;
+}
+.b-faq .faq__leftside {
+    padding-right: 20px;
+    float: left;
+    width: 180px;
+}
+.b-faq .faq__rightside {
+    overflow: hidden;
+}
+.b-faq .faq__title {
+    padding-bottom: 5px;
+    font-family: [modules.faq.title.font_family];
+    font-size: [modules.faq.title.size];
+    font-weight: [modules.faq.title.weight];
+    font-style: [modules.faq.title.style];
+    text-decoration: [modules.faq.title.decoration];
+    text-transform: [modules.faq.title.transform];
+    color: [modules.faq.title.color];
+    position: relative;
+}
+.b-faq .faq__date {
+    padding-bottom: 5px;
+    font-family: [modules.faq.date.font_family];
+    font-size: [modules.faq.date.size];
+    font-weight: [modules.faq.date.weight];
+    font-style: [modules.faq.date.style];
+    text-decoration: [modules.faq.date.decoration];
+    text-transform: [modules.faq.date.transform];
+    color: [modules.faq.date.color];
+}
+.b-faq .faq__city {
+    padding-bottom: 5px;
+    font-family: [modules.faq.city.font_family];
+    font-size: [modules.faq.city.size];
+    font-weight: [modules.faq.city.weight];
+    font-style: [modules.faq.city.style];
+    text-decoration: [modules.faq.city.decoration];
+    text-transform: [modules.faq.city.transform];
+    color: [modules.faq.city.color];
+    position: relative;
+}
+.b-faq .faq__editor {
+    padding-bottom: 1em;
+}

@@ -1,0 +1,200 @@
+:global {
+  .tree-item {
+    &__elements {
+      float: right;
+    }
+  }
+  .tree-item.tree-item--hidden{
+    color: #ccc;
+  }
+  .ant-tree {
+    padding-bottom: 20px;
+    padding-right: 5px;
+    li {
+      padding: 0;
+      .ant-tree-node-content-wrapper {
+        padding-left: 0;
+        transition: none;
+      }
+
+    }
+  }
+  .ant-tree.ant-tree-block-node li .ant-tree-node-content-wrapper {
+    width: calc(100% - 20px);
+  }
+  .ant-tree-child-tree > li:first-child {
+    padding-top: 0;
+  }
+  .sidebar-header-section .ant-tree.ant-tree-show-line.hide-file-icon li span.ant-tree-switcher-noop {
+    background: transparent;
+  }
+  .ant-collapse-item:not(.sidebar-header-section) .ant-tree.ant-tree-block-node li .ant-tree-node-content-wrapper {
+    width: calc(100% - 10px);
+    z-index: 11;
+    position: relative;
+  }
+  .ant-tree.ant-tree-show-line.hide-file-icon li:before {
+    content: " ";
+    width: 1px;
+    border-left: 1px solid #d9d9d9;
+    height: 100%;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    margin: 0;
+  }
+  .ant-modal-footer > div {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .ant-modal-footer button {
+    margin-left: 8px;
+  }
+  .ant-table-wrapper {
+    margin: 0 -30px;
+  }
+  .ant-modal-confirm-body-wrapper .ant-modal-confirm-btns .ant-btn {
+    height: auto;
+    margin: 0 8px;
+    padding: 10px 30px;
+    color: #222;
+  }
+  .tree-item--hidden .tree-item__title {
+    opacity: 0.6;
+  }
+  // жесткие стили для кастомного сайдбара
+  .sktree-scrollbar > div:first-child {
+    margin-bottom: 0 !important;
+    overflow-x: hidden !important;
+  }
+  .sktree-scrollbar > div:nth-child(2) {
+    display: none;
+  }
+  .sktree-scrollbar > div:last-child > div {
+    background-color: rgba(119,123,146, 0.7) !important;
+  }
+  .ant-tree.ant-tree-show-line.hide-file-icon li:first-child:before {
+    top: 6px;
+    height: calc(100% - 6px);
+  }
+  .ant-tree.ant-tree-show-line.hide-file-icon li:last-child:before {
+    height: 16px;
+  }
+  .ant-tree.ant-tree-show-line.hide-file-icon li:first-child:last-child:before {
+    height: 10px;
+  }
+  .ant-tree.ant-tree-show-line.hide-file-icon li .ant-tree-switcher-noop > i {
+    visibility: hidden;
+  }
+  .ant-tree.ant-tree-show-line.hide-file-icon li .ant-tree-switcher-noop:after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 10px;
+    height: 1px;
+    margin: 0;
+    // border-bottom: 1px solid #777B92;
+  }
+  .ant-tree li ul {
+    padding: 0 0 0 14px;
+  }
+  .ant-tree li span.ant-tree-switcher, .ant-tree li span.ant-tree-iconEle {
+    width: 18px;
+    color: #a1a4b6;
+  }
+  .ant-tree.ant-tree-show-line.hide-file-icon li .ant-tree-switcher-noop:after {
+    display: none;
+  }
+  .ant-modal-confirm .ant-modal-body {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .ant-modal-confirm-body-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+  }
+  .sk-modal-delete-header {
+    color: #222;
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .ant-modal-confirm-warning .ant-modal-confirm-body > .anticon,
+  .ant-modal-confirm-confirm .ant-modal-confirm-body > .anticon {
+    display: none;
+  }
+  .ant-modal-confirm-body > .anticon + .ant-modal-confirm-title + .ant-modal-confirm-content {
+    margin-left: 0;
+  }
+  .ant-modal-confirm .ant-modal-confirm-btns {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    float: none;
+    width: 100%;
+  }
+  .ant-modal .sk-main-button {
+    margin: 0;
+    padding: 10px 30px;
+    &:focus {
+      color: #222;
+      background: #ffd156;
+    }
+    &:hover {
+      color: #fff;
+      background: #3C3E49;
+      border-color: #3c3e49;
+    }
+  }
+  .ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr.ant-table-row-level-0 > th:not(.ant-table-selection-column),
+  .ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-tbody > tr.ant-table-row-level-0 > td {
+    border: inherit ;
+  }
+  .ant-table-tbody > tr,
+  .ant-table-tbody > th,
+  .ant-table-tbody > th > td {
+    transition: background-color 0s;
+  }
+  .ant-table-tbody > tr.ant-table-row-level-0 {
+    position: relative;
+    background: transparent;
+    border-bottom: 1px solid #e7e7e7;
+    &:nth-child(even) {
+      position: relative;
+      background: transparent;
+      border-bottom: 1px solid #e7e7e7;
+      &:hover {
+        background: #FFF2CD;
+      }
+    }
+    &.ant-table-row-selected:nth-child(even) {
+      background: #FFF2CD;
+    }
+    &:hover,
+    &.ant-table-row-selected {
+      background: #FFF2CD;
+    }
+  }
+  .ant-table-tbody > tr.ant-table-row-level-0, .ant-table-tbody > tr.ant-table-row-level-0:nth-child(even) {
+
+  }
+  .ant-table-thead > tr > th .ant-table-header-column .ant-table-column-sorters::before {
+    transition: background-color 0s;
+  }
+  .ant-modal .sk-main-button:nth-child(2) {
+    margin-right: 20px;
+    margin-left: 0;
+  }
+  .ant-modal .sk-main-button--white:hover {
+    color: #222;
+    background: #ffd156;
+    border-color: #ffd156;
+  }
+  .ant-modal-confirm-body .ant-modal-confirm-title {
+    margin-bottom: 20px;
+  }
+}

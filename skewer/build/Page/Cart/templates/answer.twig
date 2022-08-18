@@ -1,0 +1,11 @@
+{% if form_anchor %}
+    <div id="form-answer"></div>
+{% endif %}
+{% if answer %}{{ answer }}{% endif %}
+{% if redirect_uri %}
+    <script>
+        setTimeout(function(){
+            window.location.replace("{{ redirect_uri }}");
+        },1500);
+    </script>
+{% endif %}

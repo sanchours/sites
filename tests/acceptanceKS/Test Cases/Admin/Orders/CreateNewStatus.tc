@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Создание нового статуса</description>
+   <name>CreateNewStatus</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>35c0cf2e-01a3-4ee6-97db-22c44e3718cd</testCaseGuid>
+</TestCaseEntity>

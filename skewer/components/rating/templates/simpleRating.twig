@@ -1,0 +1,17 @@
+{% if rating %}
+
+    {% if rating > 5 %}
+        {% set rating = 5 %}
+    {% endif %}
+
+    <div class="b-ratingstar">
+        <div class="js-rating" data-rating="{{ rating }}" data-allowRate="0">
+            <div class="ratingstar__item"></div>
+        </div>
+
+        {% if count %}
+            <div class="ratingstar__count">({{ count }})</div>
+        {% endif %}
+    </div>
+
+{% endif %}

@@ -1,0 +1,78 @@
+<?php
+
+declare(strict_types=1);
+
+$finder = PhpCsFixer\Finder::create()
+    ->in(__DIR__)
+    ->exclude('vendor')
+    ->exclude('cache')
+    ->exclude('runtime')
+    ->exclude('requirements.php')
+    ->in(__DIR__.'/skewer')
+    ->exclude('libs');
+
+return PhpCsFixer\Config::create()
+    ->setRules([
+        '@Symfony' => true,
+        '@Symfony:risky' => true,
+        '@PHP70Migration' => true,
+        '@PHP70Migration:risky' => true,
+        '@PHPUnit60Migration:risky' => true,
+
+        'concat_space' => ['spacing' => 'one'], // [@Symfony] Concatenation should be spaced according configuration. Rule is: configurable.
+        'phpdoc_align' => false, // [@Symfony] All items of the given phpdoc tags must be aligned vertically.
+        'is_null' => ['use_yoda_style' => false], // [@Symfony:risky] Replaces is_null(parameter) expression with null === parameter. Risky rule: risky when the function ``is_null()`` is overridden.
+        'method_argument_space' => ['ensure_fully_multiline' => true], // [@PSR2, @Symfony] In method arguments and method call, there MUST NOT be a space before each comma and there MUST be one space after each comma. Argument lists MAY be split across multiple lines, where each subsequent line is indented once. When doing so, the first item in the list MUST be on the next line, and there MUST be only one argument per line.
+        'yoda_style' => false, // [@Symfony] Write conditions in Yoda style (true), non-Yoda style (false) or ignore those conditions (null) based on configuration. Rule is: configurable.
+
+        'array_syntax' => ['syntax' => 'short'], // PHP arrays should be declared using the configured syntax (requires PHP>= 5.4 for short syntax). Rule is: configurable.
+        'align_multiline_comment' => ['comment_type' => 'phpdocs_like'], // Each line of multi-line DocComments must have an asterisk [PSR-5] and must be aligned with the first one.
+        'combine_consecutive_issets' => true, // Using isset(X) && multiple times should be done in one call.
+        'combine_consecutive_unsets' => true, // Calling unset on multiple items should be done in one call.
+        'compact_nullable_typehint' => true, // Remove extra spaces in a nullable typehint.
+        'escape_implicit_backslashes' => true, // Escape implicit backslashes in strings and heredocs to ease the understanding of which are special chars interpreted by PHP and which not. Rule is: configurable.
+        'explicit_indirect_variable' => true, // Add curly braces to indirect variables to make them clear to understand.
+        'explicit_string_variable' => true, // Converts implicit variables into explicit ones in double-quoted strings or heredoc syntax.
+        'final_internal_class' => true, // Internal classes should be final. Rule is: configurable, risky.
+        'linebreak_after_opening_tag' => true, // Ensure there is no code on the same line as the PHP open tag.
+        'mb_str_functions' => true, // Replace non multibyte-safe functions with corresponding mb function. Rule is: risky.
+        'method_chaining_indentation' => true, // Method chaining MUST be properly indented. Method chaining with different levels of indentation is not supported.
+        'no_multiline_whitespace_before_semicolons' => true, // Multi-line whitespace before closing semicolon are prohibited.
+        'no_null_property_initialization' => true, // Properties MUST not be explicitly initialized with null.
+        'no_php4_constructor' => true, // Convert PHP4-style constructors to __construct. Rule is: risky.
+        'no_superfluous_elseif' => true, // Replaces superfluous elseif with if.
+        'no_useless_else' => true, // There should not be useless else cases.
+        'no_useless_return' => true, // There should not be an empty return statement at the end of a function.
+        'ordered_class_elements' => false, // Orders the elements of classes/interfaces/traits. Rule is: configurable.
+        'ordered_imports' => true, // Ordering use statements. Rule is: configurable.
+        'php_unit_strict' => false, // PHPUnit methods like "assertSame" should be used instead of"assertEquals". Rule is: configurable, risky.
+        'phpdoc_add_missing_param_annotation' => true, // Phpdoc should contain @param for all params. Rule is: configurable.
+        'phpdoc_order' => true, // Annotations in phpdocs should be ordered so that param annotations come first, then throws annotations, then return annotations.
+        'phpdoc_types_order' => true, // Sorts PHPDoc types.
+        'protected_to_private' => true, // Converts protected variables and methods to private where possible.
+        'simplified_null_return' => true, // A return statement wishing to return "void" should not return "null". Rule is: risky.
+        'static_lambda' => true, // Lambdas not (indirect) referencing $this must be declared static. Rule is: risky.
+        'strict_comparison' => false, // Comparisons should be strict. Rule is: risky.
+        'strict_param' => false, // Functions should be used with $strict param. Rule is: risky.
+        'ternary_to_null_coalescing' => true, // Use null coalescing operator ?? where possible.
+
+        'class_keyword_remove' => false, // Converts ::class keywords to FQCN strings.
+        'general_phpdoc_annotation_remove' => false, // Configured annotations should be omitted from phpdocs. Rule is: configurable.
+        'header_comment' => false, // Add, replace or remove header comment. Rule is: configurable.
+        'php_unit_test_annotation' => false, // Adds or removes @test annotations from tests, following configuration. Rule is: risky.
+        'php_unit_test_class_requires_covers' => false, // Adds a default @coversNothing annotation to PHPUnit test classes that have no @covers* annotation.
+        'psr0' => false, // Classes must be in a path that matches their namespace, be at least onenamespace deep and the class name should match the file name. Rule is: configurable, risky.
+        'no_blank_lines_before_namespace' => false, // There should be no blank lines before a namespace declaration.
+        'no_short_echo_tag' => false, // Replace short-echo <?= with long format <?php echo syntax.
+        'not_operator_with_space' => false, // Logical NOT operators (!) should have leading and trailing whitespaces.
+        'not_operator_with_successor_space' => false, // Logical NOT operators (!) should have one trailing whitespace.
+        'native_function_invocation' => false, // Add leading \ before function invocation of internal function to speed up resolving. Rule is: configurable, risky.
+        'single_line_comment_style' => false, // Single-line comments and multi-line comments with only one line of actual content should use the // syntax.
+
+        'self_accessor' => false, // Inside class or interface element ``self`` should be preferred to the class name itself.
+        'declare_strict_types' => false, // Force strict types declaration in all files. Requires PHP >= 7.0. Risky rule: forcing strict types will stop non strict code from working.
+        'simple_to_complex_string_variable' => true, // Converts explicit variables in double-quoted strings and heredoc syntax from simple to complex format (``${`` to ``{$``).
+    ])
+    ->setRiskyAllowed(true)
+    ->setUsingCache(false)
+    ->setFinder($finder);

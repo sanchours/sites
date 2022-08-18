@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Рейтинг в товарах</description>
+   <name>RatingInGoods</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bb48814f-6c43-4aad-a22d-1fcd806aa189</testCaseGuid>
+</TestCaseEntity>

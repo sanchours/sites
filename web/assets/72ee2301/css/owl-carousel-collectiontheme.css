@@ -1,0 +1,68 @@
+/* layer: default */
+.b-collection-carousel {
+    margin-bottom: 40px;
+    padding-left: 35px;
+    padding-right: 35px;
+    position: relative;
+}
+.b-collection-carousel .collection-carousel__item {
+    text-align: center;
+    width: auto;
+}
+.owl-carousel.owl-carousel-collectiontheme .owl-nav .owl-prev, 
+.owl-carousel.owl-carousel-collectiontheme .owl-nav .owl-next {
+    margin-top: -[modules.catalogbox.detal.gal.height] / 2; 
+    position: absolute;
+    top: 50%;
+    width: [modules.catalogbox.detal.gal.width];
+    height: [modules.catalogbox.detal.gal.height];
+    cursor: pointer;
+}
+.owl-carousel.owl-carousel-collectiontheme .owl-nav .owl-prev {
+    left: -35px;
+    background: url([modules.catalogbox.detal.gal.image_back]) 0 0 no-repeat;
+}
+.owl-carousel.owl-carousel-collectiontheme .owl-nav .owl-next {
+    right: -35px;
+    background: url([modules.catalogbox.detal.gal.image_next]) 0 0 no-repeat;
+}
+.owl-carousel.owl-carousel-collectiontheme .owl-nav .owl-prev:hover, 
+.owl-carousel.owl-carousel-collectiontheme .owl-nav .owl-prev:active, 
+.owl-carousel.owl-carousel-collectiontheme .owl-nav .owl-next:hover, 
+.owl-carousel.owl-carousel-collectiontheme .owl-nav .owl-next:active {
+    background-position: 0 100%;
+}
+.owl-carousel.owl-carousel-collectiontheme .owl-nav .owl-prev.disabled, 
+.owl-carousel.owl-carousel-collectiontheme .owl-nav .owl-next.disabled,
+.owl-carousel.owl-carousel-collectiontheme .owl-nav .owl-prev.disabled:hover,
+.owl-carousel.owl-carousel-collectiontheme .owl-nav .owl-next.disabled:hover,
+.owl-carousel.owl-carousel-collectiontheme .owl-nav .owl-prev.disabled:active,
+.owl-carousel.owl-carousel-collectiontheme .owl-nav .owl-next.disabled:active {
+    background-position: 0 0;
+}
+.owl-carousel.owl-carousel-collectiontheme .owl-dots {
+    text-align: center;
+}
+.owl-carousel.owl-carousel-collectiontheme .owl-dot {
+    margin: 0 5px;
+    border-radius: 1000px;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #c2c2c2;
+}
+.owl-carousel.owl-carousel-collectiontheme .owl-dot.active {
+    background-color: #3dade1;
+}
+.owl-carousel.owl-carousel-collectiontheme .owl-dot:before {
+    content: '';
+    margin-top: -10px;
+    margin-left: -10px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}

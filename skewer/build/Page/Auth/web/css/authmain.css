@@ -1,0 +1,91 @@
+/* layer: default */
+
+/* group: modules.auth              | Авторизация */
+/* group: modules.auth.authmain     | Авторизация в колонке */
+/* param: marginb                   | Отступ после формы | size | 18px */
+/* param: bordercolor               | Цвет бордеров | color | #d7d7d7 */
+/* param: bgcolor                   | Цвет фона блока | color | #fff */
+/* param: colorbtn                  | Цвет текста кнопки | color | #fff */
+/* param: colorbtnh                 | Цвет текста кнопки при наведении | color | #fff */
+/* param: backcolor                 | Цвет фона кнопки | color | #3dade1 */
+/* param: backcolorh                | Цвет фона кнопки при наведении | color | #c2c2c2 */
+/* param: borrad                    | Радиус скругления    | size | 0 */
+
+/* group: modules.auth.authhead     | Авторизация в шапке */
+/* param: v_value                   | Отступ по вертикали  | size | 60px */
+/* param: h_position                | Горизонтальное выравнивание | h-position-abs | right  */
+/* param: h_value                   | Отступ по горизонтали  | size | 30px */
+/* param: width                     | Ширина | size | 180px */
+.b-authmain {
+    margin-bottom: [modules.auth.authmain.marginb];
+    border: 1px solid [modules.auth.authmain.bordercolor];
+    background: [modules.auth.authmain.bgcolor];
+}
+.b-authmain input,
+.b-authmain input[type="text"],
+.b-authmain input[type="password"] {
+    padding: 10px 20px;
+    border: 1px solid [modules.auth.authmain.bordercolor];
+    width: 100%;
+    background-color: #fff;
+    font-size: 12px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.b-authmain .authmain__wrap {
+    padding: 20px 20px;
+}
+.b-authmain .authmain__item {
+    padding-bottom: 10px;
+}
+.b-authmain .authmain__btn {
+    padding: 16px 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    color: [modules.auth.authmain.colorbtn];
+    background: [modules.auth.authmain.backcolor];
+    font-family: [editor.family];
+    font-size: [editor.size];
+    border: 0;
+    cursor: pointer;
+    -webkit-border-radius: [modules.auth.authmain.borrad];
+    -moz-border-radius: [modules.auth.authmain.borrad];
+    border-radius: [modules.auth.authmain.borrad];
+    box-sizing: border-box;
+}
+.b-authmain .authmain__btn:hover {
+    background: [modules.auth.authmain.backcolorh];
+    color: [modules.auth.authmain.colorbtnh];
+}
+.b-authmain .authmain__item a:link,
+.b-authmain .authmain__item a:active,
+.b-authmain .authmain__item a:visited,
+.b-authmain .authmain__item a:hover {
+    display: block;
+    text-align: center;
+}
+.b-authmain .authmain__error {
+    color: #c61b13;
+}
+/*-------------------------*/
+.b-authmain-head {
+    position: absolute;
+    top: [modules.auth.authhead.v_value];
+    [modules.auth.authhead.h_position]: [modules.auth.authhead.h_value];
+    width: [modules.auth.authhead.width];
+    z-index: 40;
+}
+.b-authmain-head a {
+    display: inline-block;
+    vertical-align: top;
+}
+.b-authmain-head span {
+    padding: 0 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+/*-------------------------*/
+/*-------------------------*/
+/*-------------------------*/

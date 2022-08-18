@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Создание нового справочника</description>
+   <name>CreateNewDirectory</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>101b857d-5f54-4514-8537-228804d59b5e</testCaseGuid>
+</TestCaseEntity>

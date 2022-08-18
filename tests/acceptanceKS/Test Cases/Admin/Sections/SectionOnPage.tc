@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Разводка из раздела</description>
+   <name>SectionOnPage</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d81ca447-539b-4245-96ac-0d84f61ab58f</testCaseGuid>
+</TestCaseEntity>

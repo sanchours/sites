@@ -1,0 +1,16 @@
+<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+    <li class="ui-state-default ui-corner-top {% if (cmd=='order') %}ui-tabs-active ui-state-active{% endif %}">
+        <a href="[{{ profile_id }}][Profile?cmd=init]" class="ui-tabs-anchor" tabindex="-1" id="ui-id-1">{{ Lang.get('auth.your_order')}}</a></li>
+    <li class="ui-state-default ui-corner-top {% if (cmd=='info') %}ui-tabs-active ui-state-active{% endif %}">
+        <a href="[{{ profile_id }}][Profile?cmd=info]" class="ui-tabs-anchor" tabindex="-1" id="ui-id-2">{{ Lang.get('auth.data_contact')}}</a></li>
+
+    {% if canChangePass %}
+        <li class="ui-state-default ui-corner-top {% if (cmd=='settings') %}ui-tabs-active ui-state-active{% endif %}">
+            <a href="[{{ profile_id }}][Profile?cmd=settings]" class="ui-tabs-anchor" tabindex="-1" id="ui-id-3">{{ Lang.get('auth.change_password')}}</a></li>
+    {% endif %}
+
+    {% if wishlist %}
+        <li class="ui-state-default ui-corner-top {% if (cmd=='wishlist') %}ui-tabs-active ui-state-active{% endif %}">
+            <a href="[{{ profile_id }}][Profile?cmd=wishlist]" class="ui-tabs-anchor" tabindex="-1" id="ui-id-1">{{ Lang.get('Profile.wish_list')}}</a></li>
+    {% endif %}
+</ul>

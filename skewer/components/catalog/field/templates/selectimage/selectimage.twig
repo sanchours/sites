@@ -1,0 +1,4 @@
+<div class="catalogbox__param catalogbox__param__{{ name }} catalogbox__param-selectimage">
+        {% if attrs.show_title == 1 %}<span>{{ title }}:</span> {% endif %}
+    {% if image %}<img src="{{ image }}"/>{% endif %} {{ value }}{{ attrs.measure }}
+</div>

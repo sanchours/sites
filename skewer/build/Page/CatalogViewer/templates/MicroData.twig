@@ -1,0 +1,46 @@
+<div itemscope itemtype="{{ Site.getWebProtocol() }}schema.org/Product" style="display: none">
+
+    <meta itemprop="name" content="{{ aObject.title | e }}">
+
+    {% if aObject.fields.announce.value %}
+        {% set description = aObject.fields.announce.value  %}
+    {% else %}
+        {% set description = seo_description  %}
+    {% endif %}
+
+    {% if description %}
+        <div itemprop="description">
+            {{ description }}
+        </div>
+    {% endif %}
+
+    {% if aObject.fields.gallery.first_img.images_data.big.file %}
+        <img alt="{{ aObject.fields.gallery.first_img.alt_title }}" src="{{ aObject.fields.gallery.first_img.images_data.big.file }}" itemprop="image" />
+    {% endif %}
+
+    {% if aObject.fields.price.value %}
+        <div itemprop="offers" itemscope itemtype="{{ Site.getWebProtocol() }}schema.org/Offer">
+            <meta itemprop="price" content="{{ aObject.fields.price.value | e }}">
+            <meta itemprop="priceCurrency" content="{{ currency_type }}">
+        </div>
+    {% endif %}
+
+    {% if aObject.Rating.html %}
+        <div itemprop="aggregateRating" itemscope itemtype="{{ Site.getWebProtocol() }}schema.org/AggregateRating">
+            <span itemprop="worstRating">0</span>
+            {% if aObject.Rating.avgValue %}
+                <span itemprop="ratingValue">{{ aObject.Rating.avgValue }}</span>
+            {% endif %}
+            <span itemprop="bestRating">{{ aObject.Rating.max }}</span>
+            {% if aObject.Rating.countRates %}
+                <span itemprop="ratingCount">{{ aObject.Rating.countRates }}</span>
+            {% endif %}
+
+        </div>
+    {% endif %}
+
+    {% if reviews %}
+        {{ reviews }}
+    {% endif %}
+
+</div>

@@ -1,0 +1,44 @@
+<style>
+    .sk-paramlist {
+        table-layout: fixed;
+        border-top: 1px solid #dfe9f5;
+        width: 100%;
+    }
+    .sk-paramlist th {
+        padding: 10px;
+        text-align: left;
+        background-color: #dfe9f5;
+        font-weight: bold;
+        border: 1px solid #dfe9f5;
+    }
+
+    .sk-paramlist-row:nth-child(odd) {
+        background: #ecf2f5;
+    }
+
+    .sk-paramlist-row td {
+        font-size: 14px;
+        text-align: left;
+        padding: 5px 5px 0 5px;
+        border-right: 1px solid #dfe9f5;
+    }
+</style>
+
+{% if aParamsListGroup|length %}
+    <table class="sk-paramlist">
+        <tr>
+            <th>{{ Lang.get('params.name') }}</th>
+            <th>{{ Lang.get('params.title') }}</th>
+            <th>{{ Lang.get('params.value') }}</th>
+            <th>{{ Lang.get('params.parent') }}</th>
+        </tr>
+        {% for aItem in aParamsListGroup %}
+            <tr class="sk-paramlist-row">
+                <td>{{ aItem.name }}</td>
+                <td>{{ aItem.title }}</td>
+                <td>{{ aItem.value }}</td>
+                <td>{{ aItem.parent }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endif %}

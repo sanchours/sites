@@ -1,0 +1,21 @@
+<div class="b-footer__rama">
+    <div class="b-footerbox">
+        <p class="canapelogo"><img src="{{ logoImg }}" alt="" /></p>
+        {% if hideCopyright==0 %}
+            <p><a href="{{ Lang.get('adm.link_developer') }}" target="_blank">CanapeCMS</a></p>
+        {% endif %}
+        <p>Skewer {{ version }}</p>
+        {# Вывод даты гарантийного обслуживания #}
+        {% if sDataSupport %}
+            <p>{{ Lang.get('adm.end_service') }} <b> {{ sDataSupport }} </b> </p>
+        {%  if Lang.get('adm.end_href') != ' ' %} <p><a href="{{ Lang.get('adm.end_href') }}" target="_blank"> {{  Lang.get('adm.support_rates') }} </a></p> {% endif %}
+        {% elseif sSwitch == 'end' %}
+            <p>{{  Lang.get('adm.end_service_rates') }} {%  if Lang.get('adm.end_href') != ' '  %} <a href="{{ Lang.get('adm.end_href') }}" target="_blank"> {{  Lang.get('adm.end_service_rates_link') }} </a>{% endif %}</p>
+        {% elseif sSwitch == 'no' %}
+            <p>{{ Lang.get('adm.need_tech_support') }} {%  if Lang.get('adm.end_href') != ' '  %} <a href="{{ Lang.get('adm.end_href') }}" target="_blank"> {{  Lang.get('adm.need_active_support') }} </a>{% endif %} </p>
+        {% endif %}
+
+        <div class="helpbtn"><button type="button" class="helpbutton" onclick="window.open('{{ Lang.get('adm.link_help') }}','_blank');">{{ Lang.get('adm.help') }}</button></div>
+        <div class="g-clear"></div>
+    </div>
+</div>

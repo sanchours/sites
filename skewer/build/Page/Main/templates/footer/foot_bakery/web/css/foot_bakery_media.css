@@ -1,0 +1,159 @@
+/* layer: default */
+/*---------------------------------*/
+@media handheld, only screen and (min-width: [adaptive.break_desktop]) { /*-DESKTOP-*/
+    /*--------------------------*/
+    .hide-on-desktop {
+        display: none !important;
+    }
+    /*--------------------------*/
+    /*--------------------------*/
+}
+/*---------------------------------*/
+@media handheld, only screen and (min-width: [adaptive.break_desktop]) and (max-width: 1400px) { /*-SMALL DESKTOP-*/
+    /*--------------------------*/
+    .l-footerbox:before {
+        right: 76.6%;
+    }
+    /*--------------------------*/
+    .l-grid .grid__item4 {
+        right: 573px;
+    }
+    .l-grid .grid__item5 {
+        right: 520px;
+    }
+    /*--------------------------*/
+}
+/*---------------------------------*/
+@media handheld, only screen and (min-width: [adaptive.break_tablet]) and (max-width: [adaptive.break_desktop] - 1px ) { /*-TABLET-*/
+    /*--------------------------*/
+    .hide-on-tablet {
+        display: none !important;
+    }
+    /*--------------------------*/
+    .l-layout .layout__wrap {
+        padding-bottom: 630px;
+    }
+    /*--------------------------*/
+    .l-footerbox {
+        margin-top: -630px;
+        min-height: 630px;
+    }
+    .l-footerbox:before {
+        content: none;
+    }
+    /*--------------------------*/
+    .l-grid {
+        height: 630px;
+    }
+    .l-grid .grid__item1 {        
+        top: 580px;
+    }
+    .l-grid .grid__item2 {
+        top: 574px;
+    }
+    .l-grid .grid__item3 {
+        top: 50px;
+        width: 440px;
+    }
+    .l-grid .grid__item4 {
+        top: 214px;
+        right: auto;
+        left: 70px;
+    }
+    .l-grid .grid__item5 {
+        top: 56px;
+        right: auto;
+        left: 30px;
+    }
+    .l-grid .grid__item7 {
+        top: 582px;
+    }
+    /*--------------------------*/
+    /*--------------------------*/
+    /*--------------------------*/
+}
+/*--------------------------*/
+@media handheld, all and (min-device-width: [adaptive.break_tablet]) and (max-device-width: 1024px) and (orientation: landscape) { /*-TABLET LANDSCAPE-*/
+    /*--------------------------*/
+    .hide-on-tablet {
+        display: none !important;
+    }
+    .show-on-tablet-l {
+        display: block !important;
+    } 
+    /*--------------------------*/
+}
+/*--------------------------*/
+@media handheld, only screen and (max-width: [adaptive.break_tablet] - 1px ) { /*-MOBILE-*/
+    /*--------------------------*/
+    .hide-on-mobile {
+        display: none !important;
+    }
+    /*--------------------------*/
+    .l-layout .layout__wrap {
+        padding-bottom: 680px;
+    }
+    /*--------------------------*/
+    .l-footerbox {
+        margin-top: -680px;
+        min-height: 680px;
+        background-position: 100% 0;
+    }
+    .l-footerbox:before {
+        content: none;
+    }
+    /*--------------------------*/
+    .l-grid {
+        height: 680px;
+    }
+    .l-grid [class^="grid__item"] {
+        padding: 0;
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        width: auto;
+        text-align: center;
+    }
+    .l-grid .grid__item1 {
+        top: 562px;
+    }
+    .l-grid .grid__item3 {
+        top: 136px;
+    }
+    .l-grid .grid__item5 {
+        top: 47px;
+    }
+    .l-grid .grid__item7 {
+        top: 631px;
+    }
+    /*--------------------------*/
+    .b-foot-contacts {
+        margin-bottom: 23px;
+        text-align: center;
+    }
+    /*--------------------------*/
+    .b-copyright-dev {
+        text-align: center;
+    }
+    /*--------------------------*/
+    .b-foot-map {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+    /*--------------------------*/
+    /*--------------------------*/
+}
+/*--------------------------*/
+@media handheld, only screen and (max-width: [adaptive.break_tablet] - 1px ) and (orientation:landscape) { /*-MOBILE LANDSCAPE-*/
+    /*--------------------------*/
+    /*--------------------------*/
+}
+/*--------------------------*/
+@media handheld, only screen and (max-width: 320px) { /*SMALL MOBILE-*/ 
+    /*--------------------------*/
+    .b-foot-contacts .foot-contacts__phone {
+        font-size: 32px;
+    }
+    /*--------------------------*/
+}
+/*--------------------------*/

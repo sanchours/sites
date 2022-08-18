@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Удаление первого товара в корзине</description>
+   <name>DeleteFirstItemCartList</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>afe50632-8f8c-4647-bd2c-87ed06bec912</testCaseGuid>
+</TestCaseEntity>

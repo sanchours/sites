@@ -1,0 +1,28 @@
+workflow:
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+    - if: '$CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS'
+      when: never
+    - if: '$CI_COMMIT_BRANCH'
+
+deploy:
+    stage: build
+    only:
+        - master03
+    script:
+        - ssh $REMOTE_TWINSLAB_USER@$REMOTE_TWINSLAB_HOST "\echo обновление кластерных файлов - версия 4.03 - только директория skewer и build админки \
+            && cd $PLATFORM_PATH && git fetch  && echo очистка измененных файлов \
+            && git checkout . && git clean -f && echo обновление файлов из репозитория \
+            && git checkout $CI_COMMIT_SHA &&  echo обновляем тэги \
+            && git fetch --tags -f && git tag -f 0403 && git push --tags -f && echo переход в директорию ant.. \
+            && cd skewer/libs/ant-design-pro/ && pwd && echo билд для npm \
+            && npm run build && echo возвращаемся в корневую директорию \
+            && cd $PLATFORM_PATH && echo переносим директорию node_modules \
+            && mv ${PLATFORM_PATH}/skewer/libs/ant-design-pro/node_modules ${PLATFORM_PATH}/node_modules && echo стираем директорию skewer \
+            && rm -rf /var/skewerCluster/canape/0403/skewer/* && echo копируем директорию skewer \
+            && cp -r ${PLATFORM_PATH}/skewer /var/skewerCluster/canape/0403/ && echo возвращаем директорию node_modules на место \
+            && mv ${PLATFORM_PATH}/node_modules ${PLATFORM_PATH}/skewer/libs/ant-design-pro/node_modules &&  echo стираем директорию update \
+            && rm -rf /var/skewerCluster/updates/canape/0403/* \
+            && echo копируем директорию update \
+            && cp -r ${PLATFORM_PATH}/update/* /var/skewerCluster/updates/canape/0403/ && echo конец обновления \
+            && exit"

@@ -1,0 +1,18 @@
+{% for iKey, aPoll in aPolls %}
+<div class="b-formopros"{{ Design.write(' sktag="formopros"') }}>
+    <div class="js-formopros__wrap">
+        <h3>{{aPoll.title|e}}</h3>
+        <p><b>{{aPoll.question|e}}</b></p>
+        {% for aAnswer in aPoll.answers %}
+        <div class="formopros__line"><input id="vote-answer-{{ aPoll.id }}-{{ aAnswer.answer_id }}" name="vote-answer-{{ aPoll.id }}" {% if loop.index==1 %}checked="checked"{% endif %} class="js-answer" value="{{aAnswer.answer_id}}" type="radio"><label for="vote-answer-{{ aPoll.id }}-{{ aAnswer.answer_id }}">{{aAnswer.title|e}}</label></div>
+        {% endfor %}
+        <div class="formopros__btnbox">
+            <button class="b-btnbox js-poll">{{ Lang.get('poll.vote') }}</button>
+        </div>
+        <div class="formopros__btnbox">
+            <a href="#" class="b-btnbox b-btnbox--vote js-poll-results">{{ Lang.get('poll.result') }}</a>
+        </div>
+        <input type="hidden" name="poll" id="js-poll" value="{{aPoll.id}}" />
+    </div>
+</div>
+{% endfor %}

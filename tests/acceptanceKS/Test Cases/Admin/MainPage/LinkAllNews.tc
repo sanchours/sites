@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Ссылка все новости</description>
+   <name>LinkAllNews</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b13f5c66-6395-43bd-952a-7b3a27210ba8</testCaseGuid>
+</TestCaseEntity>

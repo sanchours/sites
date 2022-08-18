@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Параметр значение по умолчанию</description>
+   <name>CheckFormData</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>71a8016e-0696-4f40-85be-dde5cab15865</testCaseGuid>
+</TestCaseEntity>

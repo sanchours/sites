@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Галочка &quot;Новый товар&quot;</description>
+   <name>CheckboxNew</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a740c16d-a7da-4073-9244-bdfefc30d1c5</testCaseGuid>
+</TestCaseEntity>

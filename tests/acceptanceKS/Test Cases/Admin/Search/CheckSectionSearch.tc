@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка поиска по указанному разделу</description>
+   <name>CheckSectionSearch</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e953047f-21f2-459d-b0ea-e943ba847124</testCaseGuid>
+</TestCaseEntity>

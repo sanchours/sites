@@ -1,0 +1,31 @@
+.x-grid-row .policy-tree-row-allow {
+    color: black;
+}
+.x-grid-row .policy-tree-row-allow .x-tree-icon {
+    background-image: url("../img/unlocked.png") !important;
+}
+.x-grid-row .policy-tree-row-deny {
+    color: gray;
+}
+.x-grid-row .policy-tree-row-deny .x-tree-icon {
+    background-image: url("../img/locked.png") !important;
+}
+.x-grid-row .policy-tree-row-col-hidden  div{
+    display: none;
+}
+.x-grid-row-over .policy-tree-row-col-hidden div {
+    display: block;
+    opacity: 0.6;
+}
+.policy-tree-icon-allow {
+    background-image: url("../img/check.png") !important;
+}
+.policy-tree-icon-deny {
+    background-image: url("../img/minus2.png") !important;
+}
+.policy-tree-icon-none {
+    background-image: url("../img/uncheck.png") !important;
+}
+.policy-tree-icon-home {
+    background-image: url("../img/home.png") !important;
+}

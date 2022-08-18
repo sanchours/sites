@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка заголовка статей на главной</description>
+   <name>VerifyNameArticlesOnPage</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b3bf5cbc-8539-4a1f-abcc-6f1e9c7f35fc</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,69 @@
+:global {
+  .ant-layout-footer {
+    position: fixed;
+    z-index: 15;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .logs-panel {
+    &__content {
+      display: block;
+      height: 200px;
+      padding-bottom: 20px;
+      overflow-y: auto;
+      font-size: 11px;
+      ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+          padding: 3px 10px;
+          overflow: hidden;
+          font-size: 12px;
+          // white-space: nowrap;
+          // -o-text-overflow: ellipsis;
+          // text-overflow: ellipsis;
+          border-bottom: 1px solid #222;
+          border-left: 3px solid #fff;
+
+          &:hover {
+            background: #e7e7e7;
+            border-left: 3px solid #222;
+          }
+        }
+      }
+    }
+
+    &__title {
+      border: 1px solid #d9d9d9;
+      padding: 5px 4px;
+    }
+
+    &__title::after {
+      content: '';
+      display: block;
+      clear: both;
+      font-size: 0;
+    }
+
+    &__toolbar {
+      float: right;
+      
+      svg {
+        cursor: pointer;
+        box-sizing: content-box;
+        padding: 0 8px;
+      }
+
+      svg:hover {
+        color: #222;
+      }
+    }
+  }
+
+  .logs-panel.logs-panel--collapsed .logs-panel__content {
+    display: none;
+  }
+}

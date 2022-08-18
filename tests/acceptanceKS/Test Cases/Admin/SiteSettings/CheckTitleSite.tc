@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка названия сайта</description>
+   <name>CheckTitleSite</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aeeafa5a-4020-45f0-bca2-87688f7de9f1</testCaseGuid>
+</TestCaseEntity>

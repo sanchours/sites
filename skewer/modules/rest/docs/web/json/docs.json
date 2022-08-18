@@ -1,0 +1,270 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "REST API",
+    "description": "Описание основных запросов для получения информации с сайта",
+    "version": "1.0"
+  },
+  "basePath": "/rest/",
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "parameters": {
+    "sort": {
+      "name": "sort",
+      "in": "query",
+      "required": false,
+      "type": "string",
+      "description": "Используется для сортировки исходной выборки. Сортировка производится по переданному значению поля. Доступна прямая и обратная сортировки. Для использования прямой сортировки достаточно передать название параметр, для обратной - перед вместе с параметром знак минут. Примеры: sort=id;sort=-id"
+    },
+    "parent": {
+      "name": "parent",
+      "in": "query",
+      "required": false,
+      "type": "string",
+      "description": "Выборка дочерних разделов переданного идентификатора раздела"
+    },
+    "page": {
+      "name": "page",
+      "in": "query",
+      "required": false,
+      "type": "integer",
+      "description": "Номер страницы, данные из которой будет отображены. Параметр используется для пагинации"
+    },
+    "per-page": {
+      "name": "per-page",
+      "in": "query",
+      "required": false,
+      "type": "integer",
+      "description": "Количество элементов на странице"
+    },
+    "id": {
+      "name": "id",
+      "in": "path",
+      "required": true,
+      "type": "integer",
+      "description": "Идентификатор"
+    }
+  },
+  "responses": {
+    "InternalServerError": {
+      "description": "Внутренняя ошибка сервера"
+    },
+    "SectionsList": {
+      "description": "Список разделов",
+      "schema": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Sections"
+        }
+      }
+    },
+    "Section": {
+      "description": "Детальная информация о разделе",
+      "schema":{
+        "$ref": "#/definitions/Section"
+      }
+    }
+  },
+  "paths": {
+    "/section": {
+      "get": {
+        "tags": [
+          "sections"
+        ],
+        "description": "Возвращает список разделов",
+        "parameters": [
+          {
+            "$ref": "#/parameters/parent"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/SectionsList"
+          },
+          "500": {
+            "$ref": "#/responses/InternalServerError"
+          }
+        }
+      }
+    },
+    "/section/{id}": {
+      "get": {
+        "tags": [
+          "sections"
+        ],
+        "description": "Возвращает данные о выбранной секции",
+        "parameters": [
+          {
+            "$ref": "#/parameters/id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/Section"
+          },
+          "500": {
+            "$ref": "#/responses/InternalServerError"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Section": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "description": "Идентификатор секции"
+        },
+        "title": {
+          "type": "string",
+          "description": "Заголовок секции"
+        },
+        "alias": {
+          "type": "string",
+          "description": "Системное название секции"
+        },
+        "visible": {
+          "type": "integer",
+          "description": "Видимость секции"
+        },
+        "position": {
+          "type": "integer",
+          "description": "Расположение данного раздела в системе"
+        },
+        "alias_path": {
+          "type": "string",
+          "description": "Псевдоним для доступа к секции"
+        },
+        "last_modified_date": {
+          "type": "string",
+          "description": "Дата последних изменений"
+        },
+        "parent": {
+          "type": "integer",
+          "description": "Идентификатор родительской секции"
+        },
+        "category_img": {
+          "type": "array",
+          "description": "Изображение для раздела",
+          "$ref": "#/definitions/CategoryImg"
+        },
+        "image_mobile": {
+          "type": "array",
+          "description": "Изображения для мобильного приложения",
+          "$ref": "#/definitions/ImageMobile"
+        },
+        "text": {
+          "type": "string",
+          "description": "Данные из первого текстового блока раздела"
+        }
+      }
+    },
+    "Sections": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "description": "Идентификатор секции"
+        },
+        "title": {
+          "type": "string",
+          "description": "Заголовок секции"
+        },
+        "alias": {
+          "type": "string",
+          "description": "Системное название секции"
+        },
+        "visible": {
+          "type": "integer",
+          "description": "Видимость секции"
+        },
+        "position": {
+          "type": "integer",
+          "description": "Расположение данного раздела в системе"
+        },
+        "alias_path": {
+          "type": "string",
+          "description": "Псевдоним для доступа к секции"
+        },
+        "last_modified_date": {
+          "type": "string",
+          "description": "Дата последних изменений"
+        },
+        "parent": {
+          "type": "integer",
+          "description": "Идентификатор родительской секции"
+        },
+        "category_img": {
+          "type": "array",
+          "description": "Изображение для раздела",
+          "$ref": "#/definitions/CategoryImg"
+        },
+        "image_mobile": {
+          "type": "array",
+          "description": "Изображения для мобильного приложения",
+          "$ref": "#/definitions/ImageMobile"
+        },
+        "children": {
+          "type": "array",
+          "description": "Дочерние разделы, с такой же структурой, что тут описывается"
+        }
+      }
+    },
+    "CategoryImg": {
+      "type": "object",
+      "properties": {
+        "preview": {
+          "type": "string",
+          "description": "Путь до изображения специального формата раздела"
+        },
+        "original": {
+          "type": "string",
+          "description": "Путь до оригинального изображения"
+        }
+      }
+    },
+    "ImageMobile": {
+      "type": "object",
+      "properties": {
+        "mdpi": {
+          "type": "string",
+          "description": "Путь до изображения для мобильного приложения"
+        },
+        "hdpi": {
+          "type": "string",
+          "description": "Путь до изображения для мобильного приложения"
+        },
+        "xhdpi": {
+          "type": "string",
+          "description": "Путь до изображения для мобильного приложения"
+        },
+        "xxhdpi": {
+          "type": "string",
+          "description": "Путь до изображения для мобильного приложения"
+        },
+        "xxxhdpi": {
+          "type": "string",
+          "description": "Путь до изображения для мобильного приложения"
+        },
+        "preview_hor": {
+          "type": "string",
+          "description": "Путь до изображения специального формата для мобильного приложения"
+        },
+        "original": {
+          "type": "string",
+          "description": "Путь до оригинального изображения"
+        }
+      }
+    }
+  }
+}

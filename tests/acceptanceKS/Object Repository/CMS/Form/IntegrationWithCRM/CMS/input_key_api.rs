@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_key_api</name>
+   <tag></tag>
+   <elementGuidId>d015e9cc-d852-4f59-8a7c-b4ab439258e7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[contains(@class,'sk-tab-skewer\build\Tool\Crm\Module')]//div[contains(@class,'sk-tab-form')]/div/div[3]/div/input</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[contains(@class,'sk-tab-skewer\build\Tool\Crm\Module')]//div[contains(@class,'sk-tab-form')]/div/div[3]/div/input</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>DIV</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[contains(@class,'sk-tab-skewer\build\Tool\Crm\Module')]//div[contains(@class,'sk-tab-form')]/div/div[3]/div/input</value>
+   </webElementProperties>
+</WebElementEntity>

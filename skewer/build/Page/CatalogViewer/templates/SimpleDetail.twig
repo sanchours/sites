@@ -1,0 +1,134 @@
+<div class="b-catalogbox b-catalogbox-detal">
+    {% if aObject is defined %}
+        {%  include 'MicroData.twig' %}
+        <div class="catalogbox__item js_ecommerce_detailPage js_catalogbox_item" data-ecommerce='{{ aObject.ecommerce }}' >
+            <div class="catalogbox__leftcol">
+                <div class="catalogbox__galbox js-catalog-detail-fotorama-wrap">
+                    {% if aObject.fields.gallery.html %}
+                        {{ aObject.fields.gallery.html }}
+                    {% endif %}
+                     <div class="catalogbox__salebox">
+                            {{ aObject.fields.discount.html }}
+                            {{ aObject.fields.hit.html }}
+                            {{ aObject.fields.new.html }}
+                    </div>
+                </div>
+            </div>
+            <div class="catalogbox__content">
+                {% if aObject.Rating.html %}<div class="catalogbox__rating">{{ aObject.Rating.html }}</div>{% endif %}
+                {% if aObject.fields.article.value %}
+                    <p class="catalogbox__artical">{% if aObject.fields.article.attrs.show_title == 1 %}{{ aObject.fields.article.title }}{% endif %} {{ aObject.fields.article.value }}</p>
+                {% endif %}
+                {% if aObject.fields.announce.value %}
+                    <div class="catalogbox__param__{{ aObject.fields.announce.name }}">{{ aObject.fields.announce.value }}</div>
+                {% endif %}
+                {% for field in aObject.fields %}
+                    {% if field.attrs[condition_print_param] %}
+                        {{ field.html }}
+                    {% endif %}
+                {% endfor %}
+
+                {% if bSeeAllParams %}
+                    <p class="catalogbox__seeAllParams">
+                        <a href="{{ aObject.url }}" class="catalogbox__see-all-params">{{ Lang.get('catalog.see_all_params') }}</a>
+                    </p>
+                {% endif %}
+
+                {% if aObject.fields.old_price.value %}
+                    <p class="catalogbox__oldprice">
+                    {{ aObject.fields.old_price.title }}:
+                        <span>{{ aObject.fields.old_price.value|price_format }}
+                            {{ aObject.fields.old_price.measure }}{% if aObject.fields.measure.value %}/{{ aObject.fields.measure.value  }}{% endif %}
+                        </span>
+                    </p>
+                {% endif %}
+                {% if aObject.fields.price.value %}
+                    <p class="catalogbox__price">{{ aObject.fields.price.title }}:
+                        <span> {{ aObject.fields.price.value|price_format }}</span>
+                        {{ aObject.fields.price.measure }}{% if aObject.fields.measure.value %}/{{ aObject.fields.measure.value  }}{% endif %}
+                    </p>
+                {% endif %}
+
+                {% if not isMainObject or not hideBuy1lvlGoods %}
+                <div class="catalogbox__shcar">
+                    <div class="catalogbox__btnbox">
+                        {% if aObject.fields.countbuy.value %}
+                            <div class="js_catalogbox_inputbox catalogbox__inputbox">
+                                <div class="catalogbox__minus js_catalogbox_minus">-</div>
+                                <input class="js_count" type="text" data-id="{{ aObject.id }}" value="1">
+                                <div class="catalogbox__plus js_catalogbox_plus">+</div>
+                            </div>
+                        {% endif %}
+                        {% if aObject.fields.orderbuy.value %}
+                            <button>{{ Lang.get('catalog.order') }}</button>
+                        {% endif %}
+                    </div>
+                    {% if aObject.fields.fastbuy.value %}
+                        <div class="catalogbox__buynow">
+                            <a class="js-callback" data-ajaxform="1" data-section = "" data-js_max_width="600" data-width-type="px" data-idobj="{{aObject.id}}" data-module="Cart" data-cmd="checkout" href="[{{ cartSectionId }}][Cart?action=checkoutOneClick&idObj={{ aObject.id }}]">{{ aObject.fields.fastbuy.title }}</a>
+                        </div>
+                    {% endif %}
+                    {% if aObject.fields.buy.value %}
+                        <div class="catalogbox__btn"><a {% if useCart %}onclick="return false;"{% endif %} data-id="{{ aObject.id }}" class="js-btnBuy btnBuy"
+                                                           href="{% if not useCart %}[{{ form_section }}][From?objectId={{aObject.id}}]{% else %}#tocart{% endif %}">{{ Lang.get(aObject.fields.buy.title) }}</a>
+                        </div>
+                    {% endif %}
+                    {% if wishlist %}
+                        <div class="catalogbox__btn"><a data-id="{{ aObject.id }}" href="" class="js-add-wish">{{ Lang.get('Wishlist.add') }}</a></div>
+                    {% endif %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+
+        {% if aTabs is defined %}
+            <div id="js_tabs" class="b-tab js-tabs">
+                {% if aTabs|length >1 %}
+                    <ul>
+                        {% for tab in aTabs %}
+                            <li><a {% if tab.active %}class="js-selected-tab"{% endif %}
+                                   href="#tabs-{{ tab.name }}">{{ tab.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <ul>
+                        {% for tab in aTabs %}
+                            {% if tab.attrs.show_title == 1 %}
+                            <li><h3 {% if tab.active %}class="js-selected-tab"{% endif %}>{{ tab.title }}</h3></li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+                {% for tab in aTabs %}
+                    <div id="tabs-{{ tab.name }}">
+                        {{ tab.tab }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endif %}
+</div>
+{% if ModificationsItems is defined %}
+    {% include ['ModificationsItems.twig']|join %}
+{% endif %}
+
+{% if RecentlyViewed %}
+    {{ RecentlyViewed }}
+{% endif %}
+
+{% if includedItems is defined %}
+    {% include ['IncludedItems.twig']|join %}
+{% endif %}
+{% if relatedItems is defined %}
+    {% include ['RelatedItems.twig']|join %}
+{% endif %}
+
+{% if nearItems is defined %}
+    <div class="b-catslider">
+        <a class="catslider__back"
+           href="[{{ nearItems.section }}][CatalogViewer?{% if nearItems.prev.alias %}goods-alias={{ nearItems.prev.alias }}{% else %}item={{ nearItems.prev.id }}{% endif %}]">{{ Lang.get('Page.page_prev') }}<ins></ins></a>
+        <a class="catslider__mid" href="[{{ nearItems.section }}]">{{ Lang.get('catalog.back_to_products') }}</a>
+        <a class="catslider__next"
+           href="[{{ nearItems.section }}][CatalogViewer?{% if nearItems.next.alias %}goods-alias={{ nearItems.next.alias }}{% else %}item={{ nearItems.next.id }}{% endif %}]">{{ Lang.get('Page.page_next') }}<ins></ins></a>
+    </div>
+{% endif %}

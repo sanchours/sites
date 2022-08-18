@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Изменение кол-ва товаров в разделе каталог</description>
+   <name>SelectionQuantityGoodsCatalogList</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>95891026-ddd1-4fcc-90d3-e82a27fd4c21</testCaseGuid>
+</TestCaseEntity>

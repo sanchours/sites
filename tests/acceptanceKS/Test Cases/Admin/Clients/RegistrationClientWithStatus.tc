@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Регистрация клиента с автоматическим статусом регистацией</description>
+   <name>RegistrationClientWithStatus</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d2ac5f85-1e84-420c-ac02-ad0ee0a7dbb8</testCaseGuid>
+</TestCaseEntity>

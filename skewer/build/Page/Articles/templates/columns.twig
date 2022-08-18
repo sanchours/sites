@@ -1,0 +1,58 @@
+{% if aArticlesList is defined %}
+    <div class="b-article b-article--cols {{ html_class }}"{{ Design.write(' sktag="modules.news"') }}>
+        {% if titleOnMain or Design.modeIsActive() %}
+            <div class="b-title-h2" {{ Design.write(' sktag="editor.h2" skeditor="articles/titleOnMain"') }}>{{ titleOnMain }}</div>
+        {% endif %}
+        
+        <div class="article__row">
+            {% for iKey, aArticles in aArticlesList %}<div class="article__item">
+                <div class="article__inner">
+                    {% if bShowGallery %}
+                        <div class="article__pic">
+                            {% if aArticles.hasDetailLink %}
+                                <a href="{{ aArticles.getUrl }}">
+                            {% endif %}
+                                {% if aArticles.gallery.first_img %}
+                                    <img src="{{ aArticles.gallery.first_img.images_data.mini.file }}" alt="{{ aArticles.gallery.first_img.alt_title|e }}" title="{{ aArticles.gallery.first_img.title|e }}">
+                                {% else %}
+                                    <img src="{{ Design.get('modules.news.nophoto_img', 'articles_mini','skewer\\build\\Page\\Articles\\Asset') }}" alt="">
+                                {% endif %}
+                            {% if aArticles.hasDetailLink %}
+                                </a>
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                    <div class="article__box">
+                        <div class="article__title">
+                            {% if aArticles.hasDetailLink %}
+                                <a class="article__link"{{ Design.write(' sktag="modules.news.normal"') }} href="{{ aArticles.getUrl }}">{{aArticles.title}}</a>
+                            {% else %}
+                                <span class="article__nolink"{{ Design.write(' sktag="modules.news.normal"') }}>{{aArticles.title}}</span>
+                            {% endif %}
+                        </div>
+                        {% if not hideDate %}
+                            <div class="article__date"{{ Design.write(' sktag="modules.news.date"') }}>{{ aArticles.publication_date }}</div>
+                        {% endif %}
+                            <div class="article__text">
+                                <div class="b-editor"{{ Design.write(' sktag="editor"') }}>{{aArticles.announce}}</div>
+                            </div>
+                        {% if aArticles.author %}
+                            <div class="article__author"{{ Design.write(' sktag="modules.news.date"') }}>{{ Lang.get('Articles.author')}}: {{aArticles.author}}</div>
+                        {% endif %}
+                    </div>
+                </div>
+                </div>{% endfor %}
+        </div>
+
+        {% if section_all %}
+            <div class="article__more">
+                <a href="[{{ section_all }}]">{{ Lang.get('Articles.all_section_link') }}</a>
+            </div>
+        {% endif %}
+    </div>
+{% endif %}
+
+{# из skewer/build/common/templates #}
+{% if showPagination %}
+    {% include "paginator.twig" %}
+{% endif %}

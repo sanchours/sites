@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Активность слайдера</description>
+   <name>SliderActivity</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dc1c0c45-9a34-46b5-802f-33187500c841</testCaseGuid>
+</TestCaseEntity>

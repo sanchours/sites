@@ -1,0 +1,47 @@
+@import '~antd/lib/style/themes/default.less';
+
+.menu {
+  :global(.anticon) {
+    margin-right: 8px;
+  }
+  :global(.ant-dropdown-menu-item) {
+    min-width: 160px;
+  }
+}
+:global {
+  .dropDown {
+    line-height: @layout-header-height;
+    vertical-align: top;
+    cursor: pointer;
+    > i {
+      font-size: 16px !important;
+      transform: none !important;
+      svg {
+        position: relative;
+        top: -1px;
+      }
+    }
+    
+  }
+  .unicons-globe {
+    color: #aaa;
+    vertical-align: -5px;
+    transition: color 0.3s;  
+    &:hover {
+      color: #2E303B;
+    }
+  }
+
+  .ant-dropdown-menu-item:hover, 
+  .ant-dropdown-menu-item:focus, 
+  .ant-dropdown-menu-submenu-title:hover, 
+  .ant-dropdown-menu-submenu-title:focus {
+    background-color: rgba(255,209,86,0.3);
+  }
+  .ant-dropdown-menu-item-selected, .ant-dropdown-menu-submenu-title-selected, .ant-dropdown-menu-item-selected > a, .ant-dropdown-menu-submenu-title-selected > a {
+    color: #222;
+    background-color: rgba(255,209,86,0.3);
+  }
+}
+
+

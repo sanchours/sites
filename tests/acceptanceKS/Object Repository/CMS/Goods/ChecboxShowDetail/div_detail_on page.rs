@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_detail_on page</name>
+   <tag></tag>
+   <elementGuidId>f0704947-b7de-4da3-8ff7-b07a2df911f0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[contains(@class,'b-catalogbox')][1]//div[contains(@class,'catalogbox__item')][1]/div[contains(@class,'catalogbox__content')]/p/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>DIV</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[contains(@class,'b-catalogbox')][1]//div[contains(@class,'catalogbox__item')][1]/div[contains(@class,'catalogbox__content')]/p/a</value>
+   </webElementProperties>
+</WebElementEntity>

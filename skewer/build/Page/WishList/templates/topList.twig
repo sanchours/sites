@@ -1,0 +1,52 @@
+<noindex>
+    <div style="display: none">
+        {#<div class="">#}
+                {#<p><a href="[{{ WishListPage }}][profile?cmd=wishlist]">Отложенных товаров(<span class="wishs-count">{{ countWishs }}</span>)</a></p>#}
+        {#</div>#}
+        {% if authorized == false %}
+
+        <a href="#fancyWish" id="getFancyWish" style="display: none"></a>
+        <div class="b-editor" id="fancyWish" style="display: none;">
+            <div class="b-wish-notice">
+                <div class="wish-title">{{ Lang.get('WishList.to_add_good_you_need') }} </div>
+                <div class="wish-btn"><a class="" href="[{{ AuthPage }}]">{{ Lang.get('WishList.log_in') }}</a> {{ Lang.get('WishList.or') }} <a class="" href="[{{ AuthPage }}][Auth?cmd=register]">{{ Lang.get('WishList.sign_up') }}</a></div>
+            </div>
+        </div>
+        {% else %}
+            <a href="#fancyWish" id="getFancyWish" style="display: none"></a>
+            <div class="b-editor" id="fancyWish" style="display: none;">
+                <div class="b-wish-notice">
+                    <div class="wish-title">{{ Lang.get('WishList.add_success1') }}</div>
+                    <div class="wish-name"></div>
+                    <div class="wish-btn"><a class="" href="[{{ WishListPage }}][Profile?cmd=wishlist]">{{ Lang.get('WishList.add_success2') }}</a></div>
+                    <div class="wish-link"><a class="js-wish-close" href="">{{ Lang.get('WishList.close_link') }}</a></div>
+                </div>
+            </div>
+        {% endif %}
+</div>
+
+    <div id="mesAboutDel" style="display: none">
+        <div class="b-wish-notice">
+            <div class="wish-notice__text">
+                {{ Lang.get('WishList.message_about_del') }}
+            </div>
+            <div class="wish-btn">
+                <a class="js-wish-reset" href="">{{ Lang.get('WishList.clear')}}</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="mesDelOne" style="display: none">
+        <div class="b-wish-notice">
+            <div class="wish-notice__text">
+                {{ Lang.get('WishList.message_del_one') }}
+            </div>
+            <div class="wish-btn">
+                <a class="js-wish-remove" data-id="{1}" href="">{{ Lang.get('WishList.delete')}}</a>
+            </div>
+        </div>
+    </div>
+
+</noindex>
+
+

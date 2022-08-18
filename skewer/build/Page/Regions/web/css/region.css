@@ -1,0 +1,29 @@
+/* layer: default */
+/* group: modules.regions           | Регионы */
+    /* param: icon                  | Иконка | url | ../images/head-mapdot.png */
+    /* param: h_position            | Горизонтальное выравнивание | h-position-abs | right  */
+    /* param: h_value               | Отступ по горизонтали  | size | 260px */
+    /* param: v_position            | Горизонтальное выравнивание | v-position-abs | top  */
+    /* param: v_value               | Отступ по горизонтали  | size | 54px */
+/*------------------------------------*/
+.b-regions-wrap {
+    position: relative;
+}
+/*------------------------------------*/
+.b-regions {
+    position: absolute;
+    [modules.regions.v_position]: [modules.regions.v_value];
+    [modules.regions.h_position]: [modules.regions.h_value];
+    z-index: 25;
+}
+/*------------------------------------*/
+.b-regions-list ul {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
+.b-regions-list ul li {
+    margin: 0;
+    padding: 0 0 5px;
+}
+/*------------------------------------*/

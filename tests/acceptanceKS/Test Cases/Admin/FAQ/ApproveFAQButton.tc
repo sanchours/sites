@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Одобрение ВИО кнопкой</description>
+   <name>ApproveFAQButton</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b82fda87-c701-4292-86fd-6ccefad48946</testCaseGuid>
+</TestCaseEntity>

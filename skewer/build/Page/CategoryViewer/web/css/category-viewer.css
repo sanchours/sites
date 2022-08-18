@@ -1,0 +1,150 @@
+/*-------------------------------*/
+/* layer: default */
+/* group: modules.category | Список категорий */
+/* group: modules.category.gal | Галерея */
+    /* param: width                            | Ширина блока | size | 220px */
+    /* param: height                           | Высота блока | size | 260px */
+    /* param: noimage                          | Изображение заглушки  | url |  ../images/categ.nophoto2.png */
+/* group: modules.category.gal.margin      | Отступы */
+    /* param: margin_top                       | Отступы блока сверху | size | 0 */
+    /* param: margin_right                     | Отступы блока справа | size | 10px */
+    /* param: margin_left                      | Отступы блока слева | size | 10px */
+    /* param: margin_bottom                    | Отступы блока снизу | size | 10px */
+    /* param: padding_top                      | Верхний отступ заголовка | size | 10px */
+    /* param: padding_right                    | Правый отступ заголовка | size | 20px */
+    /* param: padding_bottom                   | Нижний отступ заголовка | size | 10px */
+    /* param: padding_left                     | Левый отступ заголовка | size | 20px */
+    /* param: abstitle_hpos                    | Горизонтальное выравнивание заголовка | h-position | right  */
+    /* param: abstitle_vpos                    | Вертикальное выравнивание заголовка | v-position | top  */
+    /* param: abstitle_hpos_value              | Горизонтальное выравнивание заголовка | size | 0  */
+    /* param: abstitle_vpos_value              | Вертикальное выравнивание заголовка | size | 0  */
+
+/* group: modules.category.gal.back        | Фон */
+    /* param: backcolor                        | Фоновый цвет | color | #f2f2f2 */
+    /* param: backimage                        | Фоновое изображение | url |  */
+    /* param: backrepeat                       | Повторение фонового изображения | repeat | no-repeat */
+    /* param: backposition_h                   | Горизонтальное выравнивание фонового изображения | h-position | left */
+    /* param: backposition_v                   | Вертикальное выравнивание фонового изображения | v-position | top */
+    /* param: backcolor_hover                  | Фоновый цвет при наведении | color | #3dade1 */
+    /* param: backimage_hover                  | Фоновое изображение при наведении | url |  */
+    /* param: backrepeat_hover                 | Повторение фонового изображения при наведении | repeat | no-repeat */
+    /* param: backposition_h_hover             | Горизонтальное выравнивание фонового изображения при наведении | h-position | left */
+    /* param: backposition_v_hover             | Вертикальное выравнивание фонового изображения при наведении | v-position | top */
+/* group: modules.category.gal.title       | Заголовок */
+    /* param: font_family                      | Шрифт | family  | Arial, sans-serif */
+    /* parentParam: default..base.userbase.fontfamily.font-family */
+    /* param: size                             | Размер | size | 1em */
+    /* parentParam: default..base.userbase.fontfamily.font-size */
+    /* param: weight                           | Толщина шрифта | font-weight | normal */
+    /* param: style                            | Курсив | font-style | normal */
+    /* param: decoration                       | Подчеркивание | text-decoration | none */
+    /* param: transform                        | Регистр | text-transform | normal */
+    /* param: color                            | Цвет | color | #358db6 */
+    /* parentParam: default..base.userbase.fontfamily.color_link */
+/* group: modules.category.gal.titleh      | Заголовок наведённый */
+    /* param: font_family                      | Шрифт | family  | Arial, sans-serif */
+    /* parentParam: default..base.userbase.fontfamily.font-family */
+    /* param: size                             | Размер | size | 1em */
+    /* parentParam: default..base.userbase.fontfamily.font-size */
+    /* param: weight                           | Толщина шрифта | font-weight | normal */
+    /* param: style                            | Курсив | font-style | normal */
+    /* param: decoration                       | Подчеркивание | text-decoration | underline */
+    /* param: transform                        | Регистр | text-transform | normal */
+    /* param: color                            | Цвет | color | #fff */
+.b-category {
+    margin-bottom: 30px;
+}
+.b-category .category__items {
+    margin-right: -[modules.category.gal.margin.margin_right];
+    margin-left: -[modules.category.gal.margin.margin_left];
+}
+.b-category .category__item {
+    margin-right: -.275em;
+    padding-right: [modules.category.gal.margin.margin_right];
+    padding-left: [modules.category.gal.margin.margin_left];
+    padding-top: [modules.category.gal.margin.margin_top];
+    padding-bottom: [modules.category.gal.margin.margin_bottom];
+    width: [modules.category.gal.width];
+    height: [modules.category.gal.height];
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+.b-category .category__inner {
+    position: relative;
+    background: [modules.category.gal.back.backcolor] url("[modules.category.gal.back.backimage]") [modules.category.gal.back.backposition_h] [modules.category.gal.back.backposition_v]  [modules.category.gal.back.backrepeat];
+}
+.b-category .category__item:hover .category__inner {
+    background: [modules.category.gal.back.backcolor_hover] url("[modules.category.gal.back.backimage_hover]") [modules.category.gal.back.backposition_h_hover] [modules.category.gal.back.backposition_v_hover]  [modules.category.gal.back.backrepeat_hover];
+}
+.b-category .category__imgbox {
+    font-size: 0;
+}
+.b-category .category__imgbox img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+.b-category .category__title {
+    padding: [modules.category.gal.margin.padding_top] [modules.category.gal.margin.padding_right] [modules.category.gal.margin.padding_bottom] [modules.category.gal.margin.padding_left];
+}
+.b-category .category__text {
+    padding: 0 [modules.category.gal.margin.padding_right] 0 [modules.category.gal.margin.padding_left];
+}
+.b-category .category__title span,
+.b-category .category__title a:link,
+.b-category .category__title a:visited {
+    font-family: [modules.category.gal.title.font_family];
+    font-size: [modules.category.gal.title.size];
+    font-weight: [modules.category.gal.title.weight];
+    font-style: [modules.category.gal.title.style];
+    text-decoration: [modules.category.gal.title.decoration];
+    text-transform: [modules.category.gal.title.transform];
+    color: [modules.category.gal.title.color];
+}
+.b-category .category__item:hover .category__title span,
+.b-category .category__item:hover .category__title a:link,
+.b-category .category__item:hover .category__title a:visited,
+.b-category .category__item:hover .category__title a:hover,
+.b-category .category__item:hover .category__title a:active {
+    font-family: [modules.category.gal.titleh.font_family];
+    font-size: [modules.category.gal.titleh.size];
+    font-weight: [modules.category.gal.titleh.weight];
+    font-style: [modules.category.gal.titleh.style];
+    text-decoration: [modules.category.gal.titleh.decoration];
+    text-transform: [modules.category.gal.titleh.transform];
+    color: [modules.category.gal.titleh.color];
+}
+    /*--------------------*/
+    .b-category_abstitle {}
+    .b-category_abstitle .category__item {
+        position: relative;
+    }
+    .b-category_abstitle .category__titlewrap {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        line-height: [modules.category.gal.height];
+        height: [modules.category.gal.height];
+        text-align: [modules.category.gal.margin.abstitle_hpos];
+        z-index: 1;
+    }
+    .b-category_abstitle .category__titlewrap > a {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    .b-category_abstitle .category__title {
+        display: inline-block;
+        vertical-align: [modules.category.gal.margin.abstitle_vpos];
+        [modules.category.gal.margin.abstitle_hpos]: [modules.category.gal.margin.abstitle_hpos_value];
+        [modules.category.gal.margin.abstitle_vpos]: [modules.category.gal.margin.abstitle_vpos_value];
+        background-color: [modules.category.gal.back.backcolor];
+        line-height: 1.4;
+    }
+    .b-category_abstitle .category__item:hover .category__title {
+        background-color: [modules.category.gal.back.backcolor_hover];
+    }

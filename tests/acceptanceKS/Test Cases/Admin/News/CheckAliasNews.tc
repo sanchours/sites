@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка псевдонима новости</description>
+   <name>CheckAliasNews</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e1808e03-5285-4405-b20a-83d39dbd4454</testCaseGuid>
+</TestCaseEntity>

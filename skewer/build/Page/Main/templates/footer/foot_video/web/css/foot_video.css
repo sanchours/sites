@@ -1,0 +1,154 @@
+/* layer: default */
+/* group: modules | Модули */
+/* group: modules.search | Поиск */
+/* param: btn_img        | Изображение кнопки поиска | url | ../images/btnsearch.png */
+/* param: btn_width      | Ширина кнопки поиска | size | 24px */
+/* param: btn_height     | Высота кнопки поиска | size | 24px */
+/* param: border_color   | Цвет бордера | color | #dddddd */
+/* param: color          | Цвет текста поля | color | #515151 */
+/*---------------------------------*/
+.l-footerbox {
+    min-height: 642px;
+    margin-top: -642px;
+    background-image: url("[page.footer.image]");
+}
+.l-footerbox .footerbox__wrapper {
+    background: none;
+    border-bottom: none;
+}
+/*---------------------------------*/
+.l-grid p {
+    margin: 0;
+    padding: 0 0 10px;
+}
+.l-grid .grid__item1 {
+    line-height: 1.6;
+    z-index: 1;
+}
+.l-grid .grid__item4 {
+    z-index: 1;  
+}
+.l-grid .grid__item8 {
+    position: absolute;
+    top: 424px;
+    left: 30px;
+    width: 300px;
+}
+/*---------------------------------*/
+.b-form--subscribe  p {
+    padding-bottom: 18px;
+}
+.b-form--subscribe .form--subscribe__inputbox input {
+    padding: 0 20px;
+    border: none; 
+    height: 51px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.b-form--subscribe button {     
+    margin: 0;
+    padding: 0;
+    border: 0;
+    float: right;
+    width: 51px;
+    height: 51px;
+    cursor: pointer;
+    background: url(../images/search-button.png) 50% 0 no-repeat;
+}
+.b-form--subscribe .form--subscribe__inputbox {
+    overflow: hidden;
+}
+.b-form--subscribe .form--subscribe__inputbox div {
+    margin-right: 0; 
+}
+/*---------------------------------*/
+.b-foot-contacts p {
+    color: #fff;
+}
+.b-foot-phone,
+.b-foot-phone a:link[href^="tel"],
+.b-foot-phone a:active[href^="tel"],
+.b-foot-phone a:visited[href^="tel"],
+.b-foot-phone a:hover[href^="tel"]{
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff; 
+}
+.b-foot-phone {
+    padding-bottom: 10px;
+}
+/*---------------------------------*/
+.b-foot-social {
+    padding-bottom: 80px;
+}
+.b-foot-social img {
+    padding-right: 32px;
+    vertical-align: middle;
+}
+/*---------------------------------*/
+.b-foot-menu {
+    margin: 0 auto;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 1350px;
+}
+.b-foot-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.b-foot-menu ul li {
+    margin: 0;
+    padding: 0 0 10px;
+}
+.b-foot-menu .foot-menu__item {
+    width: 33.33%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -.275em;
+}
+.b-foot-menu a:link,
+.b-foot-menu a:visited {
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none; 
+}
+.b-foot-menu a:hover,
+.b-foot-menu a:active {
+    text-decoration: underline; 
+}
+/*---------------------------------*/
+.b-foot-copy-dev a:link,
+.b-foot-copy-dev a:visited,
+.b-foot-copy-dev a:active,
+.b-foot-copy-dev a:hover { 
+    color: #ffca58;
+}
+/*---------------------------------*/
+.b-foot-copy,
+.b-foot-copy a:link,
+.b-foot-copy a:visited {
+    color: #ffca58;
+}
+/*---------------------------------*/
+.b-footer-logo { 
+    margin-bottom: 20px;
+}
+/*---------------------------------*/
+.b-footer-place {}
+.b-footer-place img {
+    margin-bottom: 35px;
+}
+.b-footer-place .footer__text p {
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+}
+/*---------------------------------*/
+.b-counter {
+    text-align: right;
+}
+/*---------------------------------*/

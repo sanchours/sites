@@ -1,0 +1,27 @@
+<div class="b-path"{{ Design.write(' sktag="menu.path"') }}>
+    <ul itemscope itemtype="{{ Site.getWebProtocol() }}schema.org/BreadcrumbList">
+    {% set position = 1 %}
+    {% if main_page %}
+        <li itemprop="itemListElement" itemscope itemtype="{{ Site.getWebProtocol() }}schema.org/ListItem"{{ Design.write(' sktag="menu.path.a"') }}>
+            <a itemprop="item" href="{{ main_page.href | e }}"><span itemprop="name">{{ main_page.title }}</span></a>
+            <meta itemprop="position" content="{{ position }}" />
+        </li>
+        {% set position = position + 1 %}
+    {% endif %}
+    {%for item in items%}
+        {% if item.selected %}
+            <li itemprop="itemListElement" itemscope itemtype="{{ Site.getWebProtocol() }}schema.org/ListItem" {{ Design.write(' sktag="menu.path.item"') }}>
+                <meta itemprop="item" content="{{ item.href | e }}">
+                <span itemprop="name">{{item.title}}</span>
+                <meta itemprop="position" content="{{ position }}" />
+            </li>
+        {% else %}
+            <li itemprop="itemListElement" itemscope itemtype="{{ Site.getWebProtocol() }}schema.org/ListItem"{{ Design.write(' sktag="menu.path.a"') }}>
+                <a itemprop="item" href="{{item.href | e}}"><span itemprop="name">{{ item.title }}</span></a>
+                <meta itemprop="position" content="{{ position }}" />
+            </li>
+        {% endif %}
+        {% set position = position + 1 %}
+    {% endfor %}
+    </ul>
+</div>

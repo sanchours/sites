@@ -1,0 +1,22 @@
+:global {
+	.logo-wrapper {
+		transition: margin 0.25s;
+		.sk-logo-text img {
+			width: 115px;
+			margin-left: 8px;
+			visibility: visible;
+			opacity: 1;
+			transition: opacity 0.25s ease-in-out, visibility 0s ease-in-out;
+		}
+	}
+	.ant-layout-sider-collapsed {
+		.logo-wrapper {
+			margin-left: 8px;
+		}
+		.sk-logo-text img {
+			visibility: hidden;
+			opacity: 0;
+			transition: opacity 0.25s ease-in-out, visibility 0s 0.25s ease-in-out;
+		}
+	}
+}

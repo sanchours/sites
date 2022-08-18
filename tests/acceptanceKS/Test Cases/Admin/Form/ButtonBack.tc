@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Кнопка назад на результирующей</description>
+   <name>ButtonBack</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c7908c88-c422-4b4a-81ef-511f17316c4f</testCaseGuid>
+</TestCaseEntity>

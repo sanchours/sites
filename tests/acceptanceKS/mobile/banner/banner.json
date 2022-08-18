@@ -1,0 +1,22 @@
+[
+    {
+        "image_url":"/files/mobile_app/banner/slide-1.jpg",
+        "link":"http://www.whisperarts.com"
+    },
+    {
+        "image_url":"/files/mobile_app/banner/slide-2.jpg",
+        "link":"section/307"
+    },
+    {
+        "image_url":"/files/mobile_app/banner/slide-3.jpg",
+        "link":"item/62"
+    },
+    {
+        "image_url":"/files/mobile_app/banner/slide-4.jpg",
+        "link":"item/62"
+    },
+    {
+        "image_url":"/files/mobile_app/banner/slide-5.jpg",
+        "link":"item/62"
+    }
+]

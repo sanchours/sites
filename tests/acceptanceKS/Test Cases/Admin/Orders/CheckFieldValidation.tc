@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка соответствия полей в заказе</description>
+   <name>CheckFieldValidation</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>beb64fdc-3fa9-407b-8119-4a36fdb0937c</testCaseGuid>
+</TestCaseEntity>

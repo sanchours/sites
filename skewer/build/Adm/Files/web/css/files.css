@@ -1,0 +1,81 @@
+.js_adm_image_file .x-panel-body{
+    background: white;
+    font: 11px Arial, Helvetica, sans-serif;
+}
+.js_adm_image_file .thumb{
+    background: #dddddd;
+    padding: 3px 3px 0;
+}
+
+.js_adm_image_file .balnkthumb{
+    padding: 3px 3px 0 3px;
+}
+
+.x-quirks .js_adm_image_file .thumb {
+    padding-bottom: 3px;
+}
+
+.js_adm_image_file .thumb img{
+    height: 64px;
+    width: 85px;
+}
+.js_adm_image_file .balnkthumb img{
+    height: 64px;
+    width: 64px;
+    margin-left: 10px;
+}
+.js_adm_image_file .balnkthumb span{
+    position: absolute;
+    margin-top: -42px;
+    font-weight: bold;
+}
+.js_adm_image_file .thumb-wrap{
+    float: left;
+    margin: 4px;
+    padding: 5px;
+}
+.js_adm_image_file .thumb-wrap span {
+
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    width: 86px;
+}
+
+.js_adm_image_file .x-item-over{
+    border:1px solid #dddddd;
+    background: #efefef url(over.gif) repeat-x left top;
+    padding: 4px;
+}
+
+.js_adm_image_file .x-item-selected{
+    background: #eff5fb;
+    border:1px solid #99bbe8;
+    padding: 4px;
+}
+.js_adm_image_file .x-item-selected .thumb{
+    background:transparent;
+}
+
+.js_adm_image_file .loading-indicator {
+    font-size:11px;
+    background: url('../../../../libs/ExtJS/img/grid/loading.gif') no-repeat left;
+    padding-left:20px;
+    margin:10px;
+}
+
+.x-view-selector {
+    position:absolute;
+    left:0;
+    top:0;
+    width:0;
+    opacity: .5;
+    -moz-opacity: .5;
+    filter:alpha(opacity=50);
+    zoom:1;
+    background-color:#c3daf9;
+    border: 1px dotted #3399bb;
+}.ext-strict .ext-ie .x-tree .x-panel-bwrap{
+    position:relative;
+    overflow:hidden;
+}

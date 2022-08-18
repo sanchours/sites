@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Переход в модуль &quot;Формы&quot;</description>
+   <name>GoToFormModule</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cdacfc83-b24a-4bb0-87fe-a308c8aedcf2</testCaseGuid>
+</TestCaseEntity>

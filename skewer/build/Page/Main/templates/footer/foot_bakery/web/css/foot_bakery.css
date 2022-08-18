@@ -1,0 +1,95 @@
+/* layer: default */
+
+/*---------------------------------*/
+.l-footerbox {
+    position: relative;
+    background: #3baeff url(../images/footer-bg.jpg) 50% 0 no-repeat;
+}
+.l-footerbox:before {
+    content:'';
+    position: absolute;
+    top: 0;
+    right: 63.6%;
+    display: block;
+    width: 699px;
+    height: 561px;
+    background: url(../images/footer-bg-bakery.png) 0 0 no-repeat;
+}
+.l-footerbox .footerbox__bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: url(../images/footer-bottom-bg.jpg) 50% 0 no-repeat;
+
+}
+/*---------------------------------*/
+.l-grid {
+    line-height: 1.2;
+}
+/*---------------------------------*/
+.b-foot-map {
+    border: 10px solid #fff;
+}
+.b-foot-map img {
+    display: block;
+    max-width: 100%;
+}
+/*---------------------------------*/
+.b-foot-menu {
+    font-size: 18px;
+    font-weight: bold;
+}
+.b-foot-menu ul {
+    list-style: none;
+    padding: 0;
+}
+.b-foot-menu li {
+    margin-bottom: 27px;
+}
+.b-foot-menu a:link,
+.b-foot-menu a:visited {
+    text-decoration: none;
+}
+.b-foot-menu a:hover {
+    text-decoration: underline;
+}
+/*---------------------------------*/
+.b-foot-contacts {
+    margin-bottom: 52px;
+    text-align: right;
+    font-weight: 300;
+    font-size: 14px;
+}
+.b-foot-contacts .foot-contacts__phone {
+    font-size: 34px;
+    font-weight: bold;
+}
+/*---------------------------------*/
+.b-copyright {
+    font-weight: 300;
+    font-size: 14px;
+}
+.b-copyright .copyright__name {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/*---------------------------------*/
+.b-copyright-dev {
+    text-align: right;
+    font-weight: 300;
+}
+.b-copyright-dev a:link,
+.b-copyright-dev a:visited {
+    text-decoration: none;
+    line-height: 1.1;
+    display: inline-block;
+    border-bottom: 1px solid [page.footer.color_a];
+}
+.b-copyright-dev a:active,
+.b-copyright-dev a:hover {
+    text-decoration: none;
+    border-bottom-color: transparent;
+}
+/*---------------------------------*/

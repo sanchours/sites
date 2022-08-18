@@ -1,0 +1,15 @@
+{% if aObjectList is defined %}
+    {% if aObjectList is not empty  %}
+        {% set useMainSection = 1 %}
+        <div class="b-catrelated">
+            {% if titleOnMain or Design.modeIsActive() %}
+                <div class="b-title-h2"{% if Design.modeIsActive() %} sktag="editor.h2" skeditor="{{ moduleGroup }}/titleOnMain"{% endif %}>{{ titleOnMain }}</div>
+            {% endif %}
+            <div class="b-catalogbox b-catalogbox-gal b-catalogbox-carousel {% if show_shadows=='enabled' %} b-catalogbox-boxshadow{% endif %} js_goods_container">
+                <div class="js-owl-carousel owl-carousel owl-carousel-relatedtheme"  data-carousel-options="{{ gallerySettings }}">
+                    {% include "GalleryItems.twig" %}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endif %}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Шаблон вывода отзывов в контенте</description>
+   <name>TemplateReviewContent</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>420f25e4-7df5-4663-8c8f-aa8feac80c3d</testCaseGuid>
+</TestCaseEntity>

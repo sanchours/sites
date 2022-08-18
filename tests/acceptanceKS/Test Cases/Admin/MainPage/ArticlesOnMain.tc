@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Статья на главной</description>
+   <name>ArticlesOnMain</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>85b1facc-0f00-484c-a8e0-46c1e23ae4fc</testCaseGuid>
+</TestCaseEntity>

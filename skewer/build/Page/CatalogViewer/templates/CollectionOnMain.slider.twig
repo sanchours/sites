@@ -1,0 +1,27 @@
+
+{% if aObjectList is defined %}
+    {% if aObjectList is not empty  %}
+        <div class="b-slide-title">
+            {% if titleOnMain or Design.modeIsActive() %}
+                <div class="b-title-h2" {% if Design.modeIsActive() %} sktag="editor.h2" skeditor="{{ moduleGroup }}/titleOnMain"{% endif %}>{{ titleOnMain }}</div>
+            {% endif %}
+        </div>
+        <div class="b-collection-carousel">
+            <div class="js-owl-carousel owl-carousel owl-carousel-collectiontheme" data-carousel-options="{{ gallerySettings }}">
+                {% for iKey, aObject in aObjectList %}
+                <div class="collection-carousel__item">
+                    <a href="[{% if useMainSection %}{{ aObject.main_secton }}{% else %}{{ section }}{% endif %}][CatalogViewer?{% if aObject.alias %}goods-alias={{ aObject.alias }}{% else %}item={{ aObject.id }}{% endif %}]" title="{% if aObject.fields.gallery.first_img.title %}{{ aObject.fields.gallery.first_img.title|e }}{% endif %}{% if aObject.fields.gallery.first_img.description %} {{ aObject.fields.gallery.first_img.description|e }}{% endif %}">
+                        {% if aObject.fields.gallery.first_img.images_data['colmin'].file is defined %}
+                            <img class="owl-lazy" data-src="{{ aObject.fields.gallery.first_img.images_data['colmin'].file }}" alt="{{ aObject.fields.gallery.first_img.alt_title|e }}">
+                        {% else %}
+                            <img alt="" src="{{Design.get('modules.brend','nophoto_img','skewer\\build\\Page\\Main\\Asset')}}" style="width: 160px; height: 98px;">
+                        {% endif %}
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="g-clear"></div>
+    {% endif %}
+{% endif %}

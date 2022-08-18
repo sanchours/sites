@@ -1,0 +1,35 @@
+<table style="width: 100%;">
+    <tr>
+        <td><b>{{ Lang.get('yandexExport.tpl_adress') }}</b></td>
+        <td><b>{{ Lang.get('yandexExport.tpl_data') }}</b></td>
+        <td><b>{{ Lang.get('yandexExport.tpl_count') }}</b></td>
+        <td><b>{{ Lang.get('yandexExport.status_export') }}</b></td>
+    </tr>
+    <tr>
+        <td>
+            <a href="{{ url }}" target="_blank">{{ url }}</a>
+        </td>
+        <td>
+            {{ date }}
+        </td>
+        <td>
+            {{ count }}
+        </td>
+        <td>
+            {{ statusText }}
+        </td>
+    </tr>
+</table>
+<table style="width: 100%;margin-top: 20px;">
+    <tr>
+        <td>
+            <b>{{ Lang.get('yandexExport.tpl_list') }}</b>
+        </td>
+    </tr>
+    {% for category in categories %}
+        {% if category.isCatalogSection %}
+            <tr><td>{{ category.title }} </td></tr>
+        {% endif %}
+    {% endfor %}
+
+</table>

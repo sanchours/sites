@@ -1,0 +1,138 @@
+/*-------------------------------*/
+/* layer: default */ 
+/* group: modules.category | Список категорий */
+/* group: modules.category.gadgets | Гаджеты  */
+/* group: modules.category.gadgets.margin         | Отступы */
+    /* param: margin_bottom                    | Нижний отступ разводки | size | 40px */
+    /* param: padding_t                      | Верхний отступ | size | 0 */
+    /* param: padding_r                      | Правый отступ | size | 10px */
+    /* param: padding_b                      | Нижний отступ | size | 10px */
+    /* param: padding_l                      | Левый отступ | size | 0 */
+
+/* group: modules.category.gadgets.block         | Общие параметры блока */
+    /* param: background                       | Фон блоков| color | #fafafc */
+     
+ 
+/* group: modules.category.gadgets.link          | Ссылка */
+    /* param: font_family                      | Шрифт | family  | Arial */
+    /* param: size                             | Размер | size | 16px */
+    /* param: left                             | Отступ справа | size | 50px */
+    /* param: bottom                           | Отступ снизу | size | 45px */
+    /* param: weight                           | Толщина шрифта | font-weight | normal */
+    /* param: style                            | Курсив | font-style | normal */ 
+    /* param: color                            | Цвет | color | #222 */
+    /* param: transform                        | Регистр | text-transform | uppercase */
+    /* param: spacing                          | Интервал между символами | size | 1px */
+
+
+/* group: modules.category.gadgets.marker        | Маркер ссылки */ 
+    /* param: size                             | Размер | size | 22px */ 
+    /* param: right                            | Отступ справа | size | 0 */
+    /* param: top                              | Отступ сверху | size | -9px */
+    /* param: width                            | Ширина | size | 40px */
+    /* param: height                           | Высота | size | 40px */
+    /* param: color                            | Цвет | color | #222 */
+    /* param: line_height                      | Mежстрочный интервал | size | 1.7 */
+    
+
+ 
+/*-------------------------------*/
+.b-category-3 {
+    margin-bottom: [modules.category.gadgets.margin.margin_bottom];
+}
+.b-category-3 .category__item {
+    padding: [modules.category.gadgets.margin.padding_t] [modules.category.gadgets.margin.padding_r] [modules.category.gadgets.margin.padding_b] [modules.category.gadgets.margin.padding_l];
+    margin-bottom: 0;
+    margin-right: -.275em;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    background: [modules.category.gadgets.block.background];
+}
+.b-category-3 .category__item-1x {width: 8.33%;}
+.b-category-3 .category__item-2x {width: 16.66%;}
+.b-category-3 .category__item-3x {width: 25%;}
+.b-category-3 .category__item-4x {width: 33.33%;}
+.b-category-3 .category__item-5x {width: 41.66%;}
+.b-category-3 .category__item-6x {width: 50%;}
+.b-category-3 .category__item-7x {width: 58.33%;}
+.b-category-3 .category__item-8x {width: 66.66%;}
+.b-category-3 .category__item-9x {width: 75%;}
+.b-category-3 .category__item-10x {width: 83.33%;}
+.b-category-3 .category__item-11x {width: 91.66%;}
+.b-category-3 .category__item-12x {width: 100%;}
+
+.b-category-3 .category__link a:link,
+.b-category-3 .category__link a:active,
+.b-category-3 .category__link a:visited,
+.b-category-3 .category__link a:hover {
+    position: absolute;
+    bottom: [modules.category.gadgets.link.bottom];
+    right: [modules.category.gadgets.link.left];
+    left: [modules.category.gadgets.link.left];
+    font-family: [modules.category.gadgets.link.font_family];
+    font-size: [modules.category.gadgets.link.size];
+    font-weight: [modules.category.gadgets.link.weight];
+    color: [modules.category.gadgets.link.color];
+    text-transform: [modules.category.gadgets.link.transform];
+    letter-spacing: [modules.category.gadgets.link.spacing];
+    text-decoration: none;
+}
+.b-category-3 .category__link a:after {
+    position: absolute;
+    top: [modules.category.gadgets.marker.top];
+    right: [modules.category.gadgets.marker.right];
+    text-align: center;
+    line-height: [modules.category.gadgets.marker.line_height]; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: [modules.category.gadgets.marker.size];
+    width: [modules.category.gadgets.marker.width];
+    height: [modules.category.gadgets.marker.height];
+    font-style: normal;
+    color: [modules.category.gadgets.marker.color];
+    border: 1px solid [modules.category.gadgets.marker.color];
+    border-radius: 50px;
+    content: "\003E";
+} 
+.b-category-3 .category__imgbox {
+    overflow: hidden;
+    font-size: 0;
+}
+.b-category-3 .category__imgbox img {
+    width: 100%;
+    height: auto;
+}
+
+@media handheld, only screen and (min-width: 768px) and (max-width: 979px) {
+    .b-category-3 [class*='category__item-']{
+        width: 50%;
+    }
+    .b-category-3 .category__special .category__imgbox img {
+        width: 200%;
+        height: auto;
+    }
+}
+@media handheld, only screen and (max-width: 767px) {
+    .b-category-3 [class*='category__item-'] {
+        width: 100%;
+        max-width: 350px;
+    }
+    .b-category-3 .category__special .category__imgbox img {
+        width: 200%;
+        height: auto;
+    }
+    .b-category-3 .category__link a:link,
+    .b-category-3 .category__link a:active,
+    .b-category-3 .category__link a:visited,
+    .b-category-3 .category__link a:hover {
+        bottom: 29px;
+        right: 30px;
+        left: 30px;
+    }
+}

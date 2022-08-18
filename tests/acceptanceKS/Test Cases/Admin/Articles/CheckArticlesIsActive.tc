@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка работы галочки активность</description>
+   <name>CheckArticlesIsActive</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a44dc4c0-06ab-42ee-91b0-c83ea4754da8</testCaseGuid>
+</TestCaseEntity>

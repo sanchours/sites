@@ -1,0 +1,100 @@
+<div class="b-cart">
+    {% if order.getCount() %}
+        <div class="js_cart_content cart__content js-get-data" data-fancybox-protect="{{ protect }}" data-fancybox-transition-effect="{{ transitionEffect }}">
+            <table class="cart__table">
+                <tr>
+                    <th>{{ Lang.get('order.title')}}</th>
+                    <th>{{ Lang.get('order.photo')}}</th>
+                    {% if isArticle %}<th>{{ Lang.get('order.article')}}</th>{% endif %}
+                    <th>{{ Lang.get('order.price')}}, {{ Lang.get('order.current_currency') }}</th>
+                    <th>{{ Lang.get('order.count')}}</th>
+                    <th>{{ Lang.get('order.sum') }}, {{ Lang.get('order.current_currency') }}</th>
+                    <th></th>
+                </tr>
+                {% for item in order.getItems() %}
+                    <tr class="cart__row js-cart__row" data-id="{{ item.id_goods }}" data-ecommerce='{{ item.ecommerce }}' data-count_goods_before_recount="{{ item.count }}">
+                        <td>
+                            {% if item.not_available==1 %}
+                                <div class="good_is_not_available cart__notavailable"  >
+                                    {{ Lang.get('order.good_not_available') }}
+                                </div>
+                            {% else %}
+                                <div class="cart__cost-refresh">
+                                    {% if item.not_actual_price == 1 %}
+                                        <div class="js_warning_about_not_actual_price cart__cost-refresh-title">
+                                            Цена товара была изменена
+                                        </div>
+                                        <div class="cart__cost-refresh-btn">
+                                            <a href="#" class="js_recosting_price_good" data-id="{{ item.id_goods }}" ><i class="fas fa-sync-alt"></i> Пересчитать</a>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            {% endif %}
+                        </td>
+                        <td>
+                            <span class="cabbox__imagebox">
+                            {% if item.image.big.file is defined %}
+                                <a class="js-gallery_resize" href="{{ item.image.big.file }}">
+                                    <div class="cart__objectimg">
+                                        <img alt="" src="{{  Design.get('modules.cart','lk_photo','skewer\\build\\Page\\Cart\\Asset') }}">
+                                    </div>
+                                </a>
+                            {% else %}
+                                <div class="cart__objectimg">
+                                    <img alt="" src="{{  Design.get('modules.cart','lk_no_photo','skewer\\build\\Page\\Cart\\Asset') }}">
+                                </div>
+                            {% endif %}
+                            </span>
+                        </td>
+                        {% if isArticle %}<td class="cart__center">{{ item.article }}</td>{% endif %}
+                        <td class="cart__center"><span class="js_price_good item_price">{{ item.price|price_format }} </span></td>
+                        <td class="cart__center">
+                            <div class="b-catalogbox b-catalogbox-cart">
+                                <div class="js_catalogbox_inputbox catalogbox__inputbox">
+                                    <div class="catalogbox__minus js_cart_minus" data-id="{{ item.id_goods }}"></div>
+                                    <input data-id="{{ item.id_goods }}" class="js_cart_amount" type="text" value="{{ item.count }}"/>
+                                    <div class="catalogbox__plus js_cart_plus" data-id="{{ item.id_goods }}"></div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="cart__right"><span class="item_total js-item_total">{{ item.total|price_format }}</span></td>
+                        <td class="cart__center">
+                            {% if (not item.not_available) and (item.not_actual_price == 1) %}
+                                <a href="#" class="js_recosting_price_good" data-id="{{ item.id_goods }}">Пересчитать позицию</a>
+                            {% endif %}
+                            <a data-id="{{ item.id_goods }}" class="js_cart_remove" href="#">{{ Lang.get('order.delete')}}</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+                <tr class="cart__totalrow">
+                    <td class="cart__total" colspan="{% if order.isArticle() %}5{% else %}4{% endif %}"><b>{{ Lang.get('order.payable')}}:</b></td>
+                    <td class="cart__right js_cart_total"><span class="total">{{ order.getTotalPrice()|price_format }}</span></td>
+                    <td></td>
+
+                </tr>
+            </table>
+            <div class="cart__buttons">
+                <div class="cart__back">
+                    <a class="b-btnbox b-btnboxfull b-btnboxfull4" href="[{{ mainSection }}]">{{ Lang.get('order.back')}}</a>
+                </div>
+                <div class="cart__confirm">
+                    <a class="b-btnbox b-btnboxfull" href="[{{ sectionId }}][Cart?action=checkout]">{{ Lang.get('order.checkout')}}</a>
+                </div>
+                <div class="js_cart_reset cart__reset">
+                    <a class="b-btnbox b-btnboxfull b-btnboxfull4" href="#">{{ Lang.get('order.clear')}}</a>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+    <div class="js_cart_empty{% if order.getCount() %} cart__empty-hidden{% endif %}">
+        <p>{{ Lang.get('order.cart_empty')}}</p>
+    </div>
+</div>
+<div id="js_translate_msg_count_gt_zero" style="display: none;">
+    {{ Lang.get('order.msg_count_gt_zero') }}
+</div>
+<div id="js_translate_msg_dell_all" style="display: none;">
+    {{ Lang.get('order.msg_dell_all') }}
+</div>
+
+{% include 'delete_confirm.twig' %}

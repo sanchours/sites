@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Создание всех обязательных полей</description>
+   <name>CreateAllRequiredField</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>005b6fa2-619a-4aa5-b876-07448438a29c</testCaseGuid>
+</TestCaseEntity>

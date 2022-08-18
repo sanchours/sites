@@ -1,0 +1,425 @@
+body {
+    background: #000;
+    color: #fff;
+}
+a:link,
+a:visited {
+    color: #fff;
+}
+h1 {
+    color: #fff;
+}
+h2,
+h2 a:link,
+h2 a:active,
+h2 a:visited,
+h2 a:hover,
+a:link h2,
+a:active h2,
+a:visited h2,
+a:hover h2 {
+    color: #fff;
+}
+/*------------------------------------*/
+.l-container {
+    background: #000;
+}
+/*------------------------------------*/
+.l-footerbox .footerbox__wrapper,
+.l-footerbox .footerbox__left,
+.l-footerbox .footerbox__right {
+    background: #101010 url(/images/footer-black-bg.png) 0 100% repeat-x;
+}
+/*------------------------------------*/
+.l-grid {
+    color: #fff;
+}
+.l-grid h2 {
+    color: #fff;
+}
+.l-grid a:link,
+.l-grid a:active,
+.l-grid a:visited,
+.l-grid a:hover {
+    color: #fff;
+}
+/*------------------------------------*/
+.column,
+.column__center-inside,
+.column__left-inside,
+.column__right-inside {
+    background: #000;
+}
+/*------------------------------------*/
+.b-sevice {
+    background: #101010;
+    color: #fff;
+}
+.b-sevice .item-1 > a:link,
+.b-sevice .item-1 > a:active,
+.b-sevice .item-1 > a:visited,
+.b-sevice .item-1 > a:hover,
+.b-sevice .item-1:hover > a:link,
+.b-sevice .item-1:hover > a:active,
+.b-sevice .item-1:hover > a:visited,
+.b-sevice .item-1:hover > a:hover {
+    background: #101010;
+    color: #fff;
+    text-decoration: underline;
+}
+.b-sevice .item-1:hover > a:link,
+.b-sevice .item-1:hover > a:active,
+.b-sevice .item-1:hover > a:visited,
+.b-sevice .item-1:hover > a:hover {
+    text-decoration: none;
+}
+.b-sevice .on-1 > a:link,
+.b-sevice .on-1 > a:visited,
+.b-sevice .on-1 > a:hover,
+.b-sevice .on-1 > a:active,
+.b-sevice .item-1:hover > a:link,
+.b-sevice .item-1:hover > a:active,
+.b-sevice .item-1:hover > a:visited,
+.b-sevice .item-1 > a:hover {
+    background: #101010;
+    color: #fff;
+    text-decoration: none;
+}
+.b-sevice .item-2 > a:link,
+.b-sevice .item-2 > a:active,
+.b-sevice .item-2 > a:visited {
+    border-color: transparent;
+    background: #101010;
+    color: #fff;
+    text-decoration: underline;
+}
+.b-sevice .on-2 > a:link,
+.b-sevice .on-2 > a:active,
+.b-sevice .on-2 > a:visited,
+.b-sevice .on-2 > a:hover,
+.b-sevice .item-2:hover > a:link,
+.b-sevice .item-2:hover > a:active,
+.b-sevice .item-2:hover > a:visited,
+.b-sevice .item-2 > a:hover {
+    border-color: #fff;
+    background: #101010;
+    color: #fff;
+    text-decoration: none;
+}
+.b-sevice ul.level-2 .level-3 {
+    background: #101010;
+}
+.b-sevice .item-3 > a:link,
+.b-sevice .item-3 > a:active,
+.b-sevice .item-3 > a:visited {
+    background: #101010;
+    color: #fff;
+    text-decoration: underline;
+}
+.b-sevice .on-3 > a:link,
+.b-sevice .on-3 > a:active,
+.b-sevice .on-3 > a:visited,
+.b-sevice .on-3 > a:hover,
+.b-sevice .item-3 > a:hover {
+    background: #101010;
+    color: #fff;
+    text-decoration: none;
+}
+.b-sevice i {
+    display: none;
+}
+.b-sevice ins {
+    display: none;
+}
+.b-sevice .item-home {
+    display: none;
+}
+/*------------------------------------*/
+.b-menu a:link,
+.b-menu a:active,
+.b-menu a:visited {
+    color: #fff;
+    background: #101010;
+    text-decoration: underline;
+}
+.b-menu .on-1 a,
+.b-menu .on-1 a:visited,
+.b-menu .on-1 a:hover,
+.b-menu .on-1 a:active,
+.b-menu a:hover {
+    border-color: #fff;
+    background: #101010;
+    color: #fff;
+    text-decoration: none;
+}
+.b-menu .level-2 {
+    background: #101010;
+}
+.b-menu .item-2 a:link,
+.b-menu .item-2 a:active,
+.b-menu .item-2 a:visited {
+    color: #fff;
+    background: #101010;
+    text-decoration: underline;
+}
+.b-menu .on-2 a:link,
+.b-menu .on-2 a:active,
+.b-menu .on-2 a:visited,
+.b-menu .on-2 a:hover,
+.b-menu .item-2 a:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #101010;
+}
+.b-menu .item-3 a:link,
+.b-menu .item-3 a:active,
+.b-menu .item-3 a:visited {
+    color: #fff;
+    text-decoration: underline;
+    background: #101010;
+}
+.b-menu .on-3 a:link,
+.b-menu .on-3 a:active,
+.b-menu .on-3 a:visited,
+.b-menu .on-3 a:hover,
+.b-menu .item-3 a:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #101010;
+}
+.b-menu ins {
+    display: none;
+}
+/*------------------------------------*/
+.b-path li,
+.b-path li a:link,
+.b-path li a:visited{
+    color: #fff;
+}
+/*------------------------------------*/
+.b-picture3 {
+    background: #000;
+    color: #fff;
+    border-color: #292929;
+}
+.b-picture3 a:link,
+.b-picture3 a:visited {
+    color: #fff;
+}
+/*------------------------------------*/
+.b-headcontact *[class] {
+    color: #fff;
+}
+/*------------------------------------*/
+.b-headslogan {
+    color: #fff;
+}
+/*------------------------------------*/
+.b-news-main {
+    background: #101010;
+}
+.b-news-main .news__btn a:link,
+.b-news-main .news__btn a:active,
+.b-news-main .news__btn a:visited,
+.b-news-main .news__btn a:hover {
+    background: #fff;
+    color: #000;
+}
+/*------------------------------------*/
+.b-news [class],
+.b-news [class] a:link,
+.b-news [class] a:visited,
+.b-news .news__title span{
+    color: #fff;
+}
+
+/*------------------------------------*/
+.b-benefit {
+    background: #000;
+}
+.b-benefit .benefit__title:link,
+.b-benefit .benefit__title:visited {
+    color: #fff;
+}
+/*------------------------------------*/
+.b-partner {
+    background: #000;
+}
+/*------------------------------------*/
+.b-question {
+    background: #101010;
+}
+.b-question .question__btn a:link,
+.b-question .question__btn a:active,
+.b-question .question__btn a:visited,
+.b-question .question__btn a:hover {
+    background: #fff;
+    color: #000;
+}
+.b-question .question__date {
+    color: #fff;
+}
+/*------------------------------------*/
+.b-form {
+    border-color: #292929;
+}
+.b-form ::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff;
+}
+.b-form :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #fff;
+    opacity:  1;
+}
+.b-form ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #fff;
+    opacity:  1;
+}
+.b-form :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #fff;
+}
+.b-form input[type="text"],
+.b-form input[type="password"],
+.b-form input[type="tel"],
+.b-form input[type="email"],
+.b-form textarea,
+.b-form select {
+    border-color: #ffffff;
+    background: #000;
+    color: #fff;
+}
+.b-form input.error[type="text"],
+.b-form input.error[type="password"],
+.b-form select.error,
+.b-form textarea.error {
+    border-color: #fff;
+}
+.b-form .form__info {
+    color: #fff;
+}
+.b-form .form__mark,
+.b-form .form__mark2 {
+    color: #fff;
+}
+.b-form label.error {
+    color: #fff;
+}
+/*------------------------------------*/
+.b-btnbox,
+a.b-btnbox:link,
+a.b-btnbox:visited {
+    background: #fff;
+    color: #000;
+}
+.b-btnbox:hover,
+.b-btnbox:active,
+a.b-btnbox:hover,
+a.b-btnbox:active {
+    color: #000;
+}
+/*------------------------------------*/
+.b-footcontact *[class] {
+    color: #fff;
+}
+/*------------------------------------*/
+.b-copyright_dev a:link,
+.b-copyright_dev a:visited {
+    color: #fff;
+}
+/*------------------------------------*/
+.b-headadress {
+    background-image: url(/images/head-adress-white.png);
+}
+/*------------------------------------*/
+.b-guestbox .guestbox__date,
+.b-last-reviews .reviews__date {
+    color: #fff;
+}
+.b-guestbox .guestbox__title {
+    color: #fff;
+}
+.b-guestbox .guestbox__city {
+    color: #fff;
+}
+/*------------------------------------*/
+.b-gallery,
+.b-gallery .fotorama__stage {
+    background: #101010;
+}
+/*------------------------------------*/
+.b-catalogbox .catalogbox__title a:link,
+.b-catalogbox .catalogbox__title a:active,
+.b-catalogbox .catalogbox__title a:visited {
+    color: #fff;
+}
+.b-catalogbox .catalogbox__imgbox {
+    background: #101010;
+    border-color: #101010;
+}
+.b-catalogbox-gal .catalogbox__item {
+    background: transparent;
+}
+/*------------------------------------*/
+.b-catslider a.catslider__back:link,
+.b-catslider a.catslider__back:active,
+.b-catslider a.catslider__back:visited,
+.b-catslider a.catslider__back:hover {
+    background: #101010;
+    color: #fff;
+}
+.b-catslider a.catslider__mid:link,
+.b-catslider a.catslider__mid:active,
+.b-catslider a.catslider__mid:visited,
+.b-catslider a.catslider__mid:hover {
+    background: #101010;
+    color: #fff;
+}
+.b-catslider a.catslider__next:link,
+.b-catslider a.catslider__next:active,
+.b-catslider a.catslider__next:visited,
+.b-catslider a.catslider__next:hover {
+    background: #101010;
+    color: #fff;
+}
+/*------------------------------------*/
+.b-info .info__caption [class] {
+    color: #fff;
+}
+/*------------------------------------*/
+.b-categ .categ__title a:link,
+.b-categ .categ__title a:visited {
+    padding-left: 0;
+    background: none;
+    color: inherit;
+}
+/*------------------------------------*/
+
+/*-----------Статьи-------------------*/
+.b-article [class],
+.b-article [class] a:link,
+.b-article [class] a:visited,
+.b-article .article__title span {
+    color: #fff;
+}
+/*------------------------------------*/
+
+/*--------------FAQ------------------*/
+.b-faq [class],
+.b-faq [class] a:link,
+.b-faq [class] a:visited{
+    color: #fff;
+}
+/*-----------------------------------*/
+.b-catalogbox-detal .catalogbox__item{
+    background: #000;
+}
+
+.b-catalogbox-detal input{
+    background: #000;
+}
+
+.g-size .b-catalogbox .catalogbox__param,
+.g-size .b-catalogbox input,
+.g-size .b-catalogbox .catalogbox__artical,
+.g-size .b-catalogbox .catalogbox__price span{
+    color: #fff;
+}

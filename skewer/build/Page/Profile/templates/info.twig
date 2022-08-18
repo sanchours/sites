@@ -1,0 +1,9 @@
+<div class="b-cabbox">
+    {% include "menu.twig" with {'cmd':cmd,'Lang':Lang, 'page': page}  %}
+    {% if msg is defined %}
+    <div class="cabbox__item cabbox__itemtext">
+        {{ msg }}
+    </div>
+    {% endif %}
+    {{ form }}
+</div>

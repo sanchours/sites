@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Добавление пользователя</description>
+   <name>CreateNewUser</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f3d1633a-bc1e-472d-a172-1bb33091de89</testCaseGuid>
+</TestCaseEntity>

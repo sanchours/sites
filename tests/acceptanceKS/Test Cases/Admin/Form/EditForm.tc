@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Редактирование формы</description>
+   <name>EditForm</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a6cb4186-6241-44d8-a731-455b5d27e758</testCaseGuid>
+</TestCaseEntity>

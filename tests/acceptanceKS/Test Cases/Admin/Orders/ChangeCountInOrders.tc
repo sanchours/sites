@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Изменение кол-ва товара в заказе</description>
+   <name>ChangeCountInOrders</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>93c82a6f-5946-48d4-9526-838219365e42</testCaseGuid>
+</TestCaseEntity>

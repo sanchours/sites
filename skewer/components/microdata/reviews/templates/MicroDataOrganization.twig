@@ -1,0 +1,18 @@
+<div itemprop="itemReviewed" itemscope itemtype="{{ Site.getWebProtocol() }}schema.org/Organization">
+    {% if aOrganization.address %}
+        <div itemprop="address">{{ aOrganization.address }}</div>
+    {% endif %}
+
+    <div itemprop="name">{{ aOrganization.name ?: Site.domain() }}</div>
+
+    {% if aOrganization.phone %}
+        <div itemprop="telephone">{{ aOrganization.phone }}</div>
+    {% endif %}
+
+    <div itemprop="aggregateRating" itemscope itemtype="{{ Site.getWebProtocol() }}schema.org/AggregateRating">
+        <span itemprop="ratingValue">5</span>
+        <span itemprop="bestRating">5</span>
+        <span itemprop="ratingCount">5</span>
+    </div>
+
+</div>

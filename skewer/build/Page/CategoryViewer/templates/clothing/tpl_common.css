@@ -1,0 +1,184 @@
+/*-------------------------------*/
+/* layer: default */ 
+/* group: modules.category | Список категорий */
+/* group: modules.category.clothing | Одежда  */
+/* group: modules.category.clothing.margin         | Отступы */
+    /* param: margin_bottom                    | Нижний отступ блока | size | 30px */
+    /* param: padding                          | Отступ  между блоками| size | 30px */
+
+/* group: modules.category.clothing.title          | Заголовок */
+    /* param: font_family                      | Шрифт | family  | Arial */
+    /* param: size                             | Размер | size | 24px */
+    /* param: weight                           | Толщина шрифта | font-weight | normal */
+    /* param: style                            | Курсив | font-style | normal */ 
+    /* param: transform                        | Регистр | text-transform | none */
+    /* param: color                            | Цвет | color | #222 */
+    /* param: padding                          | Отступ до разделителя | size | 20px */
+    /* param: margin                           | Отступ до разделителя | size | 25px */
+    /* param: weight_border                    | Длина разделителя | size | 40px */
+    /* param: height_border                    | Высота разделителя | size | 4px */
+    /* param: radius_border                    | Радиус разделителя | size | 2px */
+
+/* group: modules.category.clothing.block         | Общие параметры блока */
+    /* param: padding                          | Отступы  внутри блоками| size | 40px 36.5% 20px 12.6% */
+    /* param: background                       | Фон блоков| color | #fafafc */
+    /* param: height                           | Высота блоков| size | 360px */
+
+
+/* group: modules.category.clothing.text          | Текст */
+    /* param: color                            | Цвет текста | color | #222 */
+    /* param: height                           | Высота строки| size | 1.7 */
+    /* param: margin                           | Отступ после текста| size | 20px */
+
+/* group: modules.category.clothing.link          | Ссылка */
+    /* param: font_family                      | Шрифт | family  | Segoe UI, sans-seirf */
+    /* param: size                             | Размер | size | 12px */ 
+    /* param: weight                           | Толщина шрифта | font-weight | normal */
+    /* param: style                            | Курсив | font-style | normal */ 
+    /* param: transform                        | Регистр | text-transform | uppercase */
+    /* param: spacing                          | Интервал между символами | size | 2px */
+
+/* group: modules.category.clothing.marker        | Маркер ссылки */ 
+    /* param: size                             | Размер | size | 14px */ 
+    /* param: right                            | Отступ справа | size | -15px */
+    /* param: top                              | Отступ сверху | size | -3px */  
+
+/* group: modules.category.clothing.img          | Изображение */  
+    /* param: right                            | Отступ справа | size | 0 */
+    /* param: bottom                           | Отступ снизу | size | 0 */  
+
+/*-------------------------------*/
+.b-category-2 {
+    margin: 0 -[modules.category.clothing.margin.padding] / 2;
+}
+.b-category-2 .category__item {
+    padding: 0 [modules.category.clothing.margin.padding] / 2;
+    margin-bottom: [modules.category.clothing.margin.margin_bottom];
+    margin-right: -.275em;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.b-category-2 .category__wrap {
+    padding: [modules.category.clothing.block.padding];
+    background: [modules.category.clothing.block.background];
+    position: relative;
+    height: [modules.category.clothing.block.height];
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.b-category-2 .category__item-1x {width: 8.33%;}
+.b-category-2 .category__item-2x {width: 16.66%;}
+.b-category-2 .category__item-3x {width: 25%;}
+.b-category-2 .category__item-4x {width: 33.33%;}
+.b-category-2 .category__item-5x {width: 41.66%;}
+.b-category-2 .category__item-6x {width: 50%;}
+.b-category-2 .category__item-7x {width: 58.33%;}
+.b-category-2 .category__item-8x {width: 66.66%;}
+.b-category-2 .category__item-9x {width: 75%;}
+.b-category-2 .category__item-10x {width: 83.33%;}
+.b-category-2 .category__item-11x {width: 91.66%;}
+.b-category-2 .category__item-12x {width: 100%;}
+
+.b-category-2 .category__title {   
+    color: [modules.category.clothing.title.color];
+    font-family: [modules.category.clothing.title.font_family];
+    font-size:   [modules.category.clothing.title.size];
+    font-style:  [modules.category.clothing.title.style];
+    font-weight: [modules.category.clothing.title.weight];
+    text-transform: [modules.category.clothing.title.transform]; 
+    padding-bottom: [modules.category.clothing.title.padding];
+    margin-bottom: [modules.category.clothing.title.margin];
+    position: relative;
+    z-index: 2;
+}
+.b-category-2 .category__title:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: [modules.category.clothing.title.weight_border];
+    height: [modules.category.clothing.title.height_border];
+    border-radius: [modules.category.clothing.title.radius_border];
+    content: "";
+}
+
+.b-category-2 .category__text {
+    position: relative;
+    margin-bottom: [modules.category.clothing.text.margin]; 
+    z-index: 2;
+}
+.b-category-2 .category__text p { 
+    color: [modules.category.clothing.text.color];
+    line-height: [modules.category.clothing.text.height];
+}
+.b-category-2 .category__link {
+    position: relative;
+    z-index: 2;
+}
+.b-category-2 .category__link a:link,
+.b-category-2 .category__link a:active,
+.b-category-2 .category__link a:visited,
+.b-category-2 .category__link a:hover {
+    position: relative;
+    font-family: [modules.category.clothing.link.font_family];
+    font-size:   [modules.category.clothing.link.size];
+    font-style:  [modules.category.clothing.link.style];
+    font-weight: [modules.category.clothing.link.weight];
+    text-transform: [modules.category.clothing.link.transform]; 
+    letter-spacing: [modules.category.clothing.link.spacing];
+}
+.b-category-2 .category__link a:after {
+    position: absolute;
+    top: [modules.category.clothing.marker.top]; 
+    right: [modules.category.clothing.marker.right]; 
+    font-size: [modules.category.clothing.marker.size]; 
+    content: "\003E";
+}
+.b-category-2 .category__imgbox {
+    position: absolute;
+    bottom: [modules.category.clothing.img.bottom];
+    right: [modules.category.clothing.img.right];
+    font-size: 0;
+    z-index: 1;
+}
+.b-category-2 .category__imgbox img {
+    width: 100%;
+    height: auto;
+}
+@media handheld, only screen and (min-width: 768px) and (max-width: 979px) {
+    .b-category-2 {
+        margin: 0;
+    }
+    .b-category-2 .category__item {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .b-category-2 .category__wrap {
+        padding: 40px 35% 20px 10%;
+    }
+    .b-category-2 [class*='category__item-'] {
+        width: 100%;
+    }
+
+}
+@media handheld, only screen and (max-width: 767px) {
+    .b-category-2 {
+        margin: 0;
+    }
+    .b-category-2 .category__wrap {
+        padding: 40px 20px 130% 20px;
+        height: auto;
+    }
+    .b-category-2 .category__item {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .b-category-2 [class*='category__item-'] {
+        width: 100%;
+        max-width: 350px;
+    }
+}

@@ -1,0 +1,59 @@
+{% if items|length %}
+    <div class="b-guestbox b-guestbox_photo"{{ Design.write(' sktag="modules.guestbox"') }}>
+        {% if title %}<div class="b-title-h2">{{ title }}</div>{% endif %}
+        <div class="guestbox__msgtext"></div>
+        {%  for aItem in items  %}
+            <div class="guestbox__item">
+                {% if showGallery %}
+                    <div class="guestbox__photo">
+                        {% if  aItem.photo_gallery and aItem.photo_gallery.detail %}
+                            <img src="{{ aItem.photo_gallery.detail.file }}" alt="">
+                        {% else %}
+                            <img src="{{ Design.get('modules.guestbox.nophoto_img','reviews_detail','skewer\\build\\Page\\GuestBook\\Asset') }}" alt="">
+                        {% endif %}
+                    </div>
+                {% endif %}
+                <div class="guestbox__leftside">
+                    {% if aItem.name %}
+                        <div class="guestbox__title">{{aItem.name}} </div>
+                    {% endif %}
+                    {% if aItem.city %}
+                        <div class="guestbox__city">{{aItem.city}} </div>
+                    {% endif %}
+                    {% if aItem.company %}
+                        <div class="guestbox__city">{{aItem.company}} </div>
+                    {% endif %}
+
+                    {% if show_rating and aItem.ratingHtml %}
+                        <div class="guestbox__rating">
+                            {{ aItem.ratingHtml }}
+                        </div>
+                    {% endif %}
+
+                </div>
+                <a name="{{ aItem.id }}"></a>
+                <div class="guestbox__rightside">
+                    <div class="b-editor">
+                        {% if showList %}
+                            {{aItem.content|truncate(maxLen,"<a href='"~aItem.link~"'>...</a>")}}
+                        {% else %}
+                            {{ aItem.content }}
+                        {% endif %}
+                    </div>
+                    {% if aItem.date_time %}
+                        <div class="guestbox__date">{{aItem.date_time}} </div>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    {% if section_id %}
+        <p><a href="[{{ section_id }}]">{{ Lang.get('review.show_all') }}</a></p>
+    {% endif %}
+
+    {% if microData %}{{ microData }}{% endif %}
+
+    {% include "paginator.twig" %}
+
+{% endif %}

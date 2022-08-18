@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Добавление нового раздела с текстом</description>
+   <name>AddNewSectionWithText</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9af52f82-bf04-43a4-b6cb-37da1a85284a</testCaseGuid>
+</TestCaseEntity>

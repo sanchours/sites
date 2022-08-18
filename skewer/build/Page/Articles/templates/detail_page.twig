@@ -1,0 +1,42 @@
+<div class="b-article b-article--detal {{ html_class }}"{{ Design.write(' sktag="modules.news"') }}>
+    {% if oArticlesRow is defined %}
+        {{ microData }}
+        <div class="article__pic">
+            {% if bShowGalleryInDetail and oArticlesRow.gallery.images %}
+                {{ Design.addAsset('\\skewer\\ext\\fotorama\\Asset') }}
+                <div class="fotorama" data-nav="thumbs" data-width="100%"
+                        {% if iMaxWidth %} data-max-width="{{ iMaxWidth }}px" {% endif %}
+                        {% if iMaxHeight %} data-max-height="{{ iMaxHeight }}px" {% endif %}
+                        {% set first_img = oArticlesRow.gallery.first_img %}
+                        {% if first_img.images_data.thumb.height and first_img.images_data.thumb.width %}
+                            data-thumbheight="{{ first_img.images_data.thumb.height }}"
+                            data-thumbwidth="{{ first_img.images_data.thumb.width}}"
+                        {% endif %}
+                        data-keyboard="true"
+                        data-allowfullscreen="true">
+                    {% for aPhoto in oArticlesRow.gallery.images %}
+                        <a href="{{ aPhoto.images_data.big.file }}" {% if aPhoto.images_data.thumb.file %}data-thumb="{{ aPhoto.images_data.thumb.file }}"{% endif %}
+                           alt="{{ aPhoto.alt_title|e }}" title="{{ aPhoto.title|e }} {{ aPhoto.description|e }}" >
+                            <img src="{{ aPhoto.images_data.mini.file }}"  />
+                        </a>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+        {% if not hideDate %}
+            <div class="article__date"{{ Design.write(' sktag="modules.news.date"') }}>{{ oArticlesRow.publication_date | date('d.m.Y') }}</div>
+        {% endif %}
+        <div class="article__text">
+            <div class="b-editor"{{ Design.write(' sktag="editor"') }}>
+                {{oArticlesRow.full_text}}
+            </div>
+        </div>
+        {% if oArticlesRow.author %}
+            <div class="article__date"{{ Design.write(' sktag="modules.news.date"') }}>{{ Lang.get('Articles.author') }}: {{oArticlesRow.author}}</div>
+        {% endif %}
+        <div class="article__back"><a rel="nofollow" href="#" onclick="history.go(-1);return false;">{{ Lang.get('page.back') }}</a></div>
+        {% if oArticlesRow.source_link %}
+            <div class="article__back"><a rel="nofollow" target="_blank" href="{{ oArticlesRow.source_link }}" >{{ Lang.get('articles.field_source_link') }}</a></div>
+        {% endif %}
+    {% endif %}
+</div>

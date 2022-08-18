@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка вывода текста в баннере</description>
+   <name>CheckTextBanner</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>df082ff2-d111-4149-84d4-0561a16d339f</testCaseGuid>
+</TestCaseEntity>

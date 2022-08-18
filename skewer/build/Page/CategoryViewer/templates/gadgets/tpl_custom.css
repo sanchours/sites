@@ -1,0 +1,19 @@
+.b-category-3 .section_[section] {
+    background: [block.blockColor];
+}
+.b-category-2 .section_[section] .category__link a:link,
+.b-category-3 .section_[section] .category__link a:active,
+.b-category-3 .section_[section] .category__link a:visited,
+.b-category-3 .section_[section] .category__link a:hover  {
+    color: [header.color];
+    font-family: [header.font-family];
+    font-size: [header.font-size];
+    font-style: [header.font-style];
+}
+.b-category-3 .section_[section] .category__link a:after {   
+    top: [marker.top];
+    right: [marker.right];    
+    font-size: [marker.font-size];    
+    color: [marker.color];
+    border: 1px solid [marker.color];
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Добавление двух товаров в корзину</description>
+   <name>AddTwoGoodsToCart</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e5e227c4-c5ce-427d-9be0-e60f2c6eb246</testCaseGuid>
+</TestCaseEntity>

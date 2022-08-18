@@ -1,0 +1,27 @@
+{% if filter is defined %}
+<!--noindex-->
+    <div class="b-catfilter">
+        <form method="get" action="?">
+            <div class="catfilter__leftside">
+                <div class="catfilter__item" style="font-weight: bold;">{{ Lang.get('catalog.filter_order_by') }}:</div>
+                <div class="catfilter__item">
+                    {% for oField in filter.aFields %}
+                    <a class="catfilter__title{{ oField.sel }} js_sort_control" rel="nofollow" href="#" curval="{{ oField.name }}">{{oField.title}}</a>
+                    {% endfor %}
+                    {% if sortState and sortState != defSortState %}
+                    <a class="catfilter__title js_sort_control" rel="nofollow" href="#" curval="">{{ Lang.get('catalog.filter_order_default') }}</a>
+                    {% endif %}
+                    <input type="hidden" name="sort" value="{{ sortState|e }}">
+                    <input type="hidden" name="way" value="{{ sortWay|e }}">
+                </div>
+            </div>
+
+            <div class="catfilter__rightside">
+                <div class="catfilter__item"><a class="catfilter__galpic catfilter__galpic__on js_view_control" href="#" rel="nofollow" curval="gallery"><ins></ins>{{ Lang.get('catalog.view_gallery') }}</a></div>
+                <div class="catfilter__item"><a class="catfilter__listpic catfilter__listpic__on js_view_control" href="#" rel="nofollow" curval="list"><ins></ins>{{ Lang.get('catalog.view_list') }}</a></div>
+                <input type="hidden" name="view" value="{{ viewState|e }}">
+            </div>
+        </form>
+    </div>
+<!--/noindex-->
+{% endif %}

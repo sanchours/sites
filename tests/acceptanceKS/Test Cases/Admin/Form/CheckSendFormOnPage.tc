@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка отправки формы</description>
+   <name>CheckSendFormOnPage</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ed43f15e-5c05-4a67-9617-281b05038939</testCaseGuid>
+</TestCaseEntity>

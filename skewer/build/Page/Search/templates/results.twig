@@ -1,0 +1,24 @@
+{{ form }}
+
+{% if not_found==1 %}
+<p>{{ Lang.get('search.no_results') }}</p>
+{% endif %}
+{% if aItems is defined %}
+<div class="b-result">
+    <div class="b-title-h2">{{ Lang.get('search.search_results') }}</div>
+    {% for iKey, aItem in aItems %}
+        <div class="result__item">
+            <p class="title">{{aItem.number}}. <a href="[{{aItem.section_id}}]"><b>{{aItem.module_title}}:</b></a>
+                {% if aItem.showLink %}
+                    <a href="{{aItem.href}}">{{aItem.search_title}}</a>
+                {% else %}
+                    {{aItem.search_title}}
+                {% endif %}
+            </p>
+            <p>{{aItem.text}}</p>
+        </div>
+    {% endfor %}
+    {# из skewer/build/common/templates #}
+    {% include "paginator.twig" %}
+</div>
+{% endif %}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_partitioning_sections</name>
+   <tag></tag>
+   <elementGuidId>b6bae2d9-a81c-43bf-98d1-8e9b52fea349</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[contains(@class,'sk-tab-skewer\build\Adm\CategoryViewer\Module')]//div[contains(@class,'sk-tab-form')]/div/div[4]/div[1]/div[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>DIV</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[contains(@class,'sk-tab-skewer\build\Adm\CategoryViewer\Module')]//div[contains(@class,'sk-tab-form')]/div/div[4]/div[1]/div[2]</value>
+   </webElementProperties>
+</WebElementEntity>

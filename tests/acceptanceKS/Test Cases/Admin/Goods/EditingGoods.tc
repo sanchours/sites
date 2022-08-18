@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Редактирование товара</description>
+   <name>EditingGoods</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>51b9f47f-65bd-461c-a5f9-dfb1c5f157c5</testCaseGuid>
+</TestCaseEntity>

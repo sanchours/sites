@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка ссылки &quot;Все статьи&quot;</description>
+   <name>VerifyAllArticlesLink</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>651301ed-a20b-4e4c-a378-a9da95e5589d</testCaseGuid>
+</TestCaseEntity>

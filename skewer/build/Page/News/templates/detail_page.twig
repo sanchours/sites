@@ -1,0 +1,36 @@
+<div class="b-news b-news--detal"{{ Design.write(' sktag="modules.news"') }}>
+    {% if news is defined %}
+        {{ microData }}
+        {% if not hideDate %}
+            <div class="news__date"{{ Design.write(' sktag="modules.news.date"') }}>{{ news.publication_date | date('d.m.Y') }}</div>
+        {% endif %}
+        <div class="b-editor {{ html_class }}"{{ Design.write(' sktag="editor"') }}>{{ news.full_text }}</div>
+        {% if bShowGalleryInDetail and news.gallery.images %}
+            {{ Design.addAsset('\\skewer\\ext\\fotorama\\Asset') }}
+            <div class="fotorama" data-nav="thumbs" data-width="100%"
+                     {% if iMaxWidth %}data-max-width="{{ iMaxWidth }}px" {% endif %}
+                     {% if iMaxHeight %}data-max-height="{{ iMaxHeight }}px" {% endif %}
+                    {% if news.gallery.first_img.images_data.mini.height and news.gallery.first_img.images_data.mini.width %}
+                        data-thumbheight="{{ news.gallery.first_img.images_data.mini.height }}"
+                        data-thumbwidth="{{ news.gallery.first_img.images_data.mini.width}}"
+                    {% endif %}
+                     data-keyboard="true"
+                     data-allowfullscreen="true">
+                {% for aPhoto in news.gallery.images %}
+                    {% if aPhoto.images_data.big.file and aPhoto.images_data.mini.file %}
+                        <a href="{{ aPhoto.images_data.big.file }}" data-thumb="{{ aPhoto.images_data.mini.file }}"
+                           alt="{{ aPhoto.alt_title|escape }}" title="{{ aPhoto.title|escape }}" >
+                            <img src="{{ aPhoto.images_data.mini.file }}" />
+                        </a>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% endif %}
+        <p class="news__linkback"><a rel="nofollow" href="#" onclick="history.go(-1);return false;">{{ Lang.get('page.back') }}</a></p>
+        {% if news.source_link %}
+            <p>
+                <a rel="nofollow" target="_blank" href="{{ news.source_link }}" >{{ Lang.get('news.field_source_link') }}</a>
+            </p>
+        {% endif %}
+    {% endif %}
+</div>

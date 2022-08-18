@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Галочка &quot;Отображать на внутренних страницах&quot;</description>
+   <name>CheckboxShowOnInsidePage</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ce0e2353-6954-4f39-83a4-5ea018a3c6d2</testCaseGuid>
+</TestCaseEntity>

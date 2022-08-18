@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Добавление нового клиента без заполнения допинформации</description>
+   <name>CreateClientClear</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8b061c8b-af6a-44f0-ae5d-0df4e7efebd4</testCaseGuid>
+</TestCaseEntity>

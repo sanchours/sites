@@ -1,0 +1,214 @@
+/* layer: default */
+/* group: modules.cabinet       | Личный кабинет */
+/* param: color_title           | Цвет границы таблицы | color | #d4d8dd */
+/* param: color_last            | Цвет последней строки | color | #efefef */
+.b-cabbox {}
+.b-cabbox:after,
+.b-cabbox .cabbox__title:after,
+.b-cabbox .cabbox__sidebox:after {
+    content: "";
+    display: block;
+    clear: both;
+    font-size: 0;
+}
+.b-cabbox .cabbox__status {
+    margin-bottom: 18px;
+    padding: 10px 20px;
+    position: relative;
+    background: [modules.cabinet.color_title];
+}
+.b-cabbox .cabbox__status p {
+    margin: 0;
+    padding: 0 0 5px;
+}
+.b-cabbox .cabbox__statusclose {
+    padding-right: 25px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: url(../images/lk.close.png) 100% 50% no-repeat;
+}
+.b-cabbox .cabbox__item {
+    margin-bottom: 25px;
+    padding: 10px;
+    border: 1px solid [modules.cabinet.color_title];
+}
+.b-cabbox .cabbox__itemtext {
+    text-align: center;
+    font-weight: bold;
+}
+.b-cabbox .cabbox__title {
+    margin-bottom: 13px;
+    background: [modules.cabinet.color_title];
+    border-top: 1px solid [modules.cabinet.color_title];
+    border-bottom: 1px solid [modules.cabinet.color_title];
+    border-right: 1px solid [modules.cabinet.color_title];
+    display: table;
+    width: 100%;
+}
+.b-cabbox .cabbox__tcol1 {
+    padding: 9px 10px 11px 14px;
+    display: table-cell;
+    border-right: 1px solid [modules.cabinet.color_title];
+    border-left: 1px solid [modules.cabinet.color_title];
+}
+.b-cabbox .cabbox__tcol2 {
+    padding: 9px 10px 11px 14px;
+    display: table-cell;
+    border-right: 1px solid [modules.cabinet.color_title];
+}
+.b-cabbox .cabbox__tcol3 {
+    padding: 9px 10px 11px 14px;
+    display: table-cell;
+}
+.b-cabbox .cabbox__tcol4 {
+    padding: 9px 10px 11px 14px;
+    display: table-cell;
+}
+.b-cabbox .cabbox__tcol4 a {
+    white-space: nowrap;
+}
+.b-cabbox .cabbox__table {
+    margin-bottom: -1px;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.b-cabbox .cabbox__table th {
+    padding: 9px 10px;
+    background: [modules.cabinet.color_title];
+    font-weight: bold;
+    text-align: left;
+    border-right: 1px solid #ffffff;
+}
+.b-cabbox .cabbox__table th:first-child {
+    border-left: 1px solid [modules.cabinet.color_title];
+}
+.b-cabbox .cabbox__table th:last-child {
+    border-right: 1px solid [modules.cabinet.color_title];
+}
+.b-cabbox .cabbox__table th.cabbox__title1 {
+    text-align: center;
+}
+.b-cabbox .cabbox__table td {
+    padding: 9px 10px;
+    border: 1px solid [modules.cabinet.color_title];
+}
+.b-cabbox .cabbox__imagebox {
+    position: relative;
+    text-align: center;
+    display: block;
+    font-size: 0;
+}
+.b-cabbox .cabbox__objectimg {
+    margin: 0 auto;
+    overflow: hidden;
+}
+.b-cabbox .cabbox__tablast td {
+    background: [modules.cabinet.color_last];
+    font-weight: bold;
+}
+.b-cabbox .cabbox__btnbox {
+    text-align: right;
+}
+.b-cabbox .cabbox__leftside {
+    width: 67%;
+    float: left;
+}
+.b-cabbox .cabbox__rightside {
+    width: 30%;
+    float: right;
+}
+.b-cabbox .cabbox__sidebox2 .cabbox__rightside {
+    padding-top: 3px;
+    text-align: right;
+}
+.b-cabbox .cabbox__sidebox3 {
+    padding-top: 20px;
+    border-top: 1px solid [modules.cabinet.color_title];
+}
+.b-cabbox .cabbox__table2 {
+    margin-bottom: 10px;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.b-cabbox .cabbox__table2 td {
+    padding: 9px 10px;
+    border: 1px solid [modules.cabinet.color_title];
+}
+.b-cabbox .cabbox__table3 {
+    margin-bottom: 10px;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.b-cabbox .cabbox__table3 td {
+    padding: 9px 10px;
+    border: 1px solid [modules.cabinet.color_title];
+    background: [modules.cabinet.color_last];
+}
+.b-cabbox .ui-widget {
+    font-size: 1em;
+}
+.b-cabbox .ui-widget-header {
+    border-bottom: 1px solid #979ba2;
+}
+.b-cabbox .ui-state-default {
+    float: left;
+}
+.b-cabbox .ui-tabs-panel a {
+    color: [editor.a.color];
+}
+.b-cabbox .cabbox__phonebox {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+}
+.b-cabbox .cabbox__prices {
+    white-space: nowrap;
+}
+/*-----------------------*/
+.b-cabbox-detal .cabbox__table {
+    margin-bottom: 20px;
+}
+.b-wish {
+    padding: 1px 0;
+}
+.b-wish table {
+    border-collapse: collapse;
+}
+.b-wish th {
+    background-color: #d4d8dd;
+    font-weight: normal;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-top: 1px solid #d4d8dd;
+    white-space: nowrap;
+}
+.b-wish th:first-child {
+    border-left: 1px solid #d4d8dd;
+}
+.b-wish th:nth-last-child(1) {
+    border-right: 1px solid #d4d8dd;
+}
+.b-wish .wish__table {
+    margin-bottom: 10px;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.b-wish .wish__table td {
+    padding: 9px 10px;
+    border: 1px solid [modules.cabinet.color_title];
+}
+.b-wish .wish__center {
+    text-align: center;
+}
+.b-wish .wish__subtitle {
+    padding-bottom: 5px;
+    display: block;
+    color: #ccc;
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>ajax form - call back on the site</description>
+   <name>CallBackAjax</name>
+   <tag>form,site</tag>
+   <comment></comment>
+   <testCaseGuid>aae0c99e-8fce-4e19-a499-b4bcfc9b212d</testCaseGuid>
+</TestCaseEntity>

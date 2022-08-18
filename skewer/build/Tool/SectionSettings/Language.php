@@ -1,0 +1,65 @@
+<?php
+
+$aLanguage = [];
+
+$aLanguage['ru']['SectionSettings.Tool.tab_name'] = 'Разделы';
+$aLanguage['ru']['menuIcons'] = 'Иконки пунктов меню';
+$aLanguage['ru']['newsDetailLink'] = 'Ссылка "Подробнее" в новостях';
+$aLanguage['ru']['hasHideDateInNews'] = 'Скрывать дату в новостях';
+$aLanguage['ru']['hasHideDateInArticles'] = 'Скрывать дату в статьях';
+$aLanguage['ru']['galleryStatus'] = 'Фотогалерея в новостях';
+$aLanguage['ru']['galleryStatusArticles'] = 'Фотогалерея в статьях';
+$aLanguage['ru']['onCheckSizeOpenGraphImage'] = 'Включить проверку размера opengraph - изображений';
+$aLanguage['ru']['lock_section_flag'] = 'Использовать сообщение "раздел в стадии наполнения"';
+$aLanguage['ru']['lock_section_text'] = 'Сообщение "раздел в стадии наполнения"';
+$aLanguage['ru']['lock_section_text_value'] = 'Приносим свои извинения, раздел находится в стадии наполнения.';
+$aLanguage['ru']['album_fotorama_flag'] = 'Включить фотораму для фотоальбома';
+$aLanguage['ru']['favicon_validate'] = 'Проверять favicon при загрузке';
+$aLanguage['ru']['default_img'] = 'Изображение по умолчанию для новостной';
+$aLanguage['ru']['data_end_service'] = 'Дата гарантийного обслуживания';
+$aLanguage['ru']['warranty_support'] = 'Выводить данные по сроку гарантийной поддержки';
+$aLanguage['ru']['min_site_width_for_form'] = 'Минимальная ширина сайта для всплывающей формы';
+$aLanguage['ru']['image_change_effect'] = 'Эффект смены картинок в fancybox';
+$aLanguage['ru']['not_save_image_fancybox'] = 'Запрет на сохранение картинки, открытой в fancybox';
+$aLanguage['ru']['consent_to_processing'] = '"Согласие на обработку" активно по умолчанию(формы)';
+$aLanguage['ru']['min_site_width_for_form_error'] = 'Некорректное значение параметра "минимальная ширина сайта для всплывающей формы"';
+$aLanguage['ru']['warning_global_update_tpl_gallery'] = 'Внимание! Изменения будут применены для всех альбомов на сайте!';
+$aLanguage['ru']['hide_adm_copyright'] = 'Отключить копирайты для администратора';
+$aLanguage['ru']['showRatingReview'] = 'Выводить оценку в отзывах';
+$aLanguage['ru']['hideGalleryReview'] = 'Скрыть галерею в отзывах';
+$aLanguage['ru']['mode404'] = 'Действия в случае ошибки 404 на главной странице';
+$aLanguage['ru']['mode404_for_lp'] = 'Отдавать главную страницу с кодом ответа 404 (рекомендуется для Landing Page)';
+$aLanguage['ru']['mode404_default'] = 'Отдавать 404-ю страницу с кодом ответа 404';
+$aLanguage['ru']['check_policy'] = 'Включить проверку политик доступа для построения меню';
+
+$aLanguage['en']['SectionSettings.Tool.tab_name'] = 'Sections';
+$aLanguage['en']['menuIcons'] = 'Icons menu';
+$aLanguage['en']['newsDetailLink'] = '"Read more" in the news';
+$aLanguage['en']['hasHideDateInNews'] = 'To hide the date in the news';
+$aLanguage['en']['hasHideDateInArticles'] = 'To hide the date in the articles';
+$aLanguage['en']['galleryStatus'] = 'Photogallery in the news';
+$aLanguage['en']['galleryStatusArticles'] = 'Photogallery in the articles';
+$aLanguage['en']['onCheckSizeOpenGraphImage'] = 'Enable check open graph image size';
+$aLanguage['en']['lock_section_flag'] = 'Message "Section in development stage"';
+$aLanguage['en']['lock_section_text'] = 'Message for development stage';
+$aLanguage['en']['lock_section_text_value'] = 'We are sorry. This section in development stage.';
+$aLanguage['en']['album_fotorama_flag'] = 'Include Fotorama for photo album';
+$aLanguage['en']['favicon_validate'] = 'check favicon on upload';
+$aLanguage['en']['default_img'] = 'Default image for news';
+$aLanguage['en']['data_end_service'] = 'Until the end of the warranty service';
+$aLanguage['en']['warranty_support'] = 'Provide data on the period of warranty support';
+$aLanguage['en']['min_site_width_for_form'] = 'Min site width for popup form';
+$aLanguage['en']['image_change_effect'] = 'Image change effect in fancybox';
+$aLanguage['en']['not_save_image_fancybox'] = 'Prohibition of conservation a picture opened in fancybox';
+$aLanguage['en']['consent_to_processing'] = '"Consent to processing" is active by default (forms)';
+$aLanguage['en']['min_site_width_for_form_error'] = 'Invalid value for "Min site width for popup form"';
+$aLanguage['en']['warning_global_update_tpl_gallery'] = 'Warning! Changes will be applied to all albums on the site!';
+$aLanguage['en']['hide_adm_copyright'] = 'Hide copyright for administrator';
+$aLanguage['en']['showRatingReview'] = 'Rate in reviews';
+$aLanguage['en']['hideGalleryReview'] = 'Hide gallery in reviews';
+$aLanguage['en']['mode404'] = 'Action in the event of an error 404 on main page';
+$aLanguage['en']['mode404_for_lp'] = 'Give the home page with a response code of 404 (recommended for Landing Page)';
+$aLanguage['en']['mode404_default'] = 'Give 404th page with response code 404';
+$aLanguage['en']['check_policy'] = 'Enable validation of access policies for building a menu';
+
+return $aLanguage;

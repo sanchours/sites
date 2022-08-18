@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка добавления товара со старницы каталога</description>
+   <name>CheckGoodInCartCatalogList</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>86b3bfb7-afcf-4c27-8535-906c2882eacc</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка фильтра по статусам</description>
+   <name>CheckStatusFilter</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a3d08332-38a2-4b59-9aee-2dc9efdc4711</testCaseGuid>
+</TestCaseEntity>

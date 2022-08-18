@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Добавление второго клиента</description>
+   <name>AddSecondClient</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>af6bfcc8-d268-4697-b12a-54f2c61afc33</testCaseGuid>
+</TestCaseEntity>

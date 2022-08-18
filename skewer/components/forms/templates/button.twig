@@ -1,0 +1,11 @@
+<div class="form__col-1">
+    <div class="form__item form__item--btns">
+        <button type="submit" class="b-btnbox">
+            {% if Lang.get(form_button) and Lang.get(form_button)|trim %}
+                {{ Lang.get(form_button) }}
+            {% else %}
+                {{ Lang.get('forms.send') }}
+            {% endif %}
+        </button>
+    </div>
+</div>

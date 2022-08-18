@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Название формы</description>
+   <name>FormName</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>511067f7-b117-45cd-9ff6-e7af15224a29</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,18 @@
+{% if not errorCount %}
+    <div class="js_cart_fancy_add b-editor--forfancy">
+        <div class="b-basket-notice">
+            <div class="basket-title">{{ Lang.get('order.add_success1') }}</div>
+            <div class="js-basket-name basket-name">{{ title }}</div>
+            <div class="basket-btn"><a class="b-btnbox b-btnboxfull" href="{{ cartSectionLink }}">{{ Lang.get('order.add_success2') }}</a></div>
+            <div class="basket-link"><a class="js-basket-close" href="#">{{ Lang.get('order.close_link') }}</a></div>
+        </div>
+    </div>
+{% else %}
+    <div class="b-editor js_cart_fancy_error">
+        <div class="b-basket-notice">
+            <div class="basket-title">{{ Lang.get('order.add_error_count') }}</div>
+            <br>
+            <div class="basket-btn"><a class="b-btnbox b-btnboxfull" href="{{ cartSectionLink }}">{{ Lang.get('order.add_success2') }}</a></div>
+        </div>
+    </div>
+{% endif %}

@@ -1,0 +1,83 @@
+<div class="b-cart b-cart--checkout js-cart-content js-form">
+    {% if order.getCount() %}
+        <div class="js_cart_content cart__content">
+            <div class="cart__tabel">
+                {% for item in order.getItems() %}
+                    <div class="cart__item">
+                        <div class="cart__photo">
+                            {% if item.image.mini.file is defined %}
+                                <img src="{{ item.image.small.file }}" alt=""/>
+                            {% else %}
+                                <img alt="" src="{{  Design.get('modules.cart','lk_photo','skewer\\build\\Page\\Cart\\Asset') }}">
+                            {% endif %}
+                        </div>
+                        <div class="cart__desc">
+                            <div class="cart__title">
+                                <a href="{{ item.url }}"><strong>{{ item.title }}</strong></a>
+                            </div>
+                            {% if isArticle and item.article != false  %}
+                            <div class="cart__article">
+                                {{ Lang.get('order.article')}}:
+                                {{ item.article }}
+                            </div>
+                            {% endif %}
+                            <div class="cart__price">
+                                {{ Lang.get('order.price')}}:
+                                <b>
+                                    <span class="item_price">{{ item.price|price_format }} </span>
+                                    {{ Lang.get('order.current_currency') }}
+                                </b>
+                            </div>
+                        </div>
+                        <div class="cart__total-price">
+                            <ins class="hide-on-desktop hide-on-tablet">{{ Lang.get('order.sum') }}: <br></ins>
+                            <b>
+                                {{ item.count }} x <span class="item_price">{{ item.price|price_format }}</span>
+                                {{ Lang.get('order.current_currency') }}
+                            </b>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="js-cart-total-block">
+                <div class="cart__total-row">
+                    <div>
+                        {% if paidDelivery %}{{ Lang.get('order.payable') }}{% else %}{{ Lang.get('order.to_pay') }}{% endif %}:
+                        <b>
+                        <span class="js_cart_total">
+                            <span class="total">{{ totalPrice|price_format }}</span> {{ Lang.get('order.current_currency') }}
+                        </span>
+                        </b>
+                    </div>
+                </div>
+                {% if paidDelivery %}
+                <div class="cart__total-row">
+                    <div>
+                        {{ Lang.get('order.price_delivery') }}:
+                        <b>
+                        <span class="js-cart-delivery">
+                            <span class="js-delivery">{{ priceDelivery|price_format }}</span>
+                            <span class="js-currency" {% if currenty %}style="display: none;"{% endif %}>{{ Lang.get('order.current_currency') }}</span>
+                        </span>
+                        </b>
+                    </div>
+                </div>
+                <div class="cart__total-row">
+                    <div>
+                        {{ Lang.get('order.to_pay') }}:
+                        <b>
+                        <span class="js-cart-to-pay">
+                            <span class="total">{{ totalPriceToPay|price_format }}</span> {{ Lang.get('order.current_currency') }}
+                        </span>
+                        </b>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    {% endif %}
+</div>
+<div class="b-cart-form">
+    {{ form }}
+</div>
+{{ error }}

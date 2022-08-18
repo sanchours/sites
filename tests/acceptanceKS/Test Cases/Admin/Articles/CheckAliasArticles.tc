@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка псевданима статьи</description>
+   <name>CheckAliasArticles</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a6122309-2fb3-4e64-8015-b0f7e9de5f20</testCaseGuid>
+</TestCaseEntity>

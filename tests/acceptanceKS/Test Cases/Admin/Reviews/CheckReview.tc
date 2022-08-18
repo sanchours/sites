@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка наличия отзыва в админке</description>
+   <name>CheckReview</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dbe8875f-05c3-4cb7-9152-ae4a901cf21b</testCaseGuid>
+</TestCaseEntity>

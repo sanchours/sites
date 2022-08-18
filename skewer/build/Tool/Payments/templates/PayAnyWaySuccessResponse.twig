@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<MNT_RESPONSE>
+    <MNT_ID>{{ ID }}</MNT_ID>
+    <MNT_TRANSACTION_ID>{{ TRANSACTION_ID }}</MNT_TRANSACTION_ID>
+    <MNT_RESULT_CODE>{{ RESULT_CODE }}</MNT_RESULT_CODE>
+    <MNT_SIGNATURE>{{ SIGNATURE }}</MNT_SIGNATURE>
+    <MNT_ATTRIBUTES>
+        {% for key, value in ATTRIBUTES  %}
+        <ATTRIBUTE>
+            <KEY>{{ key }}</KEY>
+            <VALUE>{{ value }}</VALUE>
+        </ATTRIBUTE>
+        {% endfor %}
+    </MNT_ATTRIBUTES>
+</MNT_RESPONSE>

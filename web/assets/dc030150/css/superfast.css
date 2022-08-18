@@ -1,0 +1,196 @@
+/* layer: default */
+/* group: base | Базовые настройки */
+/* group: base.base_font-family | Шрифты */
+/* param: font-family | Семейство шрифта | family  | Arial */
+/* depParam: default..editor.family */
+/* depParam: default..editor.h1.family */
+/* depParam: default..editor.h2.family */
+/* depParam: default..editor.h3.family */
+/* depParam: default..menu.top.level1.normal.link.font_family */
+/* depParam: default..menu.top.level1.active.link.font_family */
+/* depParam: default..menu.top.level2.normal.link.font_family */
+/* depParam: default..menu.top.level2.active.link.font_family */
+/* depParam: default..menu.left.level1.normal.link.font_family */
+/* depParam: default..menu.left.level1.active.link.font_family */
+/* depParam: default..menu.left.level2.normal.link.font_family */
+/* depParam: default..menu.left.level2.active.link.font_family */
+/* depParam: default..menu.left.level3.normal.link.font_family */
+/* depParam: default..menu.left.level3.active.link.font_family */
+/* depParam: default..modules.buttons.font_family_btn */
+/* depParam: default..modules.news.date.font_family */
+/* depParam: default..modules.news.title.font_family */
+/* depParam: default..modules.news.normal.font_family */
+/* depParam: default..modules.news.active.font_family */
+/* depParam: default..modules.guestbox.font_family */
+
+/* param: font-size | Основной размер шрифта | size | 14px */
+/* depParam: default..editor.size */
+/* depParam: default..menu.top.level1.normal.link.size */
+/* depParam: default..menu.top.level1.active.link.size */
+/* depParam: default..menu.top.level2.normal.link.size */
+/* depParam: default..menu.top.level2.active.link.size */
+/* depParam: default..menu.left.level1.normal.link.size */
+/* depParam: default..menu.left.level1.active.link.size */
+/* depParam: default..menu.left.level2.normal.link.size */
+/* depParam: default..menu.left.level2.active.link.size */
+/* depParam: default..modules.buttons.size_btn */
+/* depParam: default..modules.news.size */
+/* depParam: default..modules.guestbox.size */
+
+/* param: color_text | Основной цвет текста | color | #707070 */
+/* depParam: default..editor.text_color */
+/* depParam: default..menu.left.level2.active.link.color */
+/* depParam: default..menu.left.level3.active.link.color */
+/* depParam: default..menu.path.item.color */
+/* depParam: default..page.footer.color_t */
+/* depParam: default..modules.news.date.color */
+/* depParam: default..modules.news.title.color */
+/* depParam: default..modules.guestbox.color */
+/* depParam: default..modules.search.color */
+
+/* param: color_htitle | Цвет заголовков | color | #000000 */
+/* depParam: default..editor.h1.color */
+/* depParam: default..editor.h2.color */
+/* depParam: default..editor.h3.color */
+
+/* param: color_link | Цвет ссылок | color | #1071ae */
+/* depParam: default..editor.a.color */
+/* depParam: default..menu.left.level2.normal.link.color */
+/* depParam: default..menu.left.level3.normal.link.color */
+/* depParam: default..modules.news.normal.color */
+/* depParam: default..modules.news.active.color */
+/* depParam: default..menu.path.a.color */
+
+
+/* group: base.base_background | Фон */
+
+/* param: page_color | Цвет фона сайта | color | #f5f5f5 */
+/* depParam: default..page.body_color */
+
+/* param: page_back | Фоновое изображение сайта | url | empty */
+/* depParam: default..page.body_img */
+
+/* param: center_backcolor | Цвет фона в контенте | color | #ffffff */
+/* depParam: default..page.column.background-color */
+/* depParam: default..page.column.left.background-color */
+/* depParam: default..page.column.right.background-color */
+/* depParam: default..page.column.center.background-color */
+/* depParam: default..menu.left.level2.normal.background.color */
+/* depParam: default..menu.left.level2.active.background.color */
+/* depParam: default..menu.left.level3.normal.background.color */
+/* depParam: default..menu.left.level3.active.background.color */
+
+/* param: site_weight | Ширина сайта | size | 980px */
+/* depParam: default..page.max-width */
+
+/* param: bg-attachment | Привязка фона | bg-attachment | scroll */
+/* depParam: default..page.bg-attachment */
+
+/* group: base.base_header | Шапка */
+
+/* param: head_height | Высота шапки | size | 140px */
+/* depParam: default..page.head.img.height */
+
+/* param: head_back | Цвет шапки сайта | color | #1071ae */
+/* depParam: default..page.head.img.color */
+/* depParam: default..page.footer.color */
+
+/* param: head_text_color | Цвет текста в шапке | color | #ffffff */
+/* depParam: default..page.head.color_t */
+/* depParam: default..page.footer.color_t */
+
+/* param: foot_color_link | Цвет ссылок в шапке | color | #3c3c3c */
+/* depParam: default..page.head.color_a */
+/* depParam: default..page.footer.color_a */
+
+
+/* depParam: default..page.head.logo.logo */
+
+/* param: head_image  | Фоновое изображение | url | */
+/* depParam: default..page.head.img.image */
+
+/* group: base.base_menutop | Верхнее меню */
+
+/* param: menutop_color | Цвет фона обычного пункта В.М. | color | #3c3c3c */
+/* depParam: default..menu.top.level1.level1_bg.color */
+/* depParam: default..menu.top.level1.normal.background.color */
+/* depParam: default..modules.buttons.img_btn_color */
+/* depParam: default..menu.top.level2.active.background.color */
+
+/* param: menutop_active_color | Цвет выделенного пункт верхнего меню | color | #13688f */
+/* depParam: default..menu.top.level1.active.background.color */
+/* depParam: default..menu.top.level2.normal.background.color */
+/* depParam: default..modules.buttons.img_btn_hcolor */
+
+/* param: menutop_normallink_color | Цвет текста обычного пункта 1 ур. В.М. | color | #1071ae */
+/* depParam: default..menu.top.level1.normal.link.color */
+/* depParam: default..modules.buttons.color_btn */
+
+/* param: menutop_normalactive_color | Цвет текста выделенного пункта 1 ур. В.М. | color | #ffffff */
+/* depParam: default..menu.top.level1.active.link.color */
+/* depParam: default..menu.top.level2.normal.link.color */
+/* depParam: default..modules.buttons.hcolor_btn */
+
+/* param: menutop_normallink2_color | Цвет текста выделенного пункта 2 ур. В.М. | color | #ffffff */
+/* depParam: default..menu.top.level2.active.link.color */
+
+
+/* group: base.base_menutop | Меню */
+
+/* param: menuleft_lvl1back | Цвет фона обычного пункта Л.М. | color | #f2f2f2 */
+/* depParam: default..menu.left.level1.normal.background.color */
+
+/* param: menuleft_lvl1backimg  | Фоновое изображение обычного пункта | url  | ../images/mbg.gif */
+/* depParam: menu.left.level1.normal.background.img */
+
+/* param: menuleft_lvl1backactiv | Цвет фона выделенного пункта Л.М. | color | #1071ae */
+/* depParam: default..menu.left.level1.active.background.color */
+
+/* param: menuleft_lvl1text | Цвет текста обычного пункта 1 ур. Л.М. | color | #000000 */
+/* depParam: default..menu.left.level1.normal.link.color */
+
+/* param: menuleft_lvl1textactiv | Цвет текста выделенного пункта 1 ур. Л.М. | color | #ffffff */
+/* depParam: default..menu.left.level1.active.link.color */
+
+/* param: lmenu_bulon | Булит выбранного пункта ЛМ | url | empty */
+/* depParam: default..menu.left.level1.active.bullit.img */
+
+/* param: lmenu_bul | Булит обычного пункта ЛМ | url | empty */
+/* depParam: default..menu.left.level1.normal.bullit.img */
+
+/* param: search_img | Изображение кнопки поиска | url | ../images/btnsearch.gif */
+/* depParam: default..modules.search.btn_img */
+
+/* param: search_width | Ширина кнопки поиска | size | 34px */
+/* depParam: default..modules.search.btn_width */
+
+/* param: search_height | Высота кнопки поиска | size | 20px */
+/* depParam: default..modules.search.btn_height */
+
+/* group: base.base_slider | Слайдер */
+
+/* param: back_img          | Левая стрелочка | url | ../images/catslider.back.gif */
+/* depParam: default..modules.slider.back_img */
+
+/* param: next_img          | Правая стрелочка | url | ../images/catslider.next.gif */
+/* depParam: default..modules.slider.next_img */
+
+/* param: bul_col           | Неактивный булит | color | #d9d9d9 */
+/* depParam: default..modules.slider.bul_col */
+
+/* param: bulon_col         | Активный булит | color | #1071ae */
+/* depParam: default..modules.slider.bulon_col */
+
+/* group: base.base_margingroup | Отступы */
+/* param: margin_menutop          | Отступ от верхнего края до блока верхнего меню | size | 0 */
+/* depParam: default..margingroup.margin_menutop  */
+
+/* param: margin_slider           | Отступ от слайдера в верх | size | 0 */
+/* depParam: default..margingroup.margin_slider  */
+
+/* param: margin_centtop          | Отступ от центрального блока в верх | size | 0 */
+/* depParam: default..margingroup.margin_centtop  */
+
+/* param: margin_centbot          | Отступ от центрального блока вниз | size | 0 */
+/* depParam: default..margingroup.margin_centbot  */
+

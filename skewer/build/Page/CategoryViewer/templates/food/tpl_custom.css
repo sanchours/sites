@@ -1,0 +1,6 @@
+.b-category-1 .section_[section] .category__title  {
+	color: [header.color];
+	font-family: [header.font-family];
+	font-size:   [header.font-size];
+	font-style:  [header.font-style];
+}

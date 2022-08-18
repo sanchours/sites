@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка галочки &quot;скрыть Placeholder&quot;</description>
+   <name>CheckingPlaceholdersCheckBox</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e4c4642c-0745-4985-b871-07f5b02c2ef6</testCaseGuid>
+</TestCaseEntity>

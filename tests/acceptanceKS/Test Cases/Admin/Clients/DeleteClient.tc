@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Удаление клиента</description>
+   <name>DeleteClient</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b4facbb2-2686-4bdb-8406-830166af0432</testCaseGuid>
+</TestCaseEntity>

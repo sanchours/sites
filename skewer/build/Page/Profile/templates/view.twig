@@ -1,0 +1,45 @@
+<div class="b-cabbox">
+    <div class="b-tab">
+        {% include "menu.twig"%}
+        <div style="display: block;">
+            {% for order in orders %}
+            <div class="cabbox__item">
+                <div class="cabbox__title">
+                <div class="cabbox__tcol1">{{ Lang.get('auth.order_number') }}: <a href="{{ profile_url }}detail/{{ order.id }}/">{{ order.id }}</a></div>
+                <div class="cabbox__tcol2">{{ Lang.get('auth.date') }}: <strong>{{  order.date|date("d.m.Y H:i") }}</strong></div>
+                <div class="cabbox__tcol3">{{ Lang.get('auth.status') }}: <strong>{{ order.text_status }}</strong></div>
+                <div class="cabbox__tcol4"><a href="{{ profile_url }}detail/{{ order.id }}/">{{ Lang.get('auth.more_info') }} &gt;&gt;</a></div>
+            </div>
+
+                <table class="cabbox__table">
+                    <tbody>
+                    <tr class="cabbox__tablast">
+                        <td>
+                            <span>{{ Lang.get('order.items_count') }}</span>: <span>{{ order.goods.count }} {{ Lang.get('order.current_measure') }}</span><br>
+                        </td>
+                        <td align="right">
+                            <span>{{ Lang.get('order.to_pay') }}</span> <span class="cabbox__prices">{{ order.sum_to_pay|price_format }} {{ Lang.get('order.current_currency') }}</span>
+                        </td>
+
+                        {% if (order.paymentForm is defined) %}
+                            <td>
+                                <div class="cabbox__btnbox">
+                                    {{ order.paymentForm }}
+                                </div>
+                            </td>
+                        {% endif %}
+
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            {% else %}
+                <div class="cabbox__item cabbox__itemtext">{{ Lang.get('auth.no_orders')}}</div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{# из skewer/build/common/templates #}
+{% include "paginator.twig" %}

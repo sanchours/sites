@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Создание раздела вопросов и ответов</description>
+   <name>CreateFAQSection</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>46e3e395-b9dc-4bc2-9734-306f75d37e58</testCaseGuid>
+</TestCaseEntity>

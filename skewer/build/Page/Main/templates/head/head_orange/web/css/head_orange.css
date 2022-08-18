@@ -1,0 +1,231 @@
+/* layer: default */
+/*---------------------------------*/
+.l-header .header__wrapper {
+    max-width: 100%;
+    background-color: #fff;
+}
+/*---------------------------------*/
+.b-pilot {
+    margin: 0 auto;
+    max-width: [page.max-width];
+    z-index: 27;
+}
+/*---------------------------------*/
+.b-head-phone {
+    padding-right: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    color: #222;
+}
+.b-head-phone a:link,
+.b-head-phone a:visited,
+.b-head-phone a:active,
+.b-head-phone a:hover {
+    text-decoration: none;
+    color: #222;
+}
+/*---------------------------------*/
+.b-head-callback {
+    padding-right: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.b-head-callback a:link,
+.b-head-callback a:visited {
+    border-bottom: 1px dashed #888;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 1;
+}
+.b-head-callback a:active,
+.b-head-callback a:hover {
+    border-bottom-color: transparent;
+    text-decoration: none;
+}
+/*---------------------------------*/
+.b-head-email {
+    display: inline-block;
+    vertical-align: middle;
+}
+/*---------------------------------*/
+.b-head-btn {
+    text-align: right;
+}
+.b-head-btn a:link,
+.b-head-btn a:visited {
+    padding: 15px 30px;
+    background-color: #ffa21d;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+}
+.b-head-btn a:hover,
+.b-head-btn a:active {
+    background-color: #ececec;
+    text-decoration: none;
+    color: #888;
+}
+/*---------------------------------*/
+.b-search_head {
+    top: 0 !important;
+    height: 50px !important;
+}
+.b-search_head .search__open {
+    right: 0;
+    background: url(../images/search-ok.png) 50% 50% no-repeat;
+}
+.b-search_head .search__btn {
+    background: url(../images/search-ok.png) 50% 50% no-repeat;
+}
+.b-search_head .search__close {
+    background: url(../images/search-close.png) 50% 50% no-repeat;
+}
+/*---------------------------------*/
+.b-picture {
+    width: auto;
+}
+/*---------------------------------*/
+.b-search_wrap {
+    max-width: [page.max-width];
+    margin: 0 auto;
+    position: relative;
+}
+/*---------------------------------*/
+.b-sevice .sevice__item-1 > span ins {
+    display: none;
+}
+.b-sevice .sevice__item-1--hasicon > span a:link,
+.b-sevice .sevice__item-1--hasicon > span a:visited,
+.b-sevice .sevice__item-1--hasicon:hover > span a:link,
+.b-sevice .sevice__item-1--hasicon:hover > span a:visited,
+.b-sevice .sevice__item-1--haschild > span a:link,
+.b-sevice .sevice__item-1--haschild > span a:visited,
+.b-sevice .sevice__item-1--haschild:hover > span a:link,
+.b-sevice .sevice__item-1--haschild:hover > span a:visited {
+    padding-right: 40px;
+}
+.b-sevice .sevice__item-1--haschild > span ins {
+    width: 40px;
+    display: block;
+    background: url("[menu.top.level1.normal.bullit.img]") no-repeat scroll 50% 50% transparent;
+}
+.b-sevice .sevice__item-1--haschild:hover > span ins {
+    background: url("[menu.top.level1.active.bullit.img]") no-repeat scroll 50% 50% transparent;
+}
+.b-sevice .sevice__item-2 > span ins {
+    display: none;
+}
+.b-sevice .sevice__item-2--haschild > span .sevice__child-icon {
+    background: url(../images/menutop-mar2.png) 50% 50% no-repeat;
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+}
+.b-sevice .sevice__item-2--haschild:hover > span .sevice__child-icon {
+    background: url(../images/menutop-mar2-on.png) 50% 50% no-repeat;
+    display: block;
+}
+/*---------------------------------*/
+.b-picture .picture__inner {
+    position: static;
+}
+.b-picture .picture__item {
+    padding: 0 20px;
+    right: auto;
+    left: 50%;
+    width: 100%;
+    max-width: [page.max-width];
+    bottom: 0;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+ } 
+.b-picture .picture__text1 {
+    left: 20px !important;
+    right: 20px !important;
+    top: 50% !important;
+    bottom: auto !important;
+    width: auto !important;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #fff;
+}
+.b-picture .picture__text1 h2,
+.b-picture .picture__text1 h3 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 1.1;
+    color: #fff;
+}
+.b-picture .picture__text1 p {
+    margin: 0;
+    padding: 0 0 10px;
+}
+/*---------------------------------*/
+.fotorama-picture .fotorama__dot {
+    background-image: url([modules.slider.bul_bgimg]);
+}
+.fotorama-picture .fotorama__nav__frame.fotorama__active .fotorama__dot {
+    background-image: url([modules.slider.bulon_bgimg]);
+}
+.fotorama-picture .fotorama__arr--prev,
+.fotorama-picture .fotorama__arr--next {
+    margin-top: 0;
+    top: auto;
+    bottom: 0;
+}
+.fotorama-picture .fotorama__arr--prev {
+    background-image: url([modules.slider.back_img]);
+}
+.fotorama-picture .fotorama__arr--next {
+    background-image: url([modules.slider.next_img]);
+}
+.fotorama-picture .fotorama__arr--wrap {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: [page.max-width];
+}
+/*---------------------------------*/
+.b-picture-text {
+    padding: 25px 50px;
+    min-width: 445px;
+    display: inline-block;
+    background-color: #ffa21d;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1.1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*---------------------------------*/
+.b-sidebar .sidebar__close-btn {
+    background: url([adaptive.sidebar.icon_close.pic]) 50% 50% no-repeat;
+}
+/*---------------------------------*/
+.b-sidebar-menu .sidebar-menu__item-1--haschild > span .sidebar-menu__dropicon {
+    background: url("[adaptive.side_menu.mar_open]") no-repeat scroll 50% 50%;
+}
+.b-sidebar-menu .sidebar-menu__item-1--haschild.sidebar-menu__item--open > span .sidebar-menu__dropicon {
+    background: url("[adaptive.side_menu.mar_close]") no-repeat scroll 50% 50%;
+}
+/*---------------------------------*/

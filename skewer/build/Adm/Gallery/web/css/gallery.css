@@ -1,0 +1,100 @@
+.js_adm_gallery .x-panel-body{
+    background: white;
+    font: 11px Arial, Helvetica, sans-serif;
+}
+.js_adm_gallery .thumb{
+    background: #dddddd;
+    padding: 3px 3px 0;
+    text-align: center;
+    border: 1px solid #CDCDCD;
+}
+
+.x-quirks .js_adm_gallery .thumb {
+    padding-bottom: 3px;
+}
+
+.js_adm_gallery .thumb img{
+    height: 100px;
+    max-width: 185px;
+    /*width: 120px;*/
+}
+.js_adm_gallery .thumb-wrap{
+    float: left;
+    margin: 6px 0 6px 6px;
+    padding: 4px;
+    border: 1px solid #ffffff;
+    height: 150px;
+    overflow: hidden;
+}
+.js_adm_gallery .empty-cont {
+    padding: 8px;
+}
+.js_adm_gallery .thumb-wrap:hover{
+    border:1px solid #dddddd;
+    background: #efefef;
+}
+.js_adm_gallery .thumb-wrap span {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 5px;
+    width: 142px; /* for ie to ensure that the text is centered */
+}
+
+.js_adm_gallery .x-item-over{
+    border:1px solid #dddddd;
+    background: #eff5fb;
+    padding: 4px;
+}
+
+.js_adm_gallery .x-item-selected {
+    background: #eff5fb !important;
+    border:1px solid #99bbe8 !important;
+    padding: 4px;
+}
+.js_adm_gallery .x-item-selected .thumb{
+    background:transparent;
+}
+
+.js_adm_gallery .loading-indicator {
+    font-size:11px;
+    background: url('../../../../libs/ExtJS/img/grid/loading.gif') no-repeat left;
+    padding-left:20px;
+    margin:10px;
+}
+
+.x-view-selector {
+    position:absolute;
+    left:0;
+    top:0;
+    width:0;
+    border: 1px dotted #3399bb;
+    opacity: .5;
+    -moz-opacity: .5;
+    filter:alpha(opacity=50);
+    zoom:1;
+    background-color:#c3daf9;
+}.ext-strict .ext-ie .x-tree .x-panel-bwrap{
+    position:relative;
+    overflow:hidden;
+}
+
+.js_adm_gallery_info{
+    font-size: 11px;
+    color: #888888;
+}
+
+.x-thumb-wrap {
+    position: relative;
+}
+
+.x-img_check {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    margin: -3px -2px -2px -3px;
+}
+.x-img_check .js_img_check {
+    position: relative;
+    top: 2px;
+}

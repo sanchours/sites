@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Удаление товара в корзине</description>
+   <name>DelGoodsInOrder</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>62ab4a67-ac65-4db7-b5be-6481caa14986</testCaseGuid>
+</TestCaseEntity>

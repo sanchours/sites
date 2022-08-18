@@ -1,0 +1,112 @@
+/*-------------------------------*/
+/* layer: default */ 
+/* group: modules.category | Список категорий */
+/* group: modules.category.food | Еда  */
+/* group: modules.category.food.margin         | Отступы */
+    /* param: margin_bottom                    | Нижний отступ блока | size | 30px */
+    /* param: padding                          | Отступ  между блоками| size | 30px */
+
+/* group: modules.category.food.title          | Заголовок */
+    /* param: font_family                      | Шрифт | family  | Arial */
+    /* param: size                             | Размер | size | 20px */
+    /* param: weight                           | Толщина шрифта | font-weight | normal */
+    /* param: style                            | Курсив | font-style | italic */ 
+    /* param: transform                        | Регистр | text-transform | none */
+    /* param: color                            | Цвет | color | #222 */
+    /* param: left                             | Левый отступ | size | 30px */
+    /* param: bottom                           | Нижний отступ | size | 14px */
+
+/*-------------------------------*/
+.b-category-1 {
+    margin: 0 -[modules.category.food.margin.padding] / 2;
+}
+.b-category-1 .category__item {
+    padding: 0 [modules.category.food.margin.padding] / 2;
+    margin-bottom: [modules.category.food.margin.margin_bottom];
+    margin-right: -.275em;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.b-category-1 .category__item-1x {width: 8.33%;}
+.b-category-1 .category__item-2x {width: 16.66%;}
+.b-category-1 .category__item-3x {width: 25%;}
+.b-category-1 .category__item-4x {width: 33.33%;}
+.b-category-1 .category__item-5x {width: 41.66%;}
+.b-category-1 .category__item-6x {width: 50%;}
+.b-category-1 .category__item-7x {width: 58.33%;}
+.b-category-1 .category__item-8x {width: 66.66%;}
+.b-category-1 .category__item-9x {width: 75%;}
+.b-category-1 .category__item-10x {width: 83.33%;}
+.b-category-1 .category__item-11x {width: 91.66%;}
+.b-category-1 .category__item-12x {width: 100%;}
+
+.b-category-1 .category__title  {
+    position: absolute;
+    bottom: [modules.category.food.title.bottom];
+    left: [modules.category.food.title.left];
+    margin: 0 [modules.category.food.margin.padding] / 2;
+    color: [modules.category.food.title.color];
+    font-family: [modules.category.food.title.font_family];
+    font-size:   [modules.category.food.title.size];
+    font-style:  [modules.category.food.title.style];
+    font-weight: [modules.category.food.title.weight];
+    text-transform: [modules.category.food.title.transform];
+}
+
+.b-category-1 .category__link a {
+    color: transparent;
+    font-size: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.b-category-1 .category__imgbox {
+    overflow: hidden;
+    font-size: 0;
+}
+.b-category-1 .category__imgbox img {
+    width: 100%;
+    height: auto;
+}
+@media handheld, only screen and (min-width: 768px) and (max-width: 979px) {
+    .b-category-1 {
+        margin: 0 -10px 0;
+    }
+    .b-category-1 .category__item {
+        padding: 0 10px 0;
+        margin-bottom: 20px;
+    }
+    .b-category-1 [class*='category__item-']{
+        width: 33.33%;
+    }
+    .b-category-1 .category__special .category__imgbox img {
+        width: 208%;
+        height: auto;
+    }
+
+}
+@media handheld, only screen and (max-width: 767px) {
+    .b-category-1 {
+        margin: 0;
+        text-align: center;
+    }
+    .b-category-1 .category__item {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .b-category-1 [class*='category__item-'] {
+        width: 100%;
+        max-width: 350px;
+    }
+    .b-category-1 .category__special .category__imgbox img {
+        width: 208%;
+        height: auto;
+    }
+}

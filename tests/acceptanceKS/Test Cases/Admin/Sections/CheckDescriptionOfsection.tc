@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка описания раздела</description>
+   <name>CheckDescriptionOfsection</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e022f18c-604c-4261-b2f9-776a87287f5a</testCaseGuid>
+</TestCaseEntity>

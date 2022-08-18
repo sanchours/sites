@@ -1,0 +1,9 @@
+/* layer: default */
+@media handheld, only screen and (max-width: [adaptive.break_tablet] - 1px ) {
+    /*--------------------------*/
+    .b-filter-center .filter__col {
+        margin-right: 0;
+        width: 100%;
+    }
+    /*--------------------------*/
+}

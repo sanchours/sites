@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Активация клиента</description>
+   <name>ConfirmClient</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>99fc6db1-5c52-4140-96c1-03dd9e2ea4a3</testCaseGuid>
+</TestCaseEntity>

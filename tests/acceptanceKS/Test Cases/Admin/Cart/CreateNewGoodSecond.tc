@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Добавление второго товара</description>
+   <name>CreateNewGoodSecond</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>053f83ba-b2ae-4c8d-9dbc-57878301c71b</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,32 @@
+<div itemscope itemtype="{{ WEBPROTOCOL }}schema.org/Article" style="display: none">
+    <div itemprop="headline">{{ oArticlesRow.title }}</div>
+    <div itemprop="author">{{ author }}</div>
+    <div itemprop="datePublished">{{ oArticlesRow.publication_date | date('Y-m-d') }}</div>
+    <div itemprop="articleBody">{{ oArticlesRow.announce }}</div>
+
+
+    <div itemprop="publisher" itemscope itemtype="{{ WEBPROTOCOL }}schema.org/Organization">
+        <div itemprop="name">{{ aOrganization.name }}</div>
+        <div itemprop="address">{{ aOrganization.address }}</div>
+        <div itemprop="telephone">{{ aOrganization.phone }}</div>
+
+        <div itemprop="logo" itemscope itemtype="{{ WEBPROTOCOL }}schema.org/ImageObject">
+            <img alt="" itemprop="url" src="{{ aLogo.src }}" />
+            <img alt="" itemprop="contentUrl" src="{{ aLogo.src }}" />
+        </div>
+    </div>
+
+
+    <div itemprop="image" itemscope itemtype="{{ WEBPROTOCOL }}schema.org/ImageObject">
+        <meta itemprop="width" content="{{ aImage.width }}" />
+        <meta itemprop="height" content="{{ aImage.height }}" />
+        <a itemprop="url" href="{{ aImage.src }}"></a>
+        <a itemprop="contentUrl" href="{{ aImage.src }}"></a>
+    </div>
+
+
+    <meta itemprop="dateModified" content="{{ oArticlesRow.last_modified_date | date('Y-m-d') }}" />
+    <a itemprop="mainEntityOfPage" href="{{ oArticlesRow.getUrl }}"></a>
+
+
+</div>

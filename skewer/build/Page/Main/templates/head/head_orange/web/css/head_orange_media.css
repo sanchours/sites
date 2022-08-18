@@ -1,0 +1,152 @@
+/* layer: default */
+/*---------------------------------*/
+@media handheld, only screen and (min-width: [adaptive.break_desktop]) { /*-DESKTOP-*/
+    /*--------------------------*/
+    .hide-on-desktop {
+        display: none !important;
+    }
+    /*--------------------------*/
+}
+/*---------------------------------*/
+@media handheld, only screen and (min-width: [adaptive.break_desktop]) and (max-width: 1400px) { /*-SMALL DESKTOP-*/
+    /*--------------------------*/
+    /*--------------------------*/
+}
+/*---------------------------------*/
+@media handheld, only screen and (min-width: [adaptive.break_tablet]) and (max-width: [adaptive.break_desktop] - 1px ) { /*-TABLET-*/
+    /*--------------------------*/
+    .hide-on-tablet {
+        display: none !important;
+    }
+    /*--------------------------*/
+    .b-logo {
+        left: 75px;
+    }
+    /*--------------------------*/
+    .b-search_head {
+        padding: 0;
+    }
+    /*--------------------------*/
+    .b-sidebar .sidebar__btn {
+        padding: 0 20px 20px;
+    }
+    /*--------------------------*/
+    .b-sidebar .b-head-btn {
+        text-align: center;
+    }
+    .b-sidebar .b-head-btn a:link,
+    .b-sidebar .b-head-btn a:visited {
+        display: block;
+        text-align: center;
+    }
+    /*--------------------------*/
+    /*--------------------------*/
+}
+/*--------------------------*/
+@media handheld, all and (min-device-width: [adaptive.break_tablet]) and (max-device-width: 1024px) and (orientation: landscape) { /*-TABLET LANDSCAPE-*/
+    /*--------------------------*/
+    .hide-on-tablet {
+        display: none !important;
+    }
+    .show-on-tablet-l {
+        display: block !important;
+    }
+    /*--------------------------*/
+    .b-logo {
+        left: 75px;
+    }
+    /*--------------------------*/
+}
+/*--------------------------*/
+@media handheld, only screen and (max-width: [adaptive.break_tablet] - 1px ) { /*-MOBILE-*/
+    /*--------------------------*/
+    .hide-on-mobile {
+        display: none !important;
+    }
+    /*--------------------------*/
+    .l-sidebar .sidebar__inner {
+        max-width: 270px;
+    }
+    /*--------------------------*/
+    .b-sandwich {
+        display: inline-block;
+    }
+    /*--------------------------*/
+    .b-sidebar .sidebar__btn {
+        padding: 0 20px 20px;
+    }
+    /*--------------------------*/
+    .b-sidebar-close span {
+        left: 277px;
+    }
+    /*--------------------------*/
+    .b-logo {
+        left: 75px;
+        right: 75px;
+        top: 30px;
+        text-align: center;
+    }
+    /*--------------------------*/
+    .b-pilot .pilot__1 {
+        left: 20px;
+        right: 20px;
+        top: 140px;
+        width: auto;
+    }
+    /*--------------------------*/
+    .b-head-phone {
+        padding-bottom: 5px;
+        padding-right: 0;
+        display: block;
+        text-align: center;
+        font-size: 24px;
+    }
+    /*--------------------------*/
+    .b-head-callback {
+        padding-bottom: 10px;
+        display: block;
+        padding-right: 0;
+        text-align: center;
+    }
+    /*--------------------------*/
+    .b-head-btn {
+        text-align: center;
+    }
+    .b-head-btn a:link,
+    .b-head-btn a:visited {
+        display: block;
+        text-align: center;
+    }
+    /*--------------------------*/
+    .b-head-email {
+        display: block;
+        text-align: center;
+    }
+    /*--------------------------*/
+    .b-search_head {
+        top: 30px !important;
+    }
+    /*--------------------------*/
+    .b-picture2 {
+        display: none;
+    }
+    /*--------------------------*/
+    .b-picture-text {
+        padding-left: 20px;
+        padding-right: 20px;
+        min-width: 0;
+        text-align: center;
+        font-size: 30px;
+        display: block;
+    }
+    /*--------------------------*/
+    .b-header {
+        border-bottom: 140px solid #ececec;
+    }
+    /*--------------------------*/
+}
+/*--------------------------*/
+@media handheld, only screen and (max-width: 767px) and (orientation:landscape) { /*-MOBILE LANDSCAPE-*/ 
+    /*--------------------------*/
+    /*--------------------------*/
+}

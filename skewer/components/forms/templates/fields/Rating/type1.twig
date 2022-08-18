@@ -1,0 +1,31 @@
+{# stars #}
+<div class="form__col-{{ oField.getClassVal() }} form__label-{{ oField.settings.labelPosition }} {{ oField.settings.classModify }}">
+    <label class="form__label" for="{{ oField.settings.slug }}_{{ templateForm.formHash }}">
+        {{ oField.settings.title }}
+        {% if oField.settings.required == 1 %}
+            <ins class="form__mark">*</ins>{% endif %}
+    </label>
+    <div class="form__item b-ratingstar b-ratbox-form js-rating-group
+    {% if oField.getError() %} form__item--error {% endif %}{% if oField.settings.required==1 %}js_required_group{% endif %}">
+        <div class="form__input-wrap">
+            <div class="form__input form__input--radio">
+                <div class="js-rating-form"
+                     data-rating="{{ oField.value }}"
+                     data-moduleName="{{ templateForm.moduleName }}"
+                     data-objectId="{{ objectId }}"
+                     data-allowRate="{{ allowRate }}">
+                    <div class="ratingstar__item"></div>
+                </div>
+                <input
+                        data-hash="{{ templateForm.formHash }}"
+                        data-name="{{ oField.settings.title }}"
+                        type="radio"
+                        name="{{ oField.settings.slug }}"
+                        id="radio-{{ oField.settings.slug }}_{{ templateForm.formHash }}"
+                        {% if oField.value %}value="{{ oField.value }}" checked {% endif %}
+                >
+            </div>
+        </div>
+    </div>
+    <p class="form__info">{{ oField.settings.description }}</p>
+</div>

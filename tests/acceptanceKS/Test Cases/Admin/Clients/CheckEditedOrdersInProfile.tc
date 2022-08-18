@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Отображение измененого заказа в ЛК</description>
+   <name>CheckEditedOrdersInProfile</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c70d990b-8ac6-41b6-9d70-b5c3e703218d</testCaseGuid>
+</TestCaseEntity>

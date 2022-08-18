@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Cоздание шаблона импорта</description>
+   <name>CreateImportTemplate</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f11c887d-c677-4639-b9d7-745d6e84c91b</testCaseGuid>
+</TestCaseEntity>

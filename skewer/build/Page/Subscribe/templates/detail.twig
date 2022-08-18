@@ -1,0 +1,10 @@
+{% if msg is defined %}
+    <div class="b-editor"><p>{{ msg }}</p></div>
+{% endif %}
+
+{% if mini %}
+    <h4>{{ Lang.get('subscribe.subscribe_title') }}</h4>
+{% endif %}
+{% if forms is defined %}
+    {{ forms }}
+{% endif %}

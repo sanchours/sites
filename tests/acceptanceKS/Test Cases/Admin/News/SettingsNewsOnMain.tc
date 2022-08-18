@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Настройка вывода новости на главной</description>
+   <name>SettingsNewsOnMain</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>75b84a19-71af-4373-81c9-6dbd0b2d52e7</testCaseGuid>
+</TestCaseEntity>

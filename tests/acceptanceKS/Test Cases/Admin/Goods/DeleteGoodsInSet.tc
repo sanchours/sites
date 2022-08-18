@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Удаление товара &quot;В комплекте&quot;</description>
+   <name>DeleteGoodsInSet</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3c421fc9-1602-43d2-8fb9-cfb791446a06</testCaseGuid>
+</TestCaseEntity>

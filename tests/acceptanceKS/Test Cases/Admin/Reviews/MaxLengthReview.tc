@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Максимальная длина отзыва</description>
+   <name>MaxLengthReview</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fb28b1bd-47e0-4fa5-bb6e-d05690f1aac4</testCaseGuid>
+</TestCaseEntity>

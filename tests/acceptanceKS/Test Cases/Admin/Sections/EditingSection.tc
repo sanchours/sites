@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Редактирование раздела</description>
+   <name>EditingSection</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d66fbec6-e92a-4f54-b7ce-54411261d9ce</testCaseGuid>
+</TestCaseEntity>

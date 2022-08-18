@@ -1,0 +1,44 @@
+:global {
+	.sk-content-collapse {
+		.ant-collapse-content {
+			border: none;
+		}
+		& > .ant-collapse-item {
+			border: 1px solid transparent;
+			transition: border 0.25s;
+			& > .ant-collapse-header {
+				padding-top: 12px;
+				padding-bottom: 8px;
+				padding-left: 40px;
+				font-size: 16px;
+
+				& .ant-collapse-arrow {
+					left: 16px;
+					svg {
+						transform: rotate(90deg) !important;
+					}
+				}
+
+			}
+		}
+		& > .ant-collapse-item ~ .ant-collapse-item {
+			border-top: none;
+		}
+		& > .ant-collapse-item-active {
+			background: #fff;
+			border: 1px solid #E7E7E7;
+			.ant-collapse-content {
+				background-color: #fff;
+			}
+			> .ant-collapse-header {
+				border-bottom: 1px solid transparent;
+				.ant-collapse-arrow svg {
+					transform: rotate(-90deg) !important;
+				}
+			}
+		}
+	}
+	.sk-collapse-icon {
+		margin-right: 10px;
+	}
+}

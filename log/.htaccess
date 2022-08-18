@@ -1,0 +1,4 @@
+#Deny from all
+RewriteEngine on
+RewriteBase /
+RewriteRule ^(.*) 404.html [R=404,L]

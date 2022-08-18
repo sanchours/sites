@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Создание и проверка новости со ссылкой на источник</description>
+   <name>CheckSourselinkNews</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2f365cbe-68f2-4580-9bf8-f47612921cda</testCaseGuid>
+</TestCaseEntity>

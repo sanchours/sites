@@ -1,0 +1,25 @@
+<!--noindex-->
+<div class="js-b-basketmain b-basketmain b-basketmain-head  {% if designMode %}g-ramaborder js-designDrag-right" sktag="modules.basketmain.head{% endif %}">
+    {% if designMode %}
+        <div class="b-desbtn"><span>MiniCart</span><ins></ins></div>
+    {% endif %}
+
+    <div class="js_wrap_not_empty_basketmain basketmain__wrap minicart__content{% if not order.getItems() %} basketmain__not-empty-hidden{% endif %}">
+        <a href="[{{ cartSectionId }}]">
+            <div class="basketmain__content">
+                {{ Lang.get('order.order') }}: <span class="js-goods-count goods-count">{{order.getTotalCount() }}</span><br />
+                <span class="js-goods-total goods-total">
+                    {{ order.getTotalPrice()|price_format }}
+                </span>
+                {{ Lang.get('order.current_currency') }}
+            </div>
+        </a>
+    </div>
+    <div class="js_wrap_empty_basketmain basketmain__wrap minicart__empty{% if order.getItems() %} basketmain__empty-hidden{% endif %}">
+        <div class="basketmain__content">
+            <ins>{{ Lang.get('order.basket_empty')}}</ins>
+        </div>
+    </div>
+</div>
+
+<!--/noindex-->

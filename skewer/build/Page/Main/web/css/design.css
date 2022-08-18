@@ -1,0 +1,71 @@
+/*-------------------------------*/
+.b-desbtn {
+    padding: 0 4px 2px 4px;
+    position: absolute;
+    cursor: pointer;
+    bottom: 5px;
+    left: 0;
+    display:none;
+}
+.b-desbtn span {
+    color: #071f76;
+    position: relative;
+    z-index: 5;
+}
+.b-desbtn ins {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-radius: 4px;
+    opacity: 0.6;
+    z-index: 0;
+}
+    /*-------------------------------*/
+    .b-desbtn1 {
+        bottom: 5px;
+        left: 0;
+        background: url(../images/desbtn.logo.png) 0 0 no-repeat;
+        width: 30px;
+        height: 20px; 
+    }
+    .b-desbtn2 {
+        bottom: 5px;
+        left: 0;
+        background: url(../images/desbtn.text.png) 0 0 no-repeat;
+        width: 30px;
+        height: 20px; 
+    }
+    .b-desbtn3 {
+        bottom: 5px;
+        left: 0;
+        background: url(../images/desbtn.text.png) 0 0 no-repeat;
+        width: 30px;
+        height: 20px; 
+    }
+    .b-desbtn4 {
+        bottom: 5px;
+        left: 0;
+        background: url(../images/desbtn.text.png) 0 0 no-repeat;
+        width: 30px;
+        height: 20px; 
+    }
+    .b-desbtn5 {
+        bottom: 5px;
+        left: 0;
+        background: url(../images/desbtn.text.png) 0 0 no-repeat;
+        width: 30px;
+        height: 20px; 
+    }
+    .b-desbtn6 {
+        bottom: 5px;
+        left: 0;
+        background: url(../images/desbtn.text.png) 0 0 no-repeat;
+        width: 30px;
+        height: 20px; 
+    }
+    .b-desbtn:hover ins, .b-desbtn__hover ins {
+        background-color: #bbbbbb;
+    } 

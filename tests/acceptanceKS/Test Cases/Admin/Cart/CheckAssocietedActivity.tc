@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка активности вывода сопутствующих</description>
+   <name>CheckAssocietedActivity</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b123c14f-ccff-4aea-af57-3f460cf6d5d4</testCaseGuid>
+</TestCaseEntity>

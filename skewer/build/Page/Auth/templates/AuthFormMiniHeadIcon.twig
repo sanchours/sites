@@ -1,0 +1,11 @@
+<div class="b-auth-wrap">
+    <div class="b-auth-head b-auth-head--icon">
+        {% if current_user %}
+            <!-- Авторизованный пользователь -->
+            <a href="{{ profile_url }}"><img src="/images/head_brand/auth-icon.png" alt=""></a>
+        {% else %}
+            <!-- Неавторизованный пользователь -->
+            <a href="/auth"><img src="/images/head_brand/auth-icon.png" alt=""></a>
+        {% endif %}
+    </div>
+</div>

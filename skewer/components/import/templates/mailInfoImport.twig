@@ -1,0 +1,46 @@
+{% if Config and Logger %}
+    <p>{{ Config.getParam('title') }}</p>
+    <p>{{ Lang.get('import.status') }}: {{ aStatuses[Logger.getParam('status')] }}</p>
+    <p>{{ Lang.get('import.start') }}: {{ Logger.getParam('start') }}</p>
+    {% set finishImport = Logger.getParam('finish') %}
+    {% if finishImport %}<p>{{ Lang.get('import.finish') }}: {{ finishImport }}</p>{% endif %}
+
+    <hr>
+
+    {% set new = Logger.getParam('new') %}
+    {% if new %}
+        <div>
+            <p>{{ Lang.get('import.added') }}: {{ new }} </p>
+        </div>
+    {% endif %}
+    {% set update = Logger.getParam('update') %}
+    {% if update %}
+        <div>
+            <p>{{ Lang.get('import.update') }}: {{ update }}</p>
+        </div>
+    {% endif %}
+    {% set skip = Logger.getParam('skip') %}
+    {% if skip %}
+        <div>
+            <p><b>{{ Lang.get('import.skip') }}: {{ skip }}</b></p>
+        </div>
+    {% endif %}
+    {% set not_activity = Logger.getParam('not_activity') %}
+    {% if not_activity %}
+        <div>
+            <p><b>{{ Lang.get('import.not_activity') }}: {{ not_activity }}</b></p>
+        </div>
+    {% endif %}
+    {% set delete = Logger.getParam('delete') %}
+    {% if delete %}
+        <div>
+            <p>{{ Lang.get('import.delete') }}: {{ delete }} </p>
+        </div>
+    {% endif %}
+    {% set error = Logger.getParam('error') %}
+    {% if error %}
+        <div>
+            <p><b>{{ Lang.get('import.error') }}: {{ error }}</b></p>
+        </div>
+    {% endif %}
+{% endif %}

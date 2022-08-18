@@ -1,0 +1,2034 @@
+/* layer: default */
+/* group: modules.forms | Формы */
+/* param: padding                             | Внутренние отступы | size | 0 */
+/* param: padding_col_h                       | Отступы колонок горизонтальные | size | 10px */
+/* param: padding_col_v                       | Отступы колонок вертикальные | size | 10px */
+/* param: color_border                        | Цвет бордера формы | color | #ddd */
+/* param: width_border                        | Толщина бордера формы | size | 0 */
+/* param: color_background                    | Цвет фона формы | color | transparent */
+/* param: preloader_url                       | Прелоадер | url | ../images/preloader.svg */
+/* param: preloader_bgcolor                   | Прелоадер - фон | color | rgba(0, 0, 0, .5) */
+
+/* group: modules.forms.header | Заголовок */
+/* param: padding                                 | Отступы | size | 0 0 10px  */
+/* param: margin_bottom                           | Отступ снизу | size | 20px  */
+/* param: border_width                            | Толщина рамки | size | 0 0 1px  */
+/* param: border_color                            | Толщина рамки | color | #e5e5e5  */
+/* parentParam: default..modules.forms.elements.color_input */
+/* param: text_align                              | Выравнивание | text-align | left  */
+/* param: header_color                            | Цвет заголовка | color | #aaa  */
+/* parentParam: default..base.userbase.fontfamily.color_htitle */
+/* param: header_font_size                        | Размер шрифта заголовка | size | 22px  */
+/* parentParam: default..editor.h2.size */
+/* param: header_font_weight                      | Толщина шрифта | font-weight | normal  */
+/* parentParam: default..editor.h2.bold */
+/* param: header_font_style                       | Стиль начертания | font-style | normal  */
+/* parentParam: default..editor.h2.style */
+/* param: header_font_family                      | Стиль начертания | family | Arial, sans-seorf  */
+/* parentParam: default..editor.h2.family */
+
+/* group: modules.forms.elements | Элементы формы */
+/* group: modules.forms.elements | Базовые параметры */
+/* param: input_padding                       | Отступы внутри поля | size | 10px 15px  */
+/* param: color_input                         | Цвет рамки поля ввода | color | #e5e5e5  */
+/* param: color_input_bg                      | Цвет фона поля ввода | color | #fff  */
+/* param: color_input_bg_disabled             | Цвет фона поля Только для чтения | color | #f5f5f5  */
+/* param: color_input_hover                   | Цвет рамки поля ввода наведённый | color | #c5c5c5  */
+/* param: color_input_focus                   | Цвет рамки поля ввода выделенный | color | #2199ff  */
+/* param: input_border_width                  | Толщина рамки полей ввода | size | 1px  */
+/* param: color_mark                          | Цвет "звёздочки"   | color | #f00  */
+/* param: font_color                          | Цвет текста | color | #444  */
+/* parentParam: default..base.userbase.fontfamily.color_text */
+/* param: placeholder_color                   | Цвет placeholder | color | #c1c1c1  */
+/* param: info_color                          | Цвет доп описания | color | #c1c1c1  */
+/* param: info_style                          | Начертание доп описания | font-style | normal  */
+/* param: info_weight                         | Толщина доп описания | font-weight | normal  */
+/* param: info_font_size                      | Размер шрифта доп описания | size | 12px  */
+/* param: mark_color                          | Цвет звёздочки | color | #2199ff  */
+
+/* group: modules.forms.separate | Разделитель-заголовок */
+/* param: color_separate                      | Цвет разделителя | color | #e5e5e5  */
+/* parentParam: default..modules.forms.elements.color_input */
+/* param: font_size                           | Размер шрифта | size | 14px  */
+/* parentParam: default..modules.forms.labels.font_size */
+/* param: font_weight                         | Толщина шрифта | font-weight | bold  */
+/* parentParam: default..modules.forms.labels.font_weight */
+/* param: font_family                         | Семейство шрифта | family | Arial, sans-serif  */
+/* parentParam: default..modules.forms.labels.font_family */
+/* param: font_color                         | Цвет шрифта | color | #444  */
+/* parentParam: default..base.userbase.fontfamily.color_text */
+
+/* group: modules.forms.validation | Валидация */
+/* param: color_input_error                   | Цвет рамки поля ввода Ошибка | color | #f2acac  */
+/* param: color_input_bg_error                | Цвет фона поля ввода Ошибка | color | #fef7f7  */
+/* param: color_check_bg_error                | Цвет фона чекбокс Ошибка | color | #f7cdcd  */
+/* param: font_color_error                    | Цвет текста Ошибка | color | #e65a5a  */
+/* param: color_input_success                 | Цвет рамки поля ввода Success | color | #acdc9f  */
+/* param: color_input_bg_success              | Цвет фона поля ввода Success | color | #eef8ec  */
+/* param: font_color_success                  | Цвет текста Success | color | #5ab940  */
+
+/* group: modules.forms.labels | Подписи полей */
+/* param: label_width                         | Ширина подписи | size | 155px  */
+/* param: font_size                           | Размер шрифта | size | 14px  */
+/* param: font_weight                         | Толщина шрифта | font-weight | bold  */
+/* param: font_family                         | Семейство шрифта | family | Arial, sans-serif  */
+/* parentParam: default..base.userbase.fontfamily.font-family */
+
+/* group: modules.buttons | Кнопки */
+/* param: width_btn                           | Ширина кнопки | size | 160px  */
+/* param: padding                             | Внутрение отступы | size | 20px  */
+/* param: radius_btn                          | Радиус скругления кнопки | size | 0  */
+/* param: img_btn_color1                      | Цвет градиента фона (верх) | color | #2199ff  */
+/* param: img_btn_color2                      | Цвет градиента фона (низ) | color | #2199ff  */
+/* param: img_btn_hcolor1                     | Цвет градиента фона ховер (верх) | color | #218fed  */
+/* param: img_btn_hcolor2                     | Цвет градиента фона ховер (низ) | color | #218fed  */
+/* param: font_family_btn                     | Шрифт кнопки | family  | Arial, sans-serif */
+/* parentParam: default..base.userbase.fontfamily.font-family */
+/* param: size_btn                            | Размер шрифта кнопки | size | 1em */
+/* parentParam: default..base.userbase.fontfamily.font-size */
+/* param: weight_btn                          | Толщина шрифта кнопки | font-weight | normal */
+/* param: color_btn                           | Цвет шрифта кнопки | color | #fff */
+/* param: hcolor_btn                          | Цвет шрифта выделенной кнопки | color | #fff */
+/*--------------------*/
+.b-form {
+    border: solid [modules.forms.color_border];
+    border-width: [modules.forms.width_border];
+    background-color: [modules.forms.color_background];
+    padding: [modules.forms.padding];
+    margin-bottom: 20px;
+}
+.b-form *,
+.b-form *:active,
+.b-form *:focus {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.b-form .form__header .b-title-h2 {
+    margin: 0 0 [modules.forms.header.margin_bottom];
+    padding: [modules.forms.header.padding];
+    border: solid [modules.forms.header.border_color];
+    border-width: [modules.forms.header.border_width];
+    font-size: [modules.forms.header.header_font_size];
+    font-weight: [modules.forms.header.header_font_weight];
+    font-style: [modules.forms.header.header_font_style];
+    font-family: [modules.forms.header.header_font_family];
+    text-align: [modules.forms.header.text_align];
+    color: [modules.forms.header.header_color];
+}
+.b-form hr {
+    border: solid [modules.forms.elements.color_separate];
+    border-width: 0 0 1px;
+}
+.b-form .form__title {
+    font-size: [modules.forms.separate.font_size];
+    font-family: [modules.forms.separate.font_family];
+    font-weight: [modules.forms.separate.font_weight];
+    color: [modules.forms.separate.font_color];
+}
+.b-form .form__info {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin: 0;
+    font-size: [modules.forms.elements.info_font_size];
+    font-style: [modules.forms.elements.info_style];
+    font-weight: [modules.forms.elements.info_weight];
+    color: [modules.forms.elements.info_color];
+}
+.b-form .form__mark {
+    text-decoration: none;
+    color: [modules.forms.elements.mark_color];
+}
+.b-form input:not([type="checkbox"]),
+.b-form input:not([type="radio"]),
+.b-form textarea,
+.b-form select {
+    /*-disable default styling iOS-*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: solid [modules.forms.elements.color_input];
+    border-width: [modules.forms.elements.input_border_width];
+    border-radius: 1px;
+    margin: 0;
+    padding: [modules.forms.elements.input_padding];
+    display: block;
+    background: [modules.forms.elements.color_input_bg];
+    font-family: [editor.family];
+    font-size: 14px;
+    box-sizing: border-box;
+    color: [modules.forms.elements.font_color];
+}
+.b-form input:not([type="checkbox"])::-webkit-input-placeholder,
+.b-form input:not([type="radio"])::-webkit-input-placeholder,
+.b-form textarea::-webkit-input-placeholder {
+    color: [modules.forms.elements.placeholder_color];
+}
+.b-form input:not([type="checkbox"])::-webkit-input-placeholder,
+.b-form input:not([type="radio"])::-webkit-input-placeholder,
+.b-form textarea:-moz-placeholder {
+    color: [modules.forms.elements.placeholder_color];
+    opacity: 1;
+}
+.b-form input:not([type="checkbox"])::-webkit-input-placeholder,
+.b-form input:not([type="radio"])::-webkit-input-placeholder,
+.b-form textarea::-moz-placeholder {
+    color: [modules.forms.elements.placeholder_color];
+    opacity: 1;
+}
+.b-form input:not([type="checkbox"])::-webkit-input-placeholder,
+.b-form input:not([type="radio"])::-webkit-input-placeholder,
+.b-form textarea:-ms-input-placeholder {
+    color: [modules.forms.elements.placeholder_color];
+}
+.b-form input:not([type="checkbox"]):hover,
+.b-form input:not([type="radio"]):hover,
+.b-form textarea:hover,
+.b-form select:hover {
+    border-color: [modules.forms.elements.color_input_hover];
+}
+.b-form input:not([type="checkbox"]):focus,
+.b-form input:not([type="radio"]):focus,
+.b-form textarea:focus,
+.b-form select:focus {
+    border-color: [modules.forms.elements.color_input_focus];
+}
+.b-form input:not([type="checkbox"]):not([type="radio"]){
+    width: 100%;
+}
+.b-form textarea {
+    width: 100%;
+    min-height: 130px;
+    resize: vertical;
+}
+.b-form select {
+    padding-right: 0;
+    width: 100%;
+}
+/*-- checkbox*/
+.b-form .form__input--checkbox {
+    padding-bottom: 10px;
+}
+.b-form .form__input--checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.b-form .form__input--checkbox label {
+    cursor: pointer;
+}
+.b-form .form__input--checkbox .form__checkbox {
+    padding-right: 10px;
+    margin-right: -.275em;
+    display: inline-block;
+    vertical-align: middle;
+}
+.b-form .form__input--checkbox .form__checkbox .form__checkbox-trigger {
+    border: 1px solid [modules.forms.elements.color_input];
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background: [modules.forms.elements.color_input_bg];
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.b-form .form__input--checkbox .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox .form__checkbox .form__checkbox-trigger svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    font-size: 10px;
+    line-height: 1;
+    display: none;
+}
+.b-form .form__input--checkbox:hover .form__checkbox-trigger {
+    border-color: [modules.forms.elements.color_input_hover];
+}
+.b-form .form__input--checkbox .form__checkbox-label {
+    margin-right: -.275em;
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 35px);
+}
+.b-form .form__input--checkbox input[type="checkbox"]:checked ~ .form__checkbox .form__checkbox-trigger {
+    background: [modules.forms.elements.color_input_focus];
+    border-color: [modules.forms.elements.color_input_focus];
+}
+.b-form .form__input--checkbox input[type="checkbox"]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox input[type="checkbox"]:checked ~ .form__checkbox .form__checkbox-trigger svg {
+    display: block;
+    color: [modules.forms.elements.color_input_bg];
+}
+.b-form .form__input--checkbox input[readonly="readonly"] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox input[disabled="disabled"] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox input[readonly] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox input[disabled] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox:hover input[readonly="readonly"] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox:hover input[disabled="disabled"] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox:hover input[readonly] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox:hover input[disabled] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox input[readonly="readonly"]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox input[disabled="disabled"]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox input[readonly]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox input[disabled]:checked ~ .form__checkbox .form__checkbox-trigger {
+    border-color: [modules.forms.elements.color_input];
+    background: [modules.forms.elements.color_input];
+    pointer-events: none;
+}
+.b-form .form__input--checkbox input[readonly="readonly"] ~ .form__checkbox-label,
+.b-form .form__input--checkbox input[disabled="disabled"] ~ .form__checkbox-label,
+.b-form .form__input--checkbox input[readonly] ~ .form__checkbox-label,
+.b-form .form__input--checkbox input[disabled] ~ .form__checkbox-label,
+.b-form .form__input--checkbox:hover input[readonly="readonly"] ~ .form__checkbox-label,
+.b-form .form__input--checkbox:hover input[disabled="disabled"] ~ .form__checkbox-label,
+.b-form .form__input--checkbox:hover input[readonly] ~ .form__checkbox-label,
+.b-form .form__input--checkbox:hover input[disabled] ~ .form__checkbox-label,
+.b-form .form__input--checkbox input[readonly="readonly"]:checked ~ .form__checkbox-label,
+.b-form .form__input--checkbox input[disabled="disabled"]:checked ~ .form__checkbox-label,
+.b-form .form__input--checkbox input[readonly]:checked ~ .form__checkbox-label,
+.b-form .form__input--checkbox input[disabled]:checked ~ .form__checkbox-label {
+    color: [modules.forms.elements.placeholder_color];
+    pointer-events: none;
+}
+/*-- checkbox 2*/
+.b-form .form__input--checkbox-2 {
+    padding-bottom: 10px;
+}
+.b-form .form__input--checkbox-2 input[type="checkbox"] {
+    /*display: none;*/
+    position: absolute;
+    opacity: 0;
+    /*visibility: hidden;*/
+    pointer-events: none;
+}
+.b-form .form__input--checkbox-2 label {
+    cursor: pointer;
+}
+.b-form .form__input--checkbox-2 .form__checkbox {
+    padding-right: 10px;
+    margin-right: -.275em;
+    display: inline-block;
+    vertical-align: middle;
+}
+.b-form .form__input--checkbox-2 .form__checkbox .form__checkbox-trigger {
+    border: 1px solid [modules.forms.elements.color_input];
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background: [modules.forms.elements.color_input_bg];
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.b-form .form__input--checkbox-2 .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-2 .form__checkbox .form__checkbox-trigger svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    font-size: 10px;
+    line-height: 1;
+    display: none;
+}
+.b-form .form__input--checkbox-2:hover .form__checkbox-trigger {
+    border-color: [modules.forms.elements.color_input_hover];
+}
+.b-form .form__input--checkbox-2 .form__checkbox-label {
+    margin-right: -.275em;
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 35px);
+}
+.b-form .form__input--checkbox-2 input[type="checkbox"]:checked ~ .form__checkbox .form__checkbox-trigger {
+    background: [modules.forms.elements.color_input_bg];
+    border-color: [modules.forms.elements.color_input_focus];
+}
+.b-form .form__input--checkbox-2 input[type="checkbox"]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-2 input[type="checkbox"]:checked ~ .form__checkbox .form__checkbox-trigger svg {
+    display: block;
+    color: [modules.forms.elements.color_input_focus];
+}
+.b-form .form__input--checkbox-2 input[readonly="readonly"] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-2 input[disabled="disabled"] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-2 input[readonly] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-2 input[disabled] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-2:hover input[readonly="readonly"] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-2:hover input[disabled="disabled"] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-2:hover input[readonly] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-2:hover input[disabled] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-2 input[readonly="readonly"]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-2 input[disabled="disabled"]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-2 input[readonly]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-2 input[disabled]:checked ~ .form__checkbox .form__checkbox-trigger {
+    border-color: [modules.forms.elements.color_input];
+    background: [modules.forms.elements.color_input_bg];
+    pointer-events: none;
+}
+.b-form .form__input--checkbox-2 input[readonly="readonly"] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-2 input[disabled="disabled"] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-2 input[readonly] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-2 input[disabled] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-2:hover input[readonly="readonly"] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-2:hover input[disabled="disabled"] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-2:hover input[readonly] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-2:hover input[disabled] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-2 input[readonly="readonly"]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-2 input[disabled="disabled"]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-2 input[readonly]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-2 input[disabled]:checked ~ .form__checkbox .form__checkbox-trigger span
+.b-form .form__input--checkbox-2 input[readonly="readonly"] ~ .form__checkbox .form__checkbox-trigger svg,
+.b-form .form__input--checkbox-2 input[disabled="disabled"] ~ .form__checkbox .form__checkbox-trigger svg,
+.b-form .form__input--checkbox-2 input[readonly] ~ .form__checkbox .form__checkbox-trigger svg,
+.b-form .form__input--checkbox-2 input[disabled] ~ .form__checkbox .form__checkbox-trigger svg,
+.b-form .form__input--checkbox-2:hover input[readonly="readonly"] ~ .form__checkbox .form__checkbox-trigger svg,
+.b-form .form__input--checkbox-2:hover input[disabled="disabled"] ~ .form__checkbox .form__checkbox-trigger svg,
+.b-form .form__input--checkbox-2:hover input[readonly] ~ .form__checkbox .form__checkbox-trigger svg,
+.b-form .form__input--checkbox-2:hover input[disabled] ~ .form__checkbox .form__checkbox-trigger svg,
+.b-form .form__input--checkbox-2 input[readonly="readonly"]:checked ~ .form__checkbox .form__checkbox-trigger svg,
+.b-form .form__input--checkbox-2 input[disabled="disabled"]:checked ~ .form__checkbox .form__checkbox-trigger svg,
+.b-form .form__input--checkbox-2 input[readonly]:checked ~ .form__checkbox .form__checkbox-trigger svg,
+.b-form .form__input--checkbox-2 input[disabled]:checked ~ .form__checkbox .form__checkbox-trigger svg {
+    color: [modules.forms.elements.color_input];
+}
+.b-form .form__input--checkbox-2 input[readonly="readonly"] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-2 input[disabled="disabled"] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-2 input[readonly] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-2 input[disabled] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-2:hover input[readonly="readonly"] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-2:hover input[disabled="disabled"] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-2:hover input[readonly] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-2:hover input[disabled] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-2 input[readonly="readonly"]:checked ~ .form__checkbox-label,
+.b-form .form__input--checkbox-2 input[disabled="disabled"]:checked ~ .form__checkbox-label,
+.b-form .form__input--checkbox-2 input[readonly]:checked ~ .form__checkbox-label,
+.b-form .form__input--checkbox-2 input[disabled]:checked ~ .form__checkbox-label {
+    color: [modules.forms.elements.placeholder_color];
+    pointer-events: none;
+}
+/*-- checkbox + radio slide 1*/
+.b-form .form__input--checkbox-slide,
+.b-form .form__input--radio-slide {
+    padding-bottom: 10px;
+}
+.b-form .form__input--checkbox-slide input[type="checkbox"],
+.b-form .form__input--radio-slide input[type="radio"] {
+    /*display: none;*/
+    position: absolute;
+    opacity: 0;
+    /*visibility: hidden;*/
+    /*pointer-events: none;*/
+}
+.b-form .form__input--checkbox-slide label,
+.b-form .form__input--radio-slide label{
+    cursor: pointer;
+}
+.b-form .form__input--checkbox-slide .form__checkbox,
+.b-form .form__input--radio-slide .form__radio {
+    padding-right: 10px;
+    margin-right: -.275em;
+    display: inline-block;
+    vertical-align: middle;
+}
+.b-form .form__input--checkbox-slide .form__checkbox-trigger,
+.b-form .form__input--radio-slide .form__radio-trigger {
+    border: 1px solid [modules.forms.elements.color_input];
+    -webkit-border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    border-radius: 1000px;
+    background: [modules.forms.elements.color_input];
+    display: block;
+    width: 50px;
+    height: 25px;
+    position: relative;
+    box-sizing: border-box;
+}
+.b-form .form__input--checkbox-slide .form__checkbox-trigger span,
+.b-form .form__input--radio-slide .form__radio-trigger span {
+    margin-left: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 23px;
+    height: 23px;
+    border-radius: 1000px;
+    background: [modules.forms.elements.color_input_bg];
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: left .1s ease-out, margin-left .1s;
+}
+.b-form .form__input--checkbox-slide:hover .form__checkbox-trigger,
+.b-form .form__input--radio-slide:hover .form__radio-trigger,
+.b-form .form__input--checkbox-slide input[type="checkbox"]:focus ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--radio-slide input[type="radio"]:focus ~ .form__radio .form__radio-trigger {
+    border-color: [modules.forms.elements.color_input_hover];
+    background: [modules.forms.elements.color_input_hover];
+}
+.b-form .form__input--checkbox-slide input[type="checkbox"]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--radio-slide input[type="radio"]:checked ~ .form__radio .form__radio-trigger {
+    background: [modules.forms.elements.color_input_focus];
+    border-color: [modules.forms.elements.color_input_focus];
+}
+.b-form .form__input--checkbox-slide input[type="checkbox"]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--radio-slide input[type="radio"]:checked ~ .form__radio .form__radio-trigger span {
+    left: calc(100% - 23px);
+    /*margin-left: -23px;*/
+    transition: left .1s ease-out, margin-left .1s;
+}
+.b-form .form__input--checkbox-slide input[readonly="readonly"] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide input[disabled="disabled"] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide input[readonly] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide input[disabled] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide:hover input[readonly="readonly"] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide:hover input[disabled="disabled"] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide:hover input[readonly] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide:hover input[disabled] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide input[readonly="readonly"]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide input[disabled="disabled"]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide input[readonly]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide input[disabled]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--radio-slide input[readonly="readonly"] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide input[disabled="disabled"] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide input[readonly] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide input[disabled] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide:hover input[readonly="readonly"] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide:hover input[disabled="disabled"] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide:hover input[readonly] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide:hover input[disabled] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide input[readonly="readonly"]:checked ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide input[disabled="disabled"]:checked ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide input[readonly]:checked ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide input[disabled]:checked ~ .form__radio .form__radio-trigger {
+    border-color: [modules.forms.elements.color_input];
+    background: [modules.forms.elements.color_input];
+    pointer-events: none;
+}
+.b-form .form__input--checkbox-slide input[readonly="readonly"] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide input[disabled="disabled"] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide input[readonly] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide input[disabled] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide:hover input[readonly="readonly"] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide:hover input[disabled="disabled"] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide:hover input[readonly] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide:hover input[disabled] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--radio-slide input[readonly="readonly"] ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide input[disabled="disabled"] ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide input[readonly] ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide input[disabled] ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide:hover input[readonly="readonly"] ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide:hover input[disabled="disabled"] ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide:hover input[readonly] ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide:hover input[disabled] ~ .form__radio .form__radio-trigger span {
+    background: [modules.forms.elements.color_input];
+}
+.b-form .form__input--checkbox-slide input[readonly="readonly"]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide input[readonly]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide input[disabled="disabled"]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide input[disabled]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--radio-slide input[readonly="readonly"]:checked ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide input[readonly]:checked ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide input[disabled="disabled"]:checked ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide input[disabled]:checked ~ .form__radio .form__radio-trigger span {
+    background: [modules.forms.elements.color_input_bg];
+}
+.b-form .form__input--checkbox-slide input[readonly="readonly"] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide input[disabled="disabled"] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide input[readonly] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide input[disabled] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide:hover input[readonly="readonly"] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide:hover input[disabled="disabled"] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide:hover input[readonly] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide:hover input[disabled] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide input[readonly="readonly"]:checked ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide input[disabled="disabled"]:checked ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide input[readonly]:checked ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide input[disabled]:checked ~ .form__checkbox-label,
+.b-form .form__input--radio-slide input[readonly="readonly"] ~ .form__radio-label,
+.b-form .form__input--radio-slide input[disabled="disabled"] ~ .form__radio-label,
+.b-form .form__input--radio-slide input[readonly] ~ .form__radio-label,
+.b-form .form__input--radio-slide input[disabled] ~ .form__radio-label,
+.b-form .form__input--radio-slide:hover input[readonly="readonly"] ~ .form__radio-label,
+.b-form .form__input--radio-slide:hover input[disabled="disabled"] ~ .form__radio-label,
+.b-form .form__input--radio-slide:hover input[readonly] ~ .form__radio-label,
+.b-form .form__input--radio-slide:hover input[disabled] ~ .form__radio-label,
+.b-form .form__input--radio-slide input[readonly="readonly"]:checked ~ .form__radio-label,
+.b-form .form__input--radio-slide input[disabled="disabled"]:checked ~ .form__radio-label,
+.b-form .form__input--radio-slide input[readonly]:checked ~ .form__radio-label,
+.b-form .form__input--radio-slide input[disabled]:checked ~ .form__radio-label {
+    color: [modules.forms.elements.placeholder_color];
+    pointer-events: none;
+}
+/*-- checkbox slide 2*/
+.b-form .form__input--checkbox-slide-2,
+.b-form .form__input--radio-slide-2 {
+    padding-bottom: 10px;
+}
+.b-form .form__input--checkbox-slide-2 input[type="checkbox"],
+.b-form .form__input--radio-slide-2 input[type="radio"] {
+    /*display: none;*/
+    position: absolute;
+    opacity: 0;
+    /*visibility: hidden;*/
+    pointer-events: none;
+}
+.b-form .form__input--checkbox-slide-2 label,
+.b-form .form__input--radio-slide-2 label {
+    cursor: pointer;
+}
+.b-form .form__input--checkbox-slide-2 .form__checkbox,
+.b-form .form__input--radio-slide-2 .form__radio {
+    padding-right: 10px;
+    margin-right: -.275em;
+    display: inline-block;
+    vertical-align: middle;
+}
+.b-form .form__input--checkbox-slide-2 .form__checkbox-trigger,
+.b-form .form__input--radio-slide-2 .form__radio-trigger {
+    border: 1px solid [modules.forms.elements.color_input];
+    -webkit-border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    border-radius: 1000px;
+    background: [modules.forms.elements.color_input_bg];
+    display: block;
+    width: 50px;
+    height: 25px;
+    position: relative;
+    box-sizing: border-box;
+    position: relative;
+}
+.b-form .form__input--checkbox-slide-2 .form__checkbox-trigger span,
+.b-form .form__input--radio-slide-2 .form__radio-trigger span {
+    border: 2px solid [modules.forms.elements.color_input_bg];
+    margin-left: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 23px;
+    height: 23px;
+    border-radius: 1000px;
+    background: [modules.forms.elements.color_input];
+    box-sizing: border-box;
+    transition: left .1s ease-out, margin-left .1s;
+}
+.b-form .form__input--checkbox-slide-2:hover .form__checkbox-trigger,
+.b-form .form__input--radio-slide-2:hover .form__radio-trigger,
+.b-form .form__input--checkbox-slide-2 input[type="checkbox"]:focus ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--radio-slide-2 input[type="radio"]:focus ~ .form__radio .form__radio-trigger{
+    border-color: [modules.forms.elements.color_input_hover];
+    background: [modules.forms.elements.color_input_bg];
+}
+.b-form .form__input--checkbox-slide-2:hover .form__checkbox-trigger span,
+.b-form .form__input--radio-slide-2:hover .form__radio-trigger span,
+.b-form .form__input--checkbox-slide-2 input[type="checkbox"]:focus ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--radio-slide-2 input[type="radio"]:focus ~ .form__radio .form__radio-trigger span{
+    background: [modules.forms.elements.color_input_hover];
+}
+.b-form .form__input--checkbox-slide-2 input[type="checkbox"]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--radio-slide-2 input[type="radio"]:checked ~ .form__radio .form__radio-trigger {
+    background: [modules.forms.elements.color_input_bg];
+    border-color: [modules.forms.elements.color_input_focus];
+}
+.b-form .form__input--checkbox-slide-2 input[type="checkbox"]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--radio-slide-2 input[type="radio"]:checked ~ .form__radio .form__radio-trigger span {
+    left: calc(100% - 23px);
+    /*margin-left: -23px;*/
+    background: [modules.forms.elements.color_input_focus];
+    transition: left .1s ease-out, margin-left .1s;
+}
+.b-form .form__input--checkbox-slide-2 input[readonly="readonly"] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide-2 input[disabled="disabled"] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide-2 input[readonly] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide-2 input[disabled] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide-2:hover input[readonly="readonly"] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide-2:hover input[disabled="disabled"] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide-2:hover input[readonly] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide-2:hover input[disabled] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide-2 input[readonly="readonly"]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide-2 input[disabled="disabled"]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide-2 input[readonly]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide-2 input[disabled]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--radio-slide-2 input[readonly="readonly"] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide-2 input[disabled="disabled"] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide-2 input[readonly] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide-2 input[disabled] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide-2:hover input[readonly="readonly"] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide-2:hover input[disabled="disabled"] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide-2:hover input[readonly] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide-2:hover input[disabled] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide-2 input[readonly="readonly"]:checked ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide-2 input[disabled="disabled"]:checked ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide-2 input[readonly]:checked ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide-2 input[disabled]:checked ~ .form__radio .form__radio-trigger {
+    border-color: [modules.forms.elements.color_input];
+    background: [modules.forms.elements.color_input_bg];
+    pointer-events: none;
+}
+.b-form .form__input--checkbox-slide-2 input[readonly="readonly"] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide-2 input[disabled="disabled"] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide-2 input[readonly] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide-2 input[disabled] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide-2:hover input[readonly="readonly"] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide-2:hover input[disabled="disabled"] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide-2:hover input[readonly] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide-2:hover input[disabled] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--radio-slide-2 input[readonly="readonly"] ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide-2 input[disabled="disabled"] ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide-2 input[readonly] ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide-2 input[disabled] ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide-2:hover input[readonly="readonly"] ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide-2:hover input[disabled="disabled"] ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide-2:hover input[readonly] ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide-2:hover input[disabled] ~ .form__radio .form__radio-trigger span {
+    background: [modules.forms.elements.color_input];
+}
+.b-form .form__input--checkbox-slide-2 input[readonly="readonly"]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide-2 input[readonly]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide-2 input[disabled="disabled"]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide-2 input[disabled]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--radio-slide-2 input[readonly="readonly"]:checked ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide-2 input[readonly]:checked ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide-2 input[disabled="disabled"]:checked ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide-2 input[disabled]:checked ~ .form__radio .form__radio-trigger span {
+    background: [modules.forms.elements.color_input];
+}
+.b-form .form__input--checkbox-slide-2 input[readonly="readonly"] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide-2 input[disabled="disabled"] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide-2 input[readonly] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide-2 input[disabled] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide-2:hover input[readonly="readonly"] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide-2:hover input[disabled="disabled"] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide-2:hover input[readonly] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide-2:hover input[disabled] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide-2 input[readonly="readonly"]:checked ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide-2 input[disabled="disabled"]:checked ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide-2 input[readonly]:checked ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide-2 input[disabled]:checked ~ .form__checkbox-label,
+.b-form .form__input--radio-slide-2 input[readonly="readonly"] ~ .form__radio-label,
+.b-form .form__input--radio-slide-2 input[disabled="disabled"] ~ .form__radio-label,
+.b-form .form__input--radio-slide-2 input[readonly] ~ .form__radio-label,
+.b-form .form__input--radio-slide-2 input[disabled] ~ .form__radio-label,
+.b-form .form__input--radio-slide-2:hover input[readonly="readonly"] ~ .form__radio-label,
+.b-form .form__input--radio-slide-2:hover input[disabled="disabled"] ~ .form__radio-label,
+.b-form .form__input--radio-slide-2:hover input[readonly] ~ .form__radio-label,
+.b-form .form__input--radio-slide-2:hover input[disabled] ~ .form__radio-label,
+.b-form .form__input--radio-slide-2 input[readonly="readonly"]:checked ~ .form__radio-label,
+.b-form .form__input--radio-slide-2 input[disabled="disabled"]:checked ~ .form__radio-label,
+.b-form .form__input--radio-slide-2 input[readonly]:checked ~ .form__radio-label,
+.b-form .form__input--radio-slide-2 input[disabled]:checked ~ .form__radio-label {
+    color: [modules.forms.elements.placeholder_color];
+    pointer-events: none;
+}
+/*-- checkbox slide 3*/
+.b-form .form__input--checkbox-slide-3,
+.b-form .form__input--radio-slide-3 {
+    padding-bottom: 10px;
+}
+.b-form .form__input--checkbox-slide-3 input[type="checkbox"],
+.b-form .form__input--radio-slide-3 input[type="radio"] {
+    /*display: none;*/
+    position: absolute;
+    opacity: 0;
+    /*visibility: hidden;*/
+    pointer-events: none;
+}
+.b-form .form__input--checkbox-slide-3 label,
+.b-form .form__input--radio-slide-3 label {
+    cursor: pointer;
+}
+.b-form .form__input--checkbox-slide-3 .form__checkbox,
+.b-form .form__input--radio-slide-3 .form__radio {
+    padding-right: 10px;
+    margin-right: -.275em;
+    display: inline-block;
+    vertical-align: middle;
+}
+.b-form .form__input--checkbox-slide-3 .form__checkbox-trigger,
+.b-form .form__input--radio-slide-3 .form__radio-trigger {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid [modules.forms.elements.color_input];
+    -webkit-border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    border-radius: 1000px;
+    background: [modules.forms.elements.color_input];
+    display: block;
+    width: 50px;
+    height: 4px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+.b-form .form__input--checkbox-slide-3 .form__checkbox-trigger span,
+.b-form .form__input--radio-slide-3 .form__radio-trigger span {
+    border: 1px solid [modules.forms.elements.color_input];
+    margin-left: 0;
+    position: absolute;
+    left: -1px;
+    top: calc(21px / -2);
+    /*margin-top: calc(23px / -2);*/
+    width: 23px;
+    height: 23px;
+    border-radius: 1000px;
+    background: [modules.forms.elements.color_input_bg];
+    box-sizing: border-box;
+    z-index: 1;
+    transition: left .1s ease-out, margin-left .1s;
+}
+.b-form .form__input--checkbox-slide-3 .form__checkbox-trigger:after,
+.b-form .form__input--radio-slide-3 .form__radio-trigger:after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: 0;
+    bottom: -10px;
+    left: 0;
+    z-index: 0;
+ }
+.b-form .form__input--checkbox-slide-3:hover .form__checkbox-trigger,
+.b-form .form__input--radio-slide-3:hover .form__radio-trigger,
+.b-form .form__input--checkbox-slide-3 input[type="checkbox"]:focus ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--radio-slide-3 input[type="radio"]:focus ~ .form__radio .form__radio-trigger{
+    border-color: [modules.forms.elements.color_input_hover];
+    background: [modules.forms.elements.color_input_hover];
+}
+.b-form .form__input--checkbox-slide-3:hover .form__checkbox-trigger span,
+.b-form .form__input--radio-slide-3:hover .form__radio-trigger span,
+.b-form .form__input--checkbox-slide-3 input[type="checkbox"]:focus ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--radio-slide-3 input[type="radio"]:focus ~ .form__radio .form__radio-trigger span {
+    background: [modules.forms.elements.color_input_bg];
+    border-color: [modules.forms.elements.color_input_hover];
+}
+.b-form .form__input--checkbox-slide-3 input[type="checkbox"]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--radio-slide-3 input[type="radio"]:checked ~ .form__radio .form__radio-trigger {
+    background: [modules.forms.elements.color_input_focus];
+    border-color: [modules.forms.elements.color_input_focus];
+}
+.b-form .form__input--checkbox-slide-3 input[type="checkbox"]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--radio-slide-3 input[type="radio"]:checked ~ .form__radio .form__radio-trigger span {
+    left: calc(100% - 23px);
+    /*margin-left: -22px;*/
+    background: [modules.forms.elements.color_input_bg];
+    border-color: [modules.forms.elements.color_input_focus];
+    transition: left .1s ease-out, margin-left .1s;
+}
+.b-form .form__input--checkbox-slide-3 input[readonly="readonly"] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide-3 input[disabled="disabled"] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide-3 input[readonly] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide-3 input[disabled] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide-3:hover input[readonly="readonly"] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide-3:hover input[disabled="disabled"] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide-3:hover input[readonly] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide-3:hover input[disabled] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide-3 input[readonly="readonly"]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide-3 input[disabled="disabled"]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide-3 input[readonly]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--checkbox-slide-3 input[disabled]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__input--radio-slide-3 input[readonly="readonly"] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide-3 input[disabled="disabled"] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide-3 input[readonly] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide-3 input[disabled] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide-3:hover input[readonly="readonly"] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide-3:hover input[disabled="disabled"] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide-3:hover input[readonly] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide-3:hover input[disabled] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide-3 input[readonly="readonly"]:checked ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide-3 input[disabled="disabled"]:checked ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide-3 input[readonly]:checked ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio-slide-3 input[disabled]:checked ~ .form__radio .form__radio-trigger {
+    border-color: [modules.forms.elements.color_input];
+    background: [modules.forms.elements.color_input];
+    pointer-events: none;
+}
+.b-form .form__input--checkbox-slide-3 input[readonly="readonly"] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide-3 input[disabled="disabled"] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide-3 input[readonly] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide-3 input[disabled] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide-3:hover input[readonly="readonly"] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide-3:hover input[disabled="disabled"] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide-3:hover input[readonly] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide-3:hover input[disabled] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--radio-slide-3 input[readonly="readonly"] ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide-3 input[disabled="disabled"] ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide-3 input[readonly] ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide-3 input[disabled] ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide-3:hover input[readonly="readonly"] ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide-3:hover input[disabled="disabled"] ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide-3:hover input[readonly] ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide-3:hover input[disabled] ~ .form__radio .form__radio-trigger span {
+    border-color: [modules.forms.elements.color_input];
+    background: [modules.forms.elements.color_input_bg];
+}
+.b-form .form__input--checkbox-slide-3 input[readonly="readonly"]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide-3 input[readonly]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide-3 input[disabled="disabled"]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--checkbox-slide-3 input[disabled]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__input--radio-slide-3 input[readonly="readonly"]:checked ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide-3 input[readonly]:checked ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide-3 input[disabled="disabled"]:checked ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio-slide-3 input[disabled]:checked ~ .form__radio .form__radio-trigger span {
+    border-color: [modules.forms.elements.color_input];
+    background: [modules.forms.elements.color_input_bg];
+}
+.b-form .form__input--checkbox-slide-3 input[readonly="readonly"] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide-3 input[disabled="disabled"] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide-3 input[readonly] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide-3 input[disabled] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide-3:hover input[readonly="readonly"] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide-3:hover input[disabled="disabled"] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide-3:hover input[readonly] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide-3:hover input[disabled] ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide-3 input[readonly="readonly"]:checked ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide-3 input[disabled="disabled"]:checked ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide-3 input[readonly]:checked ~ .form__checkbox-label,
+.b-form .form__input--checkbox-slide-3 input[disabled]:checked ~ .form__checkbox-label,
+.b-form .form__input--radio-slide-3 input[readonly="readonly"] ~ .form__radio-label,
+.b-form .form__input--radio-slide-3 input[disabled="disabled"] ~ .form__radio-label,
+.b-form .form__input--radio-slide-3 input[readonly] ~ .form__radio-label,
+.b-form .form__input--radio-slide-3 input[disabled] ~ .form__radio-label,
+.b-form .form__input--radio-slide-3:hover input[readonly="readonly"] ~ .form__radio-label,
+.b-form .form__input--radio-slide-3:hover input[disabled="disabled"] ~ .form__radio-label,
+.b-form .form__input--radio-slide-3:hover input[readonly] ~ .form__radio-label,
+.b-form .form__input--radio-slide-3:hover input[disabled] ~ .form__radio-label,
+.b-form .form__input--radio-slide-3 input[readonly="readonly"]:checked ~ .form__radio-label,
+.b-form .form__input--radio-slide-3 input[disabled="disabled"]:checked ~ .form__radio-label,
+.b-form .form__input--radio-slide-3 input[readonly]:checked ~ .form__radio-label,
+.b-form .form__input--radio-slide-3 input[disabled]:checked ~ .form__radio-label {
+    color: [modules.forms.elements.placeholder_color];
+    pointer-events: none;
+}
+/*-- radio buttons*/
+.b-form .form__input--radio {
+    padding-bottom: 10px;
+}
+.b-form .form__input--radio input[type="radio"] {
+    /*display: none;*/
+    position: absolute;
+    opacity: 0;
+    /*visibility: hidden;*/
+    pointer-events: none;
+}
+.b-form .form__input--radio label {
+    cursor: pointer;
+}
+.b-form .form__input--radio .form__radio {
+    padding-right: 10px;
+    margin-right: -.275em;
+    display: inline-block;
+    vertical-align: middle;
+}
+.b-form .form__input--radio .form__radio .form__radio-trigger {
+    border: 1px solid [modules.forms.elements.color_input];
+    -webkit-border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    border-radius: 1000px;
+    background: [modules.forms.elements.color_input_bg];
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    box-sizing: border-box;
+}
+.b-form .form__input--radio .form__radio .form__radio-trigger span,
+.b-form .form__input--radio .form__radio .form__radio-trigger svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    font-size: 9px;
+    line-height: 1;
+    display: none;
+}
+.b-form .form__input--radio:hover .form__radio-trigger {
+    border-color: [modules.forms.elements.color_input_hover];
+}
+.b-form .form__input--radio .form__radio-label {
+    margin-right: -.275em;
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 35px);
+}
+.b-form .form__input--radio input[type="radio"]:checked ~ .form__radio .form__radio-trigger {
+    background: [modules.forms.elements.color_input_bg];
+    border-color: [modules.forms.elements.color_input_focus];
+}
+.b-form .form__input--radio input[type="radio"]:checked ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio input[type="radio"]:checked ~ .form__radio .form__radio-trigger svg {
+    display: block;
+    color: [modules.forms.elements.color_input_focus];
+}
+.b-form .form__input--radio input[readonly="readonly"] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio input[disabled="disabled"] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio input[readonly] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio input[disabled] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio:hover input[readonly="readonly"] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio:hover input[disabled="disabled"] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio:hover input[readonly] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio:hover input[disabled] ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio input[readonly="readonly"]:checked ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio input[disabled="disabled"]:checked ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio input[readonly]:checked ~ .form__radio .form__radio-trigger,
+.b-form .form__input--radio input[disabled]:checked ~ .form__radio .form__radio-trigger {
+    border-color: [modules.forms.elements.color_input];
+    background: [modules.forms.elements.color_input_bg_disabled];
+    pointer-events: none;
+}
+.b-form .form__input--radio input[readonly="readonly"]:checked ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio input[disabled="disabled"]:checked ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio input[readonly]:checked ~ .form__radio .form__radio-trigger span,
+.b-form .form__input--radio input[disabled]:checked ~ .form__radio .form__radio-trigger span
+.b-form .form__input--radio input[readonly="readonly"]:checked ~ .form__radio .form__radio-trigger svg,
+.b-form .form__input--radio input[disabled="disabled"]:checked ~ .form__radio .form__radio-trigger svg,
+.b-form .form__input--radio input[readonly]:checked ~ .form__radio .form__radio-trigger svg,
+.b-form .form__input--radio input[disabled]:checked ~ .form__radio .form__radio-trigger svg {
+    color: transparent;
+}
+.b-form .form__input--radio input[readonly="readonly"] ~ .form__radio-label,
+.b-form .form__input--radio input[disabled="disabled"] ~ .form__radio-label,
+.b-form .form__input--radio input[readonly] ~ .form__radio-label,
+.b-form .form__input--radio input[disabled] ~ .form__radio-label,
+.b-form .form__input--radio:hover input[readonly="readonly"] ~ .form__radio-label,
+.b-form .form__input--radio:hover input[disabled="disabled"] ~ .form__radio-label,
+.b-form .form__input--radio:hover input[readonly] ~ .form__radio-label,
+.b-form .form__input--radio:hover input[disabled] ~ .form__radio-label,
+.b-form .form__input--radio input[readonly="readonly"]:checked ~ .form__radio-label,
+.b-form .form__input--radio input[disabled="disabled"]:checked ~ .form__radio-label,
+.b-form .form__input--radio input[readonly]:checked ~ .form__radio-label,
+.b-form .form__input--radio input[disabled]:checked ~ .form__radio-label {
+    color: [modules.forms.elements.placeholder_color];
+    pointer-events: none;
+}
+/*-- readonly/disabled elem*/
+.b-form input[readonly="readonly"],
+.b-form input[disabled="disabled"],
+.b-form input[readonly="readonly"]:hover,
+.b-form input[disabled="disabled"]:hover,
+.b-form input[readonly="readonly"]:focus,
+.b-form input[disabled="disabled"]:focus,
+.b-form input[readonly],
+.b-form input[disabled],
+.b-form input[readonly]:hover,
+.b-form input[disabled]:hover,
+.b-form input[readonly]:focus,
+.b-form input[disabled]:focus,
+.b-form textarea[readonly="readonly"],
+.b-form textarea[disabled="disabled"],
+.b-form textarea[readonly="readonly"]:hover,
+.b-form textarea[disabled="disabled"]:hover,
+.b-form textarea[readonly="readonly"]:focus,
+.b-form textarea[disabled="disabled"]:focus,
+.b-form textarea[readonly],
+.b-form textarea[disabled],
+.b-form textarea[readonly]:hover,
+.b-form textarea[disabled]:hover,
+.b-form textarea[readonly]:focus,
+.b-form textarea[disabled]:focus,
+.b-form select[readonly="readonly"],
+.b-form select[disabled="disabled"],
+.b-form select[readonly="readonly"]:hover,
+.b-form select[disabled="disabled"]:hover,
+.b-form select[readonly="readonly"]:focus,
+.b-form select[disabled="disabled"]:focus,
+.b-form select[readonly],
+.b-form select[disabled],
+.b-form select[readonly]:hover,
+.b-form select[disabled]:hover,
+.b-form select[readonly]:focus,
+.b-form select[disabled]:focus {
+    border: solid [modules.forms.elements.color_input];
+    border-width: [modules.forms.elements.input_border_width];
+    background-color: [modules.forms.elements.color_input_bg_disabled];
+}
+.b-form input[readonly="readonly"] + .form__icon,
+.b-form input[disabled="disabled"] + .form__icon,
+.b-form input[readonly] + .form__icon,
+.b-form input[disabled] + .form__icon {
+    color: [modules.forms.elements.placeholder_color];
+}
+/*-- labels*/
+.b-form .form__label {
+    font-family: [modules.forms.labels.font_family];
+    font-weight: [modules.forms.labels.font_weight];
+    font-size: [modules.forms.labels.font_size];
+}
+.b-form .form__item {
+    position: relative;
+}
+.b-form .form__item--label-top .form__label {
+    padding-bottom: 10px;
+}
+.b-form .form__item--label-left .form__label,
+.b-form .form__item--label-left .form__input {
+    margin-right: -.275em;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+.b-form .form__item--label-left .form__input--textarea {
+    vertical-align: top;
+}
+.b-form .form__item--label-left .form__label {
+    padding-right: 20px;
+    width: [modules.forms.labels.label_width];
+}
+.b-form .form__item--label-left .form__input {
+    width: calc(100% - [modules.forms.labels.label_width]);
+}
+.b-form .form__item--label-left .form__info {
+    padding-left: [modules.forms.labels.label_width];
+}
+.b-form .form__item--label-left.form__item--datepicker-full .form__input {
+    width: calc(100% - [modules.forms.labels.label_width]);
+}
+.b-form .form__item--label-right .form__label,
+.b-form .form__item--label-right .form__input {
+    margin-right: -.275em;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+.b-form .form__item--label-right .form__input--textarea {
+    vertical-align: top;
+}
+.b-form .form__item--label-right .form__label {
+    padding-left: 20px;
+    width: [modules.forms.labels.label_width];
+}
+.b-form .form__item--label-right .form__input {
+    width: calc(100% - [modules.forms.labels.label_width]);
+}
+.b-form .form__item--label-right .form__info {
+    padding-right: [modules.forms.labels.label_width];
+}
+.b-form .form__item--label-right.form__item--datepicker-full .form__input {
+    width: calc(100% - [modules.forms.labels.label_width]);
+}
+.b-form .form__item--label-none .form__label {
+    display: none;
+}
+.b-form .form__item--ta-left {
+    text-align: left;
+}
+.b-form .form__item--ta-right {
+    text-align: right;
+}
+.b-form .form__item--ta-center {
+    text-align: center;
+}
+/*-- checboxes + radio labels*/
+.b-form .form__item--checkboxes.form__item--label-top .form__label,
+.b-form .form__item--radios.form__item--label-top .form__label {
+    padding-bottom: 20px;
+}
+.b-form .form__item--checkboxes.form__item--label-left .form__label,
+.b-form .form__item--checkboxes.form__item--label-left .form__input-wrap,
+.b-form .form__item--radios.form__item--label-left .form__label,
+.b-form .form__item--radios.form__item--label-left .form__input-wrap {
+    margin-right: -.275em;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+.b-form .form__item--checkboxes.form__item--label-left .form__input,
+.b-form .form__item--radios.form__item--label-left .form__input {
+    display: block;
+    margin: 0;
+    width: auto;
+}
+.b-form .form__item--checkboxes.form__item--label-left .form__label,
+.b-form .form__item--radios.form__item--label-left .form__label {
+    padding-right: 20px;
+    width: [modules.forms.labels.label_width];
+}
+.b-form .form__item--checkboxes.form__item--label-left .form__input-wrap,
+.b-form .form__item--radios.form__item--label-left .form__input-wrap {
+    width: calc(100% - [modules.forms.labels.label_width]);
+}
+.b-form .form__item--checkboxes.form__item--label-right .form__label,
+.b-form .form__item--checkboxes.form__item--label-right .form__input-wrap,
+.b-form .form__item--radios.form__item--label-right .form__label,
+.b-form .form__item--radios.form__item--label-right .form__input-wrap {
+    margin-right: -.275em;
+    display: inline-block;.b-form .form__item--el-col-0 .form__input
+    vertical-align: top;
+    box-sizing: border-box;
+}
+.b-form .form__item--checkboxes.form__item--label-right .form__input,
+.b-form .form__item--radios.form__item--label-right .form__input {
+    width: auto;
+    margin: 0;
+    display: block;
+}
+.b-form .form__item--checkboxes.form__item--label-right .form__label,
+.b-form .form__item--radios.form__item--label-right .form__label {
+    padding-left: 20px;
+    width: [modules.forms.labels.label_width];
+}
+.b-form .form__item--checkboxes.form__item--label-right .form__input-wrap,
+.b-form .form__item--radios.form__item--label-right .form__input-wrap {
+    width: calc(100% - [modules.forms.labels.label_width]);
+}
+/*-- checkboxes + radios cols*/
+.b-form .form__item--el-col-0 .form__input {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+.b-form .form__item--el-col-2 .form__input {
+    padding-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -.275em;
+    width: 50%;
+    box-sizing: border-box;
+}
+.b-form .form__item--el-col-3 .form__input {
+    padding-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -.275em;
+    width: 33.33%;
+    box-sizing: border-box;
+}
+.b-form .form__item--el-col-4 .form__input {
+    padding-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -.275em;
+    width: 25%;
+    box-sizing: border-box;
+}
+.b-form .form__item--el-col-5 .form__input {
+    padding-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -.275em;
+    width: 20%;
+    box-sizing: border-box;
+}
+/*-- capcha*/
+.b-form .form__item--captha .form__label {
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.1;
+}
+.b-form .form__item--captha .form__captha-img,
+.b-form .form__item--captha .form__input input[type="text"] {
+    margin-right: -.275em;
+    display: inline-block;
+    vertical-align: middle;
+}
+.b-form .form__item--captha .form__captha-img {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.b-form .form__item--captha .form__input input[type="text"] {
+    padding: 0;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+}
+.b-form .form__item--captha .form__item--agree-left {
+    padding-left: [modules.forms.labels.label_width];
+}
+/*-- form agree*/
+.b-form .form__item--agree a:link,
+.b-form .form__item--agree a:visited {
+    line-height: 1.1;
+    text-decoration: none;
+}
+.b-form .form__item--agree a:hover,
+.b-form .form__item--agree a:active {
+    border-bottom-color: transparent;
+    text-decoration: none;
+}
+/*-- elem with icon*/
+.b-form .form__item--icon input:not([type="checkbox"]),
+.b-form .form__item--icon input:not([type="radio"]),
+.b-form .form__item--icon textarea,
+.b-form .form__item--icon select {
+    /*padding-right: 40px;*/
+}
+.b-form .form__item--icon .form__icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    z-index: 5;
+}
+.b-form .form__item--icon .form__input {
+    position: relative;
+}
+.b-form .form__item--datepicker .form__input {
+    position: relative;
+    width: 280px;
+    max-width: 100%;
+}
+.b-form .form__item--datepicker-full .form__input {
+    width: 100%;
+    max-width: 100%;
+}
+.b-form .form__item--datepicker input:not([type="checkbox"]):not([type="radio"]) {
+    padding-right: 35px;
+}
+.b-form .form__item--datepicker.form__item--label-left .form__input,
+.b-form .form__item--datepicker.form__item--label-right .form__input {
+    max-width: calc(100% - [modules.forms.labels.label_width]);
+}
+/*-- file input*/
+.b-form .form__input--file {
+    position: relative;
+}
+.b-form .form__input--file label {
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+.b-form .form__input--file label span,
+.b-form .form__input--file label strong {
+    margin-right: -.275em;
+    display: inline-block;
+    vertical-align: middle;
+}
+.b-form .form__input--file label span {
+    border: solid [modules.forms.elements.color_input];
+    border-width: [modules.forms.elements.input_border_width];
+    padding: [modules.forms.elements.input_padding];
+    background: [modules.forms.elements.color_input_bg];
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: [editor.family];
+    font-size: 14px;
+    box-sizing: border-box;
+    color: [modules.forms.elements.font_color];
+    width: calc( 100% - 150px - 10px ); /* input width - btn width - 10px spacing */
+}
+.b-form .form__input--file label span.form__label-file {
+    color: transparent;
+}
+.b-form .form__input--file label span.form__label-file-visible {
+    color: [modules.forms.elements.font_color];
+}
+.b-form .form__input--file:hover label span,
+.b-form .form__input--file-hashover label span {
+    border-color: [modules.forms.elements.color_input_hover];
+    cursor: pointer;
+}
+.b-form .form__input--file:focus label span,
+.b-form .form__input--file-hasfocus label span {
+    border-color: [modules.forms.elements.color_input_focus];
+    cursor: pointer;
+}
+.b-form .form__input--file label strong {
+    margin-left: 10px;
+    width: 150px;
+    padding: [modules.forms.elements.input_padding];
+    padding-left: 0;
+    padding-right: 0;
+    -webkit-border-radius: [modules.buttons.radius_btn];
+    -moz-border-radius: [modules.buttons.radius_btn];
+    border-radius: [modules.buttons.radius_btn];
+    background: [modules.buttons.img_btn_color1];
+    background: -moz-linear-gradient(top, [modules.buttons.img_btn_color1] 0%, [modules.buttons.img_btn_color2] 100%);
+    background: -webkit-linear-gradient(top, [modules.buttons.img_btn_color1] 0%,[modules.buttons.img_btn_color2] 100%);
+    background: linear-gradient(to bottom, [modules.buttons.img_btn_color1] 0%,[modules.buttons.img_btn_color2] 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='[modules.buttons.img_btn_color1]', endColorstr='[modules.buttons.img_btn_color2]',GradientType=0 );
+    font-family: [modules.buttons.font_family_btn];
+    font-size: [modules.buttons.size_btn];
+    font-weight: [modules.buttons.weight_btn];
+    text-decoration: none;
+    text-align: center;
+    color: [modules.buttons.color_btn];
+    cursor: pointer;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+.b-form .form__input--file:hover label strong,
+.b-form .form__input--file-hashover label strong {
+    background: [modules.buttons.img_btn_hcolor1];
+    background: -moz-linear-gradient(top, [modules.buttons.img_btn_hcolor1] 0%, [modules.buttons.img_btn_hcolor2] 100%);
+    background: -webkit-linear-gradient(top, [modules.buttons.img_btn_hcolor1] 0%,[modules.buttons.img_btn_hcolor2] 100%);
+    background: linear-gradient(to bottom, [modules.buttons.img_btn_hcolor1] 0%,[modules.buttons.img_btn_hcolor2] 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='[modules.buttons.img_btn_hcolor1]', endColorstr='[modules.buttons.img_btn_hcolor2]',GradientType=0 );
+    color: [modules.buttons.hcolor_btn];
+    text-decoration: none;
+}
+.b-form .form__input--file input[readonly] + label span,
+.b-form .form__input--file input[readonly="readonly"] + label span,
+.b-form .form__input--file input[disabled] + label span,
+.b-form .form__input--file input[disabled="disabled"] + label span {
+    border-color: [modules.forms.elements.color_input];
+    background-color: [modules.forms.elements.color_input_bg_disabled];
+}
+.b-form .form__input--file:hover input[readonly] + label span,
+.b-form .form__input--file:hover input[readonly="readonly"] + label span,
+.b-form .form__input--file-hashover input[readonly] + label span,
+.b-form .form__input--file-hashover input[readonly="readonly"] + label span,
+.b-form .form__input--file:hover input[disabled] + label span,
+.b-form .form__input--file:hover input[disabled="disabled"] + label span,
+.b-form .form__input--file-hashover input[disabled] + label span,
+.b-form .form__input--file-hashover input[disabled="disabled"] + label span {
+    cursor: auto;
+}
+.b-form .form__input--file input[readonly] + label strong,
+.b-form .form__input--file input[readonly="readonly"] + label strong,
+.b-form .form__input--file input[disabled] + label strong,
+.b-form .form__input--file input[disabled="disabled"] + label strong {
+    background: [modules.forms.elements.color_input_bg_disabled];
+    color: [modules.forms.elements.placeholder_color];
+}
+.b-form .form__input--file:hover input[readonly] + label strong,
+.b-form .form__input--file:hover input[readonly="readonly"] + label strong,
+.b-form .form__input--file-hashover input[readonly] + label span,
+.b-form .form__input--file-hashover input[readonly="readonly"] + label strong,
+.b-form .form__input--file:hover input[disabled] + label strong,
+.b-form .form__input--file:hover input[disabled="disabled"] + label strong,
+.b-form .form__input--file-hashover input[disabled] + label strong,
+.b-form .form__input--file-hashover input[disabled="disabled"] + label strong {
+    cursor: auto;
+}
+.g-js .b-form .form__input--file input[type="file"] {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+.g-no-js .b-form .form__input--file input[type="file"] {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.g-no-js .b-form .form__input--file label {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+/*-- errors*/
+.b-form .form__item--error {
+    xz-index: 2;
+}
+.b-form .form__item--error input:not([type="checkbox"]),
+.b-form .form__item--error input:not([type="radio"]),
+.b-form .form__item--error textarea,
+.b-form .form__item--error select,
+.b-form .form__item--error input:not([type="checkbox"]):hover,
+.b-form .form__item--error input:not([type="radio"]):hover,
+.b-form .form__item--error textarea:hover,
+.b-form .form__item--error select:hover,
+.b-form .form__item--error input:not([type="checkbox"]):focus,
+.b-form .form__item--error input:not([type="radio"]):focus,
+.b-form .form__item--error textarea:focus,
+.b-form .form__item--error select:focus {
+    border-color: [modules.forms.validation.color_input_error];
+    background-color: [modules.forms.validation.color_input_bg_error];
+    color: [modules.forms.validation.font_color_error];
+}
+.b-form .form__item--error input:not([type="checkbox"])::-webkit-input-placeholder,
+.b-form .form__item--error input:not([type="radio"])::-webkit-input-placeholder,
+.b-form .form__item--error textarea::-webkit-input-placeholder {
+    color: [modules.forms.validation.font_color_error];
+}
+.b-form .form__item--error input:not([type="checkbox"]):-moz-placeholder,
+.b-form .form__item--error input:not([type="radio"]):-moz-placeholder,
+.b-form .form__item--error textarea:-moz-placeholder {
+    color: [modules.forms.validation.font_color_error];
+    opacity: 1;
+}
+.b-form .form__item--error input:not([type="checkbox"])::-moz-placeholder,
+.b-form .form__item--error input:not([type="radio"])::-moz-placeholder,
+.b-form .form__item--error textarea::-moz-placeholder {
+    color: [modules.forms.validation.font_color_error];
+    opacity: 1;
+}
+.b-form .form__item--error input:not([type="checkbox"]):-ms-input-placeholder,
+.b-form .form__item--error input:not([type="radio"]):-ms-input-placeholder,
+.b-form .form__item--error textarea:-ms-input-placeholder {
+    color: [modules.forms.validation.font_color_error];
+}
+.b-form .form__item--error .form__icon {
+    color: [modules.forms.validation.font_color_error];
+}
+/*-- errors checkbox*/
+.b-form .form__item--error .form__input--checkbox .form__checkbox .form__checkbox-trigger {
+    border-color: [modules.forms.validation.color_input_error];
+    background-color: [modules.forms.validation.color_input_bg_error];
+    color: [modules.forms.validation.font_color_error];
+}
+.b-form .form__item--error .form__input--checkbox .form__checkbox .form__checkbox-trigger span {
+    color: [modules.forms.validation.font_color_error];
+}
+.b-form .form__item--error .form__input--checkbox input[type="checkbox"]:checked ~ .form__checkbox .form__checkbox-trigger {
+    background: [modules.forms.validation.font_color_error];
+    border-color: [modules.forms.validation.font_color_error];
+}
+.b-form .form__item--error .form__input--checkbox input[readonly] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--checkbox input[disabled] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--checkbox input[readonly="readonly"] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--checkbox input[disabled="disabled"] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--checkbox input[readonly]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--checkbox input[disabled]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--checkbox input[readonly="readonly"]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--checkbox input[disabled="disabled"]:checked ~ .form__checkbox .form__checkbox-trigger {
+    border-color: [modules.forms.elements.color_input];
+    background: [modules.forms.elements.color_input];
+}
+.b-form .form__item--error .form__input--checkbox input[type="checkbox"]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__item--error .form__input--checkbox input[readonly] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__item--error .form__input--checkbox input[disabled] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__item--error .form__input--checkbox input[readonly="readonly"] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__item--error .form__input--checkbox input[disabled="disabled"] ~ .form__checkbox .form__checkbox-trigger span {
+    color: [modules.forms.validation.color_input_bg_error];
+}
+/*-- errors checkbox 2*/
+.b-form .form__item--error .form__input--checkbox-2 .form__checkbox .form__checkbox-trigger {
+    border-color: [modules.forms.validation.color_input_error];
+    background-color: [modules.forms.validation.color_input_bg_error];
+    color: [modules.forms.validation.font_color_error];
+}
+.b-form .form__item--error .form__input--checkbox-2 .form__checkbox .form__checkbox-trigger span {
+    color: [modules.forms.validation.font_color_error];
+}
+.b-form .form__item--error .form__input--checkbox-2 input[type="checkbox"]:checked ~ .form__checkbox .form__checkbox-trigger {
+    background: [modules.forms.validation.color_input_bg_error];
+    border-color: [modules.forms.validation.font_color_error];
+}
+.b-form .form__item--error .form__input--checkbox-2 input[type="checkbox"]:checked ~ .form__checkbox .form__checkbox-trigger span {
+    color: [modules.forms.validation.font_color_error];
+}
+.b-form .form__item--error .form__input--checkbox-2 input[readonly] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--checkbox-2 input[disabled] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--checkbox-2 input[readonly="readonly"] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--checkbox-2 input[disabled="disabled"] ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--checkbox-2 input[readonly]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--checkbox-2 input[disabled]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--checkbox-2 input[readonly="readonly"]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--checkbox-2 input[disabled="disabled"]:checked ~ .form__checkbox .form__checkbox-trigger {
+    border-color: [modules.forms.elements.color_input];
+    background: [modules.forms.elements.color_input_bg];
+}
+.b-form .form__item--error .form__input--checkbox-2 input[readonly] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__item--error .form__input--checkbox-2 input[disabled] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__item--error .form__input--checkbox-2 input[readonly="readonly"] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__item--error .form__input--checkbox-2 input[disabled="disabled"] ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__item--error .form__input--checkbox-2 input[readonly]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__item--error .form__input--checkbox-2 input[disabled]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__item--error .form__input--checkbox-2 input[readonly="readonly"]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__item--error .form__input--checkbox-2 input[disabled="disabled"]:checked ~ .form__checkbox .form__checkbox-trigger span  {
+    color: [modules.forms.elements.color_input];
+}
+/*-- errors checkbox + radio slide*/
+.b-form .form__item--error .form__input--checkbox-slide .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--radio-slide .form__radio .form__radio-trigger {
+    border-color: [modules.forms.validation.color_check_bg_error];
+    background-color: [modules.forms.validation.color_check_bg_error];
+    color: [modules.forms.validation.font_color_error];
+}
+.b-form .form__item--error .form__input--checkbox-slide .form__checkbox .form__checkbox-trigger span,
+.b-form .form__item--error .form__input--radio-slide .form__radio .form__radio-trigger span {
+    color: [modules.forms.validation.font_color_error];
+}
+.b-form .form__item--error .form__input--checkbox-slide input[type="checkbox"]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--radio-slide input[type="radio"]:checked ~ .form__radio .form__radio-trigger {
+    background: [modules.forms.validation.font_color_error];
+    border-color: [modules.forms.validation.font_color_error];
+}
+.b-form .form__item--error .form__input--checkbox-slide input[type="checkbox"]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__item--error .form__input--radio-slide input[type="radio"]:checked ~ .form__radio .form__radio-trigger span {
+    color: [modules.forms.validation.color_input_bg_error];
+}
+.b-form .form__item--error .form__input--checkbox-slide input[readonly]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--checkbox-slide input[readonly="readonly"]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--checkbox-slide input[disabled]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--checkbox-slide input[disabled="disabled"]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--radio-slide input[readonly]:checked ~ .form__radio .form__radio-trigger,
+.b-form .form__item--error .form__input--radio-slide input[readonly="readonly"]:checked ~ .form__radio .form__radio-trigger,
+.b-form .form__item--error .form__input--radio-slide input[disabled]:checked ~ .form__radio .form__radio-trigger,
+.b-form .form__item--error .form__input--radio-slide input[disabled="disabled"]:checked ~ .form__radio .form__radio-trigger {
+    background: [modules.forms.elements.color_input];
+    border-color: [modules.forms.elements.color_input];
+}
+/*-- errors checkbox slide 2*/
+.b-form .form__item--error .form__input--checkbox-slide-2 .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--radio-slide-2 .form__radio .form__radio-trigger {
+    border-color: [modules.forms.validation.color_check_bg_error];
+    background-color: [modules.forms.validation.color_input_bg];
+    color: [modules.forms.validation.font_color_error];
+}
+.b-form .form__item--error .form__input--checkbox-slide-2 .form__checkbox .form__checkbox-trigger span,
+.b-form .form__item--error .form__input--radio-slide-2 .form__radio .form__radio-trigger span {
+    border-color: [modules.forms.elements.color_input_bg];
+    background: [modules.forms.validation.color_check_bg_error];
+    color: [modules.forms.validation.font_color_error];
+}
+.b-form .form__item--error .form__input--checkbox-slide-2 input[type="checkbox"]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--radio-slide-2 input[type="radio"]:checked ~ .form__radio .form__radio-trigger {
+    background: [modules.forms.elements.color_input_bg];
+    border-color: [modules.forms.validation.font_color_error];
+}
+.b-form .form__item--error .form__input--checkbox-slide-2 input[type="checkbox"]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__item--error .form__input--radio-slide-2 input[type="radio"]:checked ~ .form__radio .form__radio-trigger span {
+    background: [modules.forms.validation.font_color_error];
+    color: [modules.forms.validation.color_input_bg_error];
+}
+.b-form .form__item--error .form__input--checkbox-slide-2 input[readonly]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--checkbox-slide-2 input[readonly="readonly"]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--checkbox-slide-2 input[disabled]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--checkbox-slide-2 input[disabled="disabled"]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--radio-slide-2 input[readonly]:checked ~ .form__radio .form__radio-trigger,
+.b-form .form__item--error .form__input--radio-slide-2 input[readonly="readonly"]:checked ~ .form__radio .form__radio-trigger,
+.b-form .form__item--error .form__input--radio-slide-2 input[disabled]:checked ~ .form__radio .form__radio-trigger,
+.b-form .form__item--error .form__input--radio-slide-2 input[disabled="disabled"]:checked ~ .form__radio .form__radio-trigger {
+    background: [modules.forms.elements.color_input_bg_disabled];
+    border-color: [modules.forms.elements.color_input];
+}
+.b-form .form__item--error .form__input--checkbox-slide-2 input[readonly]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__item--error .form__input--checkbox-slide-2 input[readonly="readonly"]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__item--error .form__input--checkbox-slide-2 input[disabled]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__item--error .form__input--checkbox-slide-2 input[disabled="disabled"]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__item--error .form__input--radio-slide-2 input[readonly]:checked ~ .form__radio .form__radio-trigger span,
+.b-form .form__item--error .form__input--radio-slide-2 input[readonly="readonly"]:checked ~ .form__radio .form__radio-trigger span,
+.b-form .form__item--error .form__input--radio-slide-2 input[disabled]:checked ~ .form__radio .form__radio-trigger span,
+.b-form .form__item--error .form__input--radio-slide-2 input[disabled="disabled"]:checked ~ .form__radio .form__radio-trigger span {
+    background: [modules.forms.elements.color_input];
+    border-color: [modules.forms.elements.color_input_bg];
+}
+/*-- errors checkbox slide 3*/
+.b-form .form__item--error .form__input--checkbox-slide-3 .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--radio-slide-3 .form__radio .form__radio-trigger {
+    border-color: [modules.forms.validation.color_check_bg_error];
+    background-color: [modules.forms.validation.color_check_bg_error];
+    color: [modules.forms.validation.font_color_error];
+}
+.b-form .form__item--error .form__input--checkbox-slide-3 .form__checkbox .form__checkbox-trigger span,
+.b-form .form__item--error .form__input--radio-slide-3 .form__radio .form__radio-trigger span {
+    border-color: [modules.forms.validation.color_check_bg_error];
+    background: [modules.forms.elements.color_input_bg];
+}
+.b-form .form__item--error .form__input--checkbox-slide-3 input[type="checkbox"]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--radio-slide-3 input[type="radio"]:checked ~ .form__radio .form__radio-trigger {
+    background: [modules.forms.validation.font_color_error];
+    border-color: [modules.forms.validation.font_color_error];
+}
+.b-form .form__item--error .form__input--checkbox-slide-3 input[type="checkbox"]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__item--error .form__input--radio-slide-3 input[type="radio"]:checked ~ .form__radio .form__radio-trigger span {
+    background: [modules.forms.elements.color_input_bg];
+    border-color: [modules.forms.validation.font_color_error];
+}
+.b-form .form__item--error .form__input--checkbox-slide-3 input[readonly]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--checkbox-slide-3 input[readonly="readonly"]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--checkbox-slide-3 input[disabled]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--checkbox-slide-3 input[disabled="disabled"]:checked ~ .form__checkbox .form__checkbox-trigger,
+.b-form .form__item--error .form__input--radio-slide-3 input[readonly]:checked ~ .form__radio .form__radio-trigger,
+.b-form .form__item--error .form__input--radio-slide-3 input[readonly="readonly"]:checked ~ .form__radio .form__radio-trigger,
+.b-form .form__item--error .form__input--radio-slide-3 input[disabled]:checked ~ .form__radio .form__radio-trigger,
+.b-form .form__item--error .form__input--radio-slide-3 input[disabled="disabled"]:checked ~ .form__radio .form__radio-trigger {
+    background: [modules.forms.elements.color_input];
+    border-color: [modules.forms.elements.color_input];
+}
+.b-form .form__item--error .form__input--checkbox-slide-3 input[readonly]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__item--error .form__input--checkbox-slide-3 input[readonly="readonly"]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__item--error .form__input--checkbox-slide-3 input[disabled]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__item--error .form__input--checkbox-slide-3 input[disabled="disabled"]:checked ~ .form__checkbox .form__checkbox-trigger span,
+.b-form .form__item--error .form__input--radio-slide-3 input[readonly]:checked ~ .form__radio .form__radio-trigger span,
+.b-form .form__item--error .form__input--radio-slide-3 input[readonly="readonly"]:checked ~ .form__radio .form__radio-trigger span,
+.b-form .form__item--error .form__input--radio-slide-3 input[disabled]:checked ~ .form__radio .form__radio-trigger span,
+.b-form .form__item--error .form__input--radio-slide-3 input[disabled="disabled"]:checked ~ .form__radio .form__radio-trigger span {
+    background: [modules.forms.elements.color_input_bg];
+    border-color: [modules.forms.elements.color_input];
+}
+/*-- errors radio button*/
+.b-form .form__item--error .form__input--radio .form__radio .form__radio-trigger {
+    border-color: [modules.forms.validation.color_input_error];
+    background-color: [modules.forms.validation.color_input_bg_error];
+    color: [modules.forms.validation.font_color_error];
+}
+.b-form .form__item--error .form__input--radio .form__radio .form__radio-trigger span {
+    color: [modules.forms.validation.font_color_error];
+}
+.b-form .form__item--error .form__input--radio input[type="radio"]:checked ~ .form__radio .form__radio-trigger {
+    background: [modules.forms.validation.color_input_bg_error];
+    border-color: [modules.forms.validation.font_color_error];
+}
+.b-form .form__item--error .form__input--radio input[type="radio"]:checked ~ .form__radio .form__radio-trigger span {
+    color: [modules.forms.validation.font_color_error];
+}
+.b-form .form__item--error .form__input--radio input[readonly] ~ .form__radio .form__radio-trigger,
+.b-form .form__item--error .form__input--radio input[disabled] ~ .form__radio .form__radio-trigger,
+.b-form .form__item--error .form__input--radio input[readonly="readonly"] ~ .form__radio .form__radio-trigger,
+.b-form .form__item--error .form__input--radio input[disabled="disabled"] ~ .form__radio .form__radio-trigger,
+.b-form .form__item--error .form__input--radio input[readonly]:checked ~ .form__radio .form__radio-trigger,
+.b-form .form__item--error .form__input--radio input[disabled]:checked ~ .form__radio .form__radio-trigger,
+.b-form .form__item--error .form__input--radio input[readonly="readonly"]:checked ~ .form__radio .form__radio-trigger,
+.b-form .form__item--error .form__input--radio input[disabled="disabled"]:checked ~ .form__radio .form__radio-trigger {
+    border-color: [modules.forms.elements.color_input];
+    background: [modules.forms.elements.color_input_bg_disabled];
+}
+.b-form .form__item--error .form__input--radio input[readonly] ~ .form__radio .form__radio-trigger span,
+.b-form .form__item--error .form__input--radio input[readonly="readonly"] ~ .form__radio .form__radio-trigger span,
+.b-form .form__item--error .form__input--radio input[disabled] ~ .form__radio .form__radio-trigger span,
+.b-form .form__item--error .form__input--radio input[disabled="disabled"] ~ .form__radio .form__radio-trigger span,
+.b-form .form__item--error .form__input--radio input[readonly]:checked ~ .form__radio .form__radio-trigger span,
+.b-form .form__item--error .form__input--radio input[readonly="readonly"]:checked ~ .form__radio .form__radio-trigger span,
+.b-form .form__item--error .form__input--radio input[disabled]:checked ~ .form__radio .form__radio-trigger span,
+.b-form .form__item--error .form__input--radio input[disabled="disabled"]:checked ~ .form__radio .form__radio-trigger span {
+    color: transparent;
+}
+/*-- errors select (extetd file)*/
+.b-form .form__item--error .select2-container--default .select2-selection--single {
+    background: [modules.forms.validation.color_input_bg_error];
+    border-color: [modules.forms.validation.color_input_error];
+}
+.b-form .form__item--error .select2-container--default.select2-container--disabled .select2-selection--single {
+    border-color: [modules.forms.elements.color_input];
+    background: [modules.forms.elements.color_input_bg_disabled];
+}
+.b-form .form__item--error .select2-container--default .select2-selection--single .select2-selection__rendered,
+.b-form .form__item--error .select2-container--default .select2-selection--single .select2-selection__placeholder,
+.b-form .form__item--error .select2-container--default .select2-selection--single .select2-selection__arrow b:before {
+    color: [modules.forms.validation.font_color_error];
+}
+.b-form .form__item--error .select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__rendered {
+    border-color: [modules.forms.elements.color_input];
+    color: [modules.forms.elements.font_color];
+}
+.b-form .form__item--error .select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__placeholder {
+    color: [modules.forms.validation.placeholder_color];
+}
+.b-form .form__item--error .select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__arrow b:before {
+    color: [modules.forms.elements.color_input];
+}
+/*-- errors type file*/
+.b-form .form__item--error .form__input--file label span {
+    border-color: [modules.forms.validation.color_input_error];
+    background: [modules.forms.validation.color_input_bg_error];
+    color: [modules.forms.validation.font_color_error];
+}
+.b-form .form__item--error .form__input--file label strong {
+    background: [modules.forms.validation.font_color_error];
+    color: [modules.forms.validation.color_input_bg_error];
+}
+/*-- success*/
+.b-form .form__item--success input:not([type="checkbox"]),
+.b-form .form__item--success input:not([type="radio"]),
+.b-form .form__item--success textarea,
+.b-form .form__item--success select,
+.b-form .form__item--success input:not([type="checkbox"]):hover,
+.b-form .form__item--success input:not([type="radio"]):hover,
+.b-form .form__item--success textarea:hover,
+.b-form .form__item--success select:hover,
+.b-form .form__item--success input:not([type="checkbox"]):focus,
+.b-form .form__item--success input:not([type="radio"]):focus,
+.b-form .form__item--success textarea:focus,
+.b-form .form__item--success select:focus {
+    padding-right: 40px;
+}
+.b-form .form__item--success textarea,
+.b-form .form__item--success textarea:hover,
+.b-form .form__item--success textarea:focus {
+    background-position: calc(100% - 20px) 20px;
+}
+.b-form .form__item--success .form__icon {
+    color: [modules.forms.validation.font_color_success];
+}
+.b-form  .form__item--success .form__input--checkbox .form__icon {
+    display: none;
+}
+.b-form .form__item--success .form__input--textarea .form__icon {
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+    top: 15px;
+}
+/*--*/
+.b-form .form__errors {
+    padding: 20px;
+    border: 1px solid [modules.forms.validation.font_color_error];
+    background: [modules.forms.validation.color_input_bg_error];
+    color: [modules.forms.validation.font_color_error];
+}
+.b-form .form__errors ul {
+    margin: 0;
+    padding: 15px 0 15px 20px;
+}
+/*--*/
+.b-form .form__success {
+    padding: 20px;
+    border: 1px solid [modules.forms.validation.color_input_success];
+    background: [modules.forms.validation.color_input_bg_success];
+    color: [modules.forms.validation.font_color_success];
+}
+.b-form .form__success ul {
+    margin: 0;
+    padding: 20px 0 20px 20px;
+}
+/*--*/
+.b-form .form__cols-wrap {
+    margin: 0 -[modules.forms.padding_col_h];
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+.b-form [class^="form__col-"] {
+    -webkit-flex: 1 0 auto;
+    flex: 1 0 auto;
+    box-sizing: border-box;
+    padding: [modules.forms.padding_col_v] [modules.forms.padding_col_h];
+}
+.b-form .form__col-1,
+.b-form .form__col-1-1,
+.b-form .form__col-2-2,
+.b-form .form__col-3-3,
+.b-form .form__col-4-4,
+.b-form .form__col-5-5 {
+    width: 100%;
+}
+.b-form .form__col-1-2,
+.b-form .form__col-2-4{
+    width: 50%;
+}
+.b-form .form__col-1-3 {
+    width: 33.33%;
+}
+.b-form .form__col-2-3 {
+    width: 66.66%;
+}
+.b-form .form__col-1-4 {
+    width: 25%;
+}
+.b-form .form__col-1-5 {
+    width: 20%;
+}
+.b-form .form__col-2-5 {
+    width: 40%;
+}
+.b-form .form__col-3-5 {
+    width: 60%;
+}
+.b-form .form__col-4-5 {
+    width: 80%;
+}
+.b-form .form__col-align-top {
+    align-self: flex-start;
+}
+.b-form .form__col-align-middle {
+    align-self: center;
+}
+.b-form .form__col-align-bottom {
+    align-self: flex-end;
+}
+/*-- Группа полей*/
+.b-form .form__cols-group {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    padding: [modules.forms.padding_col_v] [modules.forms.padding_col_h];
+    box-sizing: border-box;
+    width: 100%;
+}
+.b-form .form__cols-group [class^="form__col-"] {
+    margin-top: -1px;
+    margin-right: -1px;
+    padding: 0;
+}
+.b-form .form__cols-group input:not([type="checkbox"]):not([type="radio"]):hover,
+.b-form .form__cols-group textarea:hover,
+.b-form .form__cols-group select:hover,
+.b-form .form__cols-group .select2-container:hover {
+    position: relative;
+    z-index: 1;
+}
+.b-form .form__cols-group input:not([type="checkbox"]):not([type="radio"]):focus,
+.b-form .form__cols-group textarea:focus,
+.b-form .form__cols-group select:focus,
+.b-form .form__cols-group .select2-container--focus {
+    position: relative;
+    z-index: 2;
+}
+/*--------------------*/
+.b-form--auth {
+    padding: 0;
+}
+/*--------------------*/
+.b-form.b-form--subscribe {
+    padding: 0;
+}
+/*--------------------*/
+.b-form--profile .form__inputwrap {
+    padding-top: 10px;
+}
+.b-form--profile .form__info {
+    display: none;
+}
+/*--------------------*/
+/* Loader */
+.b-loader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: [modules.forms.preloader_bgcolor] url([modules.forms.preloader_url]) 50% 50% no-repeat;
+    background-size: 50px 50px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s ease-out, opacity 0.3s ease-out;
+    z-index: 99999;
+}
+.b-loader--show {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.3s ease-out, opacity 0.3s ease-out;
+}
+/*--------------------*/
+
+/* modules.buttons - Кнопки */
+.b-btnbox,
+a.b-btnbox:link,
+a.b-btnbox:visited {
+    margin: 0;
+    width: [modules.buttons.width_btn];
+    padding: [modules.buttons.padding];
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    color: [modules.buttons.color_btn];
+    font-family: [modules.buttons.font_family_btn];
+    font-size: [modules.buttons.size_btn];
+    font-weight: [modules.buttons.weight_btn];
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-radius: [modules.buttons.radius_btn];
+    background: [modules.buttons.img_btn_color1]; /* Old browsers */
+    background: -moz-linear-gradient(top, [modules.buttons.img_btn_color1] 0%, [modules.buttons.img_btn_color2] 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,[modules.buttons.img_btn_color1]), color-stop(100%,[modules.buttons.img_btn_color2])); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, [modules.buttons.img_btn_color1] 0%,[modules.buttons.img_btn_color2] 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, [modules.buttons.img_btn_color1] 0%,[modules.buttons.img_btn_color2] 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, [modules.buttons.img_btn_color1] 0%,[modules.buttons.img_btn_color2] 100%); /* IE10+ */
+    background: linear-gradient(to bottom, [modules.buttons.img_btn_color1] 0%,[modules.buttons.img_btn_color2] 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='[modules.buttons.img_btn_color1]', endColorstr='[modules.buttons.img_btn_color2]',GradientType=0 ); /* IE6-9 */
+}
+.b-btnbox:hover,
+.b-btnbox:active,
+a.b-btnbox:hover,
+a.b-btnbox:active {
+    box-sizing: border-box;
+    color: [modules.buttons.hcolor_btn];
+    text-decoration: none;
+    border-radius: [modules.buttons.radius_btn];
+    background: [modules.buttons.img_btn_hcolor1]; /* Old browsers */
+    background: -moz-linear-gradient(top, [modules.buttons.img_btn_hcolor1] 0%, [modules.buttons.img_btn_hcolor2] 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,[modules.buttons.img_btn_hcolor1]), color-stop(100%,[modules.buttons.img_btn_hcolor2])); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, [modules.buttons.img_btn_hcolor1] 0%,[modules.buttons.img_btn_hcolor2] 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, [modules.buttons.img_btn_hcolor1] 0%,[modules.buttons.img_btn_hcolor2] 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, [modules.buttons.img_btn_hcolor1] 0%,[modules.buttons.img_btn_hcolor2] 100%); /* IE10+ */
+    background: linear-gradient(to bottom, [modules.buttons.img_btn_hcolor1] 0%,[modules.buttons.img_btn_hcolor2] 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='[modules.buttons.img_btn_hcolor1]', endColorstr='[modules.buttons.img_btn_hcolor2]',GradientType=0 ); /* IE6-9 */
+}
+a.btnbox__link:link,
+a.btnbox__link:active,
+a.btnbox__link:visited,
+a.btnbox__link:hover {
+    padding: [modules.buttons.padding];
+    display: table-cell;
+}
+/*----------------*/
+.b-btnbox--auth,
+a.b-btnbox--auth:link,
+a.b-btnbox--auth:visited {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: auto;
+    max-width: 100%;
+}
+/*----------------*/
+.b-btnbox--recover,
+a.b-btnbox--recover:link,
+a.b-btnbox--recover:visited {
+    width: auto;
+}
+/*----------------*/
+.b-btnbox--full,
+a.b-btnbox--full:link,
+a.b-btnbox--full:visited {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    max-width: 100%;
+}
+/*----------------*/
+.b-btnboxfull,
+a.b-btnboxfull:link,
+a.b-btnboxfull:active,
+a.b-btnboxfull:visited,
+a.b-btnboxfull:hover {
+    width: 100%;
+    box-sizing: border-box;
+}
+.b-btnboxfull2,
+a.b-btnboxfull2:link,
+a.b-btnboxfull2:active,
+a.b-btnboxfull2:visited,
+a.b-btnboxfull2:hover {
+    margin-right: 30px;
+}
+.b-btnboxfull3,
+a.b-btnboxfull3:link,
+a.b-btnboxfull3:active,
+a.b-btnboxfull3:visited,
+a.b-btnboxfull3:hover {
+    margin-left: 30px;
+    display: inline-block;
+}
+.b-btnboxfull4,
+a.b-btnboxfull4:link,
+a.b-btnboxfull4:active,
+a.b-btnboxfull4:visited,
+a.b-btnboxfull4:hover {
+    padding-left: 0;
+    padding-right: 0;
+    background: none;
+    color: [editor.a.color];
+    text-decoration: [editor.a.decoration];
+}
+a.b-btnboxfull4:hover {
+    background: none;
+    color: [editor.a.color];
+    text-decoration: [editor.a.decoration_on];
+}
+.fancybox-content .b-form {
+    margin-bottom: -10px;
+}
+.b-form .form__input.form__input--textarea .form__textarea_icon {
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    right: 15px;
+}

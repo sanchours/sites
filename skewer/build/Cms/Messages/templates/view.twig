@@ -1,0 +1,9 @@
+{% if count %}
+<div class="message">
+    <a href="{{ link }}">{{ count }} {{ text }}</a>
+</div>
+{% else %}
+<div class="message">
+    <a href="{{ link }}">{{ Lang.get('Messages.Messages.Cms.tab_name') }}</a>
+</div>
+{% endif %}

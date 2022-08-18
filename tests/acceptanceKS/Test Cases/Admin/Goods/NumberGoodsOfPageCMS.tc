@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Количество товаров на странице CMS</description>
+   <name>NumberGoodsOfPageCMS</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a4428c57-77fb-4498-b184-ebca35cebd2b</testCaseGuid>
+</TestCaseEntity>

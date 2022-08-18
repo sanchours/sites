@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка отсутствия отзыва</description>
+   <name>CheckAbsenceReview</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5919ac02-9ddb-455a-8266-fe712d5d915f</testCaseGuid>
+</TestCaseEntity>

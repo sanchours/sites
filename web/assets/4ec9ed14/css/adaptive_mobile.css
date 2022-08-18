@@ -1,0 +1,157 @@
+/* layer: default */
+@media handheld, only screen and (max-width: [adaptive.break_tablet] - 1px ) { /*-MOBILE-*/
+    .g-tablescroll {
+        overflow: scroll;
+    }
+    /*--------------------------*/
+    .l-footerbox-stop {
+        display: none;
+    }
+    .l-footerbox {
+        position: relative;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+    }
+    .l-footerbox .footerbox__wrapper {
+        min-width: auto;
+        max-width: auto;
+    }
+    .l-footerbox {
+        margin-top: -255px;
+    }
+    /*--------------------------*/
+    .l-layout .layout__wrap {
+        padding-bottom: 255px;
+    }
+    /*--------------------------*/
+    .hide-on-mobile {
+        display: none !important;
+    }
+    .l-sidebar-block .show-on-sidebar {
+        display: block !important;
+    }
+    /*--------------------------*/
+    .l-sidebar-block {
+        max-width: 100%;
+    }
+    /*--------------------------*/
+    .b-sandwich {
+        display: block;
+    }
+    /*--------------------------*/
+    .l-column .column__right,
+    .l-column .column__left,
+    .l-column .column__center {
+        float: none;
+        clear: none;
+        width: auto;
+    }
+    .l-column .column__right,
+    .l-column .column__left {
+        margin: 0;
+        width: auto;
+    }
+    .l-column .column__center-indent {
+        margin: 0;
+        padding-bottom: 0;
+    }
+    .l-column .column__right-indent,
+    .l-column .column__left-indent {
+        padding-top: 10px;
+    }
+    /*--------------------------*/
+    .b-menufoot {
+        text-align: center;
+    }
+    /*--------------------------*/
+    .b-search_wrap {
+        display: none;
+    }
+    /*--------------------------*/
+    .b-copy {
+        text-align: center;
+    }
+    /*--------------------------*/
+    .b-guestbox .guestbox__leftside {
+        margin: 0 auto;
+        padding-right: 0;
+        float: none;
+        width: auto;
+    }
+    .b-guestbox .guestbox__rightside {
+        overflow: visible;
+    }
+    .b-guestbox_photo .guestbox__photo {
+        text-align: center;
+        float: none;
+    }
+    /*--------------------------*/
+
+    /*-- review carousels*/
+    .b-carousel-reviews-bg .carousel-reviews-bg__inner {
+
+        padding-left: [modules.guestbox.carousel.carousel_bg.carousel_pic_width];
+        padding-right: [modules.guestbox.carousel.carousel_bg.carousel_pic_width];
+    }
+    .b-carousel-reviews-bg .owl-carousel .owl-nav .owl-prev {
+        left: -[modules.guestbox.carousel.carousel_bg.carousel_pic_width];
+    }
+    .b-carousel-reviews-bg .owl-carousel .owl-nav .owl-next {
+        right: -[modules.guestbox.carousel.carousel_bg.carousel_pic_width];
+    }
+    /*--------------------------*/
+    /* 12 cols grid system for content*/
+    .b-cols > [class^="cols__col-"] {
+        width: 100%;
+    }
+    .b-cols .cols__col-mobile-1-12 {
+        width: calc((100% / 12) * 1);
+    }
+    .b-cols .cols__col-mobile-2-12 {
+        width: calc((100% / 12) * 2);
+    }
+    .b-cols .cols__col-mobile-3-12 {
+        width: calc((100% / 12) * 3);
+    }
+    .b-cols .cols__col-mobile-4-12 {
+        width: calc((100% / 12) * 4);
+    }
+    .b-cols .cols__col-mobile-5-12 {
+        width: calc((100% / 12) * 5);
+    }
+    .b-cols .cols__col-mobile-6-12 {
+        width: calc((100% / 12) * 6);
+    }
+    .b-cols .cols__col-mobile-7-12 {
+        width: calc((100% / 12) * 7);
+    }
+    .b-cols .cols__col-mobile-8-12 {
+        width: calc((100% / 12) * 8);
+    }
+    .b-cols .cols__col-mobile-9-12 {
+        width: calc((100% / 12) * 9);
+    }
+    .b-cols .cols__col-mobile-10-12 {
+        width: calc((100% / 12) * 10);
+    }
+    .b-cols .cols__col-mobile-11-12 {
+        width: calc((100% / 12) * 11);
+    }
+    .b-cols .cols__col-mobile-12-12 {
+        width: calc((100% / 12) * 12);
+    }
+    /*--------------------------*/
+    .b-btnbox--confirm {
+        width: 100px;
+    }
+}
+/*--------------------------*/
+@media handheld, only screen and (max-width: [adaptive.break_tablet] - 1px ) and (orientation:landscape) { /*-MOBILE LANDSCAPE-*/
+    /*--------------------------*/
+    .l-sidebar-block {
+        max-width: [adaptive.sidebar.params.max_width];
+    }
+    /*--------------------------*/
+}

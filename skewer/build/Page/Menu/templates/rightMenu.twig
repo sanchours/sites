@@ -1,0 +1,5 @@
+<ul class="b-specmenu {{ html_class }}">
+    {%for item in items%}
+        <li {%if loop.last %} {% if aTargetBlank[item.id] is defined %} target="_blank" {% endif %} class="last" {%endif%} ><a href="{{item.href}}">{{item.title}}</a></li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,5 @@
+<div class="catalogbox__param catalogbox__param__{{ name }}">
+        {% if attrs.show_title == 1 %}<span>{{ title }}:</span>{% endif %}
+        {% if htmlAlt %}{{ htmlAlt }} {% else %}{{ html }}{% endif %}
+    {{ attrs.measure }}
+</div>

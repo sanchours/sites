@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Базовая результирующая страница</description>
+   <name>ResultPageBase</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ce35ac98-e460-42a6-b153-3460dfc0f1a8</testCaseGuid>
+</TestCaseEntity>

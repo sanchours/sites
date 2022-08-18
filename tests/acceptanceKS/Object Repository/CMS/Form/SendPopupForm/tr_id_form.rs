@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>tr_id_form</name>
+   <tag></tag>
+   <elementGuidId>2f5f20b7-fa90-4a9e-bfab-aff34a0812ab</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>.sk-tree-251</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>.sk-tree-251</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>.sk-tree-251</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>css</name>
+      <type>Main</type>
+      <value>.sk-tree-251</value>
+   </webElementProperties>
+</WebElementEntity>

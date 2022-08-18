@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Количество новостей на главной</description>
+   <name>NumberNewsOnMain</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bc69aa41-2e44-4d54-85dc-4123e31942b3</testCaseGuid>
+</TestCaseEntity>

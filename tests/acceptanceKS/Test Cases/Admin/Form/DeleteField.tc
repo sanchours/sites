@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Удаление поля</description>
+   <name>DeleteField</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f02f815a-90dd-4cb5-b75b-d7a3df65a81a</testCaseGuid>
+</TestCaseEntity>

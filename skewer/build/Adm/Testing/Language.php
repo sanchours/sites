@@ -1,0 +1,66 @@
+<?php
+
+$aLanguage = [];
+
+$aLanguage['ru']['testing'] = 'Тестирование';
+$aLanguage['ru']['Testing.Adm.tab_name'] = 'Тестирование';
+$aLanguage['ru']['title'] = 'Приемочное тестирование';
+$aLanguage['ru']['title_module'] = 'Модуль';
+$aLanguage['ru']['autotest'] = 'Автотест';
+$aLanguage['ru']['title_block_test'] = 'Тест';
+$aLanguage['ru']['tab_name'] = 'Тест кейсы приемочного тестирования';
+$aLanguage['ru']['test_case'] = 'Список тест кейсов';
+$aLanguage['ru']['list_assignment'] = 'Назначение';
+$aLanguage['ru']['list_sequencing'] = 'Последовательность действий';
+$aLanguage['ru']['start'] = 'Запуск';
+$aLanguage['ru']['restart'] = 'Перезапуск';
+$aLanguage['ru']['result_run'] = 'Результат тестирования';
+$aLanguage['ru']['last_run'] = 'Последний запуск';
+$aLanguage['ru']['last_run'] = 'Последний запуск';
+$aLanguage['ru']['script_not_exist'] = 'Файл со скриптом не существует';
+$aLanguage['ru']['dir_not_exist'] = 'Директории не существует';
+$aLanguage['ru']['not_lang_label'] = 'Для этого языка не заведены языковые метки';
+$aLanguage['ru']['not_description_test'] = 'Нет описания данного тест кейса!';
+$aLanguage['ru']['not_test_suite'] = 'Файл не является тест сьюитом!';
+$aLanguage['ru']['not_block_tests'] = 'Не удалось получить данные тестируемого модуля!';
+$aLanguage['ru']['not_rights_run_bash'] = 'На выполнение исполняемого файла недостаточно прав';
+$aLanguage['ru']['not_create_executable_file'] = 'Не создан исполняемый файл';
+$aLanguage['ru']['not_path_test_suit'] = 'Не был передан путь к Test Suite';
+$aLanguage['ru']['fail_get_last_run'] = 'Не удалось получить файлы последнего автозапуска';
+$aLanguage['ru']['error'] = 'Ошибка';
+$aLanguage['ru']['not_change_state'] = 'Состояние не было изменено';
+$aLanguage['ru']['not_passed'] = '<span style="color: red;">не прошел</span>';
+$aLanguage['ru']['passed'] = '<span style="color: green;">прошел</span>';
+$aLanguage['ru']['not_running'] = '<span style="color: #ff8927;">не запущен</span>';
+
+$aLanguage['en']['testing'] = 'Testing';
+$aLanguage['en']['Testing.Adm.tab_name'] = 'Testing';
+$aLanguage['en']['title'] = 'Acceptance testing';
+$aLanguage['en']['title_module'] = 'Module';
+$aLanguage['en']['autotest'] = 'Autotest';
+$aLanguage['en']['title_block_test'] = 'Test';
+$aLanguage['en']['tab_name'] = 'Tests cases for acceptance tests';
+$aLanguage['en']['test_case'] = 'Test case list';
+$aLanguage['en']['list_assignment'] = 'Assignment';
+$aLanguage['en']['list_sequencing'] = 'Sequencing';
+$aLanguage['en']['start'] = 'Start';
+$aLanguage['en']['restart'] = 'Restart';
+$aLanguage['en']['result_run'] = 'The test result';
+$aLanguage['en']['last_run'] = 'Last run';
+$aLanguage['en']['script_not_exist'] = 'Script file does not exist';
+$aLanguage['en']['dir_not_exist'] = "The directory doesn't exist";
+$aLanguage['en']['not_lang_label'] = 'This language is not instituted language labels';
+$aLanguage['en']['not_description_test'] = 'No description of this test case!';
+$aLanguage['en']['not_test_suite'] = 'The file is not a Test Suit!';
+$aLanguage['en']['not_rights_run_bash'] = 'The implementation file  does not have enough rights';
+$aLanguage['ru']['not_create_executable_file'] = 'The executable file was not created';
+$aLanguage['en']['not_block_tests'] = 'Failed to get data of the test module!';
+$aLanguage['en']['not_path_test_suit'] = 'Not transferred to the path by Test Suite';
+$aLanguage['en']['fail_get_last_run'] = 'Failed to get files from the last startup';
+$aLanguage['en']['error'] = 'Error';
+$aLanguage['en']['not_change_state'] = 'The condition was not changed';
+$aLanguage['en']['not_passed'] = '<span style="color: red;">not passed</span>';
+$aLanguage['en']['passed'] = '<span style="color: green;">passed</span>';
+$aLanguage['en']['not_running'] = '<span style="color: #ff8927;">not running</span>';
+
+return $aLanguage;

@@ -1,0 +1,150 @@
+/* layer: default */
+/* group: modules.date_picker | Календарь */
+    /* param: bg_color                  | Цвет фона | color | #fff */
+    /* param: border_color              | Цвет рамки | color | #2199ff */
+        /* parentParam: default..modules.forms.elements.color_input_focus */
+    /* param: separ_color               | Цвет разделителя | color | #e5e5e5 */
+        /* parentParam: default..modules.forms.elements.color_input */
+    /* param: color_active              | Цвет активного пункта | color | #2199ff */
+        /* parentParam: default..modules.forms.elements.color_input_focus */
+    /* param: color_active_font         | Цвет текста активного пункта | color | #fff */
+    /* param: color_hover               | Цвет активного пункта | color | #2199ff */
+        /* parentParam: default..modules.forms.elements.color_input_bg_disabled */
+    /* param: fort_size                 | Размер шрифта | size | 14px */
+        /* parentParam: default..base.userbase.fontfamily.font-size */
+    /* param: fort_color                | Цвет текста | color | #444 */
+        /* parentParam: default..base.userbase.fontfamily.color_text */
+/*--------------------*/
+.ui-datepicker {
+    padding: 0;
+    margin-top: -1px;
+    width: 280px;
+    background: [modules.date_picker.bg_color];
+    border: 1px solid [modules.date_picker.border_color];
+    border-top-color: [modules.date_picker.separ_color];
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: [modules.date_picker.fort_size];
+    color: [modules.date_picker.fort_color];
+}
+.ui-datepicker .ui-datepicker-header {
+    padding: 0;
+    border-bottom: 1px solid [modules.date_picker.separ_color];
+}
+.ui-datepicker .ui-datepicker-title {
+    margin: 0 40px;
+    line-height: 40px;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+    top: 0;
+    width: 40px;
+    height: 100%;
+}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+    margin: 0;
+    position: static;
+    text-indent: 0;
+    font-size: 14px;
+}
+.ui-datepicker .ui-datepicker-prev span:before,
+.ui-datepicker .ui-datepicker-next span:before {
+    display: inline-block;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.ui-datepicker .ui-datepicker-prev span:before {
+    /*content: "\f104";*/
+    /*font-family: FontAwesome;*/
+    content: url("../images/chevron-left.svg");
+    display: block;
+    width: 7px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.ui-datepicker .ui-datepicker-next span:before {
+    /*content: "\f105";*/
+    /*font-family: FontAwesome;*/
+    content: url("../images/chevron-right.svg");
+    display: block;
+    width: 7px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover{
+    color: [modules.date_picker.color_active];
+    cursor: pointer;
+}
+.ui-datepicker table {
+    margin: 5px;
+    width: calc(100% - 10px);
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+.ui-datepicker th {
+    padding: 0;
+}
+.ui-datepicker th span,
+.ui-datepicker th a {
+    padding: 5px;
+    display: block;
+    font-weight: bold;
+}
+.ui-datepicker td {
+    padding: 0;
+    border: 1px solid [modules.date_picker.separ_color];
+}
+.ui-datepicker td span,
+.ui-datepicker td a,
+.ui-datepicker td a:link,
+.ui-datepicker td a:visited,
+.ui-datepicker td a:active,
+.ui-datepicker td a:hover {
+    padding: 5px;
+    display: block;
+    color: [modules.date_picker.fort_color];
+}
+.ui-datepicker td .ui-state-hover {
+    background: [modules.date_picker.color_hover];
+}
+.ui-datepicker .ui-datepicker-other-month {
+    border: 0;
+}
+.ui-datepicker td.ui-datepicker-current-day,
+.ui-datepicker td.ui-datepicker-current-day .ui-state-hover {
+    background: [modules.date_picker.color_active];
+    color: [modules.date_picker.color_active_font];
+}
+.ui-datepicker td.ui-datepicker-current-day .ui-state-hover,
+.ui-datepicker td.ui-datepicker-current-day span,
+.ui-datepicker td.ui-datepicker-current-day a,
+.ui-datepicker td.ui-datepicker-current-day a:link,
+.ui-datepicker td.ui-datepicker-current-day a:visited,
+.ui-datepicker td.ui-datepicker-current-day a:hover,
+.ui-datepicker td.ui-datepicker-current-day a:active {
+    color: [modules.date_picker.color_active_font];
+}
+/*----------------------------------------*/
+.ui-datepicker.ui-datepicker-before {
+    margin-top: 1px;
+    border: 1px solid [modules.date_picker.border_color];
+    border-top-color: [modules.date_picker.border_color];
+    border-bottom-color: [modules.date_picker.separ_color];
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: [modules.date_picker.fort_size];
+    color: [modules.date_picker.fort_color];
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>ID раздела отзывов на главной</description>
+   <name>SectionReviewIdOnTheMain</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e6fee0d8-c8f3-4a2e-b2b4-20227cc2e9d4</testCaseGuid>
+</TestCaseEntity>

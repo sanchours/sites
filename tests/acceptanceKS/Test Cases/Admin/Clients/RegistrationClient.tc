@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Регистрация клиента</description>
+   <name>RegistrationClient</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>94f3c102-13a9-4788-9293-06a1fd22fb94</testCaseGuid>
+</TestCaseEntity>

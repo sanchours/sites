@@ -1,0 +1,50 @@
+{% if duplicate_email==1 %}
+    <div>{{ Lang.get('subscribe.duplicate_email') }}</div>
+    <a href="javascript: history.go(-1);">{{ Lang.get('subscribe.back') }}</a>
+{% endif %}
+{% if success==1 %}
+    <div>{{ Lang.get('subscribe.success') }}</div>
+    <a href="javascript: history.go(-1);">{{ Lang.get('subscribe.back') }}</a>
+{% endif %}
+{% if error==1 %}
+    <div>{{ Lang.get('subscribe.ans_error') }}</div>
+    <a href="javascript: history.go(-1);">{{ Lang.get('subscribe.back') }}</a>
+{% endif %}
+{% if captcha_error==1 %}
+    <div>{{ Lang.get('subscribe.ans_captcha_error') }}</div>
+    <a href="javascript: history.go(-1);">{{ Lang.get('subscribe.back') }}</a>
+{% endif %}
+{% if validation_error==1 %}
+    <div>{{ Lang.get('subscribe.ans_validation') }}</div>
+    <a href="javascript: history.go(-1);">{{ Lang.get('subscribe.back') }}</a>
+{% endif %}
+{% if form_not_found_error==1 %}
+    <div>{{ Lang.get('subscribe.ans_not_found') }}</div>
+    <a href="javascript: history.go(-1);">{{ Lang.get('subscribe.back') }}</a>
+{% endif %}
+{% if data_error==1 %}
+    <div>{{ Lang.get('subscribe.ans_data_error') }}</div>
+    <a href="javascript: history.go(-1);">{{ Lang.get('subscribe.back') }}</a>
+{% endif %}
+{% if fileupload_error==1 %}
+    <div>{{ Lang.get('subscribe.ans_upload') }}</div>
+    <a href="javascript: history.go(-1);">{{ Lang.get('subscribe.back') }}</a>
+{% endif %}
+{% if file_maxsize_error==1 %}
+    <div>{{ Lang.get('subscribe.ans_maxsize') }}</div>
+    <a href="javascript: history.go(-1);">{{ Lang.get('subscribe.back') }}</a>
+{% endif %}
+{% if filetype_error==1 %}
+    <div>{{ Lang.get('subscribe.ans_format') }}</div>
+    <a href="javascript: history.go(-1);">{{ Lang.get('subscribe.back') }}</a>
+{% endif %}
+{% if handler_not_found==1 %}
+    <div>{{ Lang.get('subscribe.ans_handler') }}</div>
+    <a href="javascript: history.go(-1);">{{ Lang.get('subscribe.back') }}</a>
+{% endif %}
+{% if subscriber_not_delete==1 %}
+    <div>{{ Lang.get('subscribe.old_link') }}</div>
+{% endif %}
+{% if subscriber_delete==1 %}
+    <div>{{ Lang.get('subscribe.subscriber_delete') }} <a href="/rassylka/">{{ Lang.get('subscribe.this_link') }}</a> <br> </div>
+{% endif %}

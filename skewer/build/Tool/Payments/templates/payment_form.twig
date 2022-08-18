@@ -1,0 +1,5 @@
+{% if status == 'succeeded' %}
+    <p>{{ Lang.get('payments.msg_payment_success') }}</p>
+{% else %}
+    <a class="b-btnbox send-button" href="{{ paymentLink }}">{{ Lang.get('payments.btn_payment') }}</a>
+{% endif %}

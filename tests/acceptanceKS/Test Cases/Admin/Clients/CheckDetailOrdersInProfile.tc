@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка детальной заказа в ЛК</description>
+   <name>CheckDetailOrdersInProfile</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a84a785e-26e3-4a6a-8efc-b78c307a2978</testCaseGuid>
+</TestCaseEntity>

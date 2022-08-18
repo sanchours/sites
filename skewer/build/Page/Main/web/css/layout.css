@@ -1,0 +1,421 @@
+/* layer: default */
+.l-layout {
+    position: relative;
+    min-height: 100%;
+    min-width: [page.min-width];
+    overflow: hidden;
+}
+.l-layout .layout__wrap {
+    padding-bottom: [page.footer.height];
+}
+.l-layout .layout__bgbox {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: url("[page.body_img]") [page.body_repeat] [page.bg-attachment] 50% 0 [page.body_color];
+}
+.l-layout .layout__bgwrap {
+    margin-left: -[page.max-width] / 2 ;
+    width: [page.max-width];
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+}
+.l-layout .layout__bgleft {
+    width: 100%;
+    position: absolute;
+    top: [page.sh.shleft_top];
+    bottom: [page.sh.shleft_bottom];
+    background: url("[page.sh.shleft]") [page.sh.shleft_repeat] [page.sh.shleft_attachment] 100% 0 [page.sh.background_color];
+    left: -100%;
+}
+.l-layout .layout__bgright {
+    width: 100%;
+    position: absolute;
+    right: -100%;
+    top: [page.sh.shright_top];
+    bottom: [page.sh.shright_bottom];
+    background: url("[page.sh.shright]") [page.sh.shright_repeat] [page.sh.shright_attachment] 0 0 [page.sh.background_color];
+}
+/*------------------------*/
+.l-header {
+    position: relative;
+}
+.l-header .header__wrapper {
+    margin: 0 auto;
+    max-width: [page.max-width];
+    width: 100%;
+    z-index: 10;
+    position: relative;
+}
+.l-header .header__left {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    z-index: 10;
+}
+.l-header .header__right {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    z-index: 10;
+}
+/*------------------------*/
+.l-main {}
+.l-main .main__wrapper {
+    margin: 0 auto;
+    max-width: [page.max-width];
+    width: 100%;
+    position: relative;
+}
+.l-main .main__left {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    z-index: 10;
+}
+.l-main .main__right {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    z-index: 10;
+}
+/*------------------------*/
+.l-footerbox {
+    margin-top: -[page.footer.height] ;
+    min-height: [page.footer.height];
+    min-width: [page.min-width];
+    z-index: 40;
+    overflow: hidden;
+}
+.l-footerbox-stop {
+    height: [page.footer.height];
+}
+/* Подвал сайта */
+.l-footerbox .footerbox__wrapper {
+    margin: 0 auto;
+    background: [page.footer.color] url("[page.footer.image]") [page.footer.position_h] [page.footer.position_v] [page.footer.bg-attachment] [page.footer.repeat];
+    max-width: [page.max-width];
+    width: 100%;
+    z-index: 10;
+    position: relative;
+}
+/* page.footer.footerboxl - Левое "ухо" */
+.l-footerbox .footerbox__left {
+    background: [page.footer.footerboxl.color] url("[page.footer.footerboxl.image]") [page.footer.footerboxl.position_h] [page.footer.footerboxl.position_v] [page.footer.footerboxl.repeat] ;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    z-index: 10;
+}
+/* page.footer.footerboxr - Правое "ухо" */
+.l-footerbox .footerbox__right {
+    background: [page.footer.footerboxr.color] url("[page.footer.footerboxr.image]") [page.footer.footerboxr.position_h] [page.footer.footerboxr.position_v] [page.footer.footerboxr.repeat];
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    z-index: 10;
+}
+    /*------------------------*/
+    .l-footerbox__print .footerbox__wrapper {
+        background: none;
+    }
+/*------------------------*/
+.l-grid {
+    width: 100%;
+    height: [page.footer.height];
+    position: relative;
+    color: [page.footer.color_t];
+    font-size: [page.footer.size];
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.l-grid p {
+    margin: 0 0 15px;
+}
+.l-grid a:link,
+.l-grid a:active,
+.l-grid a:visited,
+.l-grid a:hover {
+    color: [page.footer.color_a];
+}
+/* page.footer.grid1 - Блок копирайта */
+.l-grid .grid__item1 {
+    position: absolute;
+    [page.footer.grid1.h_position]: [page.footer.grid1.h_value];
+    top: [page.footer.grid1.v_value];
+    width: [page.footer.grid1.width];
+    height: [page.footer.grid1.height];
+}
+/* page.footer.grid2 - Блок счетчиков */
+.l-grid .grid__item2 {
+    position: absolute;
+    [page.footer.grid2.h_position]: [page.footer.grid2.h_value];
+    top: [page.footer.grid2.v_value];
+    width: [page.footer.grid2.width];
+    height: [page.footer.grid2.height];
+}
+/* page.footer.grid3 - Блок контактов */
+.l-grid .grid__item3 {
+    position: absolute;
+    [page.footer.grid3.h_position]: [page.footer.grid3.h_value];
+    top: [page.footer.grid3.v_value];
+    width: [page.footer.grid3.width];
+    height: [page.footer.grid3.height];
+}
+/* page.footer.grid4 - Блок в подвале */
+.l-grid .grid__item4 {
+    position: absolute;
+    [page.footer.grid4.h_position]: [page.footer.grid4.h_value];
+    top: [page.footer.grid4.v_value];
+    width: [page.footer.grid4.width];
+    height: [page.footer.grid4.height];
+}
+/* page.footer.grid5 - Блок в подвале №2 */
+.l-grid .grid__item5 {
+    position: absolute;
+    [page.footer.grid5.h_position]: [page.footer.grid5.h_value];
+    top: [page.footer.grid5.v_value];
+    width: [page.footer.grid5.width];
+    height: [page.footer.grid5.height];
+}
+/* page.footer.grid6 - Сервисное меню */
+.l-grid .grid__item6 {
+    position: absolute;
+    [page.footer.grid6.h_position]: [page.footer.grid6.h_value];
+    top: [page.footer.grid6.v_value];
+    width: [page.footer.grid6.width];
+    height: [page.footer.grid6.height];
+}
+/* page.footer.grid7 - Блок копирайта dev */
+.l-grid .grid__item7 {
+    position: absolute;
+    [page.footer.grid7.h_position]: [page.footer.grid7.h_value];
+    top: [page.footer.grid7.v_value];
+    width: [page.footer.grid7.width];
+    height: [page.footer.grid7.height];
+}
+    /*------------------------*/
+    body.l-grid {
+        color: [page.footer.color_t];
+        background-color: [page.footer.color];
+        font-size: [page.footer.size];
+    }
+    body.l-grid a {
+        color: [page.footer.color_a];
+    }
+/*------------------------*/
+
+.b-pilot {
+    position: relative;
+    width: 100%;
+    z-index: 20;
+    color: [page.head.color_t];
+}
+.b-pilot p {
+    margin: 0;
+}
+.b-pilot a:link,
+.b-pilot a:active,
+.b-pilot a:visited,
+.b-pilot a:hover {
+    color: [page.head.color_a];
+}
+/* page.head.logo   - Логотип */
+/* page.head.pilot1 - Контентный блок №1 */
+.b-pilot .pilot__1 {
+    position: absolute;
+    [page.head.pilot1.h_position]: [page.head.pilot1.h_value];
+    top: [page.head.pilot1.v_value];
+    width: [page.head.pilot1.width];
+    height: [page.head.pilot1.height];
+    z-index: 25;
+}
+/* page.head.pilot2 - Контентный блок №2 */
+.b-pilot .pilot__2 {
+    position: absolute;
+    [page.head.pilot2.h_position]: [page.head.pilot2.h_value];
+    top: [page.head.pilot2.v_value];
+    width: [page.head.pilot2.width];
+    height: [page.head.pilot2.height];
+    z-index: 25;
+}
+/* page.head.pilot3 - Контентный блок №3 */
+.b-pilot .pilot__3 {
+    position: absolute;
+    [page.head.pilot3.h_position]: [page.head.pilot3.h_value];
+    top: [page.head.pilot3.v_value];
+    width: [page.head.pilot3.width];
+    height: [page.head.pilot3.height];
+    z-index: 25;
+}
+/* page.head.pilot4 - Контентный блок №4 */
+.b-pilot .pilot__4 {
+    position: absolute;
+    [page.head.pilot4.h_position]: [page.head.pilot4.h_value];
+    top: [page.head.pilot4.v_value];
+    width: [page.head.pilot4.width];
+    height: [page.head.pilot4.height];
+    z-index: 25;
+}
+/* page.head.pilot5 - Контентный блок №5 */
+.b-pilot .pilot__5 {
+    position: absolute;
+    [page.head.pilot5.h_position]: [page.head.pilot5.h_value];
+    top: [page.head.pilot5.v_value];
+    width: [page.head.pilot5.width];
+    height: [page.head.pilot5.height];
+    z-index: 25;
+}
+    /*------------------------*/
+    body.pilot__2 {
+        color: #fff;
+        font-size: 1.714em;
+        background-color: #0180ba; /*фон от шапки*/
+        left: auto;
+        top: auto;
+        position: static;
+    }
+/*------------------------*/
+/* page.column - Центральный блок */
+.l-column {
+    background: [page.column.background-color] url([page.column.background-image]) [page.column.position_g] [page.column.position_v] [page.column.bg-attachment] [page.column.repeat];
+    height: 100%;
+    margin-top: [margingroup.margin_centtop];
+    margin-bottom: [margingroup.margin_centbot];
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.l-column:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.l-column .column__right,
+.l-column .column__left,
+.l-column .column__center {
+    clear: right;
+    float: left;
+}
+.l-column .column__center {
+    width: 100%;
+}
+/* page.column.left - Левая колонка */
+.l-column .column__left {
+    margin-left: -100%;
+    width: [page.column.left.width];
+    overflow: hidden;
+}
+/* page.column.right - Правая колонка */
+.l-column .column__right {
+    margin-left: -[page.column.right.width];
+    width: [page.column.right.width];
+    overflow: hidden;
+}
+.l-column .column__center-indent {
+    margin: 0 [page.column.right.width] 0 [page.column.left.width];
+    padding: [page.column.center.padding];
+}
+.l-column .column__left-indent {
+    padding: [page.column.left.padding];
+}
+.l-column .column__right-indent {
+    padding: [page.column.right.padding];
+}
+.l-column .column__right-bg,
+.l-column .column__left-bg,
+.l-column .column__center-bg {
+    bottom: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.l-column .column__center-bg {
+    left: [page.column.left.width];
+    right: [page.column.right.width];
+}
+.l-column .column__left-bg {
+    left: 0;
+    width: [page.column.left.width];
+}
+.l-column .column__right-bg {
+    right: 0;
+    width: [page.column.right.width];
+}
+.l-column .column__right-inside,
+.l-column .column__left-inside,
+.l-column .column__center-inside {
+    border-radius: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+/* page.column.center - Центральная колонка */
+
+.l-column .column__center-inside {
+    background: [page.column.center.background-color] url([page.column.center.background-image]) [page.column.center.position_g] [page.column.center.position_v] [page.column.center.bg-attachment] [page.column.center.repeat];
+}
+.l-column .column__left-inside {
+    background: [page.column.left.background-color] url([page.column.left.background-image]) [page.column.left.position_g] [page.column.left.position_v] [page.column.left.bg-attachment] [page.column.left.repeat];
+}
+.l-column .column__right-inside {
+    background: [page.column.right.background-color] url([page.column.right.background-image]) [page.column.right.position_g] [page.column.right.position_v] [page.column.right.bg-attachment] [page.column.right.repeat];
+}
+    /*------------------------*/
+    .l-column--lc .column__center-indent {
+        margin-right: 0;
+    }
+    .l-column--lc .column__right {
+        display: none;
+    }
+    .l-column--lc .column__right-bg {
+        display: none;
+    }
+    .l-column--lc .column__center-inside {
+        border-right-width: 0;
+    }
+    .l-column--lc .column__center-bg {
+        right: 0;
+    }
+    /*------------------------*/
+    .l-column--cr .column__center-indent {
+        margin-left: 0;
+    }
+    .l-column--cr .column__left {
+        display: none;
+    }
+    .l-column--cr .column__left-bg {
+        display: none;
+    }
+    .l-column--cr .column__center-inside {
+        border-left-width: 0;
+    }
+    .l-column--cr .column__center-bg {
+        left: 0;
+    }
+    /*------------------------*/
+    .l-column__print .column__center-indent {
+        margin-right: 0;
+        margin-left: 0;
+    }    
+/*------------------------*/

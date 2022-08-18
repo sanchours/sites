@@ -1,0 +1,25 @@
+.b-category-4 .section_[section] .category__title span {
+    color: [header.color];
+    font-family: [header.font-family];
+    font-size:   [header.font-size];
+    font-weight:  [header.font-weight];
+}
+.b-category-4 .section_[section] .category__link a:link,
+.b-category-4 .section_[section] .category__link a:active,
+.b-category-4 .section_[section] .category__link a:visited {  
+    color: [button.color];
+    background: [button.background];
+    border: 1px solid [button.background-border] ;
+}
+.b-category-4 .section_[section] .category__link a:hover {  
+    color: [button.color-hover];
+    background: [button.background-hover]; 
+    border: 1px solid [button.background-border-hover];
+}
+.b-category-4 .section_[section] .category__text p {
+    font-size: [text.size];
+    color: [text.color];
+}
+.b-category-4 .section_[section] .category__imgbox img {
+    width: [img.img-width];
+}

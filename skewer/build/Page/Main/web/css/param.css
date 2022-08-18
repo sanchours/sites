@@ -1,0 +1,410 @@
+/* layer: default */
+/*------------------------*/
+/* group: menu | Меню */
+/* group: menu.top | Верхнее меню */
+/* param: position               | Выравнивание | h-position | left */
+/* group: menu.top.level1 | 1-ый уровень */
+/* group: menu.top.level1.normal | Обычный пункт */
+/* group: menu.top.level1.normal.link | Ссылка */
+/* param: font_family            | Шрифт | family  | Arial, sans-serif */
+/* parentParam: default..base.userbase.fontfamily.font-family */
+/* param: size                   | Размер | size | 12px */
+/* parentParam: default..base.userbase.fontfamily.font-size */
+/* param: weight                 | Толщина шрифта | font-weight | normal */
+/* param: style                  | Курсив | font-style | normal */
+/* param: decoration             | Подчеркивание | text-decoration | none */
+/* param: transform              | Регистр | text-transform | uppercase */
+/* param: color                  | Цвет | color | #ffffff */
+
+/* group: menu.top.level1.normal.background | Фон */
+/* param: color                  | Цвет | color | #45494a */
+/* param: img                    | Изображение | url  | */
+/* param: hposition              | Выравнивание по горизонтали | h-position | left */
+/* param: vposition              | Выравнивание по вертикали | v-position | bottom */
+/* param: repeat                 | Повторение | repeat | repeat-x */
+/* param: padding                | Отступы | size | 17px 20px 18px 20px */
+
+/* group: menu.top.level1.normal.bullit | Маркер/Иконка */
+/* param: img                    | Изображение | url  | ../images/menutop.dot.gif */
+/* param: width                  | Ширина | px  | 1px */
+/* param: height                 | Высота | px  | 49px */
+/* param: hposition              | Выравнивание по горизонтали | h-position | right */
+/* param: hvalue                 | Отступ по горизонтали | size | 0 */
+/* param: vposition              | Выравнивание по вертикали | v-position | top */
+/* param: vvalue                 | Отступ по вертикали | size | 0 */
+
+/* group: menu.top.level1.active | Выбранный пункт */
+/* group: menu.top.level1.active.link | Ссылка */
+/* param: font_family            | Шрифт | family  | Arial, sans-serif */
+/* parentParam: default..base.userbase.fontfamily.font-family */
+/* param: size                   | Размер | size | 12px */
+/* parentParam: default..base.userbase.fontfamily.font-size */
+/* param: weight                 | Толщина шрифта | font-weight | normal */
+/* param: style                  | Курсив | font-style | normal */
+/* param: decoration             | Подчеркивание | text-decoration | none */
+/* param: transform              | Регистр | text-transform | underline */
+/* param: color                  | Цвет | color | #ffffff */
+
+/* group: menu.top.level1.active.background | Фон */
+/* param: color                  | Цвет | color | #3dade1 */
+/* param: img                    | Изображение | url  | */
+/* param: hposition              | Выравнивание по горизонтали | h-position | left */
+/* param: vposition              | Выравнивание по вертикали | v-position | bottom */
+/* param: repeat                 | Повторение | repeat | repeat-x */
+/* param: padding                | Отступ | size | 17px 20px 18px 20px */
+
+/* group: menu.top.level1.active.bullit | Маркер */
+/* param: img                    | Изображение | url  | empty */
+/* param: width                  | Ширина | px  | 1px */
+/* param: height                 | Высота | px  | 15px */
+/* param: hposition              | Выравнивание по горизонтали | h-position | right */
+/* param: hvalue                 | Отступ по горизонтали | size | 2px */
+/* param: vposition              | Выравнивание по вертикали | v-position | top */
+/* param: vvalue                 | Отступ по вертикали | size | 13px */
+
+/* group: menu.top.level1.level1_bg | Фон 1-го уровня */
+/* param: color                  | Цвет | color | #45494a */
+/* param: img                    | Изображение | url | */
+/* param: hposition              | Выравнивание по горизонтали | h-position | */
+/* param: vposition              | Выравнивание по вертикали | v-position | */
+/* param: repeat                 | Повторение | repeat | no-repeat */
+/* param: padding                | Отступы | size | 0 */
+
+/*---------------2-ый уровень--------------------*/
+
+/* group: menu.top.level2 | 2-ой уровень */
+/* param: width                  | Ширина выпадающего меню | size | 170px */
+/* param: padding                | Отступы | size | 10px 0 */
+/* param: bg_color               | Цвет фона | color | #3dade1 */
+/* parentParam: default..menu.top.level2.normal.background.color */
+/* group: menu.top.level2.normal | Обычный пункт */
+/* group: menu.top.level2.normal.link | Ссылка */
+/* param: font_family            | Шрифт | family  | Arial, sans-serif */
+/* parentParam: default..base.userbase.fontfamily.font-family */
+/* param: size                   | Размер | size | 12px */
+/* parentParam: default..base.userbase.fontfamily.font-size */
+/* param: weight                 | Толщина шрифта | font-weight | normal */
+/* param: style                  | Курсив | font-style | normal */
+/* param: decoration             | Подчеркивание | text-decoration | none */
+/* param: transform              | Регистр | text-transform | none */
+/* param: color                  | Цвет | color | #ffffff */
+
+/* group: menu.top.level2.normal.background | Фон */
+/* param: color                  | Цвет | color | #3dade1 */
+/* param: img                    | Изображение | url  | */
+/* param: hposition              | Выравнивание по горизонтали | h-position | left */
+/* param: vposition              | Выравнивание по вертикали | v-position | bottom */
+/* param: repeat                 | Повторение | repeat | repeat-x */
+/* param: padding                | Отступы | size | 10px 8px 10px 15px */
+
+/* group: menu.top.level2.normal.bullit | Маркер/Иконка */
+/* param: img                    | Изображение | url  | empty */
+/* param: width                  | Ширина | px  | 30px */
+/* parentParam: default..menu.top.level1.normal.bullit.width */
+/* param: height                 | Высота | px  | 30px */
+/* parentParam: default..menu.top.level1.normal.bullit.height */
+/* param: hposition              | Выравнивание по горизонтали | h-position | right */
+/* parentParam: default..menu.top.level1.normal.bullit.hposition */
+/* param: hvalue                 | Отступ по горизонтали | size | 0 */
+/* parentParam: default..menu.top.level1.normal.bullit.hvalue */
+/* param: vposition              | Выравнивание по вертикали | v-position | top */
+/* parentParam: default..menu.top.level1.normal.bullit.vposition */
+/* param: vvalue                 | Отступ по вертикали | size | 0 */
+/* parentParam: default..menu.top.level1.normal.bullit.vvalue */
+
+/* group: menu.top.level2.active | Выбранный пункт */
+/* group: menu.top.level2.active.link | Ссылка */
+/* param: font_family            | Шрифт | family  | Arial, sans-serif */
+/* parentParam: default..base.userbase.fontfamily.font-family */
+/* param: size                   | Размер | size | 12px */
+/* parentParam: default..base.userbase.fontfamily.font-size */
+/* param: weight                 | Толщина шрифта | font-weight | normal */
+/* param: style                  | Курсив | font-style | normal */
+/* param: decoration             | Подчеркивание | text-decoration | none */
+/* param: transform              | Регистр | text-transform | none */
+/* param: color                  | Цвет | color | #ffffff */
+
+/* group: menu.top.level2.active.background | Фон */
+/* param: color                  | Цвет | color | #45494a */
+/* param: img                    | Изображение | url  |  */
+/* param: hposition              | Выравнивание по горизонтали | h-position | left */
+/* param: vposition              | Выравнивание по вертикали | v-position | top */
+/* param: repeat                 | Повторение | repeat | repeat-x */
+/* param: padding                | Отступы | size | 10px 8px 10px 15px */
+
+/* group: menu.top.level2.active.bullit | Маркер */
+/* param: img                    | Изображение | url  | empty */
+/* param: width                  | Ширина | px  | 30px */
+/* parentParam: default..menu.top.level1.active.bullit.width */
+/* param: height                 | Высота | px  | 30px */
+/* parentParam: default..menu.top.level1.active.bullit.height */
+/* param: hposition              | Выравнивание по горизонтали | h-position | right */
+/* parentParam: default..menu.top.level1.active.bullit.hposition */
+/* param: hvalue                 | Отступ по горизонтали | size | 0 */
+/* parentParam: default..menu.top.level1.active.bullit.hvalue */
+/* param: vposition              | Выравнивание по вертикали | v-position | top */
+/* parentParam: default..menu.top.level1.active.bullit.vposition */
+/* param: vvalue                 | Отступ по вертикали | size | 0 */
+/* parentParam: default..menu.top.level1.active.bullit.vvalue */
+/*---------------3-ый уровень--------------------*/
+
+/* group: menu.top.level3 | 3-ой уровень */
+/* param: width                  | Ширина выпадающего меню | size | 170px */
+/* param: padding                | Отступы | size | 10px 0 */
+/* param: bg_color               | Цвет фона | color | #3dade1 */
+/* parentParam: default..menu.top.level3.normal.background.color */
+/* group: menu.top.level3.normal | Обычный пункт */
+/* group: menu.top.level3.normal.link | Ссылка */
+/* param: font_family            | Шрифт | family  | Arial, sans-serif */
+/* parentParam: default..base.userbase.fontfamily.font-family */
+/* param: size                   | Размер | size | 12px */
+/* param: weight                 | Толщина шрифта | font-weight | normal */
+/* param: style                  | Курсив | font-style | normal */
+/* param: decoration             | Подчеркивание | text-decoration | none */
+/* param: transform              | Регистр | text-transform | none */
+/* param: color                  | Цвет | color | #ffffff */
+
+/* group: menu.top.level3.normal.background | Фон */
+/* param: color                  | Цвет | color | #3dade1 */
+/* param: img                    | Изображение | url  | */
+/* param: hposition              | Выравнивание по горизонтали | h-position | left */
+/* param: vposition              | Выравнивание по вертикали | v-position | bottom */
+/* param: repeat                 | Повторение | repeat | repeat-x */
+/* param: padding                | Отступы | size | 10px 8px 10px 15px */
+
+/* group: menu.top.level3.active | Выбранный пункт */
+/* group: menu.top.level3.active.link | Ссылка */
+/* param: font_family            | Шрифт | family  | Arial, sans-serif */
+/* parentParam: default..base.userbase.fontfamily.font-family */
+/* param: size                   | Размер | size | 12px */
+/* param: weight                 | Толщина шрифта | font-weight | normal */
+/* param: style                  | Курсив | font-style | normal */
+/* param: decoration             | Подчеркивание | text-decoration | none */
+/* param: transform              | Регистр | text-transform | none */
+/* param: color                  | Цвет | color | #ffffff */
+
+/* group: menu.top.level3.active.background | Фон */
+/* param: color                  | Цвет | color | #45494a */
+/* param: img                    | Изображение | url  |  */
+/* param: hposition              | Выравнивание по горизонтали | h-position | left */
+/* param: vposition              | Выравнивание по вертикали | v-position | top */
+/* param: repeat                 | Повторение | repeat | repeat-x */
+/* param: padding                | Отступы | size | 10px 8px 10px 15px */
+
+/*------------------------*/
+
+/* group: menu.left | Левое меню */
+/* group: menu.left.level1 | 1-ый уровень */
+/* group: menu.left.level1.normal | Обычный пункт */
+/* group: menu.left.level1.normal.link | Ссылка */
+/* param: font_family            | Шрифт | family  | Arial, sans-serif */
+/* parentParam: default..base.userbase.fontfamily.font-family */
+/* param: size                   | Размер | size | 16px */
+/* param: weight                 | Толщина шрифта | font-weight | normal */
+/* param: style                  | Курсив | font-style | normal */
+/* param: decoration             | Подчеркивание | text-decoration | none */
+/* param: transform              | Регистр | text-transform | normal */
+/* param: color                  | Цвет | color | #ffffff */
+
+/* group: menu.left.level1.normal.background | Фон */
+/* param: color                  | Цвет | color | #3dade1  */
+/* param: img                    | Изображение | url  | ../images/menu.bg.gif */
+/* param: hposition              | Выравнивание по горизонтали | h-position | left */
+/* param: vposition              | Выравнивание по вертикали | v-position | bottom */
+/* param: repeat                 | Повторение | repeat | repeat-x */
+/* param: padding                | Отступ сверху | size | 13px 35px 14px 15px */
+
+/* group: menu.left.level1.normal.bullit | Маркер/Иконка */
+/* param: img                    | Изображение | url  | ../images/menu.doton.png */
+/* param: width                  | Ширина | px  | 4px */
+/* param: height                 | Высота | px  | 6px */
+/* param: hposition              | Выравнивание по горизонтали | h-position-abs | right */
+/* param: hvalue                 | Отступ по горизонтали | size | 12px */
+/* param: vposition              | Выравнивание по вертикали | v-position-abs | top */
+/* param: vvalue                 | Отступ по вертикали | size | 22px */
+
+/* group: menu.left.level1.active | Выбранный пункт */
+/* group: menu.left.level1.active.link | Ссылка */
+/* param: font_family            | Шрифт | family  | Arial, sans-serif */
+/* parentParam: default..base.userbase.fontfamily.font-family */
+/* param: size                   | Размер | size | 16px */
+/* param: weight                 | Толщина шрифта | font-weight | normal */
+/* param: style                  | Курсив | font-style | normal */
+/* param: decoration             | Подчеркивание | text-decoration | none */
+/* param: transform              | Регистр | text-transform | normal */
+/* param: color                  | Цвет | color | #ffffff */
+
+/* group: menu.left.level1.active.background | Фон */
+/* param: color                  | Цвет | color | #45494a */
+/* param: img                    | Изображение | url  | empty */
+/* param: hposition              | Выравнивание по горизонтали | h-position | left */
+/* param: vposition              | Выравнивание по вертикали | v-position | bottom */
+/* param: repeat                 | Повторение | repeat | repeat-x */
+/* param: padding                | Отступ сверху | size | 13px 35px 14px 15px */
+
+/* group: menu.left.level1.active.bullit | Маркер */
+/* param: img                    | Изображение | url  | ../images/menu.dot.png */
+/* param: width                  | Ширина | px  | 4px */
+/* param: height                 | Высота | px  | 6px */
+/* param: hposition              | Выравнивание по горизонтали | h-position-abs | right */
+/* param: hvalue                 | Отступ по горизонтали | size | 12px */
+/* param: vposition              | Выравнивание по вертикали | v-position-abs | top */
+/* param: vvalue                 | Отступ по вертикали | size | 22px */
+
+/* group: menu.left.level1.level1_bg | Фон 1-го уровня */
+/* param: color                  | Цвет | color | */
+/* param: img                    | Изображение | url | */
+/* param: hposition              | Выравнивание по горизонтали | h-position | */
+/* param: vposition              | Выравнивание по вертикали | v-position | */
+/* param: repeat                 | Повторение | repeat | no-repeat */
+/* param: padding                | Отступы | size | 0 */
+
+/* group: menu.left.level1.before_bg | Фон сверху блока */
+/* param: height                 | Высота | px  | 0 */
+/* param: color                  | Цвет | color | transparent */
+/* param: img                    | Изображение | url  |  */
+/* param: hposition              | Выравнивание по горизонтали | h-position | left */
+/* param: vposition              | Выравнивание по вертикали | v-position | top */
+/* param: repeat                 | Повторение | repeat | no-repeat */
+
+/* group: menu.left.level1.after_bg | Фон снизу блока */
+/* param: height                 | Высота | px  | 0 */
+/* param: color                  | Цвет | color | transparent */
+/* param: img                    | Изображение | url  |  */
+/* param: hposition              | Выравнивание по горизонтали | h-position | left */
+/* param: vposition              | Выравнивание по вертикали | v-position | top */
+/* param: repeat                 | Повторение | repeat | no-repeat */
+/*---------------2-ый уровень--------------------*/
+
+/* group: menu.left.level2 | 2-ой уровень */
+/* group: menu.left.level2.normal | Обычный пункт */
+/* group: menu.left.level2.normal.link | Ссылка */
+/* param: font_family            | Шрифт | family  | Arial, sans-serif */
+/* parentParam: default..base.userbase.fontfamily.font-family */
+/* param: size                   | Размер | size | 14px */
+/* param: weight                 | Толщина шрифта | font-weight | normal */
+/* param: style                  | Курсив | font-style | normal */
+/* param: decoration             | Подчеркивание | text-decoration | none */
+/* param: transform              | Регистр | text-transform | normal */
+/* param: color                  | Цвет | color | #1071ae */
+
+/* group: menu.left.level2.normal.background | Фон */
+/* param: color                  | Цвет | color | #f2f2f2 */
+/* param: img                    | Изображение | url  |  */
+/* param: hposition              | Выравнивание по горизонтали | h-position | left */
+/* param: vposition              | Выравнивание по вертикали | v-position | top */
+/* param: repeat                 | Повторение | repeat | repeat-x */
+/* param: padding                | Отступы | size | 5px 25px 6px 25px */
+
+/* group: menu.left.level2.active | Выбранный пункт */
+/* group: menu.left.level2.active.link | Ссылка */
+/* param: font_family            | Шрифт | family  | Arial, sans-serif */
+/* parentParam: default..base.userbase.fontfamily.font-family */
+/* param: size                   | Размер | size | 14px */
+/* param: weight                 | Толщина шрифта | font-weight | normal */
+/* param: style                  | Курсив | font-style | normal */
+/* param: decoration             | Подчеркивание | text-decoration| none */
+/* param: transform              | Регистр | text-transform | normal */
+/* param: color                  | Цвет | color | #949494 */
+
+/* group: menu.left.level2.active.background | Фон */
+/* param: color                  | Цвет | color | #f2f2f2 */
+/* param: img                    | Изображение | url  |  */
+/* param: hposition              | Выравнивание по горизонтали | h-position | left */
+/* param: vposition              | Выравнивание по вертикали | v-position | top */
+/* param: repeat                 | Повторение | repeat | repeat-x */
+/* param: padding                | Отступы | size | 5px 25px 6px 25px */
+
+/*---------------3-ый уровень--------------------*/
+
+/* group: menu.left.level3 | 3-ий уровень */
+/* group: menu.left.level3.normal | Обычный пункт */
+/* group: menu.left.level3.normal.link | Ссылка */
+/* param: font_family            | Шрифт | family  | Arial, sans-serif */
+/* parentParam: default..base.userbase.fontfamily.font-family */
+/* param: size                   | Размер | size | 12px */
+/* param: weight                 | Толщина шрифта | font-weight | normal */
+/* param: style                  | Курсив | font-style | normal */
+/* param: decoration             | Подчеркивание | text-decoration | none */
+/* param: transform              | Регистр | text-transform | normal */
+/* param: color                  | Цвет | color | #45494a */
+
+/* group: menu.left.level3.normal.background | Фон */
+/* param: color                  | Цвет | color | #f2f2f2 */
+/* param: img                    | Изображение | url  |  */
+/* param: hposition              | Выравнивание по горизонтали | h-position | left */
+/* param: vposition              | Выравнивание по вертикали | v-position | top */
+/* param: repeat                 | Повторение | repeat | repeat-x */
+/* param: padding                | Отступы | size | 5px 25px 6px 45px */
+
+/* group: menu.left.level3.active | Выбранный пункт */
+/* group: menu.left.level3.active.link | Ссылка */
+/* param: font_family            | Шрифт | family  | Arial, sans-serif */
+/* parentParam: default..base.userbase.fontfamily.font-family */
+/* param: size                   | Размер | size | 12px */
+/* param: weight                 | Толщина шрифта | font-weight | normal */
+/* param: style                  | Курсив | font-style | normal */
+/* param: decoration             | Подчеркивание | text-decoration | none */
+/* param: transform              | Регистр | text-transform | normal */
+/* param: color                  | Цвет | color | #1071ae */
+
+/* group: menu.left.level3.active.background | Фон */
+/* param: color                  | Цвет | color | #f2f2f2 */
+/* param: img                    | Изображение | url  |  */
+/* param: hposition              | Выравнивание по горизонтали | h-position | left */
+/* param: vposition              | Выравнивание по вертикали | v-position | top */
+/* param: repeat                 | Повторение | repeat | repeat-x */
+/* param: padding                | Отступы | size | 5px 25px 6px 45px */
+
+/*------------------------*/
+/* group: modules | Модули */
+/* group: modules.news | Новости и статьи */
+/* param: color                  | Цвет | color | transparent */
+/* param: img                    | Изображение | url  | ../images/news.bg.gif */
+/* param: hposition              | Выравнивание по горизонтали | h-position | left */
+/* param: vposition              | Выравнивание по вертикали | v-position | bottom */
+/* param: repeat                 | Повторение | repeat | repeat-x */
+
+/* group: modules.news.bullit | Маркер */
+/* param: img                    | Изображение | url  | empty */
+/* param: width                  | Ширина | px  | 0 */
+
+/* group: modules.news.date | Дата/Автор */
+/* param: font_family            | Шрифт | family  | Arial, sans-serif */
+/* parentParam: default..base.userbase.fontfamily.font-family */
+/* param: size                   | Размер | size | 12px */
+/* param: weight                 | Толщина шрифта | font-weight | normal */
+/* param: style                  | Курсив | font-style | normal */
+/* param: decoration             | Подчеркивание | text-decoration | none */
+/* param: transform              | Регистр | text-transform | none */
+/* param: color                  | Цвет | color | #939393 */
+
+/* group: modules.news.normal | Заголовок новости список */
+/* param: font_family            | Шрифт | family  | Arial, sans-serif */
+/* parentParam: default..base.userbase.fontfamily.font-family */
+/* param: size                   | Размер | size | 18px */
+/* param: weight                 | Толщина шрифта | font-weight | normal */
+/* param: style                  | Курсив | font-style | normal */
+/* param: decoration             | Подчеркивание | text-decoration | none */
+/* param: transform              | Регистр | text-transform | none */
+/* param: color                  | Цвет | color | #1071ae */
+/* parentParam: default..base.userbase.fontfamily.color_link */
+
+/* group: modules.news.active | Заголовок новости список (hover) */
+/* param: font_family            | Шрифт | family  | Arial, sans-serif */
+/* parentParam: default..base.userbase.fontfamily.font-family */
+/* param: size                   | Размер | size | 18px */
+/* param: weight                 | Толщина шрифта | font-weight | normal */
+/* param: style                  | Курсив | font-style | normal */
+/* param: decoration             | Подчеркивание | text-decoration | underline */
+/* param: transform              | Регистр | text-transform | none */
+/* param: color                  | Цвет | color | #1071ae */
+/* parentParam: default..base.userbase.fontfamily.color_link */
+
+/* group: modules.news.col | Трехколоночный шаблон */
+/* param: width                  | Ширина блока | size | 28% */
+/* param: height                 | Высота блока | size | 300px */
+/* param: margin-r               | Отступы справа | size | 5% */
+
+/*-------------------------------*/
+

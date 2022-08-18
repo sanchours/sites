@@ -1,0 +1,4 @@
+{% for curNews in aNews %}
+    <p>{{curNews.publication_date}} | <a href="{{curNews.href}}">{{curNews.title}}</a></p>
+    <p>{{curNews.announce}}</p>
+{% endfor %}

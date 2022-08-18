@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Переход в корзину после добавления товара</description>
+   <name>RoadInCartAfterAddGood</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f4a9cac7-70b9-41f0-a69f-61563bbc5252</testCaseGuid>
+</TestCaseEntity>

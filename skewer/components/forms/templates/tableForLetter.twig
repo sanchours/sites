@@ -1,0 +1,8 @@
+{% if ( templateLetter.tableHide or templateLetter.sendDataFromForm) %}
+    <h4>{{ Lang.get("forms.mail_adm_data_form") }}</h4>
+    <table>
+        {% for field in templateLetter.fields %}
+            {{ field }}
+        {% endfor %}
+    </table>
+{% endif %}

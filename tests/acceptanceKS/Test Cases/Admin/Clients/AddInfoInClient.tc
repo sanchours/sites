@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Добвление информации клиенту</description>
+   <name>AddInfoInClient</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8387bc89-8a91-447a-a5cf-9bea2b6e17b4</testCaseGuid>
+</TestCaseEntity>

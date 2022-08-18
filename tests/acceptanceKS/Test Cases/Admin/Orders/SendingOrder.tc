@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Отправка заказа</description>
+   <name>SendingOrder</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8ed5e0ff-9919-4578-9eec-49137e290b93</testCaseGuid>
+</TestCaseEntity>

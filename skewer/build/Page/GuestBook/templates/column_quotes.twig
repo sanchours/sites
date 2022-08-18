@@ -1,0 +1,61 @@
+{% if items|length %}
+    <div class="b-reviews-theme-quote"{{ Design.write(' sktag="modules.guestbox"') }}>
+        {% if title %}<div class="b-title-h2">{{ title }}</div>{% endif %}
+        {%  for aItem in items  %}
+            {% if not maxLen %}
+                {% set maxLen = 500 %}
+            {% endif %}
+            <div class="reviews-theme-quote__item">
+                <div class="reviews-theme-quote__content">
+                    <div class="reviews-theme-quote__border">
+                        <span>
+                            <img class="reviews-theme-quote__quote svg" src="{{ web_path_svg }}/quote-t.svg" alt="">
+                        </span>
+                    </div>
+                    <a name="{{ aItem.id }}"></a>
+                    <div class="reviews-theme-quote__title"></div>
+                    <div class="b-editor">
+                        {% if showList %}
+                            {{aItem.content|striptags|truncate(maxLen,"<a href='"~aItem.link~"'>...</a>")}}
+                        {% else %}
+                            {{ aItem.content }}
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="reviews-theme-quote__contact{% if showGallery  %} reviews-theme-quote__contact--photo{% endif %}">
+                    {% if showGallery %}
+                        {% if aItem.photo_gallery and aItem.photo_gallery.detail%}
+                            <div class="reviews-theme-quote__photo">
+                                <img src="{{ aItem.photo_gallery.main.file }}" alt="">
+                            </div>
+                        {% else %}
+                            <div class="reviews-theme-quote__photo">
+                                <img src="{{ Design.get('modules.guestbox.nophoto_img','reviews_main','skewer\\build\\Page\\GuestBook\\Asset') }}" alt="">
+                            </div>
+                        {% endif %}
+                    {% endif %}
+                    <div class="reviews-theme-quote__contact-data">
+                         {% if aItem.name %}
+                            <div class="reviews-theme-quote__name">{{aItem.name|escape}} </div>
+                        {% endif %}
+                        {% if aItem.city %}
+                            <div class="reviews-theme-quote__date">{{aItem.city|escape}} </div>
+                        {% endif %}
+                        {% if aItem.company %}
+                            <div class="reviews-theme-quote__company">{{aItem.company|escape}} </div>
+                        {% endif %}
+                    </div>
+                    {% if show_rating and aItem.ratingHtml %}
+                        <div class="reviews-theme-quote__rating">
+                            {{ aItem.ratingHtml }}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+        {% if section_id %}
+            <p><a href="[{{ section_id }}]">{{ Lang.get('review.show_all') }}</a></p>
+        {% endif %}
+    </div>
+{% endif %}

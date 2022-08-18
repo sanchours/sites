@@ -1,0 +1,1391 @@
+/* layer: default */
+/* group: page | Макет */
+/* param: max-width             | Максимальная ширина сайта | size | 1280px */
+/* param: min-width             | Минимальная ширина сайта | size | 320px */
+/* param: body_img              | Фоновое изображение страницы | url | empty */
+/* param: body_repeat           | Повторение фона страницы | repeat  | no-repeat */
+/* param: body_color            | Цвет фона страницы | color | #dfdfdf  */
+/* param: bg-attachment         | Привязка фона | bg-attachment | scroll */
+/* param: favicon               | Изображение favicon | gallery | favicon */
+
+/* group: editor | Контент */
+/* param: text_color            | Цвет текста | color | #353535 */
+/* parentParam: default..base.userbase.fontfamily.color_text */
+/* param: size                  | Размер шрифта  | size | 14px */
+/* parentParam: default..base.userbase.fontfamily.font-size */
+/* param: family                | Семейство шрифта  | family | Arial, sans-serif */
+/* parentParam: default..base.userbase.fontfamily.font-family */
+
+/* group: editor.h1 | Заголовок 1-го уровня */
+/* param: color              | Цвет заголовка | color | #000  */
+/* parentParam: default..base.userbase.fontfamily.color_htitle */
+/* param: size               | Размер шрифта  | size | 24px */
+/* param: bold               | Толщина шрифта  | font-weight | normal */
+/* param: family             | Семейство шрифта  | family | Arial, sans-serif */
+/* parentParam: default..base.userbase.fontfamily.font-family */
+/* param: style              | Стиль шрифта  | font-style | normal */
+/* param: boxshadow_x        | Сдвиг по Х  | size | 0 */
+/* param: boxshadow_y        | Сдвиг по Y  | size | 0 */
+/* param: boxshadow_blue     | Радиус размытия  | size | 0 */
+/* param: boxshadow_color    | Цвет тени  | color | rgba(0, 0, 0, 0.5) */
+
+
+/* group: editor.h2 | Заголовок 2-го уровня */
+/* param: color              | Цвет заголовка | color | #000  */
+/* parentParam: default..base.userbase.fontfamily.color_htitle */
+/* param: size               | Размер шрифта  | size | 22px */
+/* param: bold               | Толщина шрифта  | font-weight | normal */
+/* param: family             | Семейство шрифта  | family | Arial, sans-serif */
+/* parentParam: default..base.userbase.fontfamily.font-family */
+/* param: style              | Стиль шрифта  | font-style | normal */
+/* param: boxshadow_x        | Сдвиг по Х  | size | 0 */
+/* param: boxshadow_y        | Сдвиг по Y  | size | 0 */
+/* param: boxshadow_blue     | Радиус размытия  | size | 0 */
+/* param: boxshadow_color    | Цвет тени  | color | rgba(0, 0, 0, 0.5) */
+
+/* group: editor.h3 | Заголовок 3-го уровня */
+/* param: color              | Цвет заголовка | color | #000  */
+/* parentParam: default..base.userbase.fontfamily.color_htitle */
+/* param: size               | Размер шрифта  | size | 18px */
+/* param: bold               | Толщина шрифта  | font-weight | normal */
+/* param: family             | Семейство шрифта  | family | Arial, sans-serif */
+/* parentParam: default..base.userbase.fontfamily.font-family */
+/* param: style              | Стиль шрифта  | font-style | normal */
+/* param: boxshadow_x        | Сдвиг по Х  | size | 0 */
+/* param: boxshadow_y        | Сдвиг по Y  | size | 0 */
+/* param: boxshadow_blue     | Радиус размытия  | size | 0 */
+/* param: boxshadow_color    | Цвет тени  | color | rgba(0, 0, 0, 0.5) */
+
+/* group: editor.a | Стиль ссылок */
+/* param: color              | Цвет ссылки | color | #1071ae */
+/* parentParam: default..base.userbase.fontfamily.color_link */
+/* param: decoration         | Подчеркивание | text-decoration | none */
+/* param: decoration_on      | Подчеркивание наведённой | text-decoration | underline */
+
+/* group: page.sh | Боковые тени */
+/* param: shleft                | Изображение левой тени | url | ../images/sh.left.png */
+/* param: shleft_repeat         | Повторение левой тени | repeat  | repeat-y */
+/* param: shleft_top            | Отступ левой тени сверху | px  |  0 */
+/* param: shleft_bottom         | Отступ левой тени снизу | px  |  0 */
+/* param: shright               | Изображение правой тени | url | ../images/sh.right.png */
+/* param: shright_repeat        | Повторение правой тени | repeat  | repeat-y */
+/* param: shright_top           | Отступ правой тени сверху | px  |  0  */
+/* param: shright_bottom        | Отступ правой тени снизу | px  |  0 */
+/* param: background_color      | Цвет обрамления страницы | color | transparent */
+/* param: shleft_attachment     | Привязка фона левой тени | bg-attachment | scroll */
+/* param: shright_attachment    | Привязка фона правой тени | bg-attachment | scroll */
+
+/* group: page.footer | Подвал сайта */
+/* param: color            | Фоновый цвет | color | #45494a */
+/* param: image            | Фоновое изображение | url |  */
+/* param: repeat           | Повторение фонового изображения | repeat | repeat-x */
+/* param: position_h       | Горизонтальное выравнивание фонового изображения | h-position | left */
+/* param: position_v       | Вертикальное выравнивание фонового изображения | v-position | top */
+/* param: color_t          | Цвет текста | color | #ffffff */
+/* param: color_a          | Цвет ссылок | color | #66c9f7 */
+/* param: size             | Размер шрифта | size | 12px */
+/* param: height           | Высота | size | 130px */
+/* param: bg-attachment    | Привязка фона | bg-attachment | scroll */
+
+/* group: page.footer.footerboxl | Левое "ухо" */
+/* param: color            | Фоновый цвет | color | transparent */
+/* param: image            | Фоновое изображение | url |  */
+/* param: repeat           | Повторение фонового изображения | repeat | repeat-x */
+/* param: position_h       | Горизонтальное выравнивание фонового изображения | h-position | right */
+/* param: position_v       | Вертикальное выравнивание фонового изображения | v-position | top */
+
+/* group: page.footer.footerboxr | Правое "ухо" */
+/* param: color            | Фоновый цвет | color | transparent */
+/* param: image            | Фоновое изображение | url |  */
+/* param: repeat           | Повторение фонового изображения | repeat | repeat-x */
+/* param: position_h       | Горизонтальное выравнивание фонового изображения | h-position | left */
+/* param: position_v       | Вертикальное выравнивание фонового изображения | v-position | top */
+
+/* group: page.footer.grid1 | Блок копирайта */
+/* param: v_value                 | Отступ по вертикали  | size | 20px */
+/* param: h_position              | Горизонтальное выравнивание | h-position-abs | left  */
+/* param: h_value                 | Отступ по горизонтали  | size | 20px */
+/* param: width                   | Ширина  | size | 370px */
+/* param: height                  | Высота  | size | auto */
+
+/* group: page.footer.grid2 | Блок счетчиков */
+/* param: v_value                 | Отступ по вертикали  | size | 20px */
+/* param: h_position              | Горизонтальное выравнивание | h-position-abs | left  */
+/* param: h_value                 | Отступ по горизонтали  | size | 400px */
+/* param: width                   | Ширина  | size | 280px */
+/* param: height                  | Высота  | size | auto */
+
+/* group: page.footer.grid3 | Блок контактов */
+/* param: v_value                 | Отступ по вертикали  | size | 50px */
+/* param: h_position              | Горизонтальное выравнивание | h-position-abs | right  */
+/* param: h_value                 | Отступ по горизонтали  | size | 20px */
+/* param: width                   | Ширина  | size | 250px */
+/* param: height                  | Высота  | size | auto */
+
+/* group: page.footer.grid4 | Блок в подвале */
+/* param: v_value                 | Отступ по вертикали  | size | 50px */
+/* param: h_position              | Горизонтальное выравнивание | h-position-abs | left  */
+/* param: h_value                 | Отступ по горизонтали  | size | 400px */
+/* param: width                   | Ширина  | size | auto */
+/* param: height                  | Высота  | size | auto */
+
+/* group: page.footer.grid5 | Блок в подвале №2 */
+/* param: v_value                 | Отступ по вертикали  | size | 70px */
+/* param: h_position              | Горизонтальное выравнивание | h-position-abs | left  */
+/* param: h_value                 | Отступ по горизонтали  | size | 550px */
+/* param: width                   | Ширина  | size | auto */
+/* param: height                  | Высота  | size | auto */
+
+/* group: page.footer.grid6 | Сервисное меню */
+/* param: v_value                 | Отступ по вертикали  | size | 20px */
+/* param: h_position              | Горизонтальное выравнивание | h-position-abs | right  */
+/* param: h_value                 | Отступ по горизонтали  | size | 20px */
+/* param: width                   | Ширина  | size | 33% */
+/* param: height                  | Высота  | size | auto */
+
+/* group: page.footer.grid7 | Блок копирайта dev */
+/* param: v_value                 | Отступ по вертикали  | size | 100px */
+/* param: h_position              | Горизонтальное выравнивание | h-position-abs | left  */
+/* param: h_value                 | Отступ по горизонтали  | size | 20px */
+/* param: width                   | Ширина  | size | auto */
+/* param: height                  | Высота  | size | auto */
+
+/* group: modules | Модули */
+/* group: modules.search | Поиск */
+/* param: btn_img        | Изображение кнопки поиска | url | ../images/btnsearch.png */
+/* param: btn_width      | Ширина кнопки поиска | size | 24px */
+/* param: btn_height     | Высота кнопки поиска | size | 24px */
+/* param: border_color   | Цвет бордера | color | #dddddd */
+/* param: color          | Цвет текста поля | color | #515151 */
+
+/* group: page.head | Шапка сайта */
+/* param: color_t          | Цвет текста | color | #000 */
+/* param: color_a          | Цвет ссылок | color | #1071ae */
+/* parentParam: default..base.userbase.fontfamily.color_link */
+/* group: page.head.img    | Фоновое изображение в шапке сайта */
+/* param: color            | Фоновый цвет | color | #f4f4f4 */
+/* param: image            | Фоновое изображение | url | */
+/* param: repeat           | Повторение фонового изображения | repeat | no-repeat */
+/* param: position_h       | Горизонтальное выравнивание фонового изображения | h-position | left */
+/* param: position_v       | Вертикальное выравнивание фонового изображения | v-position | bottom */
+/* param: height           | Высота блока | size | 150px */
+
+/* group: menu | Меню */
+/* group: menu.path | Хлебные крошки */
+
+/* group: menu.path.item | Пункт пути */
+/* param: size               | Размер шрифта | size | 12px  */
+/* param: color              | Цвет | color | #707070  */
+/* parentParam: default..base.userbase.fontfamily.color_text */
+
+/* group: menu.path.a | Стиль ссылок */
+/* param: color              | Цвет | color | #1071ae  */
+/* parentParam: default..base.userbase.fontfamily.color_link */
+
+/* group: editor.p | Абзац */
+/* param: padding_b               | Отступ снизу | size | 1em  */
+
+/* group: editor.ul | Стиль списков */
+/* param: padding_b               | Отступ снизу | size | 1em  */
+/* param: margin_l                | Отступ слева | size | 3em  */
+
+/* group: page.head.logo | Логотип */
+/* param: v_value                 | Отступ по вертикали | size | 84px */
+/* param: h_position              | Горизонтальное выравнивание | h-position-abs | left  */
+/* param: h_value                 | Отступ по горизонтали | size | 30px */
+
+/* group: page.head.pilot1 | Контентный блок №1 */
+/* param: v_value                 | Отступ по вертикали  | size | 100px */
+/* param: h_position              | Горизонтальное выравнивание | h-position-abs | right  */
+/* param: h_value                 | Отступ по горизонтали  | size | 30px */
+/* param: width                   | Ширина  | size | 225px */
+/* param: height                  | Высота  | size | 50px */
+
+/* group: page.head.pilot2 | Контентный блок №2 */
+/* param: v_value                 | Отступ по вертикали  | size | 9px */
+/* param: h_position              | Горизонтальное выравнивание | h-position-abs | right  */
+/* param: h_value                 | Отступ по горизонтали  | size | 60px */
+/* param: width                   | Ширина  | size | 185px */
+/* param: height                  | Высота  | size | 30px */
+
+/* group: page.head.pilot3 | Контентный блок №3 */
+/* param: v_value                 | Отступ по вертикали  | size | 96px */
+/* param: h_position              | Горизонтальное выравнивание | h-position-abs | right */
+/* param: h_value                 | Отступ по горизонтали  | size | 285px */
+/* param: width                   | Ширина  | size | 210px */
+/* param: height                  | Высота  | size | 64px */
+
+/* group: page.head.pilot4 | Контентный блок №4 */
+/* param: v_value                 | Отступ по вертикали  | size | 161px */
+/* param: h_position              | Горизонтальное выравнивание | h-position-abs | right  */
+/* param: h_value                 | Отступ по горизонтали  | size | 195px */
+/* param: width                   | Ширина  | size | 300px */
+/* param: height                  | Высота  | size | 64px */
+
+/* group: page.head.pilot5 | Контентный блок №5 */
+/* param: v_value                 | Отступ по вертикали  | size | 103px */
+/* param: h_position              | Горизонтальное выравнивание | h-position-abs | right  */
+/* param: h_value                 | Отступ по горизонтали  | size | 507px */
+/* param: width                   | Ширина  | size | 45px */
+/* param: height                  | Высота  | size | 45px */
+
+/* group: page.column | Центральный блок */
+/* param: background-image              | Общее фоновое изображение | url |   */
+/* param: background-color              | Общий цвет фона | color | #FFFFFF  */
+/* param: position_g                    | Отступ фонового изображения слева | h-position | 0  */
+/* param: position_v                    | Отступ фонового изображения сверху | v-position | 0  */
+/* param: repeat                        | Повторение фонового изображения | repeat | no-repeat  */
+/* param: bg-attachment                 | Привязка фона | bg-attachment | scroll */
+
+/* group: page.column.left | Левая колонка */
+/* param: background-image              | Фоновое изображение | url |   */
+/* param: background-color              | Цвет фона | color | #FFFFFF  */
+/* param: position_g                    | Отступ фонового изображения слева | h-position | 0  */
+/* param: position_v                    | Отступ фонового изображения сверху | v-position | 0  */
+/* param: repeat                        | Повторение фонового изображения | repeat | no-repeat  */
+/* param: width                         | Ширина колонки | size | 245px  */
+/* param: padding                       | Отступы | size | 30px 15px 30px 20px   */
+/* param: bg-attachment                 | Привязка фона | bg-attachment | scroll */
+
+/* group: page.column.right | Правая колонка */
+/* param: background-image              | Фоновое изображение | url |   */
+/* param: background-color              | Цвет фона | color | #FFFFFF  */
+/* param: position_g                    | Отступ фонового изображения слева | h-position | 0  */
+/* param: position_v                    | Отступ фонового изображения сверху | v-position | 0  */
+/* param: repeat                        | Повторение фонового изображения | repeat | no-repeat  */
+/* param: width                         | Ширина колонки | size | 245px  */
+/* param: padding                       | Отступы | size | 30px 20px 30px 15px   */
+/* param: bg-attachment                 | Привязка фона | bg-attachment | scroll */
+
+/* group: page.column.center | Центральная колонка */
+/* param: background-image              | Фоновое изображение | url |   */
+/* param: background-color              | Цвет фона | color | #FFFFFF  */
+/* param: position_g                    | Отступ фонового изображения слева | h-position | 0  */
+/* param: position_v                    | Отступ фонового изображения сверху | v-position | 0  */
+/* param: repeat                        | Повторение фонового изображения | repeat | no-repeat  */
+/* param: padding                       | Отступы | size | 20px 20px 30px 15px   */
+/* param: bg-attachment                 | Привязка фона | bg-attachment | scroll */
+
+/* group: modules.formopros | Голосование */
+/* param: bordercolor           | Цвет рамки  | color | #d7d7d7 */
+/* param: borderstyle           | Стиль рамки  | border-style | solid */
+/* param: radius                | Радиус скругления | size | 0 */
+/* param: bgcolor1              | Цвет градиента фона (верх) | color | #fff */
+/* param: bgcolor2              | Цвет градиента фона (низ) | color | #fff */
+
+/* group: margingroup | Отступы */
+/* param: margin_menutop          | Отступ от верхнего края до блока верхнего меню | size | 0 */
+/* param: margin_slider           | Отступ от слайдера в верх | size | 0 */
+/* param: margin_centtop          | Отступ от центрального блока в верх | size | 0 */
+/* param: margin_centbot          | Отступ от центрального блока вниз | size | 0 */
+
+/* group: modules.brend | Коллекции */
+/* param: width              | Ширина блока | size | 160px */
+/* param: height             | Высота блока | size | 140px */
+/* param: margin             | Отступы блока | size | 0 20px 20px 0 */
+/* param: color              | Цвет заголовка | color | #000  */
+/* param: colorh             | Цвет заголовка при наведении  | color | #000  */
+/* param: size               | Размер шрифта  | size | 16px */
+/* param: opacity            | Прозрачность изображения | value | 0.5 */
+/* param: bold               | Толщина шрифта  | font-weight | normal */
+/* param: family             | Семейство шрифта  | family | Arial, sans-serif */
+/* parentParam: default..base.userbase.fontfamily.font-family */
+/* param: style              | Стиль шрифта  | font-style | normal */
+/* param: nophoto_img        | Заглушка изображения в списке  | url | ../images/collection-no-big.png */
+
+/* group: modules.tooltip | Всплывающие подсказки */
+/* param: color__bg               | Цвет фона | color | #fff  */
+/* param: color__bor              | Цвет рамки | color | #fff  */
+
+html * {
+    max-height: 999999px;
+}
+html, body {
+    height: 100%;
+}
+body {
+    color: [editor.text_color];
+    font-family: [editor.family];
+    font-size: [editor.size];
+    background-color: [page.body_color];
+    line-height: 1.2;
+    margin: 0;
+    position: relative;
+    z-index: 0;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+}
+/* Контент */
+/* Заголовок 1-го уровня */
+
+h1, .b-title-h1 {
+    margin: 0 0 0.5em 0;
+    font-family: [editor.h1.family];
+    font-size: [editor.h1.size];
+    font-style: [editor.h1.style];
+    font-weight: [editor.h1.bold];
+    text-decoration: none;
+    color: [editor.h1.color];
+    text-shadow: [editor.h1.boxshadow_x] [editor.h1.boxshadow_y] [editor.h1.boxshadow_blue] [editor.h1.boxshadow_color];
+    line-height: 1.2;
+}
+/* Заголовок 2-го уровня */
+
+h2, .b-title-h2,
+h2 a:link, 
+h2 a:active, 
+h2 a:visited, 
+h2 a:hover,
+a:link h2, 
+a:active h2, 
+a:visited h2, 
+a:hover h2  {
+    color: [editor.h2.color];
+    font-family: [editor.h2.family];
+    font-size: [editor.h2.size];
+    font-style: [editor.h2.style];
+    font-weight: [editor.h2.bold];
+    margin: 0 0 0.5em;
+    text-decoration: none;
+    text-shadow: [editor.h2.boxshadow_x] [editor.h2.boxshadow_y] [editor.h2.boxshadow_blue] [editor.h2.boxshadow_color];
+    line-height: 1.2;
+    word-wrap: break-word;
+}
+/* Заголовок 3-го уровня */
+
+h3, .b-title-h3 {
+    color: [editor.h3.color];
+    font-family: [editor.h3.family];
+    font-size: [editor.h3.size];
+    font-style: [editor.h3.style];
+    font-weight: [editor.h3.bold];
+    margin: 0 0 0.5em;
+    text-decoration: none;
+    text-shadow: [editor.h3.boxshadow_x] [editor.h3.boxshadow_y] [editor.h3.boxshadow_blue] [editor.h3.boxshadow_color];
+    line-height: 1.2;
+}
+/* Стиль ссылок */
+
+a:link,
+a:visited {
+    color: [editor.a.color];
+    text-decoration: [editor.a.decoration];
+}
+a:hover, a:active {
+    color: [editor.a.color];
+    text-decoration: [editor.a.decoration_on];
+}
+a:link[href^="tel"],
+a:active[href^="tel"],
+a:visited[href^="tel"],
+a:hover[href^="tel"] {
+    text-decoration: none;
+    color: [editor.text_color];
+    font-family: [editor.family];
+}
+img {
+    border: 0 none;
+}
+.g-clear {
+    clear: both;
+    font-size: 0;
+}
+.g-ov-h {
+    overflow: hidden;
+}
+.g-nodisplay {
+    display: none;
+}
+.g-novisible {
+    visibility: hidden;
+}
+.g-body_print {
+    background: #fff; 
+}
+.g-ramaborder {
+    z-index: 20;
+}
+.g-tablescroll {
+    overflow: scroll;
+}
+.g-ramaborder:hover {
+    margin: -1px;
+    border: 1px red dashed;
+}
+.g-ov-h {
+    overflow: hidden;
+}
+input:focus {
+    outline: none;
+}
+::-ms-clear { /* remove IE “clear field or cross” X button from inputs field */
+    display: none;
+    width: 0;
+    height: 0;
+}
+::-ms-reveal { /* remove IE “clear field or cross” X button from inputs field */
+    display: none;
+    width: 0;
+    height: 0;
+}
+pre {
+    white-space: pre-wrap;
+}
+/*------------------------*/
+.b-counter {
+    position: relative;
+    width: 100%;
+    min-height: 10px;
+}
+.b-counter:after {
+    content: "";
+    clear: both;
+    display: block;
+    font-size: 0;
+}
+.b-counter .counter__item {
+    margin-right: 5px;
+    margin-bottom: 10px;
+    float: left;
+    display: block;
+}
+.b-counter .counter__item * {
+    margin: 0;
+    padding: 0;
+}
+/*------------------------*/
+.b-picture {
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    background-color: [modules.slider.bg_color];
+}
+.b-picture .picture__inner {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    opacity: 0;
+}
+.b-picture--show .picture__inner {
+    opacity: 1;
+    -webkit-transition: opacity .3s ease-out;
+    transition: opacity .3s ease-out;
+}
+.b-picture .picture__wrapper {
+    margin-left: -640px;
+    width: 1280px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.b-picture img {
+    border: 0 none;
+    vertical-align: top;
+}
+.b-picture .picture__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: left;
+}
+.b-picture .picture__text {
+    position: absolute;
+    width: 700px;
+    z-index: 10;
+}
+.b-picture .picture__link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+}
+/*------------------------*/
+.b-picture2 .picture__text1 {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    z-index: 10;
+}
+.b-picture2 .picture__text2 {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 140px;
+    left: 30px;
+    z-index: 10;
+}
+.b-picture2 .picture__text3 {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 10;
+}
+.b-picture2 .picture__text4 {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 140px;
+    right: 30px;
+    z-index: 10;
+}
+/*------------------------*/
+.b-header {
+    position: relative;
+}
+.b-header p {
+    margin: 0;
+}
+/*------------------------*/
+.b-upper-logo {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    z-index: 5;
+}
+/*------------------------*/
+/* page.head - Шапка сайта */
+/* page.head.img - Фоновое изображение в шапке сайта */
+.b-picture2 {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    background: [page.head.img.color] url("[page.head.img.image]") [page.head.img.repeat] scroll [page.head.img.position_h] [page.head.img.position_v];
+    height: [page.head.img.height];
+}
+    /*------------------------*/
+    body.b-picture {
+        position: relative;
+        text-align: left;
+        overflow: hidden;
+        background: [page.head.img.color];
+        height: [page.head.height];
+    }
+/*------------------------*/
+.b-logo {
+    [page.head.logo.h_position]: [page.head.logo.h_value];
+    top: [page.head.logo.v_value];
+    position: absolute;
+    z-index: 9;
+}
+.b-logo img {
+    max-width: 100%;
+}
+.b-logoprint a:link,
+.b-logoprint a:active,
+.b-logoprint a:visited,
+.b-logoprint a:hover {
+    text-decoration: none;
+}
+/*------------------------*/
+.b-special {
+    position: relative;
+}
+.b-special p {
+    margin: 0;
+    padding: 0 0 1em 0;
+}
+.b-special ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.b-special li {
+    margin: 0 0 2em;
+}
+.b-special div {
+    position: relative;
+}
+.b-special img {
+    border: 0 none;
+    vertical-align: top;
+}
+.b-special a, .b-special a:visited {}
+.b-special a:hover, .b-special a:active {}
+
+/*------------------------*/
+/* menu - Меню */
+/* menu.path - Хлебные крошки */
+.b-path {
+    margin: 0;
+    padding: 0 0 0.5em;
+    position: relative;
+}
+.b-path ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.b-path li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-right: -.275em;
+    color: [menu.path.item.color];
+    font-size: [menu.path.item.size];
+}
+.b-path li:before {
+    padding: 0 5px;
+    content: " / ";
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Times New Roman", serif;
+}
+.b-path li a:link,
+.b-path li a:visited {
+    display: inline-block;
+    color: [menu.path.a.color];
+}
+.b-path li:first-child:before {
+    content: "";
+    display: none;
+}
+/*------------------------*/
+.b-order {}
+.b-order:after {
+    content: '';
+    display: table;
+    width: 100%;
+    clear: both;
+    font-size: 0;
+}
+.b-order table {
+    width: 100%;
+    border-collapse: collapse;
+    border-style: none;
+    margin-bottom: 20px;
+}
+.b-order td,
+.b-order th {
+    padding: 5px 10px;
+    vertical-align: top;
+}
+.b-order .order__user tr td:first-child {
+    font-weight: bold;
+    width: 120px;
+}
+.b-order .order__goods th,
+.b-order .order__goods td {
+    text-align: left;
+}
+.b-order .order__goods td,
+.b-order .order__goods th {
+    border: 1px solid #ddd;
+    width: 100px;
+}
+.b-order .order__goods tr td:first-child {
+    width: 50%;
+}
+/*------------------------*/
+.b-editor {
+    margin-bottom: 1.5em;
+    position: relative;
+}
+.b-editor:after {
+    content: '';
+    display: block;
+    clear: both;
+    font-size: 0;
+}
+.b-editor h4 {
+    color: #000000;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0 0 1em;
+}
+.b-editor h5 {
+    color: #000000;
+    font-size: 0.86em;
+    font-weight: bold;
+    margin: 0 0 1em;
+}
+.b-editor h6 {
+    color: #000000;
+    font-size: 0.86em;
+    font-weight: bold;
+    margin: 0 0 0.3em;
+}
+/* editor.p - Абзац */
+.b-editor p {
+    margin: 0;
+    padding: 0 0 [editor.p.padding_b];
+}
+/* editor.ul - Стиль списков */
+.b-editor ul, .b-editor ol {
+    margin: 0 0 [editor.ul.padding_b];
+    padding: 0 0 0 [editor.ul.margin_l];
+}
+.b-editor ol {
+    list-style: decimal outside none;
+}
+.b-editor ul {
+    list-style: square outside none;
+}
+.b-editor li {
+    margin: 0 0 0.5em;
+}
+.b-editor img {
+    border: 0 none;
+}
+.b-editor table {
+    margin-bottom: 1.5em;
+}
+.b-editor td {
+    padding: 0.25em 0.5em
+}
+    /*------------------------*/
+    .b-editor--nomar {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    /*------------------------*/
+    body.b-editor {
+        margin: 0;
+        padding: 6px 8px;
+        background: [page.column.center.background-color];
+    } 
+/*------------------------*/
+.b-use-resize a:focus,
+.b-use-resize:focus,
+.b-use-resize img:focus {
+    outline: 0;
+}
+/*------------------------*/
+/* Accordion - Аккордеон */
+.b-comp {}
+.b-comp .comp-list {
+    margin: 0;
+    padding: 0;
+}
+.b-comp li {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0 0 0.5em;
+}
+.b-comp .js-content-comp {
+    padding-top: 0.75em;
+}
+.b-comp li .title {
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.29em;
+    margin-bottom: 1em;
+    border-bottom: 1px dashed;
+}
+.b-comp li .title_on {
+    font-size: 1.29em;
+}
+.b-comp .comp-tab {
+    font-size: 0.79em;
+}  
+/*------------------------*/
+.b-sape {
+    clear: both;
+    text-align: center;
+    width: 100%;
+}
+/*------------------------*/
+.b-pageline {
+    padding-bottom: 1em;
+    display: inline-block;
+}
+.b-pageline .first.disabled {
+    display: none;
+}
+.b-pageline .last.disabled {
+    display: none;
+}
+.b-pageline .next.disabled {
+    display: none;
+}
+.b-pageline .prev.disabled {
+    display: none;
+}
+.b-pageline li {
+    list-style-type: none;
+}
+.b-pageline:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.b-pageline a, .b-pageline span {
+    display: block;
+    float: left;
+    margin-right: 0.5em;
+    padding: 0.3em 0.5em;
+}
+.b-pageline a:hover {
+    text-decoration: none;
+}
+.b-pageline .active a,
+.b-pageline a.pageline__on {
+    background-color: #999999;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+.b-pageline .pageline__back1 {
+    padding: 0.3em 0;
+    text-decoration: none;
+}
+.b-pageline .prev a, .b-pageline .next a {
+    padding: 0.3em 0.5em 0.3em 0;
+}
+.b-pageline a.pageline__next1 {
+    padding: 0.3em 0;
+    text-decoration: none;
+}
+.b-pageline .pageline__next2 {}
+/*------------------------*/
+.b-bannerright {
+    margin-bottom: 1em;
+}
+/*------------------------*/
+.b-speclink h2 {
+    float: left;
+}
+.b-speclink a {
+    padding-top: 5px;
+    font-weight: bold;
+    float: right;
+}
+/*------------------------*/
+.b-picbox {
+    margin-bottom: 2em;
+    width: 197px;
+    overflow: hidden;
+    background: #dbe0e4 url(../images/picbox.bg.gif) 0 100% repeat-x;
+}
+.b-picbox p {
+    margin: 0;
+    padding: 0 0 0.75em 0;
+}
+    /*------------------------*/
+    body.b-picbox {
+        margin-bottom: 0;
+    } 
+/*------------------------*/
+.b-memberbox {
+    margin-bottom: 2em;
+}
+.b-memberbox h3 {
+    margin-bottom: 1.538em;
+    padding: 0.2em 0.769em;
+    font-size: 1.083em;
+    background-color: #e3e7ea;
+}
+.b-memberbox .memberbox__text {
+    overflow: hidden;
+}
+.b-memberbox .memberbox__img {
+    padding-right: 1.67em;
+    float: left;
+}
+.b-memberbox p {
+    margin: 0;
+    padding: 0;
+}
+/*-------------------------------*/
+.b-result {
+    margin-bottom: 1em;
+}
+.b-result p {
+    margin: 0;
+    padding: 0 0 1em 0;
+}
+.b-result .title {
+    font-size: 14px;
+}
+/*-------------------------------*/
+.b-sitemap {}
+.b-sitemap ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.b-sitemap ul ul {
+    padding-top: 0.5em;
+}
+.b-sitemap li {
+    margin-bottom: 0.5em;
+    font-size: 1em;
+}
+.b-sitemap li li {
+    margin-left: 3em;
+    font-size: 1em;
+    font-weight: normal;
+}
+/*-------------------------------*/
+.b-answer {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.b-answer p {
+    margin: 0;
+    padding: 0 0 [editor.p.padding_b];
+}
+.b-answer p:last-of-type {
+    padding-bottom: 0;
+}
+    /*---------------------------*/
+    .b-answer--popup {
+        padding-top: 50px;
+    }
+
+.b-msgbox {
+    padding-bottom: 15px;
+}
+.b-tab {}
+.b-tab .tab__titlebox {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #1071ae;
+}
+.b-tab .tab__titlebox:after {
+    content: "";
+    display: block;
+    clear: both;
+    font-size: 0;
+}
+.b-tab .tab__titleitem {
+    padding: 9px 22px;
+    float: left;
+    background-color: #f2f2f2;
+    border: 1px solid #fff;
+    color: #000000;
+    cursor: pointer;
+}
+.b-tab .tab__titleitem_on,
+.b-tab .tab__titleitem:hover {
+    background-color: #1071ae;
+    border: 1px solid #1071ae;
+    color: #fff;
+}
+/*-------------------------------*/
+.b-carbox {}
+.b-carbox table {
+    margin-bottom: 2em;
+    width: 100%;
+    border-collapse: collapse;
+}
+.b-carbox th,
+.b-carbox td {
+    padding: 0.3em 0.5em;
+    border: 1px solid #8d9196;
+    border-collapse: collapse;
+}
+.b-carbox th {
+    background-color: #8d9196;
+    color: #ffffff;
+    text-align: left;
+}
+.b-carbox .carbox__input1 {
+    width: 100px;
+}
+.b-carbox .carbox__center {
+    text-align: center;
+}
+/*-------------------------------*/
+.b-catrelated {
+    margin-bottom: 20px;
+    position: relative;
+}
+.b-catrelated > .b-title-h2 {
+    padding-right: 50px;
+}
+.b-catrelated .catrelated__back {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: -40px;
+    right: 40px;
+    background: url(../images/catalog.back2.gif) 0 0 no-repeat;
+    cursor: pointer;
+}
+.b-catrelated .catrelated__back:hover {
+    background: url(../images/catalog.back2.gif) 0 100% no-repeat;
+}
+.b-catrelated .catrelated__next {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background: url(../images/catalog.next2.gif) 0 0 no-repeat;
+    cursor: pointer;
+}
+.b-catrelated .catrelated__next:hover {
+    background: url(../images/catalog.next2.gif) 0 100% no-repeat;
+}
+/*-------------------------------*/
+.b-desbtn {
+    padding: 0 4px 2px 4px;
+    position: absolute;
+    cursor: pointer;
+    bottom: 5px;
+    left: 0;
+    display:none;
+}
+.b-desbtn span {
+    color: #071f76;
+    position: relative;
+    z-index: 5;
+}
+.b-desbtn ins {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-radius: 4px;
+    opacity: 0.6;
+    z-index: 0;
+}
+    /*-------------------------------*/
+    .b-desbtn1 {
+        bottom: 5px;
+        left: 0;
+        background: url(../images/desbtn.logo.png) 0 0 no-repeat;
+        width: 30px;
+        height: 20px; 
+    }
+    .b-desbtn2 {
+        bottom: 5px;
+        left: 0;
+        background: url(../images/desbtn.text.png) 0 0 no-repeat;
+        width: 30px;
+        height: 20px; 
+    }
+    .b-desbtn3 {
+        bottom: 5px;
+        left: 0;
+        background: url(../images/desbtn.text.png) 0 0 no-repeat;
+        width: 30px;
+        height: 20px; 
+    }
+    .b-desbtn4 {
+        bottom: 5px;
+        left: 0;
+        background: url(../images/desbtn.text.png) 0 0 no-repeat;
+        width: 30px;
+        height: 20px; 
+    }
+    .b-desbtn5 {
+        bottom: 5px;
+        left: 0;
+        background: url(../images/desbtn.text.png) 0 0 no-repeat;
+        width: 30px;
+        height: 20px; 
+    }
+    .b-desbtn6 {
+        bottom: 5px;
+        left: 0;
+        background: url(../images/desbtn.text.png) 0 0 no-repeat;
+        width: 30px;
+        height: 20px; 
+    }
+    .b-desbtn:hover ins, .b-desbtn__hover ins {
+        background-color: #bbbbbb;
+    } 
+/*-------------------------------*/
+/* margingroup - Отступы         */
+/*-------------------------------*/
+/*-------------------------------*/
+/*-------------------------------*/
+.b-menufoot {
+    text-align: right;
+}
+/*------------------------*/
+.b-robokassa {
+    padding: 10px 0;
+}
+/*-------------------------------*/
+/* modules.brend - Коллекции */
+.b-brend {
+    margin-right: -30px;
+}
+.b-brend:after {
+    content: "";
+    display: block;
+    clear: both;
+    font-size: 0;
+}
+.b-brend .brend__item {
+    margin: [modules.brend.margin];
+    width: [modules.brend.width];
+    height: [modules.brend.height];
+    float: left;
+}
+.b-brend .brend__img {
+    margin-bottom: 10px;
+}
+.b-brend .brend__img img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+}
+.b-brend .brend__item:hover .brend__img {
+    opacity: [modules.brend.opacity];
+}
+.b-brend .brend__title a:link,
+.b-brend .brend__title a:active,
+.b-brend .brend__title a:visited,
+.b-brend .brend__title a:hover {
+    font-family: [modules.brend.family];
+    font-size: [modules.brend.size];
+    font-style: [modules.brend.style];
+    font-weight: [modules.brend.bold];
+    color: [modules.brend.color];
+}
+.b-brend .brend__title a:hover {
+    color: [modules.brend.colorh];
+}
+/*-------------------------------*/
+.b-brenddet {
+    margin-bottom: 20px;
+}
+.b-brenddet .brenddet__wrap {}
+.b-brenddet .brenddet__wrap:after {
+    content: "";
+    display: block;
+    clear: both;
+    font-size: 0;
+}
+.b-brenddet .brenddet__img {
+    margin-right: 25px;
+    float: left;
+}
+.b-brenddet .brenddet__content {
+    overflow: hidden;
+}
+.b-brenddet .b-editor {
+    margin-bottom: 0;
+}
+/*-------------------------------*/
+
+.form__cptch_country {
+    display: none !important;
+}
+/*-------------------------------*/
+.b-tooltip {
+    position: relative;
+    display: inline-block;
+}
+.b-tooltip .tooltip__wrap {
+    margin-left: -150px;
+    padding: 10px 20px;
+    min-width: 300px;
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    z-index: 10;
+    display: none;
+    box-sizing: border-box;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 5px 10px 0 rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0 5px 10px 0 rgba(50, 50, 50, 0.75);
+    box-shadow:         0 5px 10px 0 rgba(50, 50, 50, 0.75);
+    background: [modules.tooltip.color__bg];
+    border: 1px solid [modules.tooltip.color__bor];
+}
+.b-tooltip .tooltip__text {
+    cursor: pointer;
+}
+.b-tooltip:hover .tooltip__wrap {
+    display: block;
+}
+/*-------------------------------*/
+.b-wish-notice {
+    text-align: center;
+}
+.b-wish-notice a:link,
+.b-wish-notice a:visited {
+    outline: none;
+}
+.b-wish-notice .wish-notice__text{
+    padding-bottom: 10px;
+}
+.b-wish-notice .wish-title {
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+.b-wish-notice .wish-btn {
+    padding-bottom: 5px;
+}
+.b-wish-notice .wish-link {
+    padding-bottom: 5px;
+}
+/*-------------------------------*/
+@media handheld, only screen and (min-width: [adaptive.break_desktop]) { /*-DESKTOP-*/
+    /*--------------------------*/
+    .hide-on-desktop {
+        display: none !important;
+    }
+    /*--------------------------*/
+}
+/*-------------------------------*/
+/* group: modules.guestbox | Отзывы */
+/* param: back_dot               | Изображение разделителя | url | ../images/guestbox.bg.gif */
+/* param: photo_margin_right     | Отступ от фото | size | 0 20px 20px 0 */
+/* param: delimiter              | Разделитель| url| ../images/review-border.png */
+/* param: noimage                | Заглушка для изображения | url| ../images/guestbox.nophoto.png */
+
+.b-ratbox-form {
+    margin-bottom: 5px;
+    font-size: 0;
+    float: right;
+}
+.b-ratbox-form:after {
+    display: none;
+}
+.b-ratbox-form .ratbox__item:hover,
+.b-ratbox-form .star-rating-on,
+/*-------------------------------*/
+.b-social-network {
+    margin-bottom: 20px;
+}
+.b-social-network .social-network__title {
+    margin-bottom: 7px;
+}
+.b-social-network .social-network__wrap {
+    margin-bottom: 10px;
+}
+.b-social-network .social-network__error {
+    padding: 20px;
+    border: 1px solid [modules.forms.validation.font_color_error];
+    background: [modules.forms.validation.color_input_bg_error];
+    color: [modules.forms.validation.font_color_error];
+}
+/*-------------------------------*/
+/* 12 cols grid system for content*/
+.b-cols {
+    margin: 0 -10px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+.b-cols > [class^="cols__col-"] {
+    padding: 0 10px 20px;
+    -webkit-flex: 1 auto;
+    flex: 1 auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+}
+.b-cols .cols__col-1-12 {
+    width: calc((100% / 12) * 1);
+}
+.b-cols .cols__col-2-12 {
+    width: calc((100% / 12) * 2);
+}
+.b-cols .cols__col-3-12 {
+    width: calc((100% / 12) * 3);
+}
+.b-cols .cols__col-4-12 {
+    width: calc((100% / 12) * 4);
+}
+.b-cols .cols__col-5-12 {
+    width: calc((100% / 12) * 5);
+}
+.b-cols .cols__col-6-12 {
+    width: calc((100% / 12) * 6);
+}
+.b-cols .cols__col-7-12 {
+    width: calc((100% / 12) * 7);
+}
+.b-cols .cols__col-8-12 {
+    width: calc((100% / 12) * 8);
+}
+.b-cols .cols__col-9-12 {
+    width: calc((100% / 12) * 9);
+}
+.b-cols .cols__col-10-12 {
+    width: calc((100% / 12) * 10);
+}
+.b-cols .cols__col-11-12 {
+    width: calc((100% / 12) * 11);
+}
+.b-cols .cols__col-12-12 {
+    width: calc((100% / 12) * 12);
+}
+/*-------------------------------*/
+.b-confirm-window{
+    text-align: center;
+}
+.b-confirm-window .confirm-window__content{
+    margin: 15px 0;
+}
+.b-confirm-window .b-btnbox{
+    width: 120px;
+    padding: 12px;
+}
+/*-------------------------------------*/
+.b-fixed-menu {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: #45494a;
+    z-index: 99;
+    box-shadow: 1px 0 20px 0 rgba(0, 0, 0, .15);
+    -webkit-transform: translateY(-200%);
+    transform: translateY(-200%);
+    -webkit-transition: -webkit-transform .2s linear;
+    transition: -webkit-transform .2s linear;
+    transition: transform .2s linear;
+    transition: transform .2s linear, -webkit-transform .2s linear;
+}
+.b-fixed-menu--on {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: -webkit-transform .2s linear;
+    transition: -webkit-transform .2s linear;
+    transition: transform .2s linear;
+    transition: transform .2s linear, -webkit-transform .2s linear;
+}
+.b-fixed-menu .fixed-menu__inner {
+    box-sizing: border-box;
+    position: relative;
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+    height: 100%;
+}
+.b-fixed-menu  .sidebar__txt1 {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.b-fixed-menu  .sidebar__txt1 p {
+    margin: 0;
+}
+.b-fixed-menu .sidebar__txt2 {
+    position: absolute;
+    top: 4px;
+    right: 250px;
+}
+.b-fixed-menu .b-sevice {
+    position: absolute;
+    left: 0;
+    top: 12px;
+}
+/*-------------------------------------*/
+/*-------------------------------------*/

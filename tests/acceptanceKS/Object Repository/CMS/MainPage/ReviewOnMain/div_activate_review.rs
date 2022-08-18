@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_activate_review</name>
+   <tag></tag>
+   <elementGuidId>0c311d7d-4c86-433c-a085-5fda8ab9bc4a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[contains(@class,'sk-tab-list')]//table/tbody//table/tbody//div[contains(text(),'Отзывы')]/parent::td/parent::tr/td[last()]/div/img[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>DIV</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[contains(@class,'sk-tab-list')]//table/tbody//table/tbody//div[contains(text(),'Отзывы')]/parent::td/parent::tr/td[last()]/div/img[1]</value>
+   </webElementProperties>
+</WebElementEntity>

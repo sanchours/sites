@@ -1,0 +1,11 @@
+{% if aImages|length > 0 %}
+    <div class="js-catalog-detail-fotorama"
+         data-thumbheight="{{ aImages[0]['images_data']['mini']['height'] }}"
+         data-thumbwidth="{{ aImages[0]['images_data']['mini']['width'] }}" >
+        {% for iKey, aImage in aImages %}
+            <a href="{{ aImage.images_data['medium'].file }}" data-thumb="{{ aImage.images_data.mini.file }}" data-full="{{ aImage.images_data.big.file }}"  alt="{{ aImage.alt_title|e }}"  title="{{ aImage.title|e }}"></a>
+        {% endfor %}
+    </div>
+{% else %}
+    <img alt="" src="{{Design.get('modules.catalogbox.detal','nophoto_img','skewer\\build\\Page\\Main\\Asset')}}" />
+{% endif %}

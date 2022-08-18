@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка наличия отзыва на главной</description>
+   <name>CheckReviewOnTheMain</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6702aed7-5865-43e6-8e99-82e73116eddd</testCaseGuid>
+</TestCaseEntity>

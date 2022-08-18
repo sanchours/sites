@@ -1,0 +1,102 @@
+
+{% if Field4Filter is defined %}
+    <!--noindex-->
+    <div class="b-filter{% if flex %} b-filter-center{% endif %}"{{ Design.write(' sktag="modules.forms"') }}>
+        <form class="js_form_filter" method="get" action="{{ action }}">
+
+            <h3>{{ title }}</h3>
+
+            {% for oField in Field4Filter %}
+                {% if oField.type == 'input' %}
+
+                    <div class="filter__col">
+                        <label class="filter__ltext1" for="{{ label }}_{{oField.name}}_cat_filter">{{oField.title}}</label>
+                        <div class="js_filter_inputwrap filter__inputwrap">
+                            <input class="js_fl_str filter__inputsize1" type="text" name="{{oField.name}}" id="{{ label }}_{{oField.name}}_cat_filter" {% if oField.inputMaskAlias %}data-inputmask="{{ oField.inputMaskAlias|e }}"{% endif %} value="{{oField.value|e}}" />
+                        </div>
+                    </div>
+
+                {% elseif oField.type == 'num_slider' %}
+
+                    <div class="filter__col">
+                        <label class="filter__ltext1" for="{{ label }}_{{oField.name}}_cat_filter">{{oField.title}}</label>
+                        <div class="js_filter_inputwrap filter__inputwrap">
+                            <input class="small js_fl_num filter__inputsize2" id="{{ label }}_{{oField.name}}_cat_filter" type="text" name="{{ oField.name }}[min]"
+                                   value="{{ oField.value_min|e }}" {% if oField.inputMaskAlias %}data-inputmask="{{ oField.inputMaskAlias|e }}"{% endif %} def="{{ oField.def_value_min|e }}">
+                            <input class="small js_fl_num filter__inputsize3" type="text" name="{{ oField.name }}[max]" value="{{ oField.value_max|e }}" {% if oField.inputMaskAlias %}data-inputmask="{{ oField.inputMaskAlias|e }}"{% endif %} def="{{ oField.def_value_max|e }}">
+                            <div class="g-clear"></div>
+                            <div class="js_slider"></div>
+                        </div>
+                    </div>
+
+                {% elseif oField.type == 'check_group' %}
+
+                    <div class="filter__col">
+                        <label class="filter__ltext1">{{oField.title}}</label>
+                        {% for item in oField.items %}
+                            <div class="js_filter_inputwrap filter__inputwrap {% if item.disable %} disabled{% endif %}">
+                                <input type="checkbox" class="filter__checksize1" name="{{oField.name}}[]" id="{{ label }}_{{oField.name}}{{item.id}}_cat_filter" value="{{item.id}}"{% if item.check %} checked{% endif %}/>
+                                <label class="filter__ltext2"
+                                       for="{{ label }}_{{ oField.name }}{{ item.id }}_cat_filter">
+                                    {% if oField.bWithImage and item.image %}
+                                        <img alt="" src="{{ item.image }}"/>
+                                    {% endif %}
+                                    <span>{{ item.title }}</span>
+                                </label>
+                            </div>
+                        {% endfor %}
+                    </div>
+
+                {% elseif oField.type == 'check' %}
+
+                    <div class="filter__col">
+                        <div class="js_filter_inputwrap filter__inputwrap {% if oField.disable %} disabled{% endif %}">
+                            <input type="checkbox" class="filter__checksize1" name="{{oField.name}}" id="{{ label }}_{{oField.name}}_cat_filter" value="1"{% if oField.value==1 or oField.check %} checked{% endif %}/>
+                            <label class="filter__ltext2" for="{{ label }}_{{oField.name}}_cat_filter">{{oField.title}}</label>
+                        </div>
+                    </div>
+
+                {% elseif oField.type == 'select' %}
+
+                    <div class="filter__col">
+                        <label for="{{ label }}_{{oField.name}}_cat_filter" class="filter__ltext1">{{oField.title}}</label>
+                        <div class="filter__selectwrap">
+                            <select class="filter__selectsize1"
+                                    data-placeholder="{{ oField.title }}" name="{{ oField.name }}"
+                                    id="{{ label }}_{{ oField.name }}_cat_filter">
+                                <option value="0">{{ Lang.get('catalogFilter.not_chosen') }}</option>
+                                {% for item in oField.items %}
+                                    <option
+                                        data-class="{% if item.disable %} disabled{% endif %}"
+                                        {% if oField.bWithImage %} data-img="{{ item.image }}"{% endif %}
+                                        value="{{ item.id }}"
+                                        {% if item.check %} selected{% endif %}
+                                    >{{ item.title }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+
+            <div class="g-clear"></div>
+
+            {% if flex %}
+                <div class="filter__col">
+                    <button type="submit" class="b-btnbox">{{ Lang.get('catalogFilter.find') }}</button>
+                </div>
+                <div class="filter__col">
+                    <a class="js_clear_catalog_filter btnbox__link" href="#">{{ Lang.get('catalogFilter.clear') }}</a>
+                </div>
+            {% else %}
+                <div class="filter__col2">
+                    <button type="submit" class="b-btnbox">{{ Lang.get('catalogFilter.find') }}</button>
+                    <p><a class="js_clear_catalog_filter" href="#">{{ Lang.get('catalogFilter.clear') }}</a></p>
+                </div>
+            {% endif %}
+
+        </form>
+    </div>
+    <!--/noindex-->
+
+{% endif %}

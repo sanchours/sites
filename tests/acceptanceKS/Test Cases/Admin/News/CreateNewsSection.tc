@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Создание раздела новости</description>
+   <name>CreateNewsSection</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1e51c863-b513-4487-bf58-22bd1019bb7b</testCaseGuid>
+</TestCaseEntity>

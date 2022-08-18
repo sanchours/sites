@@ -1,0 +1,6 @@
+<div class="form__col-{{oField.getClassVal()}} {%  if oField.getError() %} form__item--error {% endif %} {{ oField.settings.classModify }}">
+    {% if oField.type.default !='' %}
+        <div class="form__title">{{oField.type.default}}</div>
+    {% endif %}
+    <hr>
+</div>

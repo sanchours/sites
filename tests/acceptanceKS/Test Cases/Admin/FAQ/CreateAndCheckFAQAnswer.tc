@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Создание и проверки вио с ответом</description>
+   <name>CreateAndCheckFAQAnswer</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bf562c31-efe0-4c4a-b491-18bdfe8be191</testCaseGuid>
+</TestCaseEntity>

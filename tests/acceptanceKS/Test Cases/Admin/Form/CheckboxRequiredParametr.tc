@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Галочка обязательный параметр</description>
+   <name>CheckboxRequiredParametr</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e579a257-2951-45a0-9e4e-87b20fea6e71</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Проверка типа поиска &quot;Общий&quot;</description>
+   <name>CheckSearchTypeInformational</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0c1b6e78-85bb-48c9-8c7b-7af15ed28a31</testCaseGuid>
+</TestCaseEntity>

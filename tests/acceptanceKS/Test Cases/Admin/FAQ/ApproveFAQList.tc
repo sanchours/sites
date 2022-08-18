@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Одобрение ВИО в выпадающем списком</description>
+   <name>ApproveFAQList</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>95e3aed8-d056-4071-9743-f7c1dd738c21</testCaseGuid>
+</TestCaseEntity>
