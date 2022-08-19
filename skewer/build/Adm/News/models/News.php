@@ -34,6 +34,7 @@ use yii\helpers\StringHelper;
  * @property string $publication_date
  * @property string $title
  * @property string $announce
+ * @property string $Avtor
  * @property string $full_text
  * @property int $active
  * @property int $on_main
@@ -65,7 +66,7 @@ class News extends ActiveRecord
             [['parent_section', 'title'], 'required'],
             [['parent_section', 'active', 'on_main', 'gallery'], 'integer'],
             [['publication_date', 'last_modified_date'], 'safe'],
-            [['announce', 'full_text'], 'string'],
+            [['announce', 'full_text', 'Avtor'], 'string'],
             [['news_alias', 'title', 'hyperlink', 'source_link'], 'string', 'max' => 255],
         ];
     }
@@ -82,6 +83,7 @@ class News extends ActiveRecord
             'publication_date' => Yii::t('news', 'field_date'),
             'title' => Yii::t('news', 'field_title'),
             'announce' => Yii::t('news', 'field_preview'),
+            'Avtor' => Yii::t('news', 'field_Avtor'),
             'full_text' => Yii::t('news', 'field_fulltext'),
             'active' => Yii::t('news', 'field_active'),
             'on_main' => Yii::t('news', 'field_onmain'),
@@ -179,6 +181,7 @@ class News extends ActiveRecord
         $oRow->active = 1;
 
         $oRow->announce = '';
+        $oRow->Avtor = '';
         $oRow->full_text = '';
         $oRow->gallery = 0;
         $oRow->hyperlink = '';
@@ -224,6 +227,10 @@ class News extends ActiveRecord
 
         if ($this->announce && $this->parent_section) {
             $this->announce = ImageResize::wrapTags($this->announce, $this->parent_section);
+        }
+
+        if ($this->Avtor && $this->parent_section) {
+            $this->Avtor = ImageResize::wrapTags($this->Avtor, $this->parent_section);
         }
 
         $aFieldsLink = ['hyperlink', 'source_link'];

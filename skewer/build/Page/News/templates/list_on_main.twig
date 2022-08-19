@@ -35,6 +35,8 @@
                         <div class="news__date"{{ Design.write(' sktag="modules.news.date"') }}>{{ aItem.publication_date | date('d.m.Y')}}</div>
                     {% endif %}
                     <div class="b-editor"{{ Design.write(' sktag="editor"') }}>{{ aItem.getTruncateAnnounce(lengthAnnounceOnMain) }}</div>
+                    <div class="news__date"{{ Design.write(' sktag="modules.news.date"') }}>{{ "Автор" }}</div>
+                    <div class="news__date"{{ Design.write(' sktag="modules.news.date"') }}>{{ aItem.Avtor}}</div>
                     <div class="g-clear"></div>
                     {% if showDetailLink and aItem.hasDetailLink  %}
                         <p class="news__linkback">

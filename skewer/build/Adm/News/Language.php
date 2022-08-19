@@ -10,6 +10,7 @@ $aLanguage['ru']['field_title'] = 'Название';
 $aLanguage['ru']['field_date'] = 'Дата публикации';
 $aLanguage['ru']['field_time'] = 'Время публикации';
 $aLanguage['ru']['field_preview'] = 'Анонс';
+$aLanguage['ru']['field_Avtor'] = 'Автор';
 $aLanguage['ru']['field_fulltext'] = 'Полный текст';
 $aLanguage['ru']['field_active'] = 'Активность';
 $aLanguage['ru']['field_archive'] = 'Архив';

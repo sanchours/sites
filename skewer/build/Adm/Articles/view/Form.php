@@ -39,6 +39,7 @@ class Form extends FormView
                 ['show_val' => Profile::getDefaultId(Profile::TYPE_ARTICLES), 'seoClass' => SeoArticles::className(), 'iEntityId' => $this->item->id]
             )
             ->field('announce', \Yii::t('articles', 'field_preview'), Editor::WYSWYG)
+            ->field('Avtor', \Yii::t('articles', 'field_Avtor'), Editor::STRING)
             ->field('full_text', \Yii::t('articles', 'field_fulltext'), Editor::WYSWYG)
             ->field('on_main', \Yii::t('articles', 'field_on_main'), Editor::CHECK)
             ->field('active', \Yii::t('articles', 'field_active'), Editor::CHECK)

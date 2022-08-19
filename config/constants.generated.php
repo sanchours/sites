@@ -13,9 +13,9 @@ define('BUILDNAME', 'canape');
 
 define('BUILDNUMBER', '0403');
 
-define('ROOTPATH', 'C:\Users/Admin/Desktop/open_server_5_3_7_basic_full/OpenServer/domains/site/');
+define('ROOTPATH', 'D:\open_server_5_3_7_basic_full/OpenServer/domains/site/');
 
-define('RELEASEPATH', 'C:\Users/Admin/Desktop/open_server_5_3_7_basic_full/OpenServer/domains/site/skewer/');
+define('RELEASEPATH', 'D:\open_server_5_3_7_basic_full/OpenServer/domains/site/skewer/');
 
 define('APPKEY', '178b3de40b4a8e10082dedcd9ff8967662a1f683');
 

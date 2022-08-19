@@ -40,6 +40,7 @@ class Form extends FormView
                 ['show_val' => Profile::getDefaultId(Profile::TYPE_NEWS), 'seoClass' => SeoNews::className(), 'iEntityId' => $this->item->id]
             )
             ->field('announce', \Yii::t('news', 'field_preview'), 'wyswyg')
+            ->field('Avtor', \Yii::t('news', 'field_Avtor'), 'string')
             ->field('full_text', \Yii::t('news', 'field_fulltext'), 'wyswyg')
             ->field('hyperlink', \Yii::t('news', 'field_hyperlink'), 'string')
             ->field('source_link', \Yii::t('news', 'field_source_link'), 'string')
