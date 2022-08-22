@@ -1,0 +1,27 @@
+{% if revert==0  %}
+
+    {{ form }}
+
+    {% if back_link is defined %}
+        {% if msg is defined %}
+            <div class="b-msgbox">
+                {{ msg }}
+            </div>
+        {% endif %}
+    {% endif %}
+{%  endif %}
+
+{{ sViewReviews }}
+
+{% if revert==1  %}
+
+    {{ form }}
+
+    {% if back_link is defined %}
+        {% if msg is defined %}
+            <div class="b-msgbox">
+                {{ msg }}
+            </div>
+        {% endif %}
+    {% endif %}
+{%  endif %}

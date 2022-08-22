@@ -1,0 +1,474 @@
+/* layer: default */
+
+/* group: modules.guestbox | Отзывы */
+/* param: back_dot               | Изображение разделителя | url | ../images/guestbox.bg.gif */
+/* param: delimiter              | Разделитель| url| ../images/review-border.png */
+/* param: photo_margin_right     | Отступ от фото | size | 0 20px 20px 0 */
+
+/* group: modules.guestbox.nophoto_img | Заглушки для изображений */
+/* param: reviews_main | Заглушка в шаблонах: одиночный, серый, карусель, пузырь, тень, рамка, кавычки | url | /images/guestbox.nophoto.png */
+/* param: reviews_detail | Заглушка в шаблонах: список | url | /images/guestbox.nophoto.png */
+
+/* group: modules.guestbox.carousel | Карусель */
+/* group: modules.guestbox.carousel.header | Заголовок */
+    /* param: margin_bottom           | Отступ снизу | size | 20px */
+    /* param: align                   | Выравнивание | text-align | left */
+    /* param: style                   | Стиль шрифта | font-style | normal */
+    /* parentParam: default..editor.h2.style */
+    /* param: family                  | Шрифт | family | Arial, sans-serif */
+    /* parentParam: default..editor.h2.family */
+    /* param: weight                  | Шрифт толщина | font-weight | normal */
+    /* parentParam: default..editor.h2.bold */
+    /* param: font_size               | Шрифта размер | size | 22px */
+    /* parentParam: default..editor.h2.size */
+    /* param: color                   | Цвет шрифта | color | #000 */
+    /* parentParam: default..editor.h2.color */
+    /* param: content_font_size       | Размер шрифта текста | size | 14px */
+    /* parentParam: default..base.userbase.fontfamily.font-size */
+
+/* group: modules.guestbox.carousel.carousel_default | Карусель */
+    /* param: carousel_border           | Разделитель | url | ../images/review-border.png */
+    /* param: carousel_pic_prev         | Стрелка назад | url | ../images/owl.prev.png */
+    /* param: carousel_pic_next         | Стрелка вперёд| url | ../images/owl.next.png */
+    /* param: carousel_pic_width        | Ширина стрелки | size | 38px */
+    /* param: carousel_pic_height       | Высота стрелки | size | 78px */
+    /* param: carousel_arr_mar          | Отступ стрелок | size | 0 */
+    /* param: carousel_dot_margin       | Отступ мужду булитами | size | 5px */
+    /* param: carousel_dot_width        | Размер булита | size | 6px */
+    /* param: carousel_dot_color        | Цвет булита | color | #dedede */
+    /* param: carousel_dot_color_active | Цвет активного булита | color | #222 */
+
+/* group: modules.guestbox.title | Имя */
+    /* param: font_family            | Шрифт | family  | Arial, sans-serif */
+    /* parentParam: default..base.userbase.fontfamily.font-family */
+    /* param: size                   | Размер | size | 14px */
+    /* param: weight                 | Толщина шрифта | font-weight | bold */
+    /* param: style                  | Курсив | font-style | normal */
+    /* param: decoration             | Подчеркивание | text-decoration | none */
+    /* param: transform              | Регистр | text-transform | normal */
+    /* param: color                  | Цвет текста | color | #353535 */
+
+/* group: modules.guestbox.date  | Дата */
+    /* param: font_family            | Шрифт | family  | Arial, sans-serif */
+    /* parentParam: default..base.userbase.fontfamily.font-family */
+    /* param: size                   | Размер | size | 14px */
+    /* param: weight                 | Толщина шрифта | font-weight | normal */
+    /* param: style                  | Курсив | font-style | normal */
+    /* param: decoration             | Подчеркивание | text-decoration | none */
+    /* param: transform              | Регистр | text-transform | normal */
+    /* param: color                  | Цвет текста | color | #999999 */
+
+/* group: modules.guestbox.city  | Город */
+    /* param: font_family            | Шрифт | family  | Arial, sans-serif */
+    /* parentParam: default..base.userbase.fontfamily.font-family */
+    /* param: size                   | Размер | size | 14px */
+    /* param: weight                 | Толщина шрифта | font-weight | normal */
+    /* param: style                  | Курсив | font-style | normal */
+    /* param: decoration             | Подчеркивание | text-decoration | none */
+    /* param: transform              | Регистр | text-transform | normal */
+    /* param: color                  | Цвет текста | color | #999999 */
+
+/* group: modules.guestbox.guestmain | Отзывы в колонке */
+    /* param: reviews_color1                   | Цвет градиента фона (верх) | color | transparent  */
+    /* param: reviews_color2                   | Цвет градиента фона (низ) | color | transparent  */
+    /* param: reviews_border                   | Цвет рамки | color | #d7d7d7  */
+    /* param: reviews_border_w                 | Ширина рамки | size | 0 0 1px  */
+    /* param: reviews_padding                  | Оступы | value | 0 0 10px 0  */
+    /* param: reviews_radius                   | Радиус скругления | size | 0  */
+/*-------------------------------*/
+/* modules.guestbox - Отзывы */
+/* modules.guestbox.title - Имя */
+/* modules.guestbox.date  - Дата */
+/* modules.guestbox.city  - Город */
+.b-guestbox {}
+.b-guestbox .guestbox__item {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    background: url("[modules.guestbox.back_dot]") 0 100% repeat-x;
+}
+.b-guestbox .guestbox__item:after {
+    content: "";
+    display: block;
+    clear: both;
+    font-size: 0;
+}
+.b-guestbox .guestbox__leftside {
+    padding-right: 20px;
+    float: left;
+    width: 180px;
+}
+.b-guestbox .guestbox__rightside {
+    overflow: hidden;
+}
+.b-guestbox .guestbox__title {
+    padding-bottom: 5px;
+    font-family: [modules.guestbox.title.font_family];
+    font-size: [modules.guestbox.title.size];
+    font-weight: [modules.guestbox.title.weight];
+    font-style: [modules.guestbox.title.style];
+    text-decoration: [modules.guestbox.title.decoration];
+    text-transform: [modules.guestbox.title.transform];
+    color: [modules.guestbox.title.color];
+    position: relative;
+}
+.b-guestbox .guestbox__title:after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 0;
+    width: 2px;
+    height: 16px;
+    background: url("[modules.guestbox.delimiter]") no-repeat;
+}
+.b-guestbox .guestbox__date {
+    padding-bottom: 5px;
+    font-family: [modules.guestbox.date.font_family];
+    font-size: [modules.guestbox.date.size];
+    font-weight: [modules.guestbox.date.weight];
+    font-style: [modules.guestbox.date.style];
+    text-decoration: [modules.guestbox.date.decoration];
+    text-transform: [modules.guestbox.date.transform];
+    color: [modules.guestbox.date.color];
+}
+.b-guestbox .guestbox__city {
+    padding-bottom: 5px;
+    font-family: [modules.guestbox.city.font_family];
+    font-size: [modules.guestbox.city.size];
+    font-weight: [modules.guestbox.city.weight];
+    font-style: [modules.guestbox.city.style];
+    text-decoration: [modules.guestbox.city.decoration];
+    text-transform: [modules.guestbox.city.transform];
+    color: [modules.guestbox.city.color];
+    position: relative;
+}
+.b-guestbox_photo .guestbox__city:last-child:after,
+.b-guestbox_photo .guestbox__title:last-child:after {
+    display: none;
+}
+.b-guestbox .guestbox__city:after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 0;
+    width: 2px;
+    height: 16px;
+    background: url("[modules.guestbox.delimiter]") no-repeat;
+}
+.b-guestbox .guestbox__msgtext {
+    text-align: center;
+}
+.b-guestbox .guestbox__editor {
+    padding-bottom: 1em;
+}
+/*---------------------------*/
+.b-guestbox_photo .guestbox__photo {
+    padding: [modules.guestbox.photo_margin_right];
+    float: left;
+}
+.b-guestbox_photo .guestbox__leftside {
+    padding-bottom: 10px;
+    float: none;
+    width: auto;
+    overflow: hidden;
+}
+.b-guestbox_photo .guestbox__title,
+.b-guestbox_photo .guestbox__city,
+.b-guestbox_photo .guestbox__rating {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+.b-guestbox_photo .guestbox__title {
+    padding-right: 10px;
+    margin-right: 5px;
+}
+.b-guestbox_photo .guestbox__city {
+    padding-right: 10px;
+}
+/*-------------------------------*/
+.b-carousel-reviews {
+    margin-bottom: 20px;
+}
+.b-carousel-reviews > .b-title-h2 {
+    margin: 0 0 [modules.guestbox.carousel.header.margin_bottom];
+    font-style: [modules.guestbox.carousel.header.style];
+    font-family: [modules.guestbox.carousel.header.family];
+    font-weight: [modules.guestbox.carousel.header.weight];
+    font-size: [modules.guestbox.carousel.header.font_size];
+    text-align: [modules.guestbox.carousel.header.align];
+    color: [modules.guestbox.carousel.header.color];
+}
+.b-carousel-reviews .carousel-reviews__name {
+    padding-bottom: 5px;
+    font-family: [modules.guestbox.title.font_family];
+    font-size: [modules.guestbox.title.size];
+    font-weight: [modules.guestbox.title.weight];
+    font-style: [modules.guestbox.title.style];
+    text-decoration: [modules.guestbox.title.decoration];
+    text-transform: [modules.guestbox.title.transform];
+    color: [modules.guestbox.title.color];
+}
+.b-carousel-reviews .carousel-reviews__date {
+    padding-right: 10px;
+    font-family: [modules.guestbox.date.font_family];
+    font-size: [modules.guestbox.date.size];
+    font-weight: [modules.guestbox.date.weight];
+    font-style: [modules.guestbox.date.style];
+    text-decoration: [modules.guestbox.date.decoration];
+    text-transform: [modules.guestbox.date.transform];
+    color: [modules.guestbox.date.color];
+    display: inline-block;
+    position: relative;
+}
+.b-carousel-reviews .carousel-reviews__city {
+    padding-bottom: 5px;
+    padding-right: 10px;
+    font-family: [modules.guestbox.city.font_family];
+    font-size: [modules.guestbox.city.size];
+    font-weight: [modules.guestbox.city.weight];
+    font-style: [modules.guestbox.city.style];
+    text-decoration: [modules.guestbox.city.decoration];
+    text-transform: [modules.guestbox.city.transform];
+    color: [modules.guestbox.city.color];
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.b-carousel-reviews .carousel-reviews__company:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 2px;
+    height: 16px;
+    background: url([modules.guestbox.carousel_border]) no-repeat;
+}
+.b-carousel-reviews .carousel-reviews__company {
+    padding-bottom: 5px;
+    padding-left: 10px;
+    font-family: [modules.guestbox.date.font_family];
+    font-size: [modules.guestbox.date.size];
+    font-weight: [modules.guestbox.date.weight];
+    font-style: [modules.guestbox.date.style];
+    text-decoration: [modules.guestbox.date.decoration];
+    text-transform: [modules.guestbox.date.transform];
+    color: [modules.guestbox.date.color];
+    display: inline-block;
+    position: relative;
+}
+.b-carousel-reviews .carousel-reviews__rating {
+    margin: 0 0 15px;
+}
+.b-carousel-reviews .carousel-reviews__content {
+    margin-bottom: 20px;
+    padding: 20px;
+    position: relative;
+    background: [modules.guestbox.guestmain.reviews_color1]; /* Old browsers */
+    background: -moz-linear-gradient(top, [modules.guestbox.guestmain.reviews_color1] 0%, [modules.guestbox.guestmain.reviews_color2] 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,[modules.guestbox.guestmain.reviews_color1]), color-stop(100%,[modules.guestbox.guestmain.reviews_color2])); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, [modules.guestbox.guestmain.reviews_color1] 0%,[modules.guestbox.guestmain.reviews_color2] 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, [modules.guestbox.guestmain.reviews_color1] 0%,[modules.guestbox.guestmain.reviews_color2] 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, [modules.guestbox.guestmain.reviews_color1] 0%,[modules.guestbox.guestmain.reviews_color2] 100%); /* IE10+ */
+    background: linear-gradient(to bottom, [modules.guestbox.guestmain.reviews_color1] 0%,[modules.guestbox.guestmain.reviews_color2] 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='[modules.guestbox.guestmain.reviews_color1]', endColorstr='[modules.guestbox.guestmain.reviews_color2]',GradientType=0 ); /* IE6-9 */
+    font-size: [modules.guestbox.guestmain.font_size];
+}
+.b-carousel-reviews .carousel-reviews__content:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    border: solid transparent;
+    border-width: 15px 10px;
+    border-top-color: [modules.guestbox.guestmain.reviews_color2];
+}
+.b-carousel-reviews .owl-carousel .owl-stage-outer:before,
+.b-carousel-reviews .owl-carousel .owl-stage-outer:after {
+    content: '';
+    width: 10px;
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+    z-index: 1;
+}
+.b-carousel-reviews .owl-carousel .owl-stage-outer:before {
+    left: 0;
+    background: -webkit-radial-gradient(left ellipse, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 75%) 0 center,
+    -webkit-radial-gradient(right ellipse, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 75%) 100% center;
+    background: radial-gradient(ellipse at left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 75%) 0 center,
+    radial-gradient(ellipse at right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 75%) 100% center;
+    background-size: 5px 100%, 0 100%;
+    background-attachment: scroll, scroll;
+    background-repeat: no-repeat;
+}
+.b-carousel-reviews .owl-carousel .owl-stage-outer:after {
+    right: 0;
+    background: -webkit-radial-gradient(right ellipse, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 75%) 100% center,
+    -webkit-radial-gradient(left ellipse, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 75%) 0 center;
+    background: radial-gradient(ellipse at right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 75%) 100% center,
+    radial-gradient(ellipse at left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 75%) 0 center;
+    background-size: 5px 100%, 0 100%;
+    background-attachment: scroll, scroll;
+    background-repeat: no-repeat;
+}
+.b-carousel-reviews .owl-carousel.owl-carousel-shadow-right .owl-stage-outer:after,
+.b-carousel-reviews .owl-carousel.owl-carousel-shadow-left .owl-stage-outer:before {
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+}
+.b-carousel-reviews .owl-carousel--nav {
+    padding-left: [modules.guestbox.carousel.carousel_default.carousel_pic_width];
+    padding-right: [modules.guestbox.carousel.carousel_default.carousel_pic_width];
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.b-carousel-reviews .owl-carousel .owl-nav .owl-prev,
+.b-carousel-reviews .owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -90px;
+    width: [modules.guestbox.carousel.carousel_default.carousel_pic_width];
+    height: [modules.guestbox.carousel.carousel_default.carousel_pic_height];
+}
+.b-carousel-reviews .owl-carousel .owl-nav .owl-prev {
+    left: [modules.guestbox.carousel.carousel_default.carousel_arr_mar];
+    opacity: 0.5;
+    background: url([modules.guestbox.carousel.carousel_default.carousel_pic_prev]) 50% 0 no-repeat;
+}
+.b-carousel-reviews .owl-carousel .owl-nav .owl-next {
+    right: [modules.guestbox.carousel.carousel_default.carousel_arr_mar];
+    opacity: 0.5;
+    background: url([modules.guestbox.carousel.carousel_default.carousel_pic_next]) 50% 0 no-repeat;
+}
+.b-carousel-reviews .owl-carousel .owl-nav .owl-next:hover,
+.b-carousel-reviews .owl-carousel .owl-nav .owl-prev:hover {
+    opacity: 1;
+}
+.b-carousel-reviews .owl-carousel .owl-nav .owl-prev.disabled,
+.b-carousel-reviews .owl-carousel .owl-nav .owl-next.disabled {
+    opacity: .5;
+    cursor: auto;
+}
+.b-carousel-reviews .owl-carousel .owl-dots {
+    text-align: center;
+}
+.b-carousel-reviews .owl-carousel .owl-dot {
+    margin: 0 [modules.guestbox.carousel.carousel_single.carousel_dot_margin];
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    border-radius: 1000px;
+    background: [modules.guestbox.carousel.carousel_single.carousel_dot_color];
+    width: [modules.guestbox.carousel.carousel_single.carousel_dot_width];
+    height: [modules.guestbox.carousel.carousel_single.carousel_dot_width];
+}
+.b-carousel-reviews .owl-carousel .owl-dot.active {
+    background: [modules.guestbox.carousel.carousel_single.carousel_dot_color_active];
+}
+
+
+.b-carousel-reviews .carousel-reviews__content {
+    position: relative;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    background: [modules.guestbox.guestmain.reviews_color2];
+    margin-bottom: 30px;
+    min-height: 200px;
+}
+.b-carousel-reviews .carousel-reviews__img {
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 12px;
+}
+.b-carousel-reviews .carousel-reviews__img img {
+    width: 64px;
+    border-radius: 50px;
+}
+.b-carousel-reviews .carousel-reviews__info {
+    display: table-cell;
+    vertical-align: middle;
+}
+/*----------------------------------------------------*/
+.b-last-reviews {
+    margin-bottom: 20px;
+}
+.b-last-reviews .b-title-h2 {}
+.b-last-reviews .reviews__item { 
+    box-sizing: border-box;
+    padding: [modules.guestbox.guestmain.reviews_padding];
+    margin: 0 0 15px 0;
+    border: solid [modules.guestbox.guestmain.reviews_border];
+    border-width: [modules.guestbox.guestmain.reviews_border_w];
+    -webkit-border-radius: [modules.guestbox.guestmain.reviews_radius];
+    -moz-border-radius: [modules.guestbox.guestmain.reviews_radius];
+    border-radius: [modules.guestbox.guestmain.reviews_radius];
+    background: [modules.guestbox.guestmain.reviews_color1]; /* Old browsers */
+    background: -moz-linear-gradient(top, [modules.guestbox.guestmain.reviews_color1] 0%, [modules.guestbox.guestmain.reviews_color2] 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,[modules.guestbox.guestmain.reviews_color1]), color-stop(100%,[modules.guestbox.guestmain.reviews_color2])); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, [modules.guestbox.guestmain.reviews_color1] 0%,[modules.guestbox.guestmain.reviews_color2] 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, [modules.guestbox.guestmain.reviews_color1] 0%,[modules.guestbox.guestmain.reviews_color2] 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, [modules.guestbox.guestmain.reviews_color1] 0%,[modules.guestbox.guestmain.reviews_color2] 100%); /* IE10+ */
+    background: linear-gradient(to bottom, [modules.guestbox.guestmain.reviews_color1] 0%,[modules.guestbox.guestmain.reviews_color2] 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='[modules.guestbox.guestmain.reviews_color1]', endColorstr='[modules.guestbox.guestmain.reviews_color2]',GradientType=0 ); /* IE6-9 */
+}
+.b-last-reviews .reviews__leftside {
+    overflow: hidden;
+} 
+.b-last-reviews .reviews__item:after {
+    content: "";
+    clear: both;
+    font-size: 0;
+    display: block;
+}
+.b-last-reviews .reviews__date {
+    padding-right: 10px; 
+    font-family: [modules.guestbox.date.font_family];
+    font-size: [modules.guestbox.date.size];
+    font-weight: [modules.guestbox.date.weight];
+    font-style: [modules.guestbox.date.style];
+    text-decoration: [modules.guestbox.date.decoration];
+    text-transform: [modules.guestbox.date.transform];
+    color: [modules.guestbox.date.color];
+    display: inline-block;
+    position: relative;
+}
+.b-last-reviews .reviews__company:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 2px;
+    height: 16px;
+    background: url("[modules.guestbox.delimiter]") no-repeat;
+}
+.b-last-reviews .reviews__company {
+    padding-left: 10px;
+    padding-bottom: 5px; 
+    font-family: [modules.guestbox.date.font_family];
+    font-size: [modules.guestbox.date.size];
+    font-weight: [modules.guestbox.date.weight];
+    font-style: [modules.guestbox.date.style];
+    text-decoration: [modules.guestbox.date.decoration];
+    text-transform: [modules.guestbox.date.transform];
+    color: [modules.guestbox.date.color];
+    display: inline-block;
+    position: relative;
+}
+.b-last-reviews--photo .reviews__photo {
+    margin-bottom: 0.5em;
+}
+
+.b-last-reviews--photo .reviews__photo img{
+    max-width: 100%;
+}
+
+.b-last-reviews .reviews__rating{
+    margin: 0 0 15px;
+}

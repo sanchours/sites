@@ -1,0 +1,56 @@
+{% if items|length %}
+    <!-- Карусель с отзывами тема с фоном -->
+    <div class="b-carousel-reviews-bg">
+        <div class="carousel-reviews-bg__inner">
+            {% if title %}<div class="b-title-h2">{{ title }}</div>{% endif %}
+            <div class="js-owl-carousel owl-carousel" data-carousel-options="{{ gallerySettings_review|escape }}">
+                {%  for aItem in items %}
+                    <div class="carousel-reviews-bg__item">
+                        <div class="carousel-reviews-bg__content">
+                            <a name="{{ aItem.id }}"></a>
+                            <div class="b-editor b-editor--nomar">
+                                {% if showList %}
+                                    {{aItem.content|truncate(maxLen,"<a href='"~aItem.link~"'>...</a>")}}
+                                {% else %}
+                                    {{ aItem.content }}
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="carousel-reviews-bg__contact{% if showGallery %} carousel-reviews-bg__contact--photo{% endif %}">
+                            {% if show_rating and aItem.ratingHtml %}
+                                <div class="carousel-reviews-bg__rating">
+                                    {{ aItem.ratingHtml }}
+                                </div>
+                            {% endif %}
+                            {% if showGallery %}
+                                {% if aItem.photo_gallery and aItem.photo_gallery.detail%}
+                                    <div class="carousel-reviews-bg__photo">
+                                        <img src="{{ aItem.photo_gallery.main.file }}" alt="">
+                                    </div>
+                                {% else %}
+                                    <div class="carousel-reviews-bg__photo">
+                                        <img src="{{ Design.get('modules.guestbox.nophoto_img','reviews_main','skewer\\build\\Page\\GuestBook\\Asset') }}" alt="">
+                                    </div>
+                                {% endif %}
+                            {% endif %}
+                            <div class="carousel-reviews-bg__contact-data">
+                                {% if aItem.name %}
+                                    <div class="carousel-reviews-bg__name">{{aItem.name|escape}} </div>
+                                {% endif %}
+                                {% if aItem.city %}
+                                    <div class="carousel-reviews-bg__date">{{aItem.city|escape}} </div>
+                                {% endif %}
+                                {% if aItem.company %}
+                                    <div class="carousel-reviews-bg__company">{{aItem.company|escape}} </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% if section_id %}
+        <p><a href="[{{ section_id }}]">{{ Lang.get('review.show_all') }}</a></p>
+    {% endif %}
+{% endif %}

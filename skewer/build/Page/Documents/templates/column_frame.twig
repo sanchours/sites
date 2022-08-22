@@ -1,0 +1,52 @@
+{% if items|length %}
+    <div class="b-reviews-theme-border"{{ Design.write(' sktag="modules.guestbox"') }}>
+        {% if title %}<div class="b-title-h2">{{ title }}</div>{% endif %}
+        {%  for aItem in items  %}
+            <div class="reviews-theme-border__item">
+                <a name="{{ aItem.id }}"></a>
+                <div class="reviews-theme-border__content">
+                    <div class="b-editor b-editor--nomar">
+                        {% if showList %}
+                            {{aItem.content|striptags|truncate(maxLen,"<a href='"~aItem.link~"'>...</a>")}}
+                        {% else %}
+                            {{ aItem.content }}
+                        {% endif %}
+                    </div>
+                </div>
+
+                    <div class="reviews-theme-border__contact{% if showGallery %} reviews-theme-border__contact--photo{% endif %}">
+                        {% if showGallery %}
+                            {% if aItem.photo_gallery and aItem.photo_gallery.detail%}
+                                <div class="reviews-theme-border__photo">
+                                    <img src="{{ aItem.photo_gallery.main.file }}" alt="">
+                                </div>
+                            {% else %}
+                                <div class="reviews-theme-border__photo">
+                                    <img src="{{ Design.get('modules.guestbox.nophoto_img','reviews_main','skewer\\build\\Page\\GuestBook\\Asset') }}" alt="">
+                                </div>
+                            {% endif %}
+                        {% endif %}
+                    <div class="reviews-theme-border__contact-data">
+                        {% if aItem.name %}
+                            <div class="reviews-theme-border__name">{{aItem.name|escape}} </div>
+                        {% endif %}
+                        {% if aItem.city %}
+                            <div class="reviews-theme-border__date">{{aItem.city|escape}} </div>
+                        {% endif %}
+                        {% if aItem.company %}
+                            <div class="reviews-theme-border__company">{{aItem.company|escape}} </div>
+                        {% endif %}
+                    </div>
+                    {% if show_rating and aItem.ratingHtml %}
+                        <div class="reviews-theme-border__rating">
+                            {{ aItem.ratingHtml }}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+        {% if section_id %}
+            <p><a href="[{{ section_id }}]">{{ Lang.get('review.show_all') }}</a></p>
+        {% endif %}
+    </div>
+{% endif %}

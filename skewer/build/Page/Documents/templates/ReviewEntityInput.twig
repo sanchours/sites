@@ -1,0 +1,14 @@
+<input type="hidden" name="cmd" value='{{ templateForm.cmd }}' />
+<input type="hidden" name="form_id" id="form_id" value="{{ form_id }}" />
+<input type="hidden" name="label" value="{{ templateForm.label }}" />
+<input type="hidden" name="section" value="{{ templateForm.section }}" />
+<input type="hidden" class="_rules" value='{{ rules }}' />
+<input type="hidden" name = 'formHash' value='{{ templateForm.formHash }}' />
+
+<input type="hidden" name="parent" value="{{ parent }}" />
+<input type="hidden" name="parent_class" value="{{ parent_class }}" />
+<input type="hidden" name="parent_class" value="{{ parent_class }}" />
+{% if rate_url %}
+    <input type="hidden" name="rate_url" value="{{ rate_url }}" />
+{% endif %}
+{{ templateForm.hiddenCaptchaInput }}

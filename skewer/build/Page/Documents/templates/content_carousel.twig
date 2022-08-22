@@ -1,0 +1,48 @@
+{% if items|length %}
+    <!-- Карусель с отзывами -->
+    <div class="b-carousel-reviews">
+        {% if title %}<div class="b-title-h2">{{ title }}</div>{% endif %}
+        <div class="js-owl-carousel owl-carousel" data-carousel-options="{{ gallerySettings_review|escape }}">
+            {%  for aItem in items %}
+                <div class="carousel-reviews__item">
+                    <a name="{{ aItem.id }}"></a>
+                    <div class="carousel-reviews__content">
+                        <div class="b-editor">
+                            {% if showList %}
+                                {{aItem.content|truncate(maxLen,"<a href='"~aItem.link~"'>...</a>")}}
+                            {% else %}
+                                {{ aItem.content }}
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% if showGallery %}
+                        <div class="carousel-reviews__img">
+                            {% if  aItem.photo_gallery and  aItem.photo_gallery.main%}
+                                <img class="owl-lazy" data-src="{{ aItem.photo_gallery.main.file }}" alt="">
+                            {% else %}
+                                <img src="{{ Design.get('modules.guestbox.nophoto_img','reviews_main','skewer\\build\\Page\\GuestBook\\Asset') }}" alt="">
+                            {% endif %}
+
+                        </div>
+                    {% endif %}
+
+                    <div class="carousel-reviews__info">
+                        <div class="carousel-reviews__name">{{aItem.name|escape}} </div>
+                        <div class="carousel-reviews__date">{{aItem.city|escape}} </div>
+                        {% if aItem.company %}
+                            <div class="carousel-reviews__company">{{aItem.company|escape}} </div>
+                        {% endif %}
+                        {% if show_rating and aItem.ratingHtml %}
+                            <div class="carousel-reviews__rating">
+                                {{ aItem.ratingHtml }}
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% if section_id %}
+        <p><a href="[{{ section_id }}]">{{ Lang.get('review.show_all') }}</a></p>
+    {% endif %}
+{% endif %}

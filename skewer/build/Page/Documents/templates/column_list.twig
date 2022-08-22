@@ -1,0 +1,42 @@
+{% if items|length %}
+<div class="b-last-reviews b-last-reviews--photo"{{ Design.write(' sktag="modules.guestbox"') }}>
+    {% if title %}<div class="b-title-h2">{{ title }}</div>{% endif %}
+    {%  for aItem in items  %}
+        <div class="reviews__item">
+            {% if showGallery %}
+                <div class="reviews__photo">
+                    {% if  aItem.photo_gallery and aItem.photo_gallery.detail%}
+                    <img src="{{ aItem.photo_gallery.detail.file }}" alt="">
+                    {% else %}
+                        <img src="{{ Design.get('modules.guestbox.nophoto_img','reviews_detail','skewer\\build\\Page\\GuestBook\\Asset') }}" alt="">
+                    {% endif %}
+                </div>
+            {% endif %}
+
+            <div class="reviews__leftside">
+                {% if show_rating and aItem.ratingHtml %}
+                    <div class="reviews__rating">
+                        {{ aItem.ratingHtml }}
+                    </div>
+                {% endif %}
+                <a name="{{ aItem.id }}"></a>
+                <div class="b-editor">
+                    {% if showList %}
+                        {{aItem.content|striptags|truncate(maxLen,"<a href='"~aItem.link~"'>...</a>")}}
+                    {% else %}
+                        {{ aItem.content }}
+                    {% endif %}
+                </div>
+                <div class="reviews__name">{{aItem.name|escape}} </div>
+                <div class="reviews__date">{{aItem.city|escape}} </div>
+                {% if aItem.company %}
+                <div class="reviews__company">{{aItem.company|escape}} </div>
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+    {% if section_id %}
+        <p><a href="[{{ section_id }}]">{{ Lang.get('review.show_all') }}</a></p>
+    {% endif %}
+</div>
+{% endif %}

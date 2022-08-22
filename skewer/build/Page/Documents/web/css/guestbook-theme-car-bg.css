@@ -1,0 +1,172 @@
+/* layer: default */
+    /* group: modules.guestbox.carousel.carousel_bg | Карусель Тема с фоном */
+        /* param: color_bg                  | Фон, цвет | color | #ececec */
+        /* param: pic_bg                    | Фон, каpтинка | url | empty */
+        /* param: padding_bg                | Фон, отступы | size | 55px 100px */
+        /* param: padding_item                   | Внутриние отступы | size | 25px */
+        /* param: carousel_border           | Цвет разделителя | color | #e9e9e9 */
+        /* param: carousel_pic_prev         | Стрелка назад | url | ../images/review-car-prev.png */
+        /* param: carousel_pic_next         | Стрелка вперёд| url | ../images/review-car-next.png */
+        /* param: carousel_pic_width        | Ширина стрелки | size | 40px */
+        /* param: carousel_pic_height       | Высота стрелки | size | 94px */
+        /* param: carousel_arr_mar          | Отступ стрелок | size | -100px */
+        /* param: carousel_dot_margin       | Отступ мужду булитами | size | 5px */
+        /* param: carousel_dot_width        | Размер булита | size | 6px */
+        /* param: carousel_dot_color        | Цвет булита | color | #dedede */
+        /* param: carousel_dot_color_active | Цвет активного булита | color | #222 */
+
+/*--------------------*/
+.b-carousel-reviews-bg {
+    margin: 0 0 20px;
+    padding: 0;
+    background: [modules.guestbox.carousel.carousel_bg.color_bg] url([modules.guestbox.carousel.carousel_bg.pic_bg]) 50% 50% no-repeat;
+}
+.b-carousel-reviews-bg .carousel-reviews-bg__inner {
+    padding: [modules.guestbox.carousel.carousel_bg.padding_bg];
+}
+.b-carousel-reviews-bg .carousel-reviews-bg__inner > .b-title-h2 {
+    margin: 0 0 [modules.guestbox.carousel.header.margin_bottom];
+    font-style: [modules.guestbox.carousel.header.style];
+    font-family: [modules.guestbox.carousel.header.family];
+    font-weight: [modules.guestbox.carousel.header.weight];
+    font-size: [modules.guestbox.carousel.header.font_size];
+    text-align: [modules.guestbox.carousel.header.align];
+    color: [modules.guestbox.carousel.header.color];
+}
+.b-carousel-reviews-bg .carousel-reviews-bg__item {
+    background: #fff;
+}
+.b-carousel-reviews-bg .carousel-reviews-bg__content {
+    padding: [modules.guestbox.carousel.carousel_bg.padding_item];
+    border-bottom: 1px solid [modules.guestbox.carousel.carousel_bg.carousel_border];
+}
+.b-carousel-reviews-bg .carousel-reviews-bg__contact {
+    padding: [modules.guestbox.carousel.carousel_bg.padding_item];
+}
+.b-carousel-reviews-bg .carousel-reviews-bg__contact--photo .carousel-reviews-bg__photo,
+.b-carousel-reviews-bg .carousel-reviews-bg__contact--photo .carousel-reviews-bg__contact-data {
+    margin-right: -.275em;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+.b-carousel-reviews-bg .carousel-reviews-bg__contact--photo .carousel-reviews-bg__photo {
+    width: 50px;
+}
+.b-carousel-reviews-bg .carousel-reviews-bg__contact--photo .carousel-reviews-bg__photo img {
+    vertical-align: middle;
+    max-width: 100%;
+    border-radius: 1000px;
+}
+.b-carousel-reviews-bg .carousel-reviews-bg__contact--photo .carousel-reviews-bg__contact-data {
+    padding-left: 20px;
+    width: calc(100% - 50px);
+}
+.b-carousel-reviews-bg .carousel-reviews-bg__name {
+    font-family: [modules.guestbox.title.font_family];
+    font-size: [modules.guestbox.title.size];
+    font-weight: [modules.guestbox.title.weight];
+    font-style: [modules.guestbox.title.style];
+    text-decoration: [modules.guestbox.title.decoration];
+    text-transform: [modules.guestbox.title.transform];
+    color: [modules.guestbox.title.color];
+}
+.b-carousel-reviews-bg .carousel-reviews-bg__date,
+.b-carousel-reviews-bg .carousel-reviews-bg__company,
+.b-carousel-reviews-bg .carousel-reviews-bg__city {
+    display: inline-block;
+    padding-right: 10px;
+    font-family: [modules.guestbox.date.font_family];
+    font-size: [modules.guestbox.date.size];
+    font-weight: [modules.guestbox.date.weight];
+    font-style: [modules.guestbox.date.style];
+    text-decoration: [modules.guestbox.date.decoration];
+    text-transform: [modules.guestbox.date.transform];
+    color: [modules.guestbox.date.color];
+}
+.b-carousel-reviews-bg .carousel-reviews-bg__rating{
+    margin: 0 0 15px;
+}
+/*-- owl carousel */
+.b-carousel-reviews-bg .owl-carousel .owl-stage-outer:before,
+.b-carousel-reviews-bg .owl-carousel .owl-stage-outer:after {
+    content: '';
+    width: 10px;
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+    z-index: 1;
+}
+.b-carousel-reviews-bg .owl-carousel .owl-stage-outer:before {
+    left: 0;
+    background: -webkit-radial-gradient(left ellipse, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 75%) 0 center,
+    -webkit-radial-gradient(right ellipse, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 75%) 100% center;
+    background: radial-gradient(ellipse at left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 75%) 0 center,
+    radial-gradient(ellipse at right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 75%) 100% center;
+    background-size: 5px 100%, 0 100%;
+    background-attachment: scroll, scroll;
+    background-repeat: no-repeat;
+}
+.b-carousel-reviews-bg .owl-carousel .owl-stage-outer:after {
+    right: 0;
+    background: -webkit-radial-gradient(right ellipse, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 75%) 100% center,
+    -webkit-radial-gradient(left ellipse, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 75%) 0 center;
+    background: radial-gradient(ellipse at right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 75%) 100% center,
+    radial-gradient(ellipse at left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 75%) 0 center;
+    background-size: 5px 100%, 0 100%;
+    background-attachment: scroll, scroll;
+    background-repeat: no-repeat;
+}
+.b-carousel-reviews-bg .owl-carousel.owl-carousel-shadow-right .owl-stage-outer:after,
+.b-carousel-reviews-bg .owl-carousel.owl-carousel-shadow-left .owl-stage-outer:before {
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+}
+.b-carousel-reviews-bg .owl-carousel .owl-nav .owl-prev,
+.b-carousel-reviews-bg .owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: 0;
+    width: [modules.guestbox.carousel.carousel_bg.carousel_pic_width];
+    height: [modules.guestbox.carousel.carousel_bg.carousel_pic_height];
+}
+.b-carousel-reviews-bg .owl-carousel .owl-nav .owl-prev {
+    left: [modules.guestbox.carousel.carousel_bg.carousel_arr_mar];
+    opacity: 0.5;
+    background: url([modules.guestbox.carousel.carousel_bg.carousel_pic_prev]) 50% 0 no-repeat;
+}
+.b-carousel-reviews-bg .owl-carousel .owl-nav .owl-next {
+    right: [modules.guestbox.carousel.carousel_bg.carousel_arr_mar];
+    opacity: 0.5;
+    background: url([modules.guestbox.carousel.carousel_bg.carousel_pic_next]) 50% 0 no-repeat;
+}
+.b-carousel-reviews-bg .owl-carousel .owl-nav .owl-next:hover,
+.b-carousel-reviews-bg .owl-carousel .owl-nav .owl-prev:hover {
+    opacity: 1;
+}
+.b-carousel-reviews-bg .owl-carousel .owl-nav .owl-prev.disabled,
+.b-carousel-reviews-bg .owl-carousel .owl-nav .owl-next.disabled {
+    opacity: .5;
+    cursor: auto;
+}
+.b-carousel-reviews-bg .owl-carousel .owl-dots {
+    padding-top: 20px;
+    text-align: center;
+}
+.b-carousel-reviews-bg .owl-carousel .owl-dot {
+    margin: 0 [modules.guestbox.carousel.carousel_bg.carousel_dot_margin];
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    border-radius: 1000px;
+    background: [modules.guestbox.carousel.carousel_bg.carousel_dot_color];
+    width: [modules.guestbox.carousel.carousel_bg.carousel_dot_width];
+    height: [modules.guestbox.carousel.carousel_bg.carousel_dot_width];
+}
+.b-carousel-reviews-bg .owl-carousel .owl-dot.active {
+    background: [modules.guestbox.carousel.carousel_bg.carousel_dot_color_active];
+}
